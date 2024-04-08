@@ -1,0 +1,44 @@
+root: index
+format: jb-book
+chapters:
+- file: dei
+- file: overview
+- file: setup
+- file: outline
+- file: introduction/introduction.md
+  sections:
+  - file: introduction/introduction_1.md
+  - file: introduction/introduction_2.md
+  - file: introduction/introduction_3_new.md
+    sections:
+    - file: introduction/intro_jupyter.ipynb
+  - file: introduction/introduction_4.md
+    sections:
+    - file: introduction/intro_python_I.ipynb
+  - file: introduction/introduction_5.md
+    sections:
+    - file: introduction/intro_python_II.ipynb 
+  - file: introduction/introduction_6.md  
+    sections:
+    - file: introduction/intro_python_III.ipynb
+- file: NY_recap.ipynb
+- file: experiments/experiments.md
+- file: newanalyses/DataAnalysis_lecture.ipynb
+- file: showcases/module_showcases.md
+  sections:
+    - file: showcases/python_numpy.ipynb
+    - file: showcases/python_scipy.ipynb
+    - file: showcases/python_scikit.ipynb
+    - file: showcases/python_visualization_for_data.ipynb
+    - file: showcases/image_manipulation_nibabel.ipynb
+    - file: showcases/image_manipulation_nilearn.ipynb
+    - file: showcases/statistical_analyses_MRI.ipynb
+    - file: showcases/functional_connectivity.ipynb
+    - file: showcases/diffusion_imaging.ipynb
+    - file: showcases/machine_learning_preparation.ipynb
+    - file: showcases/machine_learning_nilearn.ipynb
+    - file: showcases/machine_learning_keras.ipynb
+    - file: showcases/Predicting_age_with_machine_learning.ipynb
+- file: questionnaires
+- file: break
+- file: CoC
