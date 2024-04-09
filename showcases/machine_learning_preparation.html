@@ -1,0 +1,1000 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Preparation Machine Learning &#8212; Winter - 2023</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'showcases/machine_learning_preparation';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MVPA and Searchlight with nilearn" href="machine_learning_nilearn.html" />
+    <link rel="prev" title="Structural connectivity and diffusion imaging" href="diffusion_imaging.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/pfp_logo.png" class="logo__image only-light" alt="Winter - 2023 - Home"/>
+    <script>document.write(`<img src="../_static/pfp_logo.png" class="logo__image only-dark" alt="Winter - 2023 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../dei.html">Diversity, Equity and Inclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Course overview &amp; procedure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup for the course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outline.html">General outline</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../introduction/introduction.html">Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/introduction_1.html">Introduction I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/introduction_2.html">Introduction II</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_3_new.html">Introduction III</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_jupyter.html">Introduction III - the jupyter ecosystem &amp; notebooks, first look at programming in Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_4.html">Introduction IV</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_I.html">Introduction IV - Introduction to Python - I</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_5.html">Introduction V</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_II.html">Introduction V - Introduction to Python - II</a></li>
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_6.html">Introduction VI</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_III.html">Introduction VI - Introduction to Python III</a></li>
+
+
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../NY_recap.html">New Year recap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../experiments/experiments.html">Running experiments in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../newanalyses/DataAnalysis_lecture.html">Analysing Experimental Data in Table Form with Pandas</a></li>
+
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="module_showcases.html">Python module showcases</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="python_numpy.html">Introduction to NumPy</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="python_scipy.html">Introduction to SciPy</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="python_scikit.html">Introduction to scikit-learn &amp; scikit-image</a></li>
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="python_visualization_for_data.html">Visualization of different data types with python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_manipulation_nibabel.html">Using Python for neuroimaging data - NiBabel</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="image_manipulation_nilearn.html">Using Python for neuroimaging data - Nilearn</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="statistical_analyses_MRI.html">Nilearn GLM: statistical analyses of MRI in Python</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="functional_connectivity.html">Functional connectivity and resting state</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="diffusion_imaging.html">Structural connectivity and diffusion imaging</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Preparation Machine Learning</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="machine_learning_nilearn.html">MVPA and Searchlight with <code class="docutils literal notranslate"><span class="pre">nilearn</span></code></a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="machine_learning_keras.html"><code class="docutils literal notranslate"><span class="pre">TensorFlow</span></code>/<code class="docutils literal notranslate"><span class="pre">Keras</span></code></a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="Predicting_age_with_machine_learning.html">Machine learning to predict age from rs-fmri</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../questionnaires.html">Questionnaire templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../break.html">Yoga and/or dance break</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoC.html">Code of Conduct</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/aylinsgl/Python_For_Psychologists_23-24/master?urlpath=tree/lecture/showcases/machine_learning_preparation.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/aylinsgl/Python_For_Psychologists_23-24" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/aylinsgl/Python_For_Psychologists_23-24/edit/master/lecture/showcases/machine_learning_preparation.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/aylinsgl/Python_For_Psychologists_23-24/issues/new?title=Issue%20on%20page%20%2Fshowcases/machine_learning_preparation.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/showcases/machine_learning_preparation.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Preparation Machine Learning</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Preparation Machine Learning</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-do-we-want-to-do">What do we want to do?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-to-prepare-the-data">Why do we need to prepare the data?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-the-signal-time-course-of-a-voxel-look-like">1. What does the signal time-course of a voxel look like?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-many-nonzero-voxels-do-we-have">2. How many nonzero voxels do we have?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-data">Preparing the data</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-machine-learning-dataset">Creating the machine learning dataset</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dataset-ready-for-the-machine-learning-approach-can-be-found-under">The dataset ready for the machine-learning approach can be found under:</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="preparation-machine-learning">
+<h1>Preparation Machine Learning<a class="headerlink" href="#preparation-machine-learning" title="Link to this heading">#</a></h1>
+<p>For the machine learning tutorial in the <a class="reference internal" href="#05b_machine_learning_nilearn.ipynb"><span class="xref myst">Nilearn</span></a> and the <a class="reference internal" href="#05c_machine_learning_tensorflow.ipynb"><span class="xref myst">Deep Learning</span></a> notebook, we will need some pre-processed and prepared data. This notebook covers how one could prepare their data. But it’s always important to consider what the data looks like and what we want to do.</p>
+<section id="what-do-we-want-to-do">
+<h2>What do we want to do?<a class="headerlink" href="#what-do-we-want-to-do" title="Link to this heading">#</a></h2>
+<p>For the machine learning tutorial, we will use the dataset from <a class="reference external" href="https://link.springer.com/article/10.1007%2Fs12021-013-9187-0">Zang et al.</a>. It contains 48 subjects, where each subject did two resting-state fMRI recordings. Once with eyes <strong>open</strong> and once with eyes <strong>closed</strong>. The data was already pre-processed and is already ready for the machine learning notebooks. <em><strong>Note</strong></em>: The data diverges from the original data in the way, that we only consider the first 100 volumes for this tutorial. The original dataset had 240 volumes per run.</p>
+<p>What we would like to do is to see if we can predict if a person had their eyes open or not, solely based on the fMRI signal.</p>
+<img src="data/resting_state_eyes.gif" style="width:500px;">
+<p>With such an obvious signal difference we should be able to classify the two categories <code class="docutils literal notranslate"><span class="pre">'closed'</span></code> and <code class="docutils literal notranslate"><span class="pre">'open'</span></code> if we leave the signal around the eyes in the data. But before we can do any machine learning we need to prepare the data accordingly.</p>
+</section>
+<section id="why-do-we-need-to-prepare-the-data">
+<h2>Why do we need to prepare the data?<a class="headerlink" href="#why-do-we-need-to-prepare-the-data" title="Link to this heading">#</a></h2>
+<p>Let’s take a look at the data of one subject:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nilearn.plotting</span> <span class="kn">import</span> <span class="n">plot_anat</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">nibabel</span> <span class="k">as</span> <span class="nn">nb</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img_func</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;/home/neuro/workshop_weizmann/workshop/advanced/data/sub-01_rest-EC.nii.gz&#39;</span><span class="p">)</span>
+<span class="n">plot_anat</span><span class="p">(</span><span class="n">img_func</span><span class="o">.</span><span class="n">slicer</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">draw_cross</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">annotate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+          <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;magma&#39;</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1250</span><span class="p">,</span> <span class="n">cut_coords</span><span class="o">=</span><span class="p">[</span><span class="mi">33</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+          <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Normalized and Cleaned Functional Image; Vox.Res.: 4mm^3&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;nilearn.plotting.displays.OrthoSlicer at 0x7ff9498a2490&gt;
+</pre></div>
+</div>
+<img alt="../_images/6d5f1b737d551260f62a3ca66879524cd7b5a1cfc2f78d172665a20d3826602a.png" src="../_images/6d5f1b737d551260f62a3ca66879524cd7b5a1cfc2f78d172665a20d3826602a.png" />
+</div>
+</div>
+<p>This all looks fine. Why do we need to prepare something? Well, let’s take a look at two things.</p>
+<section id="what-does-the-signal-time-course-of-a-voxel-look-like">
+<h3>1. What does the signal time-course of a voxel look like?<a class="headerlink" href="#what-does-the-signal-time-course-of-a-voxel-look-like" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="n">plot</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">img_func</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()[</span><span class="mi">19</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="p">:])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7ff946e1a8d0&gt;]
+</pre></div>
+</div>
+<img alt="../_images/6a14d309c9c40bf31ec07adb68a27043c70562fc808e878b27929a15954ce4e9.png" src="../_images/6a14d309c9c40bf31ec07adb68a27043c70562fc808e878b27929a15954ce4e9.png" />
+</div>
+</div>
+<p>As we can see, the data still has a slight linear trend and is centered around a value of 800 (for this particular voxel). To be able to do some machine learning on this data we therefore need to remove the linear trend and ideally zscore the data.</p>
+<p>This can be done with the following commands:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">detrend</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">zscore</span>
+
+<span class="c1"># Detrend and zscore the data</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">img_func</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">detrend</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan_to_num</span><span class="p">(</span><span class="n">zscore</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+
+<span class="c1"># Plot the cleaned signal</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">19</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="p">:]);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/scipy/stats/stats.py:2419: RuntimeWarning: invalid value encountered in true_divide
+  return (a - mns) / sstd
+</pre></div>
+</div>
+<img alt="../_images/608e1c873d050c58da248c54d534ca72d4ee35406ab085c1566d99d3f2a2f0e8.png" src="../_images/608e1c873d050c58da248c54d534ca72d4ee35406ab085c1566d99d3f2a2f0e8.png" />
+</div>
+</div>
+<p>Perfect, that looks much better!</p>
+</section>
+<section id="how-many-nonzero-voxels-do-we-have">
+<h3>2. How many nonzero voxels do we have?<a class="headerlink" href="#how-many-nonzero-voxels-do-we-have" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img_func</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(40, 52, 38, 100)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">img_func</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>79040
+</pre></div>
+</div>
+</div>
+</div>
+<p>Well, those are all voxels of the 40 x 52 x 38 matrix. It doesn’t make sense that we run machine learning outside of the brain.</p>
+<p>So let’s use a mask to only keep those voxels that we’re interested in. For this purpose we will use the MNI-152 template brain mask and an eye mask that we’ve created for this workshop. Both can be found under <code class="docutils literal notranslate"><span class="pre">/home/neuro/workshop/notebooks/data/templates</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nilearn.image</span> <span class="kn">import</span> <span class="n">math_img</span>
+
+<span class="c1"># Specify location of the brain and eye image</span>
+<span class="n">brain</span> <span class="o">=</span> <span class="s1">&#39;/home/neuro/workshop/notebooks/data/templates/MNI152_T1_1mm_brain.nii.gz&#39;</span>
+<span class="n">eyes</span> <span class="o">=</span> <span class="s1">&#39;/home/neuro/workshop/notebooks/data/templates/MNI152_T1_1mm_eye.nii.gz&#39;</span>
+
+<span class="c1"># Combine the two template images</span>
+<span class="n">img_roi</span> <span class="o">=</span> <span class="n">math_img</span><span class="p">(</span><span class="s2">&quot;img1 + img2&quot;</span><span class="p">,</span> <span class="n">img1</span><span class="o">=</span><span class="n">brain</span><span class="p">,</span> <span class="n">img2</span><span class="o">=</span><span class="n">eyes</span><span class="p">)</span>
+
+<span class="c1"># Plot the region-of-interest (ROI) template</span>
+<span class="n">plot_anat</span><span class="p">(</span><span class="n">img_roi</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">draw_cross</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">annotate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+          <span class="n">cut_coords</span><span class="o">=</span><span class="p">[</span><span class="mi">33</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Brain &amp; Eye MNI Template; Vox.Res.: 1mm^3&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;nilearn.plotting.displays.OrthoSlicer at 0x7ff946d16e10&gt;
+</pre></div>
+</div>
+<img alt="../_images/c55778a6742c910d4d719af548de36ebef90d4141a4439405036a70a6791cd52.png" src="../_images/c55778a6742c910d4d719af548de36ebef90d4141a4439405036a70a6791cd52.png" />
+</div>
+</div>
+<p>Great, now we just need to binarize this template to get a mask, dilate this mask a bit to be sure that we keep all relevant voxels and multiply it with the functional image. But before we can do any of this we also need to resample the ROI template to a voxel resolution for 4x4x4mm, as the functional images.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Resample ROI template to functional image resolution</span>
+<span class="kn">from</span> <span class="nn">nilearn.image</span> <span class="kn">import</span> <span class="n">resample_to_img</span>
+
+<span class="n">img_resampled</span> <span class="o">=</span> <span class="n">resample_to_img</span><span class="p">(</span><span class="n">img_roi</span><span class="p">,</span> <span class="n">img_func</span><span class="p">)</span>
+
+<span class="n">plot_anat</span><span class="p">(</span><span class="n">img_resampled</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">draw_cross</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">annotate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+          <span class="n">cut_coords</span><span class="o">=</span><span class="p">[</span><span class="mi">33</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Brain &amp; Eye MNI Template; Vox.Res.: 4mm^3&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;nilearn.plotting.displays.OrthoSlicer at 0x7ff946bc8a90&gt;
+</pre></div>
+</div>
+<img alt="../_images/2d0f822c5b0105d694fdceae96a90b4de6658fbf3a09c67e6971bce74509783e.png" src="../_images/2d0f822c5b0105d694fdceae96a90b4de6658fbf3a09c67e6971bce74509783e.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.ndimage</span> <span class="kn">import</span> <span class="n">binary_dilation</span>
+
+<span class="c1"># Binarize ROI template</span>
+<span class="n">data_binary</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">img_resampled</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()</span><span class="o">&gt;=</span><span class="mi">10</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">)</span>
+
+<span class="c1"># Dilate binary mask once</span>
+<span class="n">data_dilated</span> <span class="o">=</span> <span class="n">binary_dilation</span><span class="p">(</span><span class="n">data_binary</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">)</span>
+
+<span class="c1"># Save binary mask in NIfTI image</span>
+<span class="n">img_mask</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">Nifti1Image</span><span class="p">(</span><span class="n">data_dilated</span><span class="p">,</span> <span class="n">img_resampled</span><span class="o">.</span><span class="n">affine</span><span class="p">,</span> <span class="n">img_resampled</span><span class="o">.</span><span class="n">header</span><span class="p">)</span>
+<span class="n">img_mask</span><span class="o">.</span><span class="n">set_data_dtype</span><span class="p">(</span><span class="s1">&#39;i1&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot binary mask (overlayed over MNI-152_Template)</span>
+<span class="kn">from</span> <span class="nn">nilearn.plotting</span> <span class="kn">import</span> <span class="n">plot_roi</span>
+<span class="n">plot_roi</span><span class="p">(</span><span class="n">img_mask</span><span class="p">,</span> <span class="n">draw_cross</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">annotate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">black_bg</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+         <span class="n">bg_img</span><span class="o">=</span><span class="s1">&#39;/home/neuro/workshop/notebooks/data/templates/MNI152_T1_1mm.nii.gz&#39;</span><span class="p">,</span> <span class="n">cut_coords</span><span class="o">=</span><span class="p">[</span><span class="mi">33</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span>
+         <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Dilated Brain &amp; Eye Mask; Vox.Res.: 4mm^3&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;magma_r&#39;</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;nilearn.plotting.displays.OrthoSlicer at 0x7ff946b1ad50&gt;
+</pre></div>
+</div>
+<img alt="../_images/4005cf3bfc9acde8617abab0fe52a18c4e99be0bb2fad8e5ee1ebe89defa02d5.png" src="../_images/4005cf3bfc9acde8617abab0fe52a18c4e99be0bb2fad8e5ee1ebe89defa02d5.png" />
+</div>
+</div>
+<p>Cool. How many voxels do we have now?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">img_mask</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>36575.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Great, that’s a 53% reduction of datapoints that we need to consider in our machine-learning approach!</p>
+<p>Now we only have to multiply this mask with our functional images and remove tailing zeros from the 3D matrix.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Multiply the functional image with the mask</span>
+<span class="n">img_cleaned</span> <span class="o">=</span> <span class="n">math_img</span><span class="p">(</span><span class="s1">&#39;img1 * img2&#39;</span><span class="p">,</span> <span class="n">img1</span><span class="o">=</span><span class="n">img_func</span><span class="p">,</span> <span class="n">img2</span><span class="o">=</span><span class="n">img_mask</span><span class="o">.</span><span class="n">slicer</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="kc">None</span><span class="p">])</span>
+
+<span class="c1"># Remove as many zero rows in the data matrix to reduce overall volume size</span>
+<span class="kn">from</span> <span class="nn">nilearn.image</span> <span class="kn">import</span> <span class="n">crop_img</span>
+<span class="n">img_crop</span> <span class="o">=</span> <span class="n">crop_img</span><span class="p">(</span><span class="n">img_cleaned</span><span class="p">)</span>
+
+<span class="c1"># Plot the </span>
+<span class="kn">from</span> <span class="nn">nilearn.plotting</span> <span class="kn">import</span> <span class="n">plot_anat</span>
+<span class="n">plot_anat</span><span class="p">(</span><span class="n">img_crop</span><span class="o">.</span><span class="n">slicer</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">draw_cross</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">annotate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+          <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;magma&#39;</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1250</span><span class="p">,</span> <span class="n">cut_coords</span><span class="o">=</span><span class="p">[</span><span class="mi">33</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+          <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Masked functional image; Vox.Res.: 4mm^3&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;nilearn.plotting.displays.OrthoSlicer at 0x7ff9469fbed0&gt;
+</pre></div>
+</div>
+<img alt="../_images/c698378facc742b47511ec1f6fa20bae07762760fdd66088e6caffb1f0e7bbd8.png" src="../_images/c698378facc742b47511ec1f6fa20bae07762760fdd66088e6caffb1f0e7bbd8.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="preparing-the-data">
+<h2>Preparing the data<a class="headerlink" href="#preparing-the-data" title="Link to this heading">#</a></h2>
+<p>If we do all the steps that we discussed above in one go, it looks like this:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">in_file</span> <span class="o">=</span> <span class="s1">&#39;data/sub-01_rest-EC.nii.gz&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load functional image</span>
+<span class="n">img_func</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">in_file</span><span class="p">)</span>
+
+<span class="c1"># Detrend and zscore data and save it under a new NIfTI file</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">img_func</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">detrend</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan_to_num</span><span class="p">(</span><span class="n">zscore</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">img_standardized</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">Nifti1Image</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">img_func</span><span class="o">.</span><span class="n">affine</span><span class="p">,</span> <span class="n">img_func</span><span class="o">.</span><span class="n">header</span><span class="p">)</span>
+
+<span class="c1"># Create MNI-152 template brain and eye mask</span>
+<span class="n">brain</span> <span class="o">=</span> <span class="s1">&#39;/home/neuro/workshop/notebooks/data/templates/MNI152_T1_1mm_brain.nii.gz&#39;</span>
+<span class="n">eyes</span> <span class="o">=</span> <span class="s1">&#39;/home/neuro/workshop/notebooks/data/templates/MNI152_T1_1mm_eye.nii.gz&#39;</span>
+<span class="n">img_roi</span> <span class="o">=</span> <span class="n">math_img</span><span class="p">(</span><span class="s2">&quot;img1 + img2&quot;</span><span class="p">,</span> <span class="n">img1</span><span class="o">=</span><span class="n">brain</span><span class="p">,</span> <span class="n">img2</span><span class="o">=</span><span class="n">eyes</span><span class="p">)</span>
+<span class="n">img_resampled</span> <span class="o">=</span> <span class="n">resample_to_img</span><span class="p">(</span><span class="n">img_roi</span><span class="p">,</span> <span class="n">img_func</span><span class="p">)</span>
+<span class="n">data_binary</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">img_resampled</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()</span><span class="o">&gt;=</span><span class="mi">10</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">)</span>
+<span class="n">data_dilated</span> <span class="o">=</span> <span class="n">binary_dilation</span><span class="p">(</span><span class="n">data_binary</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">)</span>
+<span class="n">img_mask</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">Nifti1Image</span><span class="p">(</span><span class="n">data_dilated</span><span class="p">,</span> <span class="n">img_resampled</span><span class="o">.</span><span class="n">affine</span><span class="p">,</span> <span class="n">img_resampled</span><span class="o">.</span><span class="n">header</span><span class="p">)</span>
+<span class="n">img_mask</span><span class="o">.</span><span class="n">set_data_dtype</span><span class="p">(</span><span class="s1">&#39;i1&#39;</span><span class="p">)</span>
+
+<span class="c1"># Multiply functional image with mask and crop image</span>
+<span class="n">img_cleaned</span> <span class="o">=</span> <span class="n">math_img</span><span class="p">(</span><span class="s1">&#39;img1 * img2&#39;</span><span class="p">,</span>
+                       <span class="n">img1</span><span class="o">=</span><span class="n">img_standardized</span><span class="p">,</span> <span class="n">img2</span><span class="o">=</span><span class="n">img_mask</span><span class="o">.</span><span class="n">slicer</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="kc">None</span><span class="p">])</span>
+<span class="n">img_crop</span> <span class="o">=</span> <span class="n">crop_img</span><span class="p">(</span><span class="n">img_cleaned</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/scipy/stats/stats.py:2419: RuntimeWarning: invalid value encountered in true_divide
+  return (a - mns) / sstd
+</pre></div>
+</div>
+</div>
+</div>
+<p>And the result looks as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_anat</span><span class="p">(</span><span class="n">img_crop</span><span class="o">.</span><span class="n">slicer</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">draw_cross</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">annotate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+          <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;magma&#39;</span><span class="p">,</span> <span class="n">cut_coords</span><span class="o">=</span><span class="p">[</span><span class="mi">33</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+          <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Masked and standardized functional image; Vox.Res.: 4mm^3&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;nilearn.plotting.displays.OrthoSlicer at 0x7ff946079a50&gt;
+</pre></div>
+</div>
+<img alt="../_images/4a25adc4c9121ba0a37ed7a89d0a8eb9b3051529afef405e3484e55af4ec4038.png" src="../_images/4a25adc4c9121ba0a37ed7a89d0a8eb9b3051529afef405e3484e55af4ec4038.png" />
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="creating-the-machine-learning-dataset">
+<h1>Creating the machine learning dataset<a class="headerlink" href="#creating-the-machine-learning-dataset" title="Link to this heading">#</a></h1>
+<p>Above we showed you how to prepare the data of an individual run for machine-learning. We now could use the 100 volumes per run and try to do machine learning on this. But this might not be the best approach.</p>
+<p>Let’s consider again what we want to do. We want to predict if a person has their eyes closed or open during a resting state scan. Our assumption is that during the <strong>eyes open</strong> there is more eye movement, more visual stimulation, i.e. more variance in certain regions. Therefore, we want to look at the standard deviation over time (i.e. over the 100 volumes per run).</p>
+<p><strong>Keep in mind</strong> that this approach is more or less “randomly” chosen by us to be appropriate for this particular classification and might differ a lot to other datasets, research questions etc.</p>
+<p>To nonetheless keep enough data points, let’s take the 100 volumes, and compute the standard deviation for 4 equally long sections:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img_std1</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">Nifti1Image</span><span class="p">(</span><span class="n">img_crop</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()[</span><span class="o">...</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">25</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">),</span> <span class="n">img_crop</span><span class="o">.</span><span class="n">affine</span><span class="p">,</span> <span class="n">img_crop</span><span class="o">.</span><span class="n">header</span><span class="p">)</span>
+<span class="n">img_std2</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">Nifti1Image</span><span class="p">(</span><span class="n">img_crop</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()[</span><span class="o">...</span><span class="p">,</span><span class="mi">25</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">),</span> <span class="n">img_crop</span><span class="o">.</span><span class="n">affine</span><span class="p">,</span> <span class="n">img_crop</span><span class="o">.</span><span class="n">header</span><span class="p">)</span>
+<span class="n">img_std3</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">Nifti1Image</span><span class="p">(</span><span class="n">img_crop</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()[</span><span class="o">...</span><span class="p">,</span><span class="mi">50</span><span class="p">:</span><span class="mi">75</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">),</span> <span class="n">img_crop</span><span class="o">.</span><span class="n">affine</span><span class="p">,</span> <span class="n">img_crop</span><span class="o">.</span><span class="n">header</span><span class="p">)</span>
+<span class="n">img_std4</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">Nifti1Image</span><span class="p">(</span><span class="n">img_crop</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()[</span><span class="o">...</span><span class="p">,</span><span class="mi">75</span><span class="p">:</span><span class="mi">100</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">),</span> <span class="n">img_crop</span><span class="o">.</span><span class="n">affine</span><span class="p">,</span> <span class="n">img_crop</span><span class="o">.</span><span class="n">header</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_anat</span><span class="p">(</span><span class="n">img_std1</span><span class="p">,</span> <span class="n">draw_cross</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">annotate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;magma&#39;</span><span class="p">,</span>
+          <span class="n">cut_coords</span><span class="o">=</span><span class="p">[</span><span class="mi">33</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+          <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Standard Deviation for Segment 1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;nilearn.plotting.displays.OrthoSlicer at 0x7ff93d646990&gt;
+</pre></div>
+</div>
+<img alt="../_images/a07c412a097452a4d3efeb6c6c54237bc970355a9163f1a48ffd90d372515123.png" src="../_images/a07c412a097452a4d3efeb6c6c54237bc970355a9163f1a48ffd90d372515123.png" />
+</div>
+</div>
+<p>If we do this now for each of the eyes <strong>closed</strong> and <strong>open</strong> run, for each of the total 48 subjects in the dataset, we will get 4 segments x 2 eye_state x 48 subjects = 384 datapoints per voxel. The pre-processing of all 48 subjects would explode the scope of this workshop, we therefore already pre-processed all subjects and prepared the data for the machine-learning approach.</p>
+<section id="the-dataset-ready-for-the-machine-learning-approach-can-be-found-under">
+<h2>The dataset ready for the machine-learning approach can be found under:<a class="headerlink" href="#the-dataset-ready-for-the-machine-learning-approach-can-be-found-under" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">/home/neuro/workshop/notebooks/data/dataset_ML.nii.gz</span></code></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./showcases"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="diffusion_imaging.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Structural connectivity and diffusion imaging</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="machine_learning_nilearn.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">MVPA and Searchlight with <code class="docutils literal notranslate"><span class="pre">nilearn</span></code></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Preparation Machine Learning</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-do-we-want-to-do">What do we want to do?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-to-prepare-the-data">Why do we need to prepare the data?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-the-signal-time-course-of-a-voxel-look-like">1. What does the signal time-course of a voxel look like?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-many-nonzero-voxels-do-we-have">2. How many nonzero voxels do we have?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-data">Preparing the data</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-machine-learning-dataset">Creating the machine learning dataset</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dataset-ready-for-the-machine-learning-approach-can-be-found-under">The dataset ready for the machine-learning approach can be found under:</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Peer Herholz
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2020.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
