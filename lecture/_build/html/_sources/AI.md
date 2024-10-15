@@ -6,8 +6,9 @@ To truly master Python, it’s essential to build a solid foundation of programm
 
 Therefore, while AI can be a useful assistant, it cannot replace the deep learning and practice required to truly grasp the language and its applications. Keep this in mind as you continue developing your skills in Python.
 
-### Note:
+```{note}
 Typical plagiarism (i.e., copying from other sources without citation) is strictly prohibited at Goethe University, and all instances of academic dishonesty, including unauthorized AI use, will be dealt with according to the established regulations.
+```
 
 ## Guidelines for Handling Suspected Cases of Unauthorized Use of AI Tools in Written Work
 
