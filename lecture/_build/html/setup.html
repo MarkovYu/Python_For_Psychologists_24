@@ -463,6 +463,15 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-installation-with-jupyter-notebook-2024">Anaconda Installation with Jupyter Notebook 2024</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-instructions">Installation Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-your-installation-2024">Verifying Your Installation 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-2024">Conclusion 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-legacy-pre-2024">Required software (Legacy, pre 2024)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-quick-general-notes-on-instructions">Some quick general notes on instructions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#os-specific-installation-instructions">OS-specific installation instructions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-account">GitHub account</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-your-install">Checking your install</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-the-course-content">Getting the course content</a></li>
 </ul>
             </nav>
         </div>
@@ -620,141 +629,155 @@ Linux Installation</label><div class="sd-tab-content docutils">
 </section>
 <section id="verifying-your-installation-2024">
 <h2>Verifying Your Installation 2024<a class="headerlink" href="#verifying-your-installation-2024" title="Link to this heading">#</a></h2>
-<p>To ensure Anaconda and Jupyter Notebook were installed correctly, you can run the following commands in your terminal or Anaconda Prompt:</p>
+<ul>
+<li><p>To ensure Anaconda and Jupyter Notebook were installed correctly, you can run the following commands in your terminal or Anaconda Prompt:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">conda --version</span>
-
-<span class="go">This should display the installed version of Conda.</span>
-
-<span class="go">```console</span>
-<span class="go">jupyter notebook</span>
-
-<span class="go">This should launch Jupyter Notebook in your web browser.</span>
-
-<span class="gp">#</span><span class="c1"># Conclusion 2024</span>
-
-<span class="go">Now that you&#39;ve successfully installed Anaconda, you can easily manage your Python environments and use Jupyter Notebook for interactive coding. Anaconda simplifies package management and deployment, making it a great choice for both beginners and experienced users.</span>
-
-<span class="gp">#</span><span class="c1"># Required software (Legacy, pre 2024)</span>
-
-<span class="go">To get the most out of the course, we ask that you arrive with the following software already installed (software/things in () are not entirely necessary but definitely great to have):</span>
-
-<span class="go">- A command-line shell: [`Bash`](https://www.gnu.org/software/bash/)</span>
-<span class="go">- (A version control system: [`Git`](https://git-scm.com/))</span>
-<span class="go">- A remote-capable text editor: [`VSCode`](https://code.visualstudio.com/)</span>
-<span class="go">- `Python 3` via [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html)</span>
-<span class="go">- (A [`GitHub`](https://github.com/) account)</span>
-<span class="go">- [`Discord`](https://discord.com/) (for communication purposes)</span>
-<span class="go">- A `modern web-browser`</span>
-
-<span class="go">If you already have all of the above software tools/packages installed (what are you even doing here?), or are confident you’ll be able to install them by the time the course starts, you can jump straight to [checking your install](#checking-your-install).</span>
-<span class="go">The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (`Windows`, `Mac OS`, and `Linux`).</span>
-
-<span class="gp">#</span><span class="c1">## Some quick general notes on instructions</span>
-
-<span class="go">- There is no difference between `Enter` and `Return` in these instructions, so just press whatever the equivalent on your keyboard is whenever one is stated</span>
-<span class="go">- If you already have some of these things installed on your computer already that should (theoretically) be okay.</span>
-<span class="go">  However, you need to make sure that you are able to complete the steps described in [checking your install](#checking-your-install) without issue.</span>
-<span class="go">  - For example, having multiple different `Python` installations on your computer can lead to incredibly frustrating issues that are very difficult to debug.</span>
-<span class="go">    As such, if you have already installed `Python` via some other application (not `Miniconda`/`Anaconda`), it&#39;s strongly encouraged to uninstall it before following the instructions below.</span>
-<span class="go">    You _must_ have `Python` installed via `Miniconda` for this course.</span>
-
-<span class="gp">#</span><span class="c1">## OS-specific installation instructions</span>
-
-<span class="go">Select the tab that corresponds to your operating system and follow the instructions therein.</span>
-
-<span class="go">````{tab-set}</span>
-<span class="go">```{tab-item} Windows</span>
-<span class="go">**Windows Subsystem for Linux (WSL)**</span>
-
-<span class="go">1. Search for `Windows Powershell` in your applications; right click and select `Run as administrator`.</span>
-<span class="go">   Select `Yes` on the prompt that appears asking if you want to allow the app to make changes to your device.</span>
-<span class="go">2. Type the following into the Powershell and then press `Enter`:</span>
-
-<span class="go">        Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</span>
-
-<span class="go">3. Press `Enter` again when prompted to reboot your computer.</span>
-<span class="go">4. Once your computer has rebooted, open the Microsoft Store and search for &quot;Ubuntu.&quot;</span>
-<span class="go">   Install the program labelled &quot;Ubuntu 18.04&quot; (not &quot;Ubuntu 16.04&quot; or &quot;Ubuntu&quot;) by clicking the tile, pressing `Get`, and then `Install`.</span>
-<span class="go">5. Search for and open Ubuntu from your applications.</span>
-<span class="go">   There will be a slight delay (of a few minutes) while it finishes installing.</span>
-<span class="go">6. You will be prompted to `Enter new UNIX username`.</span>
-<span class="go">   You can use any combination of alphanumeric characters here for your username, but a good choice is `&lt;first_initial&gt;&lt;last_name&gt;` (e.g., `jsmith` for John Smith).</span>
-<span class="go">   You will then be prompted to enter a new password.</span>
-<span class="go">   (Choose something easy to remember as you will find yourself using it frequently.)</span>
-<span class="go">7. Right click on the top bar of the Ubuntu application and select &quot;Properties&quot;.</span>
-<span class="go">   Under the &quot;Options&quot; tab, under the &quot;Edit Options&quot; heading, make sure the box reading &quot;Use Ctrl+Shift+C/V as Copy/Paste&quot; is checked.</span>
-<span class="go">   Under the &quot;Terminal&quot; tab, under the &quot;Cursor Shape&quot; heading, make sure the box reading &quot;Vertical Bar&quot; is checked.</span>
-<span class="go">   Press &quot;Okay&quot; to save these settings and then exit the application.</span>
-
-<span class="gp gp-VirtualEnv">(The above step-by-step WSL instructions are distilled from [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10)</span> <span class="go">and [here](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro).</span>
-<span class="go">If you have questions during the installation procedure those resources may have answers!)</span>
-
-<span class="go">From this point on whenever the instructions specify to &quot;open a terminal&quot; please assume you are supposed to open the Ubuntu application.</span>
-
-<span class="go">**Bash shell**</span>
-
-<span class="go">You already have it, now that you’ve installed the WSL!</span>
-
-<span class="go">**Git**</span>
-
-<span class="go">You already have it, now that you’ve installed the WSL!</span>
-
-<span class="go">**VSCode**</span>
-
-<span class="go">1. Go to https://code.visualstudio.com/ and click the download button, then run the `.exe` file.</span>
-<span class="go">1. Leave all the defaults during the installation with the following exception:</span>
-<span class="go">      - Please make sure the box labelled &quot;Register Code as an editor for supported file types&quot; is selected</span>
-
-<span class="go">**VSCode extensions**</span>
-
-<span class="go">1. Open the Ubuntu application.</span>
-<span class="go">1. Type `code .` into the terminal and press `Enter`.</span>
-<span class="go">   You should see a message reading &quot;Installing VS Code Server&quot; and then a new windows will open up.</span>
-<span class="go">1. Press `Ctrl+Shift+P` in the new window that opens and type &quot;Extensions: Install extensions&quot; into the search bar that appears at the top of the screen.</span>
-<span class="go">   Select the appropriate entry from the dropdown menu that appears (there should be four entries; simply select the one that reads &quot;Extensions: Install extensions&quot;).</span>
-<span class="go">1. A new panel should appear on the left-hand side of the screen with a search bar.</span>
-<span class="go">   Search for each of the following extensions and press `Install` for the first entry that appears. (The author listed for all of these extensions should be &quot;Microsoft&quot;.)</span>
-<span class="go">      - Python (n.b., you will need to reload VSCode after installing this)</span>
-<span class="go">      - Live Share (n.b., you may need to press &quot;Ctrl/Cmd+Shift+P&quot; and type &quot;install extensions&quot; again after installing this)</span>
-<span class="go">      - Live Share Extension Pack</span>
-<span class="go">      - Docker</span>
-<span class="go">      - Remote - WSL</span>
-
-<span class="go">**Python**</span>
-
-<span class="go">1. Open a new terminal and type the following lines (separately) into the terminal, pressing `Enter` after each one:</span>
-
-<span class="go">        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh</span>
-<span class="go">        bash Miniconda3-latest-Linux-x86_64.sh</span>
-
-<span class="go">1. A license agreement will be displayed and the bottom of the terminal will read `--More--`.</span>
-<span class="go">   Press `Enter` or the space bar until you are prompted with &quot;Do you accept the license terms? [yes|no].&quot;</span>
-<span class="go">   Type `yes` and then press `Enter`</span>
-<span class="go">1. The installation script will inform you that it is going to install into a default directory (e.g., `/home/$USER/miniconda3`).</span>
-<span class="go">   Leave this default and press `Enter`.</span>
-<span class="go">1. When you are asked &quot;Do you wish the installer to initialize Miniconda3 by running conda init? [yes|no],&quot; type `yes` and press `Enter`.</span>
-<span class="go">   Exit the terminal once the installation has finished.</span>
-<span class="go">1. Re-open the Ubuntu application.</span>
-<span class="go">   Type `which python` into the terminal and it should return a path (e.g., `/home/$USER/miniconda3/bin/python`).</span>
-<span class="go">   - If you do not see a path like this then please try typing `conda init`, closing your terminal, and repeating this step.</span>
-<span class="go">     If your issue is still not resolved skip the following step and contact an instructor on the #help-installation channel on the BHS Slack.</span>
-<span class="go">1. Type the following to remove the installation script that was downloaded:</span>
-
-<span class="go">        rm ./Miniconda3-latest-Linux-x86_64.sh</span>
-
-
-<span class="go">**Python packages**</span>
-
-<span class="go">Open a terminal and type the following commands:</span>
-
-<span class="go">        conda config --append channels conda-forge</span>
-<span class="go">        conda config --set channel_priority strict</span>
-<span class="go">        conda install -y flake8 ipython jupyter jupyterlab matplotlib numpy pandas scipy seaborn pingouin statsmodels plotly</span>
 </pre></div>
 </div>
-<div class="sd-tab-item docutils">
-<p class="sd-tab-label rubric">Linux</p>
-<div class="sd-tab-content docutils">
+</li>
+<li><p>This should display the installed version of Conda.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">jupyter notebook</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>This should launch Jupyter Notebook in your web browser.</p>
+</section>
+<section id="conclusion-2024">
+<h2>Conclusion 2024<a class="headerlink" href="#conclusion-2024" title="Link to this heading">#</a></h2>
+<p>Now that you’ve successfully installed Anaconda, you can easily manage your Python environments and use Jupyter Notebook for interactive coding. Anaconda simplifies package management and deployment, making it a great choice for both beginners and experienced users.</p>
+</section>
+<section id="required-software-legacy-pre-2024">
+<h2>Required software (Legacy, pre 2024)<a class="headerlink" href="#required-software-legacy-pre-2024" title="Link to this heading">#</a></h2>
+<p>To get the most out of the course, we ask that you arrive with the following software already installed (software/things in () are not entirely necessary but definitely great to have):</p>
+<ul class="simple">
+<li><p>A command-line shell: <a class="reference external" href="https://www.gnu.org/software/bash/"><code class="docutils literal notranslate"><span class="pre">Bash</span></code></a></p></li>
+<li><p>(A version control system: <a class="reference external" href="https://git-scm.com/"><code class="docutils literal notranslate"><span class="pre">Git</span></code></a>)</p></li>
+<li><p>A remote-capable text editor: <a class="reference external" href="https://code.visualstudio.com/"><code class="docutils literal notranslate"><span class="pre">VSCode</span></code></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> via <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html"><code class="docutils literal notranslate"><span class="pre">Miniconda</span></code></a></p></li>
+<li><p>(A <a class="reference external" href="https://github.com/"><code class="docutils literal notranslate"><span class="pre">GitHub</span></code></a> account)</p></li>
+<li><p><a class="reference external" href="https://discord.com/"><code class="docutils literal notranslate"><span class="pre">Discord</span></code></a> (for communication purposes)</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">modern</span> <span class="pre">web-browser</span></code></p></li>
+</ul>
+<p>If you already have all of the above software tools/packages installed (what are you even doing here?), or are confident you’ll be able to install them by the time the course starts, you can jump straight to <a class="reference internal" href="#checking-your-install"><span class="xref myst">checking your install</span></a>.
+The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (<code class="docutils literal notranslate"><span class="pre">Windows</span></code>, <code class="docutils literal notranslate"><span class="pre">Mac</span> <span class="pre">OS</span></code>, and <code class="docutils literal notranslate"><span class="pre">Linux</span></code>).</p>
+<section id="some-quick-general-notes-on-instructions">
+<h3>Some quick general notes on instructions<a class="headerlink" href="#some-quick-general-notes-on-instructions" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>There is no difference between <code class="docutils literal notranslate"><span class="pre">Enter</span></code> and <code class="docutils literal notranslate"><span class="pre">Return</span></code> in these instructions, so just press whatever the equivalent on your keyboard is whenever one is stated</p></li>
+<li><p>If you already have some of these things installed on your computer already that should (theoretically) be okay.
+However, you need to make sure that you are able to complete the steps described in <a class="reference internal" href="#checking-your-install"><span class="xref myst">checking your install</span></a> without issue.</p>
+<ul>
+<li><p>For example, having multiple different <code class="docutils literal notranslate"><span class="pre">Python</span></code> installations on your computer can lead to incredibly frustrating issues that are very difficult to debug.
+As such, if you have already installed <code class="docutils literal notranslate"><span class="pre">Python</span></code> via some other application (not <code class="docutils literal notranslate"><span class="pre">Miniconda</span></code>/<code class="docutils literal notranslate"><span class="pre">Anaconda</span></code>), it’s strongly encouraged to uninstall it before following the instructions below.
+You <em>must</em> have <code class="docutils literal notranslate"><span class="pre">Python</span></code> installed via <code class="docutils literal notranslate"><span class="pre">Miniconda</span></code> for this course.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="os-specific-installation-instructions">
+<h3>OS-specific installation instructions<a class="headerlink" href="#os-specific-installation-instructions" title="Link to this heading">#</a></h3>
+<p>Select the tab that corresponds to your operating system and follow the instructions therein.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+Windows</label><div class="sd-tab-content docutils">
+<p><strong>Windows Subsystem for Linux (WSL)</strong></p>
+<ol class="arabic">
+<li><p>Search for <code class="docutils literal notranslate"><span class="pre">Windows</span> <span class="pre">Powershell</span></code> in your applications; right click and select <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">as</span> <span class="pre">administrator</span></code>.
+Select <code class="docutils literal notranslate"><span class="pre">Yes</span></code> on the prompt that appears asking if you want to allow the app to make changes to your device.</p></li>
+<li><p>Type the following into the Powershell and then press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+</pre></div>
+</div>
+</li>
+<li><p>Press <code class="docutils literal notranslate"><span class="pre">Enter</span></code> again when prompted to reboot your computer.</p></li>
+<li><p>Once your computer has rebooted, open the Microsoft Store and search for “Ubuntu.”
+Install the program labelled “Ubuntu 18.04” (not “Ubuntu 16.04” or “Ubuntu”) by clicking the tile, pressing <code class="docutils literal notranslate"><span class="pre">Get</span></code>, and then <code class="docutils literal notranslate"><span class="pre">Install</span></code>.</p></li>
+<li><p>Search for and open Ubuntu from your applications.
+There will be a slight delay (of a few minutes) while it finishes installing.</p></li>
+<li><p>You will be prompted to <code class="docutils literal notranslate"><span class="pre">Enter</span> <span class="pre">new</span> <span class="pre">UNIX</span> <span class="pre">username</span></code>.
+You can use any combination of alphanumeric characters here for your username, but a good choice is <code class="docutils literal notranslate"><span class="pre">&lt;first_initial&gt;&lt;last_name&gt;</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">jsmith</span></code> for John Smith).
+You will then be prompted to enter a new password.
+(Choose something easy to remember as you will find yourself using it frequently.)</p></li>
+<li><p>Right click on the top bar of the Ubuntu application and select “Properties”.
+Under the “Options” tab, under the “Edit Options” heading, make sure the box reading “Use Ctrl+Shift+C/V as Copy/Paste” is checked.
+Under the “Terminal” tab, under the “Cursor Shape” heading, make sure the box reading “Vertical Bar” is checked.
+Press “Okay” to save these settings and then exit the application.</p></li>
+</ol>
+<p>(The above step-by-step WSL instructions are distilled from <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">here</a> and <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/initialize-distro">here</a>.
+If you have questions during the installation procedure those resources may have answers!)</p>
+<p>From this point on whenever the instructions specify to “open a terminal” please assume you are supposed to open the Ubuntu application.</p>
+<p><strong>Bash shell</strong></p>
+<p>You already have it, now that you’ve installed the WSL!</p>
+<p><strong>Git</strong></p>
+<p>You already have it, now that you’ve installed the WSL!</p>
+<p><strong>VSCode</strong></p>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a> and click the download button, then run the <code class="docutils literal notranslate"><span class="pre">.exe</span></code> file.</p></li>
+<li><p>Leave all the defaults during the installation with the following exception:</p>
+<ul class="simple">
+<li><p>Please make sure the box labelled “Register Code as an editor for supported file types” is selected</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>VSCode extensions</strong></p>
+<ol class="arabic simple">
+<li><p>Open the Ubuntu application.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">.</span></code> into the terminal and press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.
+You should see a message reading “Installing VS Code Server” and then a new windows will open up.</p></li>
+<li><p>Press <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+P</span></code> in the new window that opens and type “Extensions: Install extensions” into the search bar that appears at the top of the screen.
+Select the appropriate entry from the dropdown menu that appears (there should be four entries; simply select the one that reads “Extensions: Install extensions”).</p></li>
+<li><p>A new panel should appear on the left-hand side of the screen with a search bar.
+Search for each of the following extensions and press <code class="docutils literal notranslate"><span class="pre">Install</span></code> for the first entry that appears. (The author listed for all of these extensions should be “Microsoft”.)</p>
+<ul class="simple">
+<li><p>Python (n.b., you will need to reload VSCode after installing this)</p></li>
+<li><p>Live Share (n.b., you may need to press “Ctrl/Cmd+Shift+P” and type “install extensions” again after installing this)</p></li>
+<li><p>Live Share Extension Pack</p></li>
+<li><p>Docker</p></li>
+<li><p>Remote - WSL</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Python</strong></p>
+<ol class="arabic">
+<li><p>Open a new terminal and type the following lines (separately) into the terminal, pressing <code class="docutils literal notranslate"><span class="pre">Enter</span></code> after each one:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+ bash Miniconda3-latest-Linux-x86_64.sh
+</pre></div>
+</div>
+</li>
+<li><p>A license agreement will be displayed and the bottom of the terminal will read <code class="docutils literal notranslate"><span class="pre">--More--</span></code>.
+Press <code class="docutils literal notranslate"><span class="pre">Enter</span></code> or the space bar until you are prompted with “Do you accept the license terms? [yes|no].”
+Type <code class="docutils literal notranslate"><span class="pre">yes</span></code> and then press <code class="docutils literal notranslate"><span class="pre">Enter</span></code></p></li>
+<li><p>The installation script will inform you that it is going to install into a default directory (e.g., <code class="docutils literal notranslate"><span class="pre">/home/$USER/miniconda3</span></code>).
+Leave this default and press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
+<li><p>When you are asked “Do you wish the installer to initialize Miniconda3 by running conda init? [yes|no],” type <code class="docutils literal notranslate"><span class="pre">yes</span></code> and press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.
+Exit the terminal once the installation has finished.</p></li>
+<li><p>Re-open the Ubuntu application.
+Type <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">python</span></code> into the terminal and it should return a path (e.g., <code class="docutils literal notranslate"><span class="pre">/home/$USER/miniconda3/bin/python</span></code>).</p>
+<ul class="simple">
+<li><p>If you do not see a path like this then please try typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code>, closing your terminal, and repeating this step.
+If your issue is still not resolved skip the following step and contact an instructor on the #help-installation channel on the BHS Slack.</p></li>
+</ul>
+</li>
+<li><p>Type the following to remove the installation script that was downloaded:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> rm ./Miniconda3-latest-Linux-x86_64.sh
+</pre></div>
+</div>
+</li>
+</ol>
+<p><strong>Python packages</strong></p>
+<p>Open a terminal and type the following commands:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    conda config --append channels conda-forge
+    conda config --set channel_priority strict
+    conda install -y flake8 ipython jupyter jupyterlab matplotlib numpy pandas scipy seaborn pingouin statsmodels plotly
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
+Linux</label><div class="sd-tab-content docutils">
 <p><strong>Bash shell</strong></p>
 <p>You already have it!
 Depending on which version of Linux you’re running you may need to type <code class="docutils literal notranslate"><span class="pre">bash</span></code> inside the terminal to access it.
@@ -824,10 +847,9 @@ If your issue is still not resolved skip the following step and contact an instr
 </pre></div>
 </div>
 </div>
-</div>
-<div class="sd-tab-item docutils">
-<p class="sd-tab-label rubric">MacOs</p>
-<div class="sd-tab-content docutils">
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
+MacOs</label><div class="sd-tab-content docutils">
 <p><strong>Bash shell</strong></p>
 <p>You already have it!
 Depending on which version of Mac OS you’re running you may need to type <code class="docutils literal notranslate"><span class="pre">bash</span></code> inside the terminal to access it.
@@ -907,54 +929,42 @@ If your issue is still not resolved skip the following step and contact an instr
 </div>
 </div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-**Note**: If the instructions aren&#39;t working and you have spent more than 15-20 minutes troubleshooting on your own, reach out on the #help-installation channel on the Discord channel with the exact problems you&#39;re having.
+<p><strong>Note</strong>: If the instructions aren’t working and you have spent more than 15-20 minutes troubleshooting on your own, reach out on the #help-installation channel on the Discord channel with the exact problems you’re having.
 One of the instructors will try and get back to you quickly to help resolve the situation.
-If they&#39;re unable to help via `Discord`, you may be directed to attend one of the installation office hours.
-
-### GitHub account
-
-Go to https://github.com/join/ and follow the on-screen instructions to create an account.
-It is a good idea to associate this with your university e-mail (if you have one) as this will entitle you to sign up for the [GitHub Student Developer Pack](https://education.github.com/pack) which comes with some nice free bonuses.
-
-
-
-## Checking your install
-
-Now that you&#39;ve installed everything it&#39;s time to check that everything works as expected!
-Type the following into your terminal:
-
-    bash &lt;( curl -s https://raw.githubusercontent.com/aylinsgl/Python_For_Psychologists_23-24/master/check_install.sh)
-
-If you installed everything correctly you should see a message informing you as such.
-If any problems were detected you should receive some brief instructions on what is wrong with potential suggestions on how to remedy it.
-If you followed these instructions step-by-step and cannot resolve the issue please contact one of the course instructors for more help.
-
-Yeah, you did! Great job!
-
-
-
-## Getting the course content
-
-Now that you have installed the required software (or not) to follow the course, it&#39;s time to gather the respective materials.
-
-&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg&quot; alt=&quot;conda logo&quot; width=&quot;300&quot;/&gt;\
-&lt;sub&gt;&lt;sup&gt;&lt;sub&gt;&lt;sup&gt;https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;
-
-By installing `Python` on your system (i.e. specifically `Conda`) and setting up the appropriate environment, you will be able to open all the `Jupyter Notebooks` and go through the whole content of the course locally. 
-
-To get things up and running, please follow these steps:
-
-1. Download the [`environment.yml`](https://raw.githubusercontent.com/aylinsgl/Python_For_Psychologists_23-24/master/environment.yml) file (e.g. with right mouse click -&gt; Save As). Make sure that the file ends with `.yml` and not `.txt`.
-2. Open up a conda terminal (or any other terminal), and create a new conda environment with the following command: `conda env create -f /path/to/file/environment.yml` - For example ``conda env create -f ~/Downloads/environment.yml`
-3. Download the notebooks in this repository via [this link](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/archive/refs/heads/main.zip) and unzip them to your preferred location, e.g. `Desktop/Python_for_Psychologists_Winter2022`.
-4. Next, open up a `conda terminal` (or any other `terminal`), activate the `conda environment` with `conda activate pfp_2022` (or on older `conda environment` with `source activate pfp_2022` for `mac` and `linux` and `activate pfp_2022` for `windows`).
-5. Finally, via the `terminal`, move to the folder where you&#39;ve put all the unzipped content of this workshop, e.g. with the command `cd ~/Desktop/Python_for_Psychologists_Winter2022` and run the command `jupyter notebook`. If the `notebook server` isn&#39;t automatically opened in a new browser window, please copy-paste either the `http://127.0.0.1:8888/...` or the `http://localhost:8888/...` path into a new browser window and press `Enter`. You should now see the `jupyter notebook server` (looking like a file browser and displaying the content of the directory). 
-
-
-
+If they’re unable to help via <code class="docutils literal notranslate"><span class="pre">Discord</span></code>, you may be directed to attend one of the installation office hours.</p>
+</section>
+<section id="github-account">
+<h3>GitHub account<a class="headerlink" href="#github-account" title="Link to this heading">#</a></h3>
+<p>Go to <a class="github reference external" href="https://github.com/join/">join/</a> and follow the on-screen instructions to create an account.
+It is a good idea to associate this with your university e-mail (if you have one) as this will entitle you to sign up for the <a class="reference external" href="https://education.github.com/pack">GitHub Student Developer Pack</a> which comes with some nice free bonuses.</p>
+</section>
+</section>
+<section id="checking-your-install">
+<h2>Checking your install<a class="headerlink" href="#checking-your-install" title="Link to this heading">#</a></h2>
+<p>Now that you’ve installed everything it’s time to check that everything works as expected!
+Type the following into your terminal:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>bash &lt;( curl -s https://raw.githubusercontent.com/aylinsgl/Python_For_Psychologists_23-24/master/check_install.sh)
 </pre></div>
 </div>
+<p>If you installed everything correctly you should see a message informing you as such.
+If any problems were detected you should receive some brief instructions on what is wrong with potential suggestions on how to remedy it.
+If you followed these instructions step-by-step and cannot resolve the issue please contact one of the course instructors for more help.</p>
+<p>Yeah, you did! Great job!</p>
+</section>
+<section id="getting-the-course-content">
+<h2>Getting the course content<a class="headerlink" href="#getting-the-course-content" title="Link to this heading">#</a></h2>
+<p>Now that you have installed the required software (or not) to follow the course, it’s time to gather the respective materials.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg" alt="conda logo" width="300"/><br />
+<sub><sup><sub><sup><a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg">https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg</a></sup></sub></sup></sub></p>
+<p>By installing <code class="docutils literal notranslate"><span class="pre">Python</span></code> on your system (i.e. specifically <code class="docutils literal notranslate"><span class="pre">Conda</span></code>) and setting up the appropriate environment, you will be able to open all the <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Notebooks</span></code> and go through the whole content of the course locally.</p>
+<p>To get things up and running, please follow these steps:</p>
+<ol class="arabic simple">
+<li><p>Download the <a class="reference external" href="https://raw.githubusercontent.com/aylinsgl/Python_For_Psychologists_23-24/master/environment.yml"><code class="docutils literal notranslate"><span class="pre">environment.yml</span></code></a> file (e.g. with right mouse click -&gt; Save As). Make sure that the file ends with <code class="docutils literal notranslate"><span class="pre">.yml</span></code> and not <code class="docutils literal notranslate"><span class="pre">.txt</span></code>.</p></li>
+<li><p>Open up a conda terminal (or any other terminal), and create a new conda environment with the following command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">/path/to/file/environment.yml</span></code> - For example ``conda env create -f ~/Downloads/environment.yml`</p></li>
+<li><p>Download the notebooks in this repository via <a class="reference external" href="https://github.com/M-earnest/Python_for_Psychologists_Winter2022/archive/refs/heads/main.zip">this link</a> and unzip them to your preferred location, e.g. <code class="docutils literal notranslate"><span class="pre">Desktop/Python_for_Psychologists_Winter2022</span></code>.</p></li>
+<li><p>Next, open up a <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">terminal</span></code> (or any other <code class="docutils literal notranslate"><span class="pre">terminal</span></code>), activate the <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">pfp_2022</span></code> (or on older <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> with <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">activate</span> <span class="pre">pfp_2022</span></code> for <code class="docutils literal notranslate"><span class="pre">mac</span></code> and <code class="docutils literal notranslate"><span class="pre">linux</span></code> and <code class="docutils literal notranslate"><span class="pre">activate</span> <span class="pre">pfp_2022</span></code> for <code class="docutils literal notranslate"><span class="pre">windows</span></code>).</p></li>
+<li><p>Finally, via the <code class="docutils literal notranslate"><span class="pre">terminal</span></code>, move to the folder where you’ve put all the unzipped content of this workshop, e.g. with the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~/Desktop/Python_for_Psychologists_Winter2022</span></code> and run the command <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. If the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">server</span></code> isn’t automatically opened in a new browser window, please copy-paste either the <code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:8888/...</span></code> or the <code class="docutils literal notranslate"><span class="pre">http://localhost:8888/...</span></code> path into a new browser window and press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>. You should now see the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">server</span></code> (looking like a file browser and displaying the content of the directory).</p></li>
+</ol>
 </section>
 </section>
 
@@ -1029,6 +1039,15 @@ To get things up and running, please follow these steps:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-installation-with-jupyter-notebook-2024">Anaconda Installation with Jupyter Notebook 2024</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-instructions">Installation Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-your-installation-2024">Verifying Your Installation 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-2024">Conclusion 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-legacy-pre-2024">Required software (Legacy, pre 2024)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-quick-general-notes-on-instructions">Some quick general notes on instructions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#os-specific-installation-instructions">OS-specific installation instructions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-account">GitHub account</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-your-install">Checking your install</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-the-course-content">Getting the course content</a></li>
 </ul>
   </nav></div>
 
