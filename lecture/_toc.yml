@@ -21,9 +21,9 @@ chapters:
   - file: introduction/introduction_6.md  
     sections:
     - file: introduction/intro_python_III.ipynb
-- file: NY_recap.ipynb
-- file: experiments/experiments.md
-- file: newanalyses/DataAnalysis_lecture.ipynb
+#- file: NY_recap.ipynb
+#- file: experiments/experiments.md
+#- file: newanalyses/DataAnalysis_lecture.ipynb
 - file: showcases/module_showcases.md
   sections:
     - file: showcases/python_numpy.ipynb
@@ -40,5 +40,5 @@ chapters:
     - file: showcases/machine_learning_keras.ipynb
     - file: showcases/Predicting_age_with_machine_learning.ipynb
 - file: questionnaires
-- file: break
+#- file: break
 - file: CoC
