@@ -242,7 +242,7 @@
 <li class="toctree-l2"><a class="reference internal" href="showcases/Predicting_age_with_machine_learning.html">Machine learning to predict age from rs-fmri</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="questionnaires.html">Questionnaire templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AI.html">The use of AI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CoC.html">Code of Conduct</a></li>
 </ul>
 
@@ -456,13 +456,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-things">General things</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software">Required software</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-things-2024">General things 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-2024">Required software 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discord-2024">Discord 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modern-web-browser-2024">Modern web browser 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-installation-with-jupyter-notebook-2024">Anaconda Installation with Jupyter Notebook 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-instructions">Installation Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-your-installation-2024">Verifying Your Installation 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-2024">Conclusion 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-legacy-pre-2024">Required software (Legacy, pre 2024)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-quick-general-notes-on-instructions">Some quick general notes on instructions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#os-specific-installation-instructions">OS-specific installation instructions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-account">GitHub account</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discord">Discord</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modern-web-browser">Modern web browser</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-your-install">Checking your install</a></li>
@@ -481,22 +486,153 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="setup-for-the-course">
 <h1>Setup for the course<a class="headerlink" href="#setup-for-the-course" title="Link to this heading">#</a></h1>
 <p>There are a few things you need to get working on your machine in order to follow this course. However, don’t worry as it’s all gonna be <a class="reference internal" href="#"><span class="xref myst">open source</span></a>, won’t require a lot of storage and will be explained in detail.</p>
-<p><strong>Importantly, some of the content on this page is outdated because it uses more complex environments like Git, etc. In the 2024 version of the course, we will focus more on Python itself rather than IDE environments. So, don’t stress too much about all this information—just focus on the 2024 section.</strong></p>
-<p>Some parts and section of this course will be executable via <code class="docutils literal notranslate"><span class="pre">cloud</span> <span class="pre">computing</span></code> (click on the small rocket at the top right of the webpage to start <a class="reference external" href="https://mybinder.org/">binder</a>), which mainly serves the puprose of making the lessons nice and easy to follow in an interactive manner. Although in general getting <code class="docutils literal notranslate"><span class="pre">Python</span></code> &amp; friends to work reliably on your machine is going to be very beneficial. This holds true for the course and especially beyond. The following tools focusing open and reproducible (neuro-/data science) will therefore not only be necessary for this course, but are curated in a way that you can build your “everyday” research workflow around them. This even applies if you won’t continue with <code class="docutils literal notranslate"><span class="pre">python</span></code> (I certainly hope you do) and instead work with <code class="docutils literal notranslate"><span class="pre">R</span></code> (of course also cool), <code class="docutils literal notranslate"><span class="pre">matlab</span></code> (weeeeeeeell…) or what have you.</p>
-<p>You’ll find the (hopefully) comprehensive set of install instructions below. While not all of them might be totally necessary for the course, they all will help you a great deal going further and are especially useful/needed if we have to hold the course virtually due to the COVID-19 pandemic.</p>
-<p>Don’t worry, you got this!</p>
-<section id="general-things">
-<h2>General things<a class="headerlink" href="#general-things" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Importantly, some of the content on this page is outdated because it uses more complex environments like Git, etc. In the 2024 version of the course, we will focus more on Python itself rather than IDE environments. So, don’t stress too much about all this information—just focus on the 2024 section.</p>
+</div>
+<section id="general-things-2024">
+<h2>General things 2024<a class="headerlink" href="#general-things-2024" title="Link to this heading">#</a></h2>
 <p>There are a few computing requirements for the course that are absolutely necessary (beyond the few software packages you should install, described below):</p>
-<ol class="arabic simple">
-<li><p>You must have administrator access to your computer (i.e., you must be able to install things yourself without requesting IT approval).</p></li>
-<li><p>You should have at least 20 GB of free disk space on your computer (but we would recommend more, to be safe).</p></li>
-<li><p>If you are using Windows you must be using Windows 10/11; Windows 7 and 8 will not be sufficient for this course.</p></li>
-</ol>
+<ul class="simple">
+<li><p><strong>Laptop</strong> You must have administrator access to your computer (i.e., you must be able to install things yourself without requesting IT approval).</p></li>
+<li><p><strong>Operating Systems</strong>: Windows, macOS, or Linux</p></li>
+<li><p><strong>Python version</strong>: Anaconda comes with its own Python installation, so no need to pre-install Python</p></li>
+<li><p><strong>Disk Space</strong>: At least 3 GB of free disk space for the base installation</p></li>
+<li><p><strong>Internet Access</strong>: Required for downloading the installer</p></li>
+</ul>
 <p>If you foresee any of these being a problem please reach out to one of the instructors and enquire what steps you can take to ensure your setup is ready for the course.</p>
 </section>
-<section id="required-software">
-<h2>Required software<a class="headerlink" href="#required-software" title="Link to this heading">#</a></h2>
+<section id="required-software-2024">
+<h2>Required software 2024<a class="headerlink" href="#required-software-2024" title="Link to this heading">#</a></h2>
+<p>To get the most out of the course, we ask that you arrive with the following software already installed:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://discord.com/"><code class="docutils literal notranslate"><span class="pre">Discord</span></code></a> (for communication purposes)</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">modern</span> <span class="pre">web-browser</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> via <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/index.html"><code class="docutils literal notranslate"><span class="pre">Anaconda</span></code></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> (<a class="reference external" href="https://www.psychopy.org/">https://www.psychopy.org/</a>) (we will need much later)</p></li>
+</ul>
+<p>The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (<code class="docutils literal notranslate"><span class="pre">Windows</span></code>, <code class="docutils literal notranslate"><span class="pre">Mac</span> <span class="pre">OS</span></code>, and <code class="docutils literal notranslate"><span class="pre">Linux</span></code>).</p>
+</section>
+<section id="discord-2024">
+<h2>Discord 2024<a class="headerlink" href="#discord-2024" title="Link to this heading">#</a></h2>
+<p>Go to <a class="reference external" href="https://discord.com/">https://discord.com/</a> and download and install Discord. Please note, that you can also use Discord through your browser if you don’t want to download it. This will be the main channel of communication for the course.</p>
+</section>
+<section id="modern-web-browser-2024">
+<h2>Modern web browser 2024<a class="headerlink" href="#modern-web-browser-2024" title="Link to this heading">#</a></h2>
+<p>Install Firefox or Chrome.
+(Safari will also work.)</p>
+</section>
+<section id="anaconda-installation-with-jupyter-notebook-2024">
+<h2>Anaconda Installation with Jupyter Notebook 2024<a class="headerlink" href="#anaconda-installation-with-jupyter-notebook-2024" title="Link to this heading">#</a></h2>
+</section>
+<section id="installation-instructions">
+<h2>Installation Instructions<a class="headerlink" href="#installation-instructions" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Windows Installation</label><div class="sd-tab-content docutils">
+<h3 class="rubric" id="step-1-download-anaconda">Step 1: Download Anaconda</h3>
+<ul class="simple">
+<li><p>Go to the <a class="reference external" href="https://www.anaconda.com/products/distribution">Anaconda website</a>.</p></li>
+<li><p>Click on the “Download” button and choose the Windows version that matches your system architecture (64-bit recommended).</p></li>
+</ul>
+<h3 class="rubric" id="step-2-run-the-installer">Step 2: Run the Installer</h3>
+<ul class="simple">
+<li><p>Locate the downloaded <code class="docutils literal notranslate"><span class="pre">.exe</span></code> installer and double-click it to run.</p></li>
+<li><p>Click “Next” and accept the default installation settings.</p></li>
+<li><p>Choose whether to install Anaconda for “Just Me” or “All Users.” For most cases, “Just Me” is sufficient.</p></li>
+<li><p><strong>Important</strong>: You will be prompted to add Anaconda to your system’s <code class="docutils literal notranslate"><span class="pre">PATH</span></code>. It is recommended <strong>not</strong> to check this option. Anaconda will manage the environment for you.</p></li>
+</ul>
+<h3 class="rubric" id="step-3-complete-the-installation">Step 3: Complete the Installation</h3>
+<ul class="simple">
+<li><p>Once installed, open the “Anaconda Navigator” from the Start Menu or search for it.</p></li>
+</ul>
+<h3 class="rubric" id="step-4-launch-jupyter-notebook">Step 4: Launch Jupyter Notebook</h3>
+<ul class="simple">
+<li><p>In Anaconda Navigator, locate “Jupyter Notebook” and click “Launch.” This will open Jupyter Notebook in your browser.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+macOS Installation</label><div class="sd-tab-content docutils">
+<h3 class="rubric" id="id1">Step 1: Download Anaconda</h3>
+<ul class="simple">
+<li><p>Go to the <a class="reference external" href="https://www.anaconda.com/products/distribution">Anaconda website</a> and download the macOS installer.</p></li>
+</ul>
+<h3 class="rubric" id="step-2-install-anaconda">Step 2: Install Anaconda</h3>
+<ul class="simple">
+<li><p>Open the downloaded <code class="docutils literal notranslate"><span class="pre">.pkg</span></code> file and follow the on-screen instructions.</p></li>
+<li><p>During the installation, the installer will ask you to install Anaconda for “Just Me” or “All Users.” You can choose based on your needs.</p></li>
+</ul>
+<h3 class="rubric" id="step-3-update-the-terminal-profile-optional">Step 3: Update the Terminal Profile (optional)</h3>
+<ul class="simple">
+<li><p>If you want to use <code class="docutils literal notranslate"><span class="pre">conda</span></code> in the terminal, ensure Anaconda is added to your shell’s startup file.</p>
+<ul>
+<li><p>For <strong>bash</strong> users, this is typically in <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code>.</p></li>
+<li><p>For <strong>zsh</strong> users, it’s in <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code>.</p></li>
+</ul>
+</li>
+<li><p>You can do this by adding the following line to the respective file:
+bash
+export PATH=”/Users/your-username/anaconda3/bin:$PATH”</p></li>
+</ul>
+<h3 class="rubric" id="id2">Step 4: Launch Jupyter Notebook</h3>
+<ul class="simple">
+<li><p>Open the terminal and type:
+bash
+jupyter notebook</p></li>
+<li><p>Jupyter Notebook will open in your default browser.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+Linux Installation</label><div class="sd-tab-content docutils">
+<h3 class="rubric" id="id3">Step 1: Download Anaconda</h3>
+<ul class="simple">
+<li><p>Head over to the <a class="reference external" href="https://www.anaconda.com/products/distribution">Anaconda website</a> and download the Linux installer (64-bit <code class="docutils literal notranslate"><span class="pre">.sh</span></code> file).</p></li>
+</ul>
+<h3 class="rubric" id="id4">Step 2: Install Anaconda</h3>
+<ul>
+<li><p>Open the terminal and navigate to the directory where the installer was downloaded.</p></li>
+<li><p>Run the following command to start the installation:
+bash
+bash Anaconda3-2024.XX-Linux-x86_64.sh</p>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">2024.XX</span></code> with the version number you downloaded.</p>
+</li>
+<li><p>Follow the prompts to complete the installation. You’ll be asked to approve the license terms and specify the installation path.</p></li>
+</ul>
+<h3 class="rubric" id="step-3-update-shell-profile">Step 3: Update Shell Profile</h3>
+<ul class="simple">
+<li><p>After installation, you may need to update your shell’s startup file (e.g., <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> or <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code>) to add Anaconda to your <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.
+bash
+export PATH=”~/anaconda3/bin:$PATH”</p></li>
+</ul>
+<h3 class="rubric" id="id5">Step 4: Launch Jupyter Notebook</h3>
+<ul class="simple">
+<li><p>In your terminal, run:
+bash
+jupyter notebook</p></li>
+<li><p>This will open Jupyter Notebook in your browser.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="verifying-your-installation-2024">
+<h2>Verifying Your Installation 2024<a class="headerlink" href="#verifying-your-installation-2024" title="Link to this heading">#</a></h2>
+<p>To ensure Anaconda and Jupyter Notebook were installed correctly, you can run the following commands in your terminal or Anaconda Prompt:</p>
+<p>bash
+conda –version</p>
+<p>This should display the installed version of Conda.</p>
+<p>bash
+jupyter notebook</p>
+<p>This should launch Jupyter Notebook in your web browser.</p>
+</section>
+<section id="conclusion-2024">
+<h2>Conclusion 2024<a class="headerlink" href="#conclusion-2024" title="Link to this heading">#</a></h2>
+<p>Now that you’ve successfully installed Anaconda, you can easily manage your Python environments and use Jupyter Notebook for interactive coding. Anaconda simplifies package management and deployment, making it a great choice for both beginners and experienced users.</p>
+</section>
+<section id="required-software-legacy-pre-2024">
+<h2>Required software (Legacy, pre 2024)<a class="headerlink" href="#required-software-legacy-pre-2024" title="Link to this heading">#</a></h2>
 <p>To get the most out of the course, we ask that you arrive with the following software already installed (software/things in () are not entirely necessary but definitely great to have):</p>
 <ul class="simple">
 <li><p>A command-line shell: <a class="reference external" href="https://www.gnu.org/software/bash/"><code class="docutils literal notranslate"><span class="pre">Bash</span></code></a></p></li>
@@ -527,8 +663,8 @@ You <em>must</em> have <code class="docutils literal notranslate"><span class="p
 <h3>OS-specific installation instructions<a class="headerlink" href="#os-specific-installation-instructions" title="Link to this heading">#</a></h3>
 <p>Select the tab that corresponds to your operating system and follow the instructions therein.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-0">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
 Windows</label><div class="sd-tab-content docutils">
 <p><strong>Windows Subsystem for Linux (WSL)</strong></p>
 <ol class="arabic">
@@ -623,8 +759,8 @@ If your issue is still not resolved skip the following step and contact an instr
 </pre></div>
 </div>
 </div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-1">
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
 Linux</label><div class="sd-tab-content docutils">
 <p><strong>Bash shell</strong></p>
 <p>You already have it!
@@ -695,8 +831,8 @@ If your issue is still not resolved skip the following step and contact an instr
 </pre></div>
 </div>
 </div>
-<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-2">
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
 MacOs</label><div class="sd-tab-content docutils">
 <p><strong>Bash shell</strong></p>
 <p>You already have it!
@@ -786,16 +922,6 @@ If they’re unable to help via <code class="docutils literal notranslate"><span
 <p>Go to <a class="github reference external" href="https://github.com/join/">join/</a> and follow the on-screen instructions to create an account.
 It is a good idea to associate this with your university e-mail (if you have one) as this will entitle you to sign up for the <a class="reference external" href="https://education.github.com/pack">GitHub Student Developer Pack</a> which comes with some nice free bonuses.</p>
 </section>
-<section id="discord">
-<h3>Discord<a class="headerlink" href="#discord" title="Link to this heading">#</a></h3>
-<p>Go to <a class="reference external" href="https://discord.com/">https://discord.com/</a> and download and install Discord. Please note, that you can also use Discord through your browser if you don’t want to download it. This will be the main channel of communication for the course.</p>
-</section>
-<section id="modern-web-browser">
-<h3>Modern web browser<a class="headerlink" href="#modern-web-browser" title="Link to this heading">#</a></h3>
-<p>Install Firefox or Chrome.
-(Safari will also work.)
-Microsoft Edge is not modern, despite what Microsoft might try and otherwise tell you.</p>
-</section>
 </section>
 <section id="checking-your-install">
 <h2>Checking your install<a class="headerlink" href="#checking-your-install" title="Link to this heading">#</a></h2>
@@ -808,16 +934,10 @@ Type the following into your terminal:</p>
 If any problems were detected you should receive some brief instructions on what is wrong with potential suggestions on how to remedy it.
 If you followed these instructions step-by-step and cannot resolve the issue please contact one of the course instructors for more help.</p>
 <p>Yeah, you did! Great job!</p>
-<p><img alt="logo" src="https://media1.tenor.com/images/d5ebabf248130ec3842ed3b8627fd4f2/tenor.gif?itemid=4770158" /><br />
-<sub><sup><sub><sup><a class="reference external" href="https://media1.tenor.com/images/d5ebabf248130ec3842ed3b8627fd4f2/tenor.gif?itemid=4770158">https://media1.tenor.com/images/d5ebabf248130ec3842ed3b8627fd4f2/tenor.gif?itemid=4770158</a></sup></sub></sup></sub></p>
 </section>
 <section id="getting-the-course-content">
 <h2>Getting the course content<a class="headerlink" href="#getting-the-course-content" title="Link to this heading">#</a></h2>
 <p>Now that you have installed the required software (or not) to follow the course, it’s time to gather the respective materials.</p>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-3">
-Local</label><div class="sd-tab-content docutils">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg" alt="conda logo" width="300"/><br />
 <sub><sup><sub><sup><a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg">https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg</a></sup></sub></sup></sub></p>
 <p>By installing <code class="docutils literal notranslate"><span class="pre">Python</span></code> on your system (i.e. specifically <code class="docutils literal notranslate"><span class="pre">Conda</span></code>) and setting up the appropriate environment, you will be able to open all the <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Notebooks</span></code> and go through the whole content of the course locally.</p>
@@ -829,17 +949,6 @@ Local</label><div class="sd-tab-content docutils">
 <li><p>Next, open up a <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">terminal</span></code> (or any other <code class="docutils literal notranslate"><span class="pre">terminal</span></code>), activate the <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">pfp_2022</span></code> (or on older <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> with <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">activate</span> <span class="pre">pfp_2022</span></code> for <code class="docutils literal notranslate"><span class="pre">mac</span></code> and <code class="docutils literal notranslate"><span class="pre">linux</span></code> and <code class="docutils literal notranslate"><span class="pre">activate</span> <span class="pre">pfp_2022</span></code> for <code class="docutils literal notranslate"><span class="pre">windows</span></code>).</p></li>
 <li><p>Finally, via the <code class="docutils literal notranslate"><span class="pre">terminal</span></code>, move to the folder where you’ve put all the unzipped content of this workshop, e.g. with the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~/Desktop/Python_for_Psychologists_Winter2022</span></code> and run the command <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. If the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">server</span></code> isn’t automatically opened in a new browser window, please copy-paste either the <code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:8888/...</span></code> or the <code class="docutils literal notranslate"><span class="pre">http://localhost:8888/...</span></code> path into a new browser window and press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>. You should now see the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">server</span></code> (looking like a file browser and displaying the content of the directory).</p></li>
 </ol>
-</div>
-<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-4">
-Cloud via Mybinder</label><div class="sd-tab-content docutils">
-<p><img src="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b" alt="binder logo" width="300"/><br />
-<sub><sup><sub><sup><a class="reference external" href="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b">https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b</a></sup></sub></sup></sub></p>
-<p><a class="reference external" href="https://mybinder.org/v2/gh/peerherholz/Python_for_Psychologists_Winter2021/HEAD"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
-<p><a class="reference external" href="https://mybinder.org/">MyBinder.org</a> is a great service that allows you to run Jupyter notebooks in a Docker or Python environment, directly online and for free. However, this service comes of course with a restricted computational environment (1-2GB of RAM). This means, many notebooks might be very slow and some might even crash, due to not enough memory.</p>
-<p>You can use this approach to run and test most of the notebooks and to explore the slides. To access the MyBinder instance, use <a class="reference external" href="https://mybinder.org/v2/gh/peerherholz/Python_for_Psychologists_Winter2021/HEAD">this link</a>.</p>
-</div>
-</div>
 </section>
 </section>
 
@@ -907,13 +1016,18 @@ Cloud via Mybinder</label><div class="sd-tab-content docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-things">General things</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software">Required software</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-things-2024">General things 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-2024">Required software 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discord-2024">Discord 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modern-web-browser-2024">Modern web browser 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-installation-with-jupyter-notebook-2024">Anaconda Installation with Jupyter Notebook 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-instructions">Installation Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-your-installation-2024">Verifying Your Installation 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-2024">Conclusion 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-legacy-pre-2024">Required software (Legacy, pre 2024)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-quick-general-notes-on-instructions">Some quick general notes on instructions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#os-specific-installation-instructions">OS-specific installation instructions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-account">GitHub account</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discord">Discord</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modern-web-browser">Modern web browser</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-your-install">Checking your install</a></li>

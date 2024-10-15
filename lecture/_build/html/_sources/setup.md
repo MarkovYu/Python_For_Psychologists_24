@@ -2,25 +2,143 @@
 
 There are a few things you need to get working on your machine in order to follow this course. However, don't worry as it's all gonna be [open source](), won't require a lot of storage and will be explained in detail.
 
-**Importantly, some of the content on this page is outdated because it uses more complex environments like Git, etc. In the 2024 version of the course, we will focus more on Python itself rather than IDE environments. So, don't stress too much about all this information—just focus on the 2024 section.**
+```{note}
+Importantly, some of the content on this page is outdated because it uses more complex environments like Git, etc. In the 2024 version of the course, we will focus more on Python itself rather than IDE environments. So, don't stress too much about all this information—just focus on the 2024 section.
+```
 
-Some parts and section of this course will be executable via `cloud computing` (click on the small rocket at the top right of the webpage to start [binder](https://mybinder.org/)), which mainly serves the puprose of making the lessons nice and easy to follow in an interactive manner. Although in general getting `Python` & friends to work reliably on your machine is going to be very beneficial. This holds true for the course and especially beyond. The following tools focusing open and reproducible (neuro-/data science) will therefore not only be necessary for this course, but are curated in a way that you can build your "everyday" research workflow around them. This even applies if you won't continue with `python` (I certainly hope you do) and instead work with `R` (of course also cool), `matlab` (weeeeeeeell...) or what have you. 
-
-You'll find the (hopefully) comprehensive set of install instructions below. While not all of them might be totally necessary for the course, they all will help you a great deal going further and are especially useful/needed if we have to hold the course virtually due to the COVID-19 pandemic.  
-
-Don't worry, you got this!
-
-## General things
+## General things 2024
 
 There are a few computing requirements for the course that are absolutely necessary (beyond the few software packages you should install, described below):
 
-1. You must have administrator access to your computer (i.e., you must be able to install things yourself without requesting IT approval).
-1. You should have at least 20 GB of free disk space on your computer (but we would recommend more, to be safe).
-1. If you are using Windows you must be using Windows 10/11; Windows 7 and 8 will not be sufficient for this course.
+- **Laptop** You must have administrator access to your computer (i.e., you must be able to install things yourself without requesting IT approval).
+- **Operating Systems**: Windows, macOS, or Linux
+- **Python version**: Anaconda comes with its own Python installation, so no need to pre-install Python
+- **Disk Space**: At least 3 GB of free disk space for the base installation
+- **Internet Access**: Required for downloading the installer
+
 
 If you foresee any of these being a problem please reach out to one of the instructors and enquire what steps you can take to ensure your setup is ready for the course.
 
-## Required software
+## Required software 2024
+
+To get the most out of the course, we ask that you arrive with the following software already installed:
+
+- [`Discord`](https://discord.com/) (for communication purposes)
+- A `modern web-browser`
+- `Python 3` via [`Anaconda`](https://docs.conda.io/projects/conda/en/latest/index.html)
+- `PsychoPy` (https://www.psychopy.org/) (we will need much later)
+
+
+The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (`Windows`, `Mac OS`, and `Linux`).
+
+## Discord 2024
+
+Go to https://discord.com/ and download and install Discord. Please note, that you can also use Discord through your browser if you don't want to download it. This will be the main channel of communication for the course.
+
+## Modern web browser 2024
+
+Install Firefox or Chrome.
+(Safari will also work.)
+
+## Anaconda Installation with Jupyter Notebook 2024
+## Installation Instructions
+
+````{tab-set}
+```{tab-item} Windows Installation
+
+### Step 1: Download Anaconda
+- Go to the [Anaconda website](https://www.anaconda.com/products/distribution).
+- Click on the "Download" button and choose the Windows version that matches your system architecture (64-bit recommended).
+
+### Step 2: Run the Installer
+- Locate the downloaded `.exe` installer and double-click it to run.
+- Click "Next" and accept the default installation settings.
+- Choose whether to install Anaconda for "Just Me" or "All Users." For most cases, "Just Me" is sufficient.
+- **Important**: You will be prompted to add Anaconda to your system’s `PATH`. It is recommended **not** to check this option. Anaconda will manage the environment for you.
+
+### Step 3: Complete the Installation
+- Once installed, open the "Anaconda Navigator" from the Start Menu or search for it.
+
+### Step 4: Launch Jupyter Notebook
+- In Anaconda Navigator, locate "Jupyter Notebook" and click "Launch." This will open Jupyter Notebook in your browser.
+```
+
+```{tab-item} macOS Installation
+
+### Step 1: Download Anaconda
+- Go to the [Anaconda website](https://www.anaconda.com/products/distribution) and download the macOS installer.
+
+### Step 2: Install Anaconda
+- Open the downloaded `.pkg` file and follow the on-screen instructions.
+- During the installation, the installer will ask you to install Anaconda for "Just Me" or "All Users." You can choose based on your needs.
+
+### Step 3: Update the Terminal Profile (optional)
+- If you want to use `conda` in the terminal, ensure Anaconda is added to your shell's startup file.
+  - For **bash** users, this is typically in `.bash_profile`.
+  - For **zsh** users, it’s in `.zshrc`.
+
+- You can do this by adding the following line to the respective file:
+  bash
+  export PATH="/Users/your-username/anaconda3/bin:$PATH"
+  
+
+### Step 4: Launch Jupyter Notebook
+- Open the terminal and type:
+  bash
+  jupyter notebook
+  
+- Jupyter Notebook will open in your default browser.
+```
+
+```{tab-item} Linux Installation
+
+### Step 1: Download Anaconda
+- Head over to the [Anaconda website](https://www.anaconda.com/products/distribution) and download the Linux installer (64-bit `.sh` file).
+
+### Step 2: Install Anaconda
+- Open the terminal and navigate to the directory where the installer was downloaded.
+- Run the following command to start the installation:
+  bash
+  bash Anaconda3-2024.XX-Linux-x86_64.sh
+  
+  Replace `2024.XX` with the version number you downloaded.
+
+- Follow the prompts to complete the installation. You’ll be asked to approve the license terms and specify the installation path.
+
+### Step 3: Update Shell Profile
+- After installation, you may need to update your shell’s startup file (e.g., `.bashrc` or `.zshrc`) to add Anaconda to your `PATH`.
+  bash
+  export PATH="~/anaconda3/bin:$PATH"
+  
+
+### Step 4: Launch Jupyter Notebook
+- In your terminal, run:
+  bash
+  jupyter notebook
+
+- This will open Jupyter Notebook in your browser.
+```
+````
+
+## Verifying Your Installation 2024
+
+To ensure Anaconda and Jupyter Notebook were installed correctly, you can run the following commands in your terminal or Anaconda Prompt:
+
+bash
+conda --version
+
+This should display the installed version of Conda.
+
+bash
+jupyter notebook
+
+This should launch Jupyter Notebook in your web browser.
+
+## Conclusion 2024
+
+Now that you've successfully installed Anaconda, you can easily manage your Python environments and use Jupyter Notebook for interactive coding. Anaconda simplifies package management and deployment, making it a great choice for both beginners and experienced users.
+
+## Required software (Legacy, pre 2024)
 
 To get the most out of the course, we ask that you arrive with the following software already installed (software/things in () are not entirely necessary but definitely great to have):
 
@@ -291,15 +409,7 @@ If they're unable to help via `Discord`, you may be directed to attend one of th
 Go to https://github.com/join/ and follow the on-screen instructions to create an account.
 It is a good idea to associate this with your university e-mail (if you have one) as this will entitle you to sign up for the [GitHub Student Developer Pack](https://education.github.com/pack) which comes with some nice free bonuses.
 
-### Discord
 
-Go to https://discord.com/ and download and install Discord. Please note, that you can also use Discord through your browser if you don't want to download it. This will be the main channel of communication for the course.
-
-### Modern web browser
-
-Install Firefox or Chrome.
-(Safari will also work.)
-Microsoft Edge is not modern, despite what Microsoft might try and otherwise tell you.
 
 ## Checking your install
 
@@ -314,15 +424,12 @@ If you followed these instructions step-by-step and cannot resolve the issue ple
 
 Yeah, you did! Great job!
 
-![logo](https://media1.tenor.com/images/d5ebabf248130ec3842ed3b8627fd4f2/tenor.gif?itemid=4770158)\
-<sub><sup><sub><sup>https://media1.tenor.com/images/d5ebabf248130ec3842ed3b8627fd4f2/tenor.gif?itemid=4770158</sup></sub></sup></sub>
+
 
 ## Getting the course content
 
 Now that you have installed the required software (or not) to follow the course, it's time to gather the respective materials.
 
-````{tab-set}
-```{tab-item} Local
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg" alt="conda logo" width="300"/>\
 <sub><sup><sub><sup>https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg</sup></sub></sup></sub>
 
@@ -335,20 +442,6 @@ To get things up and running, please follow these steps:
 3. Download the notebooks in this repository via [this link](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/archive/refs/heads/main.zip) and unzip them to your preferred location, e.g. `Desktop/Python_for_Psychologists_Winter2022`.
 4. Next, open up a `conda terminal` (or any other `terminal`), activate the `conda environment` with `conda activate pfp_2022` (or on older `conda environment` with `source activate pfp_2022` for `mac` and `linux` and `activate pfp_2022` for `windows`).
 5. Finally, via the `terminal`, move to the folder where you've put all the unzipped content of this workshop, e.g. with the command `cd ~/Desktop/Python_for_Psychologists_Winter2022` and run the command `jupyter notebook`. If the `notebook server` isn't automatically opened in a new browser window, please copy-paste either the `http://127.0.0.1:8888/...` or the `http://localhost:8888/...` path into a new browser window and press `Enter`. You should now see the `jupyter notebook server` (looking like a file browser and displaying the content of the directory). 
-```
 
-```{tab-item} Cloud via Mybinder
-
-<img src="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b" alt="binder logo" width="300"/>\
-<sub><sup><sub><sup>https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b</sup></sub></sup></sub>
-
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/peerherholz/Python_for_Psychologists_Winter2021/HEAD)
-
-[MyBinder.org](https://mybinder.org/) is a great service that allows you to run Jupyter notebooks in a Docker or Python environment, directly online and for free. However, this service comes of course with a restricted computational environment (1-2GB of RAM). This means, many notebooks might be very slow and some might even crash, due to not enough memory.
-
-You can use this approach to run and test most of the notebooks and to explore the slides. To access the MyBinder instance, use [this link](https://mybinder.org/v2/gh/peerherholz/Python_for_Psychologists_Winter2021/HEAD).
-```
-````
 
 

@@ -39,7 +39,8 @@ chapters:
     - file: showcases/machine_learning_nilearn.ipynb
     - file: showcases/machine_learning_keras.ipynb
     - file: showcases/Predicting_age_with_machine_learning.ipynb
-- file: questionnaires
+#- file: questionnaires
+- file: AI.md
 #- file: break
 - file: CoC
-- file: AI
+
