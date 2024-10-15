@@ -6,11 +6,11 @@
 ````{margin}
 ```{warning}
 These pages are currently under construction and will be updated continuously.
-Please visit these pages again in the next few weeks for further information.
+Importantly, website will be updated during the semester, please visit sections as we go along 
 ````
 
 Hello everyone and welcome to the course page for "Python for Psychologists", taught
-within the [Psychology master programme](https://www.goethe-university-frankfurt.de/51789866/Institute_of_Psychology?) of the [Goethe-University Frankfurt](https://www.goethe-university-frankfurt.de/en) during the spring term 2024. Glad to see you here!
+within the [Psychology master programme](https://www.goethe-university-frankfurt.de/51789866/Institute_of_Psychology?) of the [Goethe-University Frankfurt](https://www.goethe-university-frankfurt.de/en) during the winter term 2024. Glad to see you here!
 
 Within these pages, we provide the all information important to follow and conduct the course, including formal aspects, requirements, lecture materials, practicals and so on.  This [jupyter book](https://jupyterbook.org/intro.html) will include the used slides and code in a way that they can be explored in an interactive manner. You can navigate through the respective sections via the TOC (table of contents) on the left side and within sections via the TOC on the right side. The three symbols in the top allow enabling full screen mode, link to the underlying [Github repository](https://github.com/MarkovYu/Python_For_Psychologists_24) and allow you to download the contents as a pdf or [jupyter notebook](https://jupyter.org/) respectively. Some sections will additionally have a little rocket in that row which will allow you to interactively rerun certain parts of the practicals via cloud computing. Additionally, we support public reviews and comments through an [hypothes.is](https://web.hypothes.is/) plugin with which you can interact on the right side. All of this awesomeness (talking about the infrastructure and resource) is possible through the dedicated and second to none work of the [Jupyter community](https://jupyter.org/), specifically, the [Executable/Jupyter Book](https://executablebooks.org/en/latest/) and [mybinder project](https://mybinder.org/).
 
@@ -22,37 +22,32 @@ This course is designed to provide lecture content in a way that it is [FAIR](ht
 
 You can use the following sections to navigate through the content of the lecture:
 
-* [Overview & procedure ]()
+* [Overview & procedure ](https://markovyu.github.io/Python_For_Psychologists_24/overview.html)
 
    What's this course all about? How are things implemented and supposed to work?
 
-* [General outline]()
+* [General outline](https://markovyu.github.io/Python_For_Psychologists_24/outline.html)
 
    What are the specific topics and aspects taught?
 
-* [Introduction]()
+* [Introduction (soon)]()
 
    All things gotta start somewhere and using programming within research settings is no exception to
    that, but how?
 
-* [Running experiments in Python]()
+* [Running experiments in Python (soon)]()
 
    How can you use python to conduct experiments to acquire data from participants?
 
-* [Data analyses in Python]()
+* [Data analyses in Python (soon)]()
 
    How can you use python to obtain insights from data, including preprocessing, statistics and visualizations?
 
-* [Student projects]()
+* [ChatGPT and others](https://markovyu.github.io/Python_For_Psychologists_24/AI.html)
 
-   Making sure the work and progress of the participants is transparent and
-   documented.
+   The rules for using AI.
 
-* [Questionnaires]()
-
-   Was it worth it and how can this be evaluated?
-
-* [Code of Conduct]()
+* [Code of Conduct](https://markovyu.github.io/Python_For_Psychologists_24/CoC.html)
 
    Necessities for creating an open, fair, safe and inclusive learning
    experience.
@@ -64,6 +59,6 @@ In case you have any questions or difficulties with the lecture and its material
 
 ## Acknowledgements
 
-This course was initially composed and designed by [Peer Herholz](https://github.com/PeerHerholz) and adapted by [Aylin Kallmayer](https://aylinkallmayer.com/) and teached to you this spring by [Yury Markov](https://www.y-markov.com/).
+This course was initially composed and designed by [Peer Herholz](https://github.com/PeerHerholz) and adapted by [Aylin Kallmayer](https://aylinkallmayer.com/) and teached to you this winter by [Yury Markov](https://www.y-markov.com/).
 
 Peer Herholz' work on and ability to compile this course was enabled through training received at the [Montreal Neurological Institute](https://www.mcgill.ca/neuro/), specifically the [NeuroDataScience - ORIGAMI lab](https://neurodatascience.github.io/) supported by funding from the Canada First Research Excellence Fund, awarded to McGill University for the [Healthy Brains for Healthy Lives initiative](https://www.mcgill.ca/hbhl/), the [National Institutes of Health (NIH)](https://www.nih.gov/) [NIH-NIBIB P41 EB019936 (ReproNim)](https://www.repronim.org/), the [National Institute Of Mental Health](https://www.nimh.nih.gov/) of the NIH under Award  Number [R01MH096906 (Neurosynth)](https://www.neurosynth.org/), a [research scholar award from Brain Canada, in partnership with Health Canada, for the Canadian Open Neuroscience Platform initiative](https://conp.ca/), as well as an [Excellence Scholarship from Unifying Neuroscience and Artificial Intelligence - Québec](https://sites.google.com/view/unique-neuro-ai).
