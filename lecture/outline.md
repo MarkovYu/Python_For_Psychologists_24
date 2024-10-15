@@ -14,10 +14,10 @@ The optimistic schedule below may be subject of change, dependent on time constr
 
 | Date (day/month/year) 🗓 | Topic 💡 👨🏻‍🏫 |
 |-------------------------|-------------|
-| 19/10/2023 | Introduction I - course information & setup |
-| 26/10/2023 | Introduction II - no in person session! Jupyter notebooks I |
-| 02/11/2023 | Introduction III - Jupyter notebooks II |
-| 09/11/2023 | Introduction IV - Intro to Python I |
-| 16/11/2023 | Introduction V - Intro to Python II |
-| 23/11/2023 | Introduction V - Intro to Python II continued |
-| 30/11/2023 | Introduction VI - Intro to Python III |
+| 17/10/2024 | Introduction I - course information & setup |
+| 24/10/2024 | Introduction II - Jupyter notebooks I |
+| 31/10/2024 | Introduction III - Jupyter notebooks II |
+| 07/11/2023 | Introduction IV - Intro to Python I |
+| 14/11/2023 | Introduction V - Intro to Python II |
+| 21/11/2023 | Introduction V - Intro to Python II continued |
+| 28/11/2023 | Introduction VI - Intro to Python III |

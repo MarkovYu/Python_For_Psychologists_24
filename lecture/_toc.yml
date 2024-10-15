@@ -8,19 +8,19 @@ chapters:
 - file: introduction/introduction.md
   sections:
   - file: introduction/introduction_1.md
-  - file: introduction/introduction_2.md
-  - file: introduction/introduction_3_new.md
-    sections:
-    - file: introduction/intro_jupyter.ipynb
-  - file: introduction/introduction_4.md
-    sections:
-    - file: introduction/intro_python_I.ipynb
-  - file: introduction/introduction_5.md
-    sections:
-    - file: introduction/intro_python_II.ipynb 
-  - file: introduction/introduction_6.md  
-    sections:
-    - file: introduction/intro_python_III.ipynb
+#  - file: introduction/introduction_2.md
+#  - file: introduction/introduction_3_new.md
+#    sections:
+#    - file: introduction/intro_jupyter.ipynb
+#  - file: introduction/introduction_4.md
+#    sections:
+#    - file: introduction/intro_python_I.ipynb
+#  - file: introduction/introduction_5.md
+#    sections:
+#    - file: introduction/intro_python_II.ipynb 
+#  - file: introduction/introduction_6.md  
+#    sections:
+#    - file: introduction/intro_python_III.ipynb
 #- file: NY_recap.ipynb
 #- file: experiments/experiments.md
 #- file: newanalyses/DataAnalysis_lecture.ipynb
