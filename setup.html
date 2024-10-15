@@ -184,29 +184,9 @@
 <li class="toctree-l1"><a class="reference internal" href="outline.html">General outline</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="introduction/introduction.html">Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="introduction/introduction_1.html">Introduction I</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction/introduction_2.html">Introduction II</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="introduction/introduction_3_new.html">Introduction III</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="introduction/intro_jupyter.html">Introduction III - the jupyter ecosystem &amp; notebooks, first look at programming in Python</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="introduction/introduction_4.html">Introduction IV</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="introduction/intro_python_I.html">Introduction IV - Introduction to Python - I</a></li>
-</ul>
-</li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="introduction/introduction_5.html">Introduction V</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="introduction/intro_python_II.html">Introduction V - Introduction to Python - II</a></li>
-
-</ul>
-</li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="introduction/introduction_6.html">Introduction VI</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="introduction/intro_python_III.html">Introduction VI - Introduction to Python III</a></li>
-
-
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="showcases/module_showcases.html">Python module showcases</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="showcases/module_showcases.html">Python module showcases</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="showcases/python_numpy.html">Introduction to NumPy</a></li>
 
 
@@ -487,7 +467,6 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-your-install">Checking your install</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-the-course-content">Getting the course content</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-the-matrix">Enter the matrix</a></li>
 </ul>
             </nav>
         </div>
@@ -502,11 +481,10 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="setup-for-the-course">
 <h1>Setup for the course<a class="headerlink" href="#setup-for-the-course" title="Link to this heading">#</a></h1>
 <p>There are a few things you need to get working on your machine in order to follow this course. However, don’t worry as it’s all gonna be <a class="reference internal" href="#"><span class="xref myst">open source</span></a>, won’t require a lot of storage and will be explained in detail.</p>
+<p><strong>Importantly, some of the content on this page is outdated because it uses more complex environments like Git, etc. In the 2024 version of the course, we will focus more on Python itself rather than IDE environments. So, don’t stress too much about all this information—just focus on the 2024 section.</strong></p>
 <p>Some parts and section of this course will be executable via <code class="docutils literal notranslate"><span class="pre">cloud</span> <span class="pre">computing</span></code> (click on the small rocket at the top right of the webpage to start <a class="reference external" href="https://mybinder.org/">binder</a>), which mainly serves the puprose of making the lessons nice and easy to follow in an interactive manner. Although in general getting <code class="docutils literal notranslate"><span class="pre">Python</span></code> &amp; friends to work reliably on your machine is going to be very beneficial. This holds true for the course and especially beyond. The following tools focusing open and reproducible (neuro-/data science) will therefore not only be necessary for this course, but are curated in a way that you can build your “everyday” research workflow around them. This even applies if you won’t continue with <code class="docutils literal notranslate"><span class="pre">python</span></code> (I certainly hope you do) and instead work with <code class="docutils literal notranslate"><span class="pre">R</span></code> (of course also cool), <code class="docutils literal notranslate"><span class="pre">matlab</span></code> (weeeeeeeell…) or what have you.</p>
 <p>You’ll find the (hopefully) comprehensive set of install instructions below. While not all of them might be totally necessary for the course, they all will help you a great deal going further and are especially useful/needed if we have to hold the course virtually due to the COVID-19 pandemic.</p>
 <p>Don’t worry, you got this!</p>
-<p><img alt="logo" src="https://media1.tenor.com/images/f72cb542d6b3e3c3421889e0a3d9628d/tenor.gif?itemid=4533805" /><br />
-<sub><sup><sub><sup><a class="reference external" href="https://media1.tenor.com/images/f72cb542d6b3e3c3421889e0a3d9628d/tenor.gif?itemid=4533805">https://media1.tenor.com/images/f72cb542d6b3e3c3421889e0a3d9628d/tenor.gif?itemid=4533805</a></sup></sub></sup></sub></p>
 <section id="general-things">
 <h2>General things<a class="headerlink" href="#general-things" title="Link to this heading">#</a></h2>
 <p>There are a few computing requirements for the course that are absolutely necessary (beyond the few software packages you should install, described below):</p>
@@ -863,12 +841,6 @@ Cloud via Mybinder</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </section>
-<section id="enter-the-matrix">
-<h2>Enter the matrix<a class="headerlink" href="#enter-the-matrix" title="Link to this heading">#</a></h2>
-<p>Once you reached this point, you should be ready the enter the matrix and follow the course in your preferred way. Congrats, fantastic work!</p>
-<p><img alt="logo" src="https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236" /><br />
-<sub><sup><sub><sup><a class="reference external" href="https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236">https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236</a></sup></sub></sup></sub></p>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -946,7 +918,6 @@ Cloud via Mybinder</label><div class="sd-tab-content docutils">
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-your-install">Checking your install</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-the-course-content">Getting the course content</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-the-matrix">Enter the matrix</a></li>
 </ul>
   </nav></div>
 
