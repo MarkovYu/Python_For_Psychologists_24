@@ -12,15 +12,14 @@ psychology. To do so, we will follow a "learning by doing" approach in a tripart
 
 ### How to reach the folks in the front
 
-<p align="center"><iframe src="https://giphy.com/embed/U6GunJi6B1o7ecMfKc" width="240" height="240" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen style="overflow-y: hidden;"></iframe></p><p align="center"><a href="https://giphy.com/gifs/justviralnet-funny-mistake-spelling-U6GunJi6B1o7ecMfKc"><small>via GIPHY</small></a></p></p>
 
 The contact information of the instructors are as follows:
 
-[Aylin Kallmayer](https://aylinkallmayer.com)
+[Yury Markov](https://www.y-markov.com)
 
-- She/Her
+- He/Him
 - Office hours: upon request
-- E-mail: `kallmayer@psych.uni-frankfurt.de`
+- E-mail: ` Markov@psych.uni-frankfurt.de`
 - preferred mode of contact: vie e-mail
 
 ### Gimme the details
@@ -29,18 +28,14 @@ Below you will find important details regarding the course summarized in a compa
 
 #### When and where
 
-The course will officially run from October 19th, 2023 till Feburary 2nd, 2024. 
+The course will officially run from October 17th, 2024 till Feburary, 2025. 
 
-```{admonition} Important Room Change!
-:class: warning
-Because a lot more people signed up than expected, there was a change in rooms: we will now meet weekly in **Seminarhaus Room SH 4.107** !
-```
+We will now meet weekly in **Seminarhaus Room SH 4.107** !
 
 #### Can I use my calculator?
 
 Well, depends on your calculator, but you'll need frequent access to a computer that can run Python. None of the analyses that we will be doing will be very computationally intensive, so this does not need necessarily be a modern or "fast" computer. Still, it will need to be running a standard operating system like Windows, Mac OS X, or Linux. Unfortunately, tablets running mobile operating systems (iOS, Android) probably won't work for this purpose. **If this is an issue for you, please get in touch with the instructor as soon as possible so that we can try to figure out a solution**. Regarding software and installation thereof, please check the next section.
 
-<iframe src="https://giphy.com/embed/DHqth0hVQoIzS" width="240" height="103" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/maths-DHqth0hVQoIzS">via GIPHY</a></p>
 
 #### How do I get all the software and do I have to apply for a loan to get it?
 
@@ -49,17 +44,13 @@ Why? Because teaching students via [proprietary software](https://en.wikipedia.o
 
 In order to help you get all the software required for the course, a [comprehensive installation instruction](https://aylinsgl.github.io/Python_For_Psychologists_23-24/setup.html) was compiled. In a step-by-step manner it guides you through the installation process, covering several `OS`: `windows`, `macos` and `linux`. Now the installation of the required packages probably goes beyond the scope of how most people engage with their computers on a daily basis, therefore errors and following frustration may occur. **Please do not be discouraged! If any problems occur during the installation process, please contact me ASAP and we'll get that sorted out**
 
-<iframe src="https://giphy.com/embed/CTX0ivSQbI78A" width="240" height="177" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/internet-computer-technology-CTX0ivSQbI78A">via GIPHY</a></p>
-
 #### Where is everything?
 
-All course materials (lecture slides, lecture demo notebooks, lab notebooks, homework assignments, etc.) will be available on the [course website](https://aylinsgl.github.io/Python_For_Psychologists_23-24/Python_for_Psychologists_Winter2022/index.html), i.e. the one you're looking at right now. Everything will be completely open and free to use, thus constituting an [open educational resource](https://en.wikipedia.org/wiki/Open_educational_resources) you are **free to explore, enhance and share**. Thus, this website and all materials will also remain up for the entire duration of the course and beyond, ideally to end of the internet. The usage of this resource and the materials therein will be explained at the beginning and throughout the course.  
-
-<iframe src="https://giphy.com/embed/c20UV66B7zCWA" width="240" height="155" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/superman-phone-looking-c20UV66B7zCWA">via GIPHY</a></p>
+All course materials (lecture slides, lecture demo notebooks, lab notebooks, homework assignments, etc.) will be available on the [course website](https://markovyu.github.io/Python_For_Psychologists_24/index.html), i.e. the one you're looking at right now. Everything will be completely open and free to use, thus constituting an [open educational resource](https://en.wikipedia.org/wiki/Open_educational_resources) you are **free to explore, enhance and share**. Thus, this website and all materials will also remain up for the entire duration of the course and beyond, ideally to end of the internet. The usage of this resource and the materials therein will be explained at the beginning and throughout the course.  
 
 #### Syllabus and Text
 
-As noted above, this page serves as the syllabus for this course, with the precise outline indicated in the [respective section](https://aylinsgl.github.io/Python_For_Psychologists_23-24/outline.html). This syllabus is subject to change; students who miss class are responsible for learning about any changes to the syllabus.
+As noted above, this page serves as the syllabus for this course, with the precise outline indicated in the [respective section](https://markovyu.github.io/Python_For_Psychologists_24/outline.html). This syllabus is subject to change; students who miss class are responsible for learning about any changes to the syllabus.
 
 The course was build with the knowledge of several textbooks, all of which are online and free:
 
@@ -68,8 +59,6 @@ https://www.inferentialthinking.com/
 https://jakevdp.github.io/PythonDataScienceHandbook/
 
 Additional reading material might be added but will always be open & free with students being informed about any addition.
-
-<iframe src="https://giphy.com/embed/9dFvgd4ID6ne0" width="240" height="135" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/community-nbc-ken-jeong-9dFvgd4ID6ne0">via GIPHY</a></p>
 
 #### How to get those credits?
 
@@ -89,14 +78,14 @@ Your final grade will be based on the the `final exam`.
 that there will be prominent differences depending on the start date of your studies, i.e. the `exam regulation` under which you started the master program. I'm very sorry that there will be some imbalance, I'm also not a fan of this. However, we have to comply with the `exam regulations` unfortunately.  
 ```
 
-**First semester, started winter term 22/23 or later**
+**First semester, started winter term 24/25 or later**
 
 You can choose if you want to only obtain a participation credit **or** a grade. 
 
 *In order to obtain your participation credit you will have to provide the following:*
 
 - `homework assignments`: There will be approx. `6 homework assignments`. You have to hand in at least `4` and thus can miss 2 in total.
-- `Class participation`: Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs.
+- `Class participation`: Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs, you can miss no more than `2` clases.
 
 *If you want to obtain your grade for the module in this course, you will have to provide the following on top of the participation requirements:*
 
@@ -106,11 +95,9 @@ You can choose if you want to only obtain a participation credit **or** a grade.
 
 The module will be graded with the final grade being the average of your previous grade and the final exam grade of this class. 
 
-<iframe src="https://giphy.com/embed/yFHkrrbfITemc" width="240" height="173" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/exams-yFHkrrbfITemc">via GIPHY</a></p>
-
 ##### Late Homework & Extension Policy
 
-`Homework assignments` will in general have a clearly stated due date, so as to manage course load clearly. Exceptions will be communicated. Please check the respective sections of this course and don't hesitate to ask questions if things are unclear. Generally `Homework assignments` must be turned in on the due date in order to to earn participation credits for the course and receive a grade.  Homework assignments must be turned in on the due date in order to receive full credit. Homework assignment turned in less than 1 week late will be accepted, unless this happens too often. Homework has to be handed in via e-mail to the [instructor](kallmayer@psych.uni-frankfurt.de).
+`Homework assignments` will in general have a clearly stated due date, so as to manage course load clearly. Exceptions will be communicated. Please check the respective sections of this course and don't hesitate to ask questions if things are unclear. Generally `Homework assignments` must be turned in on the due date in order to to earn participation credits for the course and receive a grade.  Homework assignments must be turned in on the due date in order to receive full credit. Homework assignment turned in less than 1 week late will be accepted, unless this happens too often. Homework has to be handed in via e-mail to the [instructor](Markov@psych.uni-frankfurt.de).
 
 Late `homework assignments` will also be accepted under _exceptional circumstances_ (e.g., medical or family emergency etc.) and at the discretion of the instructor with no penalty. This policy allowing for exceptional circumstances is definitely a right, but courtesy to be used when needed and not abused. Should you encounter such circumstances, simply email the assignment to instructor and note "late submission due to exceptional circumstances". **You do not need to provide any further justification or personally revealing information regarding the details.**
 
@@ -135,9 +122,6 @@ We might miss some things, so please notify the instructors of your pending abse
 
 This course has a `Code of conduct`. Please inform yourself about the specifics by carefully reading through the [respective section](https://aylinsgl.github.io/Python_For_Psychologists_23-24/CoC.html).
 
-<iframe src="https://giphy.com/embed/l5s71uAp3CzKwxwkoZ" width="240" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/theoffice-nbc-the-office-tv-l5s71uAp3CzKwxwkoZ">via GIPHY</a></p>
-
-
 ### How to Get Your Question(s) Answered and/or Provide Feedback
 
 It’s great that we have so many ways to communicate, but it can get tricky to figure out who to contact or where your question belongs or when to expect a response. These guidelines are to help you get your question answered as quickly as possible and to ensure that we’re able to get to everyone’s questions.
@@ -148,7 +132,7 @@ If you have:
 
 **- questions about course content** 
 
-these are awesome! We want everyone to see them and have their questions answered too, so either use the [hypothes.is](https://web.hypothes.is/) plugin, the `discord` channel, `e-mail` or the [GitHub repository](https://github.com/aylinsgl/Python_For_Psychologists_23-24/issues).
+these are awesome! We want everyone to see them and have their questions answered too, so either use the `discord` channel or `e-mail`.
 
 **- a technical assignment question**
 
@@ -160,7 +144,7 @@ Programming can be frustrating and it may not always be obvious what is going wr
 
 **- questions about course logistics**
 
-first, check the [overview](https://aylinsgl.github.io/Python_For_Psychologists_23-24/overview.html) & [syllabus](https://aylinsgl.github.io/Python_For_Psychologists_23-24/outline.html). If you can’t find the answer there, first ask a classmate. If still unsure, post on `discord`.
+first, check the [overview](https://markovyu.github.io/Python_For_Psychologists_24/overview.html) & [syllabus](https://markovyu.github.io/Python_For_Psychologists_24/outline.html). If you can’t find the answer there, first ask a classmate. If still unsure, post on `discord`.
 
 **- something super cool to share related to class or want to talk about a topic in further depth** 
 
