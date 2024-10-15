@@ -121,15 +121,13 @@ Install Firefox or Chrome.
 
 ## Verifying Your Installation 2024
 
-To ensure Anaconda and Jupyter Notebook were installed correctly, you can run the following commands in your terminal or Anaconda Prompt:
+- To ensure Anaconda and Jupyter Notebook were installed correctly, you can run the following commands in your terminal or Anaconda Prompt:
+   ```console
+   conda --version
 
-```console
-conda --version
-
-This should display the installed version of Conda.
-
-```console
-jupyter notebook
+- This should display the installed version of Conda.
+   ```console
+   jupyter notebook
 
 This should launch Jupyter Notebook in your web browser.
 
