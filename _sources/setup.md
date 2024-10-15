@@ -78,13 +78,12 @@ Install Firefox or Chrome.
   - For **zsh** users, it’s in `.zshrc`.
 
 - You can do this by adding the following line to the respective file:
-  bash
+  ```console
   export PATH="/Users/your-username/anaconda3/bin:$PATH"
-  
 
 ### Step 4: Launch Jupyter Notebook
 - Open the terminal and type:
-  bash
+  ```console
   jupyter notebook
   
 - Jupyter Notebook will open in your default browser.
@@ -98,7 +97,7 @@ Install Firefox or Chrome.
 ### Step 2: Install Anaconda
 - Open the terminal and navigate to the directory where the installer was downloaded.
 - Run the following command to start the installation:
-  bash
+  ```console
   bash Anaconda3-2024.XX-Linux-x86_64.sh
   
   Replace `2024.XX` with the version number you downloaded.
@@ -107,13 +106,13 @@ Install Firefox or Chrome.
 
 ### Step 3: Update Shell Profile
 - After installation, you may need to update your shell’s startup file (e.g., `.bashrc` or `.zshrc`) to add Anaconda to your `PATH`.
-  bash
+  ```console
   export PATH="~/anaconda3/bin:$PATH"
   
 
 ### Step 4: Launch Jupyter Notebook
 - In your terminal, run:
-  bash
+  ```console
   jupyter notebook
 
 - This will open Jupyter Notebook in your browser.
@@ -124,12 +123,12 @@ Install Firefox or Chrome.
 
 To ensure Anaconda and Jupyter Notebook were installed correctly, you can run the following commands in your terminal or Anaconda Prompt:
 
-bash
+```console
 conda --version
 
 This should display the installed version of Conda.
 
-bash
+```console
 jupyter notebook
 
 This should launch Jupyter Notebook in your web browser.
