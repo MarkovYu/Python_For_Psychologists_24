@@ -120,7 +120,7 @@ We might miss some things, so please notify the instructors of your pending abse
 
 ### Code of conduct
 
-This course has a `Code of conduct`. Please inform yourself about the specifics by carefully reading through the [respective section](https://aylinsgl.github.io/Python_For_Psychologists_23-24/CoC.html).
+This course has a `Code of conduct`. Please inform yourself about the specifics by carefully reading through the [respective section](https://markovyu.github.io/Python_For_Psychologists_24/CoC.html).
 
 ### How to Get Your Question(s) Answered and/or Provide Feedback
 
