@@ -138,9 +138,11 @@ This should launch Jupyter Notebook in your web browser.
 
 Now that you've successfully installed Anaconda, you can easily manage your Python environments and use Jupyter Notebook for interactive coding. Anaconda simplifies package management and deployment, making it a great choice for both beginners and experienced users.
 
-## I have significant problems with Anaconda installation or with laptop
+## I have significant problems with Anaconda installation or with laptop 2024
 
 If you're experiencing issues with installing Anaconda or if your laptop is having performance problems, **Google Colab** is a great alternative that you can use to run Python code without needing to install anything on your computer. **Colab** is a free, cloud-based environment that lets you write and run Python code directly in your browser.
+
+- Don't worry your learning experience will be not affected by different IDE enviroment.
 
 Here’s a breakdown of what **Colab** offers and how it compares to working with Anaconda on your local machine:
 
@@ -148,13 +150,13 @@ Here’s a breakdown of what **Colab** offers and how it compares to working wit
 Google Colab (Colaboratory) is an online platform that allows you to write and execute Python code in a notebook environment, similar to Jupyter Notebooks. It’s powered by Google’s cloud infrastructure, so you can access it from anywhere, as long as you have a browser and an internet connection.
 
 ### Key Benefits of Using Google Colab:
-No Installation Required: You don’t need to install Python, Anaconda, or any libraries locally. Colab comes preloaded with many common Python libraries (like NumPy, pandas, Matplotlib, and even TensorFlow).
+- No Installation Required: You don’t need to install Python, Anaconda, or any libraries locally. Colab comes preloaded with many common Python libraries (like NumPy, pandas, Matplotlib, and even TensorFlow).
 
-Works on Any Device: Whether you're using a low-spec laptop, a tablet, or a desktop, Colab runs everything in the cloud. This means it’s perfect if your laptop is slow or you can't install Anaconda due to compatibility issues or lack of storage space.
+- Works on Any Device: Whether you're using a low-spec laptop, a tablet, or a desktop, Colab runs everything in the cloud. This means it’s perfect if your laptop is slow or you can't install Anaconda due to compatibility issues or lack of storage space.
 
-Free GPU Access: Colab gives you access to free GPU and TPU resources, which can speed up computations if you're working with machine learning or deep learning models. This is a feature you wouldn't have with a typical Anaconda setup unless you have a high-performance machine.
+- Free GPU Access: Colab gives you access to free GPU and TPU resources, which can speed up computations if you're working with machine learning or deep learning models. This is a feature you wouldn't have with a typical Anaconda setup unless you have a high-performance machine.
 
-Real-Time Collaboration: Just like Google Docs, you can share Colab notebooks with others and collaborate in real-time, making it easier to work with classmates or colleagues on code-based projects.
+- Real-Time Collaboration: Just like Google Docs, you can share Colab notebooks with others and collaborate in real-time, making it easier to work with classmates or colleagues on code-based projects.
 
 ### Anaconda vs Google Colab:
 
@@ -170,13 +172,13 @@ Real-Time Collaboration: Just like Google Docs, you can share Colab notebooks wi
 
 
 ### When Should You Use Google Colab?
-If you're having trouble with Anaconda installation: Whether it's due to version conflicts, missing dependencies, or operating system compatibility issues, Colab removes the need to install anything on your local machine.
+- If you're having trouble with Anaconda installation: Whether it's due to version conflicts, missing dependencies, or operating system compatibility issues, Colab removes the need to install anything on your local machine.
 
-If your laptop is underpowered: Colab allows you to run even computationally heavy code (such as deep learning models) on Google's high-performance cloud infrastructure, which may be impossible on a low-spec laptop.
+- If your laptop is underpowered: Colab allows you to run even computationally heavy code (such as deep learning models) on Google's high-performance cloud infrastructure, which may be impossible on a low-spec laptop.
 
-If you're short on storage space: Running code locally requires ample storage for libraries, data, and environments. Colab eliminates this need by storing everything in the cloud.
+- If you're short on storage space: Running code locally requires ample storage for libraries, data, and environments. Colab eliminates this need by storing everything in the cloud.
 
-For collaboration: If you're working on a group project, Colab’s real-time sharing features make it a breeze to collaborate.
+- For collaboration: If you're working on a group project, Colab’s real-time sharing features make it a breeze to collaborate.
 
 ## Required software (Legacy, pre 2024)
 
