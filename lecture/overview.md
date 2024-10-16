@@ -8,9 +8,9 @@ While most thesis projects (undergrad and grad), PhD and other positions that ac
 ### TL;DR
 
 Within this course we will explore the [Python programming language](https://en.wikipedia.org/wiki/Python_(programming_language)), specifically how it can and why it should be utilized within experimental
-psychology. To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `programming` and `python` (Block I), we will evaluate how `python` can be used to run `experiments` (Block II) and `analyze` the resulting `data` (Block III). Thus, we actively seek out `realistic examples` and `workflows`, trying to solve problems with `python`.  Along this way we will also talk about important adjacent topics such as `computing environments` and `IDE`s. For a rather precise outline of the course, please consult the [respective section](https://aylinsgl.github.io/Python_For_Psychologists_23-24/setup.html).
+psychology. To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `programming` and `python` (Block I), we will evaluate how `python` can be used to run `experiments` (Block II) and `analyze` the resulting `data` (Block III). Thus, we actively seek out `realistic examples` and `workflows`, trying to solve problems with `python`.  Along this way we will also talk about important adjacent topics such as `computing environments` and `IDE`s. For a rather precise outline of the course, please consult the [respective section](https://markovyu.github.io/Python_For_Psychologists_24/setup.html).
 
-### How to reach the folks in the front
+### How to reach me
 
 
 The contact information of the instructors are as follows:
@@ -20,29 +20,26 @@ The contact information of the instructors are as follows:
 - He/Him
 - Office hours: upon request
 - E-mail: ` Markov@psych.uni-frankfurt.de`
-- preferred mode of contact: vie e-mail
+- preferred mode of contact: via e-mail
 
-### Gimme the details
-
-Below you will find important details regarding the course summarized in a compact form. Please consult and familiarize yourself with the information presented there prior to and/or within the first week of the course. 
 
 #### When and where
 
 The course will officially run from October 17th, 2024 till Feburary, 2025. 
 
-We will now meet weekly in **Seminarhaus Room SH 4.107** !
+We will now meet weekly in **Raum: 5.G 056** at 16:00!
 
-#### Can I use my calculator?
+#### What should I have?
 
-Well, depends on your calculator, but you'll need frequent access to a computer that can run Python. None of the analyses that we will be doing will be very computationally intensive, so this does not need necessarily be a modern or "fast" computer. Still, it will need to be running a standard operating system like Windows, Mac OS X, or Linux. Unfortunately, tablets running mobile operating systems (iOS, Android) probably won't work for this purpose. **If this is an issue for you, please get in touch with the instructor as soon as possible so that we can try to figure out a solution**. Regarding software and installation thereof, please check the next section.
+You'll need frequent access to a computer that can run Python. The analyses we'll be doing aren’t very computationally intensive, so you don’t need a modern or "fast" computer. However, it must run a standard operating system like Windows, Mac OS X, or Linux. Unfortunately, tablets with mobile operating systems (iOS, Android) probably won’t work. **If this is an issue for you, please contact the instructor as soon as possible so we can find a solution.** For software and installation details, please refer to the next section.
 
 
-#### How do I get all the software and do I have to apply for a loan to get it?
+#### How do I get all the software?
 
-Nah, everything we'll use is [open-source software](https://en.wikipedia.org/wiki/Open-source_software) or at minimum free of charge and publicly available. 
+Everything we'll use is [open-source software](https://en.wikipedia.org/wiki/Open-source_software) or at minimum free of charge and publicly available. 
 Why? Because teaching students via [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) is just not fair and won't help anyone: students have to obtain licenses or use those from the university (which usually doesn't have enough for everyone), leading to tremendous problems regarding inequity now and in the future. Additionally, [opens-source software](https://en.wikipedia.org/wiki/Open-source_software) can do everything, if not more than [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) and is furthermore usually better supported, tested and documented, creating a fantastic sense of community. Also, it makes collaoration and sharing resources a lot easier (especially in combination with computing environemnts) which is a MUST for reproducibility and [open science](https://en.wikipedia.org/wiki/Open_science).
 
-In order to help you get all the software required for the course, a [comprehensive installation instruction](https://aylinsgl.github.io/Python_For_Psychologists_23-24/setup.html) was compiled. In a step-by-step manner it guides you through the installation process, covering several `OS`: `windows`, `macos` and `linux`. Now the installation of the required packages probably goes beyond the scope of how most people engage with their computers on a daily basis, therefore errors and following frustration may occur. **Please do not be discouraged! If any problems occur during the installation process, please contact me ASAP and we'll get that sorted out**
+In order to help you get all the software required for the course, a [comprehensive installation instruction](https://markovyu.github.io/Python_For_Psychologists_24/setup.html) was compiled. In a step-by-step manner it guides you through the installation process, covering several `OS`: `windows`, `macos` and `linux`. Now the installation of the required packages probably goes beyond the scope of how most people engage with their computers on a daily basis, therefore errors and following frustration may occur. **Please do not be discouraged! If any problems occur during the installation process, please contact me ASAP and we'll get that sorted out**
 
 #### Where is everything?
 
@@ -60,13 +57,13 @@ https://jakevdp.github.io/PythonDataScienceHandbook/
 
 Additional reading material might be added but will always be open & free with students being informed about any addition.
 
-#### How to get those credits?
+#### How to get credits?
 
 As this is a practical lab course intended to provide you with an introduction to using `python` for experimental work via a mixture of guided and independent work, your assignments and tasks will be rather diverse and quite different from other modules. In order to successfully participate in this you will need to work on and hand in multiple things, including `homework assignments`, `python scripts` and `analyses pipelines`.  While this may sound intimidating and out of the scope of your usual course load, it is intended to provide you with a holistic learning experience and the instructors with a way to assess your learning progress (somewhat) individually. The assignments and tasks aim to reflect these aspects and will entail working on research projects, evaluating that of others, reading project-related and general research-related literature and more. All of this will follow [open science practices](https://en.wikipedia.org/wiki/Open_science) & [FAIR principles](https://en.wikipedia.org/wiki/FAIR_data), meaning all work will be completely open & maximized regarding reproducibility. The different parts and grading scheme are further outlined below.  
 
 ##### Exams and Assignments
 
-There will be an assignment that will make up your final grade a `take-home, open book final exam`. This will entail the generation of an `interactive & reproducible publication`, that is a `data analysis pipeline` which is `documented` and `run` within a `jupyter notebook`, as well as provided in a form that allows others to `openly re-run everything`.  
+There will be an assignment that will make up your final grade a `take-home, open book final exam`. This will entail the generation of an `interactive & reproducible notebook`, that is a `data analysis pipeline` which is `documented` and `run` within a `jupyter notebook`, as well as provided in a form that allows others to `openly re-run everything`.  
 
 For your **participation** there will be `a number of homework assignments`. Assignments will be communicated in the respective sections of this course and during the lectures. Please note that due to the size of the class and only one available instructor, the instructor won't be able to give individual feedback for each homework assignment. 
 
@@ -91,9 +88,6 @@ You can choose if you want to only obtain a participation credit **or** a grade.
 
 - Final exam: The take-home, open book final exam as outlined above.
 
-**Not first semester, started earlier than winter term 21/22** 
-
-The module will be graded with the final grade being the average of your previous grade and the final exam grade of this class. 
 
 ##### Late Homework & Extension Policy
 
@@ -103,10 +97,15 @@ Late `homework assignments` will also be accepted under _exceptional circumstanc
 
 ##### Academic Honor Code
 
-You are encouraged to discuss problem sets with classmates and work on them together, but certain written submissions must reflect your own, original work. If you worked with other students on a problem set, no worries, please include their names in a statement like "I worked on this homework with XX and YY" on the assignment. If in doubt, ask the instructor.
+While you're encouraged to discuss problem sets with classmates and work on them together, certain parts of your submissions must reflect your own, original work. Understanding what you're writing is key—it's okay to take inspiration from others to an extent, but you must make the work your own. **For instance, code commenting should be unique for each student, even if the code itself is similar.**
+
+If you worked with other students on a problem set, that's fine! Just include their names in a statement like, "I worked on this homework with XX and YY" at the top of your assignment. If you're unsure, feel free to ask the instructor for clarification.
+
 ```{note}
-Using online-ressources to help you programm is endorsed and advised, but please note that if code is copied from the internet without alterations and not clearly marked as such, this will be understood as an attempt at deception and treated as such. The same goes for any kind of reproduction of any other published work, as per usual.
+Using online resources to help you program is encouraged, but please be aware: if code is copied from the internet without modifications and not clearly cited, it will be considered an attempt at deception and treated accordingly. The same applies to any reproduction of published work, following standard academic integrity rules.
 ```
+
+Also, please check additionally special page dedicated to the use of [AI, such as ChatGPT](https://markovyu.github.io/Python_For_Psychologists_24/AI.html).
 
 ##### Notice about missed work due to religious holy days
 
@@ -130,25 +129,25 @@ That said, to ensure that we’re respecting everyone's time we'll mainly answer
 
 If you have:
 
-**- questions about course content** 
+**- Questions about course content** 
 
-these are awesome! We want everyone to see them and have their questions answered too, so either use the `discord` channel or `e-mail`.
+These are awesome! We want everyone to see them and have their questions answered too, so either use the `discord` channel or `e-mail`.
 
-**- a technical assignment question**
+**- A technical assignment question**
 
-come to office hours (after making an appointment) (or post to `discord`). Answering technical questions is often best accomplished ‘in person’ where we can discuss the question and talk through ideas. However, if that is not possible, post your question to `discord`. Be as specific as you can in the question you ask (and include error messages when appropriate!). And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
+Come to office hours (after making an appointment) (or post to `discord`). Answering technical questions is often best accomplished ‘in person’ where we can discuss the question and talk through ideas. However, if that is not possible, post your question to `discord`. Be as specific as you can in the question you ask (and include error messages when appropriate!). And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
 
-**- been stuck on something for a while (>30min) and aren’t even really sure where to start** 
+**- Been stuck on something for a while (>30min) and aren’t even really sure where to start** 
 
 Programming can be frustrating and it may not always be obvious what is going wrong or why something isn’t working. **That’s OK - we’ve all been there!** IF you are stuck, you can and should reach out for help, even if you aren’t exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on `discord`). If you don’t have a specific question, include the information you have (what you’re stuck on, the code you’ve been trying that hasn’t been happening, and/or the error messages you’ve been getting).
 
-**- questions about course logistics**
+**- Questions about course logistics**
 
-first, check the [overview](https://markovyu.github.io/Python_For_Psychologists_24/overview.html) & [syllabus](https://markovyu.github.io/Python_For_Psychologists_24/outline.html). If you can’t find the answer there, first ask a classmate. If still unsure, post on `discord`.
+First, check the [overview](https://markovyu.github.io/Python_For_Psychologists_24/overview.html) & [syllabus](https://markovyu.github.io/Python_For_Psychologists_24/outline.html). If you can’t find the answer there, first ask a classmate. If still unsure, post on `discord`.
 
-**- something super cool to share related to class or want to talk about a topic in further depth** 
+**- Something super cool to share related to class or want to talk about a topic in further depth** 
 
-feel free to post on `discord`, contact the instructors or come to office hours. 
+Feel free to post on `discord`, contact the instructors or come to office hours. 
 
 ### Acknowledgements
 

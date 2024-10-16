@@ -5,7 +5,7 @@ These three defining parts will also be used as cornerstones of the course outli
 
 ## Schedule
 
-Please see below for our current optimistic schedule. Depending on our progress, potential problems and different forms of learning, content and times might change a bit. Each lecture will be divided into two parts: a lecture part and a practicle part where you work on problems in groups.
+Below is the current schedule. Depending on our progress, challenges, and the pace of learning, the content and timing may be adjusted. Each session will be divided into two parts: a lecture and a practical section where you'll work on problems in groups.
 
 
 ```{note}

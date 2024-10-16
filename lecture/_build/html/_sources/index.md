@@ -5,19 +5,21 @@
 
 ````{margin}
 ```{warning}
-These pages are currently under construction and will be updated continuously.
-Importantly, website will be updated during the semester, please visit sections as we go along 
+These pages are currently under construction and will be continuously updated.
+Please check back often, especially as new sections will be added during the semester.
 ````
 
-Hello everyone and welcome to the course page for "Python for Psychologists", taught
-within the [Psychology master programme](https://www.goethe-university-frankfurt.de/51789866/Institute_of_Psychology?) of the [Goethe-University Frankfurt](https://www.goethe-university-frankfurt.de/en) during the winter term 2024. Glad to see you here!
+Hello, and welcome to the course page for **"Python for Psychologists"**, part of the [Psychology Master's program](https://www.goethe-university-frankfurt.de/51789866/Institute_of_Psychology?) at [Goethe University Frankfurt](https://www.goethe-university-frankfurt.de/en) for the Winter Term 2024.
 
-Within these pages, we provide the all information important to follow and conduct the course, including formal aspects, requirements, lecture materials, practicals and so on.  This [jupyter book](https://jupyterbook.org/intro.html) will include the used slides and code in a way that they can be explored in an interactive manner. You can navigate through the respective sections via the TOC (table of contents) on the left side and within sections via the TOC on the right side. The three symbols in the top allow enabling full screen mode, link to the underlying [Github repository](https://github.com/MarkovYu/Python_For_Psychologists_24) and allow you to download the contents as a pdf or [jupyter notebook](https://jupyter.org/) respectively. Some sections will additionally have a little rocket in that row which will allow you to interactively rerun certain parts of the practicals via cloud computing. All of this awesomeness (talking about the infrastructure and resource) is possible through the dedicated and second to none work of the [Jupyter community](https://jupyter.org/), specifically, the [Executable/Jupyter Book](https://executablebooks.org/en/latest/) and [mybinder project](https://mybinder.org/).
+This platform will serve as your guide throughout the course, providing you with essential information such as formal requirements, lecture materials, practical assignments, and much more. This resource is built using [Jupyter Book](https://jupyterbook.org/intro.html), which allows us to integrate interactive code and tutorials directly into the course material.
+
+You can navigate through the respective sections via the TOC (table of contents) on the left side and within sections via the TOC on the right side. The three symbols in the top allow enabling full screen mode, link to the underlying [Github repository](https://github.com/MarkovYu/Python_For_Psychologists_24) and allow you to download the contents as a pdf or [jupyter notebook](https://jupyter.org/) respectively. Some sections will additionally have a little rocket in that row which will allow you to interactively rerun certain parts of the practicals via cloud computing. All of this awesomeness (talking about the infrastructure and resource) is possible through the dedicated and second to none work of the [Jupyter community](https://jupyter.org/), specifically, the [Executable/Jupyter Book](https://executablebooks.org/en/latest/) and [mybinder project](https://mybinder.org/).
 
 ## Python for Psychologists
 
-Within this course we will explore the [Python programming language](https://en.wikipedia.org/wiki/Python_(programming_language)), specifically how it can and why it should be utilized within experimental
-psychology. To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `programming` and `python` (Block I), we will evaluate how `python` can be used to run `experiments` (Block II) and `analyze` the resulting `data` (Block III). Thus, we actively seek out `realistic examples` and `workflows`, trying to solve problems with `python`.  Along this way we will also talk about important adjacent topics such as `computing environments` and `IDE`s. For a more precise outline of the course, please consult the [respective section]().
+This course is designed to introduce psychology students to the world of programming, focusing on its application to psychological research. While programming might seem intimidating at first, it is an incredibly powerful tool for `data acquisition`, `analysis`, and even `experiment` design.
+
+Within this course we will explore the [Python programming language](https://en.wikipedia.org/wiki/Python_(programming_language)), specifically how it can and why it should be utilized within experimental psychology. To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `programming` and `python` (Block I), we will evaluate how `python` can be used to run `experiments` (Block II) and `analyze` the resulting `data` (Block III). Thus, we actively seek out `realistic examples` and `workflows`, trying to solve problems with `python`.  Along this way we will also talk about important adjacent topics such as `computing environments` and `IDE`s. For a more precise outline of the course, please consult the [respective section]().
 This course is designed to provide lecture content in a way that it is [FAIR](https://en.wikipedia.org/wiki/FAIR_data) for as many people as possible.
 
 You can use the following sections to navigate through the content of the lecture:
@@ -30,7 +32,7 @@ You can use the following sections to navigate through the content of the lectur
 
    What are the specific topics and aspects taught?
 
-* [Introduction (soon)]()
+* [Introduction](https://markovyu.github.io/Python_For_Psychologists_24/introduction/introduction.html)
 
    All things gotta start somewhere and using programming within research settings is no exception to
    that, but how?
