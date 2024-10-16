@@ -460,10 +460,19 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-2024">Required software 2024</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discord-2024">Discord 2024</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modern-web-browser-2024">Modern web browser 2024</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-installation-with-jupyter-notebook-2024">Anaconda Installation with Jupyter Notebook 2024</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-instructions">Installation Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-installation-with-jupyter-notebook-2024">Anaconda Installation with Jupyter Notebook 2024</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-instructions">Installation Instructions</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-your-installation-2024">Verifying Your Installation 2024</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-2024">Conclusion 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-have-significant-problems-with-anaconda-installation-or-with-laptop">I have significant problems with Anaconda installation or with laptop</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-google-colab">What is Google Colab?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-benefits-of-using-google-colab">Key Benefits of Using Google Colab:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-vs-google-colab">Anaconda vs Google Colab:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#when-should-you-use-google-colab">When Should You Use Google Colab?</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-legacy-pre-2024">Required software (Legacy, pre 2024)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-quick-general-notes-on-instructions">Some quick general notes on instructions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#os-specific-installation-instructions">OS-specific installation instructions</a></li>
@@ -485,7 +494,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="setup-for-the-course">
 <h1>Setup for the course<a class="headerlink" href="#setup-for-the-course" title="Link to this heading">#</a></h1>
-<p>There are a few things you need to get working on your machine in order to follow this course. However, don’t worry as it’s all gonna be <a class="reference internal" href="#"><span class="xref myst">open source</span></a>, won’t require a lot of storage and will be explained in detail.</p>
+<p>There are a few things you need to get working on your machine in order to follow this course. However, don’t worry as it’s all gonna be <a class="reference external" href="https://en.wikipedia.org/wiki/Open_source">open source</a>, won’t require a lot of storage and will be explained in detail.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Importantly, some of the content on this page is outdated because it uses more complex environments like Git, etc. In the 2024 version of the course, we will focus more on Python itself rather than IDE environments. So, don’t stress too much about all this information—just focus on the 2024 section.</p>
@@ -500,6 +509,10 @@ document.write(`
 <li><p><strong>Disk Space</strong>: At least 3 GB of free disk space for the base installation</p></li>
 <li><p><strong>Internet Access</strong>: Required for downloading the installer</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you don’t have a laptop or strugle significantly with instalation process find the section below and contact your instructor</p>
+</div>
 <p>If you foresee any of these being a problem please reach out to one of the instructors and enquire what steps you can take to ensure your setup is ready for the course.</p>
 </section>
 <section id="required-software-2024">
@@ -524,9 +537,8 @@ document.write(`
 </section>
 <section id="anaconda-installation-with-jupyter-notebook-2024">
 <h2>Anaconda Installation with Jupyter Notebook 2024<a class="headerlink" href="#anaconda-installation-with-jupyter-notebook-2024" title="Link to this heading">#</a></h2>
-</section>
 <section id="installation-instructions">
-<h2>Installation Instructions<a class="headerlink" href="#installation-instructions" title="Link to this heading">#</a></h2>
+<h3>Installation Instructions<a class="headerlink" href="#installation-instructions" title="Link to this heading">#</a></h3>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-0">
@@ -627,6 +639,7 @@ Linux Installation</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </section>
+</section>
 <section id="verifying-your-installation-2024">
 <h2>Verifying Your Installation 2024<a class="headerlink" href="#verifying-your-installation-2024" title="Link to this heading">#</a></h2>
 <ul>
@@ -646,6 +659,70 @@ Linux Installation</label><div class="sd-tab-content docutils">
 <section id="conclusion-2024">
 <h2>Conclusion 2024<a class="headerlink" href="#conclusion-2024" title="Link to this heading">#</a></h2>
 <p>Now that you’ve successfully installed Anaconda, you can easily manage your Python environments and use Jupyter Notebook for interactive coding. Anaconda simplifies package management and deployment, making it a great choice for both beginners and experienced users.</p>
+</section>
+<section id="i-have-significant-problems-with-anaconda-installation-or-with-laptop">
+<h2>I have significant problems with Anaconda installation or with laptop<a class="headerlink" href="#i-have-significant-problems-with-anaconda-installation-or-with-laptop" title="Link to this heading">#</a></h2>
+<p>If you’re experiencing issues with installing Anaconda or if your laptop is having performance problems, <strong>Google Colab</strong> is a great alternative that you can use to run Python code without needing to install anything on your computer. <strong>Colab</strong> is a free, cloud-based environment that lets you write and run Python code directly in your browser.</p>
+<p>Here’s a breakdown of what <strong>Colab</strong> offers and how it compares to working with Anaconda on your local machine:</p>
+<section id="what-is-google-colab">
+<h3>What is Google Colab?<a class="headerlink" href="#what-is-google-colab" title="Link to this heading">#</a></h3>
+<p>Google Colab (Colaboratory) is an online platform that allows you to write and execute Python code in a notebook environment, similar to Jupyter Notebooks. It’s powered by Google’s cloud infrastructure, so you can access it from anywhere, as long as you have a browser and an internet connection.</p>
+</section>
+<section id="key-benefits-of-using-google-colab">
+<h3>Key Benefits of Using Google Colab:<a class="headerlink" href="#key-benefits-of-using-google-colab" title="Link to this heading">#</a></h3>
+<p>No Installation Required: You don’t need to install Python, Anaconda, or any libraries locally. Colab comes preloaded with many common Python libraries (like NumPy, pandas, Matplotlib, and even TensorFlow).</p>
+<p>Works on Any Device: Whether you’re using a low-spec laptop, a tablet, or a desktop, Colab runs everything in the cloud. This means it’s perfect if your laptop is slow or you can’t install Anaconda due to compatibility issues or lack of storage space.</p>
+<p>Free GPU Access: Colab gives you access to free GPU and TPU resources, which can speed up computations if you’re working with machine learning or deep learning models. This is a feature you wouldn’t have with a typical Anaconda setup unless you have a high-performance machine.</p>
+<p>Real-Time Collaboration: Just like Google Docs, you can share Colab notebooks with others and collaborate in real-time, making it easier to work with classmates or colleagues on code-based projects.</p>
+</section>
+<section id="anaconda-vs-google-colab">
+<h3>Anaconda vs Google Colab:<a class="headerlink" href="#anaconda-vs-google-colab" title="Link to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p>Anaconda (Local Setup)</p></th>
+<th class="head"><p>Google Colab (Cloud)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Installation</strong></p></td>
+<td><p>Requires downloading and installing Anaconda, setting up environments, installing packages</p></td>
+<td><p>No installation needed, runs in your browser</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Libraries</strong></p></td>
+<td><p>Full control over which libraries and packages you install</p></td>
+<td><p>Pre-installed libraries (can install additional ones if needed)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Device Requirements</strong></p></td>
+<td><p>Requires sufficient storage and processing power on your laptop</p></td>
+<td><p>No device requirements, works on any browser-enabled device</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Computation Power</strong></p></td>
+<td><p>Limited by your machine’s specs (RAM, CPU, GPU)</p></td>
+<td><p>Uses cloud-based GPUs and TPUs, making it faster for large computations</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Offline Use</strong></p></td>
+<td><p>Can be used offline</p></td>
+<td><p>Requires an internet connection</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Storage</strong></p></td>
+<td><p>Limited by your local storage space</p></td>
+<td><p>Saves notebooks to Google Drive with virtually unlimited cloud storage</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Collaboration</strong></p></td>
+<td><p>Can share files manually</p></td>
+<td><p>Real-time collaboration with easy sharing (like Google Docs)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="when-should-you-use-google-colab">
+<h3>When Should You Use Google Colab?<a class="headerlink" href="#when-should-you-use-google-colab" title="Link to this heading">#</a></h3>
+<p>If you’re having trouble with Anaconda installation: Whether it’s due to version conflicts, missing dependencies, or operating system compatibility issues, Colab removes the need to install anything on your local machine.</p>
+<p>If your laptop is underpowered: Colab allows you to run even computationally heavy code (such as deep learning models) on Google’s high-performance cloud infrastructure, which may be impossible on a low-spec laptop.</p>
+<p>If you’re short on storage space: Running code locally requires ample storage for libraries, data, and environments. Colab eliminates this need by storing everything in the cloud.</p>
+<p>For collaboration: If you’re working on a group project, Colab’s real-time sharing features make it a breeze to collaborate.</p>
+</section>
 </section>
 <section id="required-software-legacy-pre-2024">
 <h2>Required software (Legacy, pre 2024)<a class="headerlink" href="#required-software-legacy-pre-2024" title="Link to this heading">#</a></h2>
@@ -1036,10 +1113,19 @@ If you followed these instructions step-by-step and cannot resolve the issue ple
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-2024">Required software 2024</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discord-2024">Discord 2024</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modern-web-browser-2024">Modern web browser 2024</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-installation-with-jupyter-notebook-2024">Anaconda Installation with Jupyter Notebook 2024</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-instructions">Installation Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-installation-with-jupyter-notebook-2024">Anaconda Installation with Jupyter Notebook 2024</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-instructions">Installation Instructions</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-your-installation-2024">Verifying Your Installation 2024</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-2024">Conclusion 2024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-have-significant-problems-with-anaconda-installation-or-with-laptop">I have significant problems with Anaconda installation or with laptop</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-google-colab">What is Google Colab?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-benefits-of-using-google-colab">Key Benefits of Using Google Colab:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-vs-google-colab">Anaconda vs Google Colab:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#when-should-you-use-google-colab">When Should You Use Google Colab?</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-legacy-pre-2024">Required software (Legacy, pre 2024)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-quick-general-notes-on-instructions">Some quick general notes on instructions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#os-specific-installation-instructions">OS-specific installation instructions</a></li>

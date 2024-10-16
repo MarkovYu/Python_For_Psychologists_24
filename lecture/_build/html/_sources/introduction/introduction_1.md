@@ -23,7 +23,7 @@ First things first: what is going to happen in this course? What is it all about
 
 #### Materials 📓
 
-<iframe src="https://docs.google.com/presentation/d/13hKb426iS1VW4f2lnzGghRDgtjFgRFQg/edit?usp=sharing&ouid=111947409952022928265&rtpof=true&sd=true" frameborder="0" width="700" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="" frameborder="0" width="700" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">https://docs.google.com/presentation/d/1CUkrkpaxiW5c5OmGUr_PiIZ5tDPMEtMS/edit?usp=sharing&ouid=118250986002691875019&rtpof=true&sd=true</iframe>
 
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
 

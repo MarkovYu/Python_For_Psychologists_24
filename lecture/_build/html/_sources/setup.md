@@ -1,6 +1,6 @@
 # Setup for the course
 
-There are a few things you need to get working on your machine in order to follow this course. However, don't worry as it's all gonna be [open source](), won't require a lot of storage and will be explained in detail.
+There are a few things you need to get working on your machine in order to follow this course. However, don't worry as it's all gonna be [open source](https://en.wikipedia.org/wiki/Open_source), won't require a lot of storage and will be explained in detail.
 
 ```{note}
 Importantly, some of the content on this page is outdated because it uses more complex environments like Git, etc. In the 2024 version of the course, we will focus more on Python itself rather than IDE environments. So, don't stress too much about all this information—just focus on the 2024 section.
@@ -16,6 +16,9 @@ There are a few computing requirements for the course that are absolutely necess
 - **Disk Space**: At least 3 GB of free disk space for the base installation
 - **Internet Access**: Required for downloading the installer
 
+```{note}
+If you don't have a laptop or strugle significantly with instalation process find the section below and contact your instructor
+```
 
 If you foresee any of these being a problem please reach out to one of the instructors and enquire what steps you can take to ensure your setup is ready for the course.
 
@@ -41,7 +44,7 @@ Install Firefox or Chrome.
 (Safari will also work.)
 
 ## Anaconda Installation with Jupyter Notebook 2024
-## Installation Instructions
+### Installation Instructions
 
 ````{tab-set}
 ```{tab-item} Windows Installation
@@ -134,6 +137,46 @@ This should launch Jupyter Notebook in your web browser.
 ## Conclusion 2024
 
 Now that you've successfully installed Anaconda, you can easily manage your Python environments and use Jupyter Notebook for interactive coding. Anaconda simplifies package management and deployment, making it a great choice for both beginners and experienced users.
+
+## I have significant problems with Anaconda installation or with laptop
+
+If you're experiencing issues with installing Anaconda or if your laptop is having performance problems, **Google Colab** is a great alternative that you can use to run Python code without needing to install anything on your computer. **Colab** is a free, cloud-based environment that lets you write and run Python code directly in your browser.
+
+Here’s a breakdown of what **Colab** offers and how it compares to working with Anaconda on your local machine:
+
+### What is Google Colab?
+Google Colab (Colaboratory) is an online platform that allows you to write and execute Python code in a notebook environment, similar to Jupyter Notebooks. It’s powered by Google’s cloud infrastructure, so you can access it from anywhere, as long as you have a browser and an internet connection.
+
+### Key Benefits of Using Google Colab:
+No Installation Required: You don’t need to install Python, Anaconda, or any libraries locally. Colab comes preloaded with many common Python libraries (like NumPy, pandas, Matplotlib, and even TensorFlow).
+
+Works on Any Device: Whether you're using a low-spec laptop, a tablet, or a desktop, Colab runs everything in the cloud. This means it’s perfect if your laptop is slow or you can't install Anaconda due to compatibility issues or lack of storage space.
+
+Free GPU Access: Colab gives you access to free GPU and TPU resources, which can speed up computations if you're working with machine learning or deep learning models. This is a feature you wouldn't have with a typical Anaconda setup unless you have a high-performance machine.
+
+Real-Time Collaboration: Just like Google Docs, you can share Colab notebooks with others and collaborate in real-time, making it easier to work with classmates or colleagues on code-based projects.
+
+### Anaconda vs Google Colab:
+
+| Feature                | Anaconda (Local Setup)                                          | Google Colab (Cloud)                                        |
+|------------------------|----------------------------------------------------------------|-------------------------------------------------------------|
+| **Installation**        | Requires downloading and installing Anaconda, setting up environments, installing packages | No installation needed, runs in your browser                |
+| **Libraries**           | Full control over which libraries and packages you install | Pre-installed libraries (can install additional ones if needed) |
+| **Device Requirements** | Requires sufficient storage and processing power on your laptop | No device requirements, works on any browser-enabled device  |
+| **Computation Power**   | Limited by your machine’s specs (RAM, CPU, GPU)                | Uses cloud-based GPUs and TPUs, making it faster for large computations |
+| **Offline Use**         | Can be used offline                                            | Requires an internet connection                             |
+| **Storage**             | Limited by your local storage space                            | Saves notebooks to Google Drive with virtually unlimited cloud storage |
+| **Collaboration**       | Can share files manually                                       | Real-time collaboration with easy sharing (like Google Docs) |
+
+
+### When Should You Use Google Colab?
+If you're having trouble with Anaconda installation: Whether it's due to version conflicts, missing dependencies, or operating system compatibility issues, Colab removes the need to install anything on your local machine.
+
+If your laptop is underpowered: Colab allows you to run even computationally heavy code (such as deep learning models) on Google's high-performance cloud infrastructure, which may be impossible on a low-spec laptop.
+
+If you're short on storage space: Running code locally requires ample storage for libraries, data, and environments. Colab eliminates this need by storing everything in the cloud.
+
+For collaboration: If you're working on a group project, Colab’s real-time sharing features make it a breeze to collaborate.
 
 ## Required software (Legacy, pre 2024)
 
