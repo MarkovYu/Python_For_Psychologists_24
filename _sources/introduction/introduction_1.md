@@ -31,7 +31,9 @@ Not applicable, as project related work didn't start yet.
 
 ## Tasks for subsequent meeting 🖥️✍🏽📖
 
-Not applicable, as we will ease into things.
+- Get familiar with our [website](https://markovyu.github.io/Python_For_Psychologists_24/index.html)
+- Join Discord server (find invite link in the presentation, slide 19)
+- Install Anaconda Navigator, miniconda - most importantly you should have Jupiter Notebook, look [here](https://markovyu.github.io/Python_For_Psychologists_24/setup.html)
 
 ## Optional/reading/further materials
 

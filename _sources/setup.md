@@ -51,6 +51,7 @@ Install Firefox or Chrome.
 
 ### Step 1: Download Anaconda
 - Go to the [Anaconda website](https://www.anaconda.com/products/distribution).
+- [Download link version 2024.06](https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Windows-x86_64.exe)
 - Click on the "Download" button and choose the Windows version that matches your system architecture (64-bit recommended).
 
 ### Step 2: Run the Installer
@@ -70,6 +71,8 @@ Install Firefox or Chrome.
 
 ### Step 1: Download Anaconda
 - Go to the [Anaconda website](https://www.anaconda.com/products/distribution) and download the macOS installer.
+- [Download link for 64-Bit Apple silicon version 2024.06](https://repo.anaconda.com/archive/Anaconda3-2024.06-1-MacOSX-arm64.pkg)
+- [Download link for 64-Bit Intel chip version 2024.06](https://repo.anaconda.com/archive/Anaconda3-2024.06-1-MacOSX-x86_64.pkg)
 
 ### Step 2: Install Anaconda
 - Open the downloaded `.pkg` file and follow the on-screen instructions.
