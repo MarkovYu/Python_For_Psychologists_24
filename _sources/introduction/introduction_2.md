@@ -1,18 +1,32 @@
 # Introduction II
 
-This week, while I'm away on a conference in Italy, I want you to explore the basics of Jupyter Notebooks. Don't worry, you won't have to program anything by yourself at this point. I just want you to familiarize yourself with the application so that next time, we can dive right into our first Python programming session! We will also do a more in depth introduction to jupyter notebooks next week.
-All I want you to do for today, is work through this page, look at the screenshots and follow along by yourself. If you run into any issues, we will discuss them the week after when I'm back! Good luck and have fun!
+This week, we will explore the basics of Jupyter Notebooks and Colab notebooks. We will familiarize with the applications and dive right into our first Python programming session!
+
 
 ### Objectives 📍
 
-- Learn how to open jupyter notebooks locally and create your own jupyter notebook
+- Learn how to open Jupyter notebooks locally and create your own Jupyter notebook
+- Learn how to open Colab notebooks and create your own notebook
+- Learn basic and efficient usage of the Jupyter ecosystem & notebooks
+    - What is Jupyter & how to utilize Jupyter notebooks
+- Ask and answer questions
 
 ### Materials 📓
 
-None
-### tasks for subsequent meeting 🖥️✍🏽📖
+Please see the rendered version of the `jupyter notebook` [Introduction II - jupyter notebooks](https://markovyu.github.io/Python_For_Psychologists_24/introduction/intro_jupyter.html) in the `ToC` on the left.
 
-None
+### Homework 🖥️✍🏽📖
+
+You should create a `jupyter notebook` with
+- **mandatory**:  `3 different cells`:
+            - 1 rendered markdown cell within which you name your favorite movie and describe why you like it via  
+              max. 2 sentences
+            - 1 code cell with an equation (e.g. `1+1`, `(a+b)/(c+d)`, etc.)
+            - 1 raw cell with your favorite snack
+- **optional**: try to include a picture of your favorite animal
+- save the notebook and e-mail it to **Markov@psych.uni-frankfurt.de**
+
+Please note that the deadline for the assignment is: **XXX**.
 
 ## Open jupyter notebook
 
@@ -37,3 +51,14 @@ The last thing I want you to do, is open your own notebook and save it. Click on
 <img align="center" src="https://raw.githubusercontent.com/aylinsgl/Python_For_Psychologists_23-24/master/lecture/static/open_new_nb.png" alt="new" title=" " width="900" height="600" />
 
 Tada! now you can save this notebook under `File` `save as`. We will go from here next time. If you're eager to explore more, feel free to do so, for example [over here](https://jupyter-notebook.readthedocs.io/en/latest/notebook.html). 
+
+## Optional/reading/further materials 📓
+
+Google Colab intro [file](https://colab.research.google.com/notebooks/intro.ipynb)
+Google Colab features [file](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
+Google Colab Markdown [file](https://colab.research.google.com/notebooks/markdown_guide.ipynb)
+
+`Fernando Perez`' presentation on `From interactive exploration to reproducible data science: Jupyter` from [NeuroHackademy](https://neurohackademy.org/) 2020.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nXA39_eW3Q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

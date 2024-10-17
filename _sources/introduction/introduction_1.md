@@ -17,7 +17,7 @@ First things first: what is going to happen in this course? What is it all about
     - Who?
     - What?
     - How?
-- get the necessary software  
+- Get the necessary software  
 - Ask and answer questions
 - Have a great time
 
@@ -29,11 +29,11 @@ First things first: what is going to happen in this course? What is it all about
 
 Not applicable, as project related work didn't start yet.
 
-## tasks for subsequent meeting 🖥️✍🏽📖
+## Tasks for subsequent meeting 🖥️✍🏽📖
 
 Not applicable, as we will ease into things.
 
-## optional/reading/further materials
+## Optional/reading/further materials
 
 Here are some things that you could check out further regarding the topics discussed
 
