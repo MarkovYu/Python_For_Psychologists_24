@@ -54,9 +54,9 @@ Tada! now you can save this notebook under `File` `save as`. We will go from her
 
 ## Optional/reading/further materials 📓
 
-Google Colab intro [file](https://colab.research.google.com/notebooks/intro.ipynb)
-Google Colab features [file](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
-Google Colab Markdown [file](https://colab.research.google.com/notebooks/markdown_guide.ipynb)
+- Google Colab intro [file](https://colab.research.google.com/notebooks/intro.ipynb)
+- Google Colab features [file](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
+- Google Colab Markdown [file](https://colab.research.google.com/notebooks/markdown_guide.ipynb)
 
 `Fernando Perez`' presentation on `From interactive exploration to reproducible data science: Jupyter` from [NeuroHackademy](https://neurohackademy.org/) 2020.
 

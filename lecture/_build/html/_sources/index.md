@@ -1,5 +1,5 @@
 
-<img align="right" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/pfp_logo.png" alt="logo" title="Twitter" width="500" height="300" />
+<img align="right" src="https://raw.githubusercontent.com/MarkovYu/Python_For_Psychologists_24/main/lecture/static/pfp_logo.png" alt="logo" title="Python" width="500" height="300" />
 
 # Welcome!
 
