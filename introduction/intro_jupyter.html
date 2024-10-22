@@ -493,17 +493,29 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-we-get-started">Before we get started…</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives 📍</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-an-ide">What is an IDE?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-python-ides">Comparing Python IDEs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#which-one-should-you-choose">Which One Should You Choose?</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#to-jupyter-beyond">To Jupyter &amp; beyond</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">To Jupyter &amp; beyond</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Before we get started</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-jupyter-notebook-user-interface-ui">Understanding the Jupyter Notebook User Interface (UI)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#files-tab">Files Tab</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-notebook">The Notebook</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#header">Header</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#toolbar"><strong>Toolbar</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#body">Body</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modality">Modality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modality-of-the-cell">Modality of the cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kernel"><strong>Kernel</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#status-indicators"><strong>Status Indicators</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autosave-and-checkpoints"><strong>Autosave and Checkpoints</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-is-the-kernel-important">Why Is the Kernel Important?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mouse-navigation">Mouse navigation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-navigation">Keyboard Navigation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-following-shortcuts-have-been-found-to-be-the-most-useful-in-day-to-day-tasks">The following shortcuts have been found to be the most useful in day-to-day tasks:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown">Markdown</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-cells">Markdown Cells</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-basics">Markdown basics</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#embedded-code">Embedded code</a></li>
@@ -574,6 +586,89 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </li>
 </ul>
 </section>
+<section id="what-is-an-ide">
+<h2>What is an IDE?<a class="headerlink" href="#what-is-an-ide" title="Link to this heading">#</a></h2>
+<p>There are also many different environments through which the python interpreter can be used. Each environment has different advantages and is suitable for different workflows. One strength of python is that it is versatile and can be used in complementary ways, but it can be confusing for beginners so we will start with a brief survey of python environments that are useful for scientific computing.</p>
+<p>An Integrated Development Environment (IDE) is a type of software that provides all the tools you need to write and run code in one place. It typically includes a text editor (for writing code), a terminal (to run code), and debugging tools (to help fix errors).</p>
+<p>It is much easier to work in IDE compared to boring console.</p>
+<p>Common IDEs for Python include:</p>
+<ul class="simple">
+<li><p>Jupyter Notebook: Ideal for interactive data analysis and visualizations.</p></li>
+<li><p>PyCharm: A full-featured IDE for larger Python projects.</p></li>
+<li><p>Spyder: A scientific Python IDE that resembles Matlab, popular in research fields.</p></li>
+<li><p>Visual Studio Code (VS Code): A lightweight but powerful code editor with Python support.</p></li>
+</ul>
+</section>
+<section id="comparing-python-ides">
+<h2>Comparing Python IDEs<a class="headerlink" href="#comparing-python-ides" title="Link to this heading">#</a></h2>
+<p>When working with Python, there are several IDEs (Integrated Development Environments) that you can choose from, each with its own strengths. Below is a comparison of popular IDEs that are commonly used in data analysis, programming, and research, especially relevant to psychologists.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>IDE</strong></p></th>
+<th class="head"><p><strong>Strengths</strong></p></th>
+<th class="head"><p><strong>Best Suited For</strong></p></th>
+<th class="head"><p><strong>Limitations</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Jupyter Notebook</strong></p></td>
+<td><p>- Interactive interface with live code, text, and visuals in one place</p></td>
+<td><p>- Data analysis, exploratory research, teaching</p></td>
+<td><p>- Not suitable for larger, complex projects</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>- Supports rich text formatting with Markdown</p></td>
+<td><p>- Prototyping, behavioral experiments</p></td>
+<td><p>- Requires installing Jupyter or using a cloud platform</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>- Ideal for visualizing results immediately</p></td>
+<td><p></p></td>
+<td><p>- Limited debugging features</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>PyCharm</strong></p></td>
+<td><p>- Full-featured IDE with advanced debugging and project management tools</p></td>
+<td><p>- Large-scale projects, complex applications</p></td>
+<td><p>- Can be overwhelming for beginners</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>- Supports version control (Git), code refactoring, and package management</p></td>
+<td><p>- Code-heavy research with many files</p></td>
+<td><p>- Free version (Community) lacks some professional features</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Spyder</strong></p></td>
+<td><p>- Designed specifically for scientific computing and data analysis</p></td>
+<td><p>- Users transitioning from Matlab/R</p></td>
+<td><p>- Interface can feel outdated and less polished</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>- Built-in support for scientific libraries (NumPy, SciPy, Matplotlib, etc.)</p></td>
+<td><p>- Small to mid-sized research projects</p></td>
+<td><p>- Limited features compared to PyCharm</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Visual Studio Code</strong></p></td>
+<td><p>- Lightweight, highly customizable with extensions</p></td>
+<td><p>- General programming, lightweight projects</p></td>
+<td><p>- Requires setting up Python environment manually</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>- Supports many languages, including Python</p></td>
+<td><p>- Cross-discipline research</p></td>
+<td><p>- Lacks built-in data science tools (needs extensions like Jupyter)</p></td>
+</tr>
+</tbody>
+</table>
+<section id="which-one-should-you-choose">
+<h3>Which One Should You Choose?<a class="headerlink" href="#which-one-should-you-choose" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Jupyter Notebook</strong> is ideal if you’re looking to analyze data, create visualizations, or write up experiments in an easy-to-follow, interactive format. It’s widely used in research, particularly in psychology, due to its real-time feedback and ease of use.</p></li>
+<li><p><strong>PyCharm</strong> is better suited for larger, more complex projects where managing multiple files, debugging, and using version control (like Git) is important. It’s feature-rich, but the learning curve can be steep.</p></li>
+<li><p><strong>Spyder</strong> is great for scientific computing and users who are transitioning from tools like Matlab. It’s particularly handy if you’re doing data analysis, and its interface is tailored for research.</p></li>
+<li><p><strong>Visual Studio Code</strong> offers flexibility and speed, making it a good option for lightweight development across various programming languages. It’s highly customizable but may require additional setup for data science tasks.</p></li>
+</ul>
+<p>Ultimately, the best IDE for you depends on your needs—whether you’re focusing on small experiments, large data analysis projects, or learning Python from scratch.</p>
+</section>
+</section>
 <section id="to-jupyter-beyond">
 <h2>To Jupyter &amp; beyond<a class="headerlink" href="#to-jupyter-beyond" title="Link to this heading">#</a></h2>
 <img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/jupyter_ecosystem.png" alt="logo" title="jupyter" width="500" height="200" /> 
@@ -596,6 +691,10 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <p>Open Anaconda Navigator and launch the Jupyter Notebook Application</p>
 <p>If you’re not automatically directed to a webpage copy the URL (<code class="docutils literal notranslate"><span class="pre">https://....</span></code>) printed in the <code class="docutils literal notranslate"><span class="pre">terminal</span></code> and paste it in your <code class="docutils literal notranslate"><span class="pre">browser</span></code></p>
 </section>
+<section id="understanding-the-jupyter-notebook-user-interface-ui">
+<h2>Understanding the Jupyter Notebook User Interface (UI)<a class="headerlink" href="#understanding-the-jupyter-notebook-user-interface-ui" title="Link to this heading">#</a></h2>
+<p>Jupyter Notebook is an interactive environment for writing, running, and visualizing code. When you open a Jupyter Notebook, you’ll see the following main components in its user interface</p>
+</section>
 <section id="files-tab">
 <h2>Files Tab<a class="headerlink" href="#files-tab" title="Link to this heading">#</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">files</span> <span class="pre">tab</span></code> provides an interactive view of the portion of the <code class="docutils literal notranslate"><span class="pre">filesystem</span></code> which is accessible by the <code class="docutils literal notranslate"><span class="pre">user</span></code>. This is typically rooted by the directory in which the notebook server was started.</p>
@@ -612,6 +711,20 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <h3>Header<a class="headerlink" href="#header" title="Link to this heading">#</a></h3>
 <p>At the top of the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">document</span></code> is a <code class="docutils literal notranslate"><span class="pre">header</span></code> which contains the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">title</span></code>, a <code class="docutils literal notranslate"><span class="pre">menubar</span></code>, and <code class="docutils literal notranslate"><span class="pre">toolbar</span></code>. This <code class="docutils literal notranslate"><span class="pre">header</span></code> remains <code class="docutils literal notranslate"><span class="pre">fixed</span></code> at the top of the screen, even as the <code class="docutils literal notranslate"><span class="pre">body</span></code> of the <code class="docutils literal notranslate"><span class="pre">notebook</span></code> is <code class="docutils literal notranslate"><span class="pre">scrolled</span></code>. The <code class="docutils literal notranslate"><span class="pre">title</span></code> can be edited <code class="docutils literal notranslate"><span class="pre">in-place</span></code> (which renames the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">file</span></code>), and the <code class="docutils literal notranslate"><span class="pre">menubar</span></code> and <code class="docutils literal notranslate"><span class="pre">toolbar</span></code> contain a variety of actions which control <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">navigation</span></code> and <code class="docutils literal notranslate"><span class="pre">document</span> <span class="pre">structure</span></code>.</p>
 <img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/notebook_header_4_0.png" alt="logo" title="jupyter" width="600" height="100" /> </section>
+<section id="toolbar">
+<h3><strong>Toolbar</strong><a class="headerlink" href="#toolbar" title="Link to this heading">#</a></h3>
+<p>At the top of each notebook, there’s a toolbar with several options:</p>
+<ul class="simple">
+<li><p><strong>File</strong>: This menu allows you to create, save, rename, download, and close your notebook.</p></li>
+<li><p><strong>Edit</strong>: Provides options to undo/redo, cut, copy, paste cells, and more.</p></li>
+<li><p><strong>View</strong>: Allows you to toggle visibility of the toolbar, line numbers, and more.</p></li>
+<li><p><strong>Insert</strong>: Lets you insert new code or markdown cells.</p></li>
+<li><p><strong>Cell</strong>: This is crucial for running code in Jupyter. You can use it to run, stop, or restart the code cells.</p></li>
+<li><p><strong>Kernel</strong>: Options for starting, restarting, or shutting down the kernel (explained below).</p></li>
+<li><p><strong>Widgets</strong> in Jupyter Notebook are UI controls (like sliders, buttons, and dropdowns) that allow you to create interactive elements in your notebook. With widgets, you can build interactive forms, visualizations, or even entire applications inside your notebook.</p></li>
+<li><p><strong>Help</strong>: Provides links to official Jupyter documentation and shortcuts.</p></li>
+</ul>
+</section>
 <section id="body">
 <h3>Body<a class="headerlink" href="#body" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">body</span></code> of a <code class="docutils literal notranslate"><span class="pre">notebook</span></code> is composed of <code class="docutils literal notranslate"><span class="pre">cells</span></code>. Each <code class="docutils literal notranslate"><span class="pre">cell</span></code> contains either <code class="docutils literal notranslate"><span class="pre">markdown</span></code>, <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">input</span></code>, <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">output</span></code>, or <code class="docutils literal notranslate"><span class="pre">raw</span> <span class="pre">text</span></code>. <code class="docutils literal notranslate"><span class="pre">Cells</span></code> can be included in any order and edited at-will, allowing for a large amount of flexibility for constructing a narrative.</p>
@@ -641,12 +754,59 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </ul>
 <img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/notebook_body_4_0.png" alt="logo" title="jupyter" width="700" height="200" />
 </section>
-<section id="modality">
-<h3>Modality<a class="headerlink" href="#modality" title="Link to this heading">#</a></h3>
+<section id="modality-of-the-cell">
+<h3>Modality of the cell<a class="headerlink" href="#modality-of-the-cell" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>In/Out Labels</strong>: Each code cell is labeled with <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[</span> <span class="pre">]:</span></code> before execution and updates to <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code>, <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[2]:</span></code>, etc., after it is run. The corresponding output is labeled as <code class="docutils literal notranslate"><span class="pre">Out</span> <span class="pre">[1]:</span></code>, <code class="docutils literal notranslate"><span class="pre">Out</span> <span class="pre">[2]:</span></code>, and so on.</p></li>
+</ul>
 <p>The <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">user</span> <span class="pre">interface</span></code> is <code class="docutils literal notranslate"><span class="pre">modal</span></code>. This means that the <code class="docutils literal notranslate"><span class="pre">keyboard</span></code> behaves <code class="docutils literal notranslate"><span class="pre">differently</span></code> depending upon the <code class="docutils literal notranslate"><span class="pre">current</span> <span class="pre">mode</span></code> of the <code class="docutils literal notranslate"><span class="pre">notebook</span></code>. A <code class="docutils literal notranslate"><span class="pre">notebook</span></code> has <code class="docutils literal notranslate"><span class="pre">two</span> <span class="pre">modes</span></code>: <code class="docutils literal notranslate"><span class="pre">edit</span></code> and <code class="docutils literal notranslate"><span class="pre">command</span></code>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">mode</span></code> is indicated by a <code class="docutils literal notranslate"><span class="pre">green</span> <span class="pre">cell</span> <span class="pre">border</span></code> and a <code class="docutils literal notranslate"><span class="pre">prompt</span></code> showing in the <code class="docutils literal notranslate"><span class="pre">editor</span> <span class="pre">area</span></code>. When a <code class="docutils literal notranslate"><span class="pre">cell</span></code> is in <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">mode</span></code>, you can type into the <code class="docutils literal notranslate"><span class="pre">cell</span></code>, like a <code class="docutils literal notranslate"><span class="pre">normal</span> <span class="pre">text</span> <span class="pre">editor</span></code>.</p>
 <img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/edit_mode.png" alt="logo" title="jupyter" width="700" height="100" /> <p><code class="docutils literal notranslate"><span class="pre">Command</span> <span class="pre">mode</span></code> is indicated by a <code class="docutils literal notranslate"><span class="pre">grey</span> <span class="pre">cell</span> <span class="pre">border</span></code>. When in <code class="docutils literal notranslate"><span class="pre">command</span> <span class="pre">mode</span></code>, the structure of the <code class="docutils literal notranslate"><span class="pre">notebook</span></code> can be modified as a whole, but the <code class="docutils literal notranslate"><span class="pre">text</span></code> in <code class="docutils literal notranslate"><span class="pre">individual</span> <span class="pre">cells</span></code> cannot be changed. Most importantly, the <code class="docutils literal notranslate"><span class="pre">keyboard</span></code> is <code class="docutils literal notranslate"><span class="pre">mapped</span></code> to a set of <code class="docutils literal notranslate"><span class="pre">shortcuts</span></code> for efficiently performing <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">and</span> <span class="pre">cell</span> <span class="pre">actions</span></code>. For example, pressing <code class="docutils literal notranslate"><span class="pre">c</span></code> when in <code class="docutils literal notranslate"><span class="pre">command</span></code> mode, will <code class="docutils literal notranslate"><span class="pre">copy</span></code> the <code class="docutils literal notranslate"><span class="pre">current</span> <span class="pre">cell</span></code>; no modifier is needed.</p>
 <img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/command_mode.png" alt="logo" title="jupyter" width="700" height="100" /> </section>
+<section id="kernel">
+<h3><strong>Kernel</strong><a class="headerlink" href="#kernel" title="Link to this heading">#</a></h3>
+<p>The <strong>kernel</strong> is the computational engine that runs the code you write in the notebook.</p>
+<ul class="simple">
+<li><p><strong>What is a kernel?</strong>
+A <strong>kernel</strong> is a process that runs your Python code and keeps track of your variable states, functions, imports, and other information throughout your session. When you run code in a notebook, the kernel executes the code and sends back the results to be displayed.</p></li>
+<li><p><strong>Types of Kernels</strong>: While Python is the most common language for Jupyter Notebooks, Jupyter can support other languages like R, Julia, and more by changing the kernel.</p></li>
+<li><p><strong>Kernel States</strong>:</p>
+<ul>
+<li><p><strong>Idle</strong>: The kernel is idle and ready to execute code.</p></li>
+<li><p><strong>Busy</strong>: The kernel is running code. You will see an asterisk <code class="docutils literal notranslate"><span class="pre">[*]</span></code> next to the code cell when it’s running.</p></li>
+<li><p><strong>Restarting</strong>: Sometimes, you may need to restart the kernel if it becomes unresponsive or if you want to clear all variables and reset the environment.</p></li>
+</ul>
+</li>
+<li><p><strong>Managing the Kernel</strong>:</p>
+<ul>
+<li><p>You can interrupt or restart the kernel using the “Kernel” menu in the toolbar.</p></li>
+<li><p><strong>Restarting the kernel</strong> clears all variables, functions, and code states, effectively resetting your environment.</p></li>
+<li><p>If a cell is taking too long to execute, you can interrupt the kernel, which stops its execution.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="status-indicators">
+<h3><strong>Status Indicators</strong><a class="headerlink" href="#status-indicators" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Circle in the Upper-Right Corner</strong>: This indicates the status of the kernel:</p>
+<ul>
+<li><p><strong>Empty circle</strong>: The kernel is idle, and no code is currently running.</p></li>
+<li><p><strong>Filled circle</strong>: The kernel is busy running code.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="autosave-and-checkpoints">
+<h3><strong>Autosave and Checkpoints</strong><a class="headerlink" href="#autosave-and-checkpoints" title="Link to this heading">#</a></h3>
+<p>Jupyter Notebooks automatically save your progress periodically. However, you can manually save your notebook using <strong>File &gt; Save and Checkpoint</strong> or by pressing <strong>Ctrl + S</strong>. Jupyter also creates checkpoints, so if something goes wrong, you can restore your notebook to a previously saved state.</p>
+</section>
+<hr class="docutils" />
+<section id="why-is-the-kernel-important">
+<h3>Why Is the Kernel Important?<a class="headerlink" href="#why-is-the-kernel-important" title="Link to this heading">#</a></h3>
+<p>The kernel is what makes Jupyter Notebooks interactive. It allows you to run Python code incrementally, cell by cell, and keep track of variables and data across different cells. This means you can run code, analyze data, and see results immediately without needing to run the entire program at once.</p>
+<p>If your notebook session becomes slow or unresponsive, or you need to reset your workspace, you can simply restart the kernel. This will clear all the stored information, allowing you to start fresh without reopening the notebook.</p>
+</section>
 <section id="mouse-navigation">
 <h3>Mouse navigation<a class="headerlink" href="#mouse-navigation" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">first</span> <span class="pre">concept</span></code> to understand in <code class="docutils literal notranslate"><span class="pre">mouse-based</span> <span class="pre">navigation</span></code> is that <code class="docutils literal notranslate"><span class="pre">cells</span></code> can be <code class="docutils literal notranslate"><span class="pre">selected</span> <span class="pre">by</span> <span class="pre">clicking</span> <span class="pre">on</span> <span class="pre">them</span></code>. The <code class="docutils literal notranslate"><span class="pre">currently</span> <span class="pre">selected</span> <span class="pre">cell</span></code> is indicated with a <code class="docutils literal notranslate"><span class="pre">grey</span></code> or <code class="docutils literal notranslate"><span class="pre">green</span> <span class="pre">border</span> <span class="pre">depending</span></code> on whether the <code class="docutils literal notranslate"><span class="pre">notebook</span></code> is in <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">or</span> <span class="pre">command</span> <span class="pre">mode</span></code>. Clicking inside a <code class="docutils literal notranslate"><span class="pre">cell</span></code>’s <code class="docutils literal notranslate"><span class="pre">editor</span> <span class="pre">area</span></code> will enter <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">mode</span></code>. Clicking on the <code class="docutils literal notranslate"><span class="pre">prompt</span></code> or the <code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">area</span></code> of a <code class="docutils literal notranslate"><span class="pre">cell</span></code> will enter <code class="docutils literal notranslate"><span class="pre">command</span> <span class="pre">mode</span></code>.</p>
@@ -671,6 +831,17 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <li><p><code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">operations</span></code>: <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">.</span></code></p></li>
 </ul>
 <p>Additionally, you should get in the habit of using <code class="docutils literal notranslate"><span class="pre">Tab</span></code> to auto-complete your code. This not only speeds up things, but also makes sure that your variable and file names or the specific function you want to use is actually spelled correctly. In <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">mode</span></code> you should further get used to use the <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">down/up/left/right</span></code> shortcuts to quickly navigate trough your code cells.</p>
+<p><strong>Note</strong>: for Mac it is <code class="docutils literal notranslate"><span class="pre">cmd</span></code> instead of <code class="docutils literal notranslate"><span class="pre">ctrl</span></code></p>
+</section>
+<section id="markdown">
+<h3>Markdown<a class="headerlink" href="#markdown" title="Link to this heading">#</a></h3>
+<p>Markdown is a lightweight markup language that is used to format plain text into structured documents. It’s widely used for writing documentation, web content, and readme files due to its simplicity and ease of readability. Markdown allows you to easily create formatted text such as headings, lists, links, and more without needing complex HTML or rich text editors.</p>
+<p><strong>Key Features of Markdown:</strong></p>
+<ul class="simple">
+<li><p>Plain Text: Markdown is written in plain text, making it easy to create and edit in any text editor.</p></li>
+<li><p>Formatting Simplicity: Instead of using buttons or complex formatting, Markdown uses simple symbols (like # for headings or * for emphasis) to add structure and style to the text.</p></li>
+<li><p>Readability: Even without rendering, Markdown files are easily readable. The plain text is structured and doesn’t require specialized software to interpret.</p></li>
+</ul>
 </section>
 <section id="markdown-cells">
 <h3>Markdown Cells<a class="headerlink" href="#markdown-cells" title="Link to this heading">#</a></h3>
@@ -741,16 +912,98 @@ If the implementation is hard to explain, it’s a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea – let’s do more of those!</p>
 </div></blockquote>
-<p>You can add headings using Markdown’s syntax:</p>
-<pre>
-# Heading 1
+<ol class="arabic simple">
+<li><p><strong>You can add headings using Markdown’s syntax:</strong></p></li>
+</ol>
+  <pre>
+  # Heading 1
+  
+  ## Heading 2.1
 
-# Heading 2
+  ## Heading 2.2
 
-## Heading 2.1
-
-## Heading 2.2
-</pre></section>
+  ### Heading 3
+  </pre>
+<ol class="arabic" start="2">
+<li><p><strong>Bold and Italic Text</strong>:</p>
+<ul>
+<li><p>To make text <strong>bold</strong>, use double asterisks (<code class="docutils literal notranslate"><span class="pre">**</span></code>) or underscores (<code class="docutils literal notranslate"><span class="pre">__</span></code>):</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gs">**This is bold text**</span>
+<span class="gs">__This is also bold text__</span>
+</pre></div>
+</div>
+</li>
+<li><p>For <em>italic</em> text, use single asterisks (<code class="docutils literal notranslate"><span class="pre">*</span></code>) or underscores (<code class="docutils literal notranslate"><span class="pre">_</span></code>):</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="ge">*This is italic text*</span>
+<span class="ge">_This is also italic text_</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Lists</strong>:</p>
+<ul>
+<li><p>Markdown supports both ordered and unordered lists.</p></li>
+<li><p><strong>Unordered list</strong>:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">-</span><span class="w"> </span>Item 1
+<span class="k">-</span><span class="w"> </span>Item 2
+<span class="k">-</span><span class="w"> </span>Item 3
+</pre></div>
+</div>
+</li>
+<li><p><strong>Ordered list</strong>:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">1.</span> First item
+<span class="k">2.</span> Second item
+<span class="k">3.</span> Third item
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Links</strong>:</p>
+<ul>
+<li><p>To create a hyperlink, use this format:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>[<span class="nt">Link Text</span>](<span class="na">http://example.com</span>)
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Images</strong>:</p>
+<ul>
+<li><p>To embed images, use a similar syntax to links but add an exclamation mark (<code class="docutils literal notranslate"><span class="pre">!</span></code>) at the beginning:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>![<span class="nt">Alt text</span>](<span class="na">http://example.com/image.jpg</span>)
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Blockquotes</strong>:</p>
+<ul>
+<li><p>For blockquotes, use the <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> symbol:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">This is a quote.</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Code Blocks</strong>:</p>
+<ul>
+<li><p>Inline code can be written using backticks:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="sb">`This is inline code.`</span>
+</pre></div>
+</div>
+</li>
+<li><p>For code blocks, use triple backticks:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Code block&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</section>
 <section id="embedded-code">
 <h3>Embedded code<a class="headerlink" href="#embedded-code" title="Link to this heading">#</a></h3>
 <p>You can embed code meant for illustration instead of execution in Python:</p>
@@ -1359,17 +1612,29 @@ df -h
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-we-get-started">Before we get started…</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives 📍</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-an-ide">What is an IDE?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-python-ides">Comparing Python IDEs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#which-one-should-you-choose">Which One Should You Choose?</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#to-jupyter-beyond">To Jupyter &amp; beyond</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">To Jupyter &amp; beyond</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Before we get started</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-jupyter-notebook-user-interface-ui">Understanding the Jupyter Notebook User Interface (UI)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#files-tab">Files Tab</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-notebook">The Notebook</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#header">Header</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#toolbar"><strong>Toolbar</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#body">Body</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modality">Modality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modality-of-the-cell">Modality of the cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kernel"><strong>Kernel</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#status-indicators"><strong>Status Indicators</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autosave-and-checkpoints"><strong>Autosave and Checkpoints</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-is-the-kernel-important">Why Is the Kernel Important?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mouse-navigation">Mouse navigation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-navigation">Keyboard Navigation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-following-shortcuts-have-been-found-to-be-the-most-useful-in-day-to-day-tasks">The following shortcuts have been found to be the most useful in day-to-day tasks:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown">Markdown</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-cells">Markdown Cells</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-basics">Markdown basics</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#embedded-code">Embedded code</a></li>
