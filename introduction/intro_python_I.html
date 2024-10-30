@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction IV - Introduction to Python - I &#8212; Winter - 2024</title>
+    <title>Introduction III - Introduction to Python - I &#8212; Winter - 2024</title>
   
   
   
@@ -182,7 +182,7 @@
 </ul>
 </details></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="introduction_4.html">Introduction III</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Introduction IV - Introduction to Python - I</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Introduction III - Introduction to Python - I</a></li>
 </ul>
 </details></li>
 </ul>
@@ -470,7 +470,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction IV - Introduction to Python - I</h1>
+    <h1>Introduction III - Introduction to Python - I</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -505,6 +505,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-and-data-types">Variables and data types</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-and-types">Variables and types</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#symbol-names">Symbol names</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-variables-in-python">Naming Variables in Python</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment">Assignment</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-1">Exercise 2.1</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-2">Exercise 2.2</a></li>
@@ -514,7 +515,13 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-types-data-structures">Fundamental types &amp; data structures</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#integers">Integers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#floating-point-numbers">Floating-point numbers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-e-or-e-in-floats-for-scientific-notation-in-python">Using <code class="docutils literal notranslate"><span class="pre">e</span></code> or <code class="docutils literal notranslate"><span class="pre">E</span></code> in Floats for Scientific Notation in Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax">Syntax</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-in-code">Examples in Code</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#escape-sequences-in-strings">Escape Sequences in Strings</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-escape-sequences-in-python">Common Escape Sequences in Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-escape-sequences-in-code">Examples of Escape Sequences in Code</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#booleans">Booleans</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-data-types">Converting data types</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-1">Exercise 3.1</a></li>
@@ -550,8 +557,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction-iv-introduction-to-python-i">
-<h1>Introduction IV - Introduction to Python - I<a class="headerlink" href="#introduction-iv-introduction-to-python-i" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-iii-introduction-to-python-i">
+<h1>Introduction III - Introduction to Python - I<a class="headerlink" href="#introduction-iii-introduction-to-python-i" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="https://github.com/M-earnest">Michael Ernst</a><br />
 Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fiebach Lab</a>, <a class="reference external" href="https://www.psychologie.uni-frankfurt.de/49868684/Abteilungen">Neurocognitive Psychology</a> at <a class="reference external" href="https://www.goethe-university-frankfurt.de/en?locale=en">Goethe-University Frankfurt</a></p>
 <p>Adapted by: <a class="reference external" href="https://www.aylinkallmayer.com">Aylin Kallmayer</a>, <a class="reference external" href="https://www.scenegrammarlab.com">Scene-Grammar-Lab</a></p>
@@ -565,6 +572,7 @@ Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fi
 <li><p>based on <a class="reference external" href="http://github.com/jrjohansson/scientific-python-lectures">IPython notebooks from J. R. Johansson</a></p></li>
 <li><p>based on <a class="reference external" href="http://www.stavros.io/tutorials/python/">http://www.stavros.io/tutorials/python/</a> &amp; <a class="reference external" href="http://www.swaroopch.com/notes/python">http://www.swaroopch.com/notes/python</a></p></li>
 <li><p>based on <a class="github reference external" href="https://github.com/oesteban/biss2016">oesteban/biss2016</a> &amp;  <a class="github reference external" href="https://github.com/jvns/pandas-cookbook">jvns/pandas-cookbook</a></p></li>
+<li><p>based on <a class="reference external" href="https://realpython.com/python-data-types/">Real Python</a></p></li>
 </ul>
 <p><a class="reference external" href="https://peerherholz.github.io/">Peer Herholz (he/him)</a><br />
 Research affiliate - <a class="reference external" href="https://neurodatascience.github.io/">NeuroDataScience lab</a> at <a class="reference external" href="https://www.mcgill.ca/neuro/">MNI</a>/<a class="reference external" href="https://www.mit.edu/">MIT</a><br />
@@ -829,7 +837,8 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <section id="exercise-1-1">
 <h3>Exercise 1.1<a class="headerlink" href="#exercise-1-1" title="Link to this heading">#</a></h3>
 <p>Import the <code class="docutils literal notranslate"><span class="pre">max</span></code> from <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and find out what it does.</p>
-<p><em><strong>note</strong>: the <code class="docutils literal notranslate"><span class="pre">#</span></code> character tells python not to run the following code in that line. It is therefore used to embedd comments in our code while avoiding errors. You can try deleting the <code class="docutils literal notranslate"><span class="pre">#</span></code> and see what happens.</em></p>
+<p><em><strong>note</strong>: the <code class="docutils literal notranslate"><span class="pre">#</span></code> character tells python not to run the following code in that line. It is therefore used to embeded comments in our code while avoiding errors. You can try deleting the <code class="docutils literal notranslate"><span class="pre">#</span></code> and see what happens.</em></p>
+<p><em><strong>note</strong>: comments could be also used to disable written code to debug the code</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write your solution in this code cell</span>
@@ -877,6 +886,14 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </ul>
 </li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try running this code</span>
+<span class="kn">import</span> <span class="nn">MaTh</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="help-and-descriptions">
 <h2>Help and Descriptions<a class="headerlink" href="#help-and-descriptions" title="Link to this heading">#</a></h2>
@@ -933,7 +950,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </li>
 <li><p>We don’t specify a variable’s type at assignment</p></li>
 </ul>
-</section>
+<center><img src="https://programmerhumor.io/wp-content/uploads/2022/05/programmerhumor-io-python-memes-backend-memes-175a49456dd8c94.jpg" width="400" height="400"></center></section>
 <section id="variables-and-types">
 <h2>Variables and types<a class="headerlink" href="#variables-and-types" title="Link to this heading">#</a></h2>
 <section id="symbol-names">
@@ -944,6 +961,26 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, with, yield
 </pre></div>
 </div>
+<p>Variable names:</p>
+<ul class="simple">
+<li><p>Can include <code class="docutils literal notranslate"><span class="pre">letters</span></code> (A-Z), <code class="docutils literal notranslate"><span class="pre">digits</span></code> (0-9), and <code class="docutils literal notranslate"><span class="pre">underscores</span></code> ( _ )</p></li>
+<li><p>Cannot start with a <code class="docutils literal notranslate"><span class="pre">digit</span></code></p></li>
+<li><p>Are <strong>case sensitive</strong> (question: where did “lower/upper case” originate?)</p></li>
+</ul>
+<p>This means that, for example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">shire0</span></code> is a valid variable name, whereas <code class="docutils literal notranslate"><span class="pre">0shire</span></code> is not</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">shire</span></code> and <code class="docutils literal notranslate"><span class="pre">Shire</span></code> are different variables</p></li>
+</ul>
+</section>
+<section id="naming-variables-in-python">
+<h3>Naming Variables in Python<a class="headerlink" href="#naming-variables-in-python" title="Link to this heading">#</a></h3>
+<p>In Python, variable names should be descriptive, easy to read, and follow certain conventions to improve code readability and maintainability. Variables should use <strong>snake_case</strong>, where words are lowercase and separated by underscores (e.g., <code class="docutils literal notranslate"><span class="pre">user_name</span></code>, <code class="docutils literal notranslate"><span class="pre">total_price</span></code>). Additionally, keep names meaningful to indicate their purpose in the code, which makes your code more understandable for yourself and others who may read it later.</p>
+<center><img src="https://i.redd.it/bncs74w0fxk61.png" height="800"></center><ul class="simple">
+<li><p>CamelCase: Used for class names (MyClass, DataProcessor).</p></li>
+<li><p>snake_case: Used for variables, functions, and methods (my_variable, calculate_total).</p></li>
+<li><p>UPPERCASE: Used for constants (MAX_SIZE, DEFAULT_TIMEOUT)</p></li>
+</ul>
 </section>
 <section id="assignment">
 <h3>Assignment<a class="headerlink" href="#assignment" title="Link to this heading">#</a></h3>
@@ -1022,7 +1059,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <p>We don’t get an error like “This <code class="docutils literal notranslate"><span class="pre">namespace</span></code> is already taken.” Thus, always remember/keep track of what <code class="docutils literal notranslate"><span class="pre">namespaces</span></code> were already used to avoid unintentional deletions/errors (reproducibility/replicability much?).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">icon</span> <span class="o">=</span> <span class="s1">&#39;Rei Kawakubo&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">icon</span> <span class="o">=</span> <span class="s1">&#39;Hideo Kojima&#39;</span>
 <span class="n">icon</span>
 </pre></div>
 </div>
@@ -1035,7 +1072,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">icon</span> <span class="o">=</span> <span class="s1">&#39;Yohji Yamamoto&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">icon</span> <span class="o">=</span> <span class="s1">&#39;Keanu Reeves&#39;</span>
 <span class="n">icon</span>
 </pre></div>
 </div>
@@ -1049,17 +1086,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <p>If we try to use a variable that has not yet been defined we get an <code class="docutils literal notranslate"><span class="pre">NameError</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">god</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">aylinkallmayer</span><span class="o">/</span><span class="n">Dropbox</span><span class="o">/</span><span class="n">Promotion</span><span class="o">/</span><span class="mi">05</span><span class="o">-</span><span class="n">Teaching</span><span class="o">/</span><span class="mi">2023</span><span class="n">_Python</span><span class="o">-</span><span class="n">seminar</span><span class="o">/</span><span class="n">Python_For_Psychologists_23</span><span class="o">-</span><span class="mi">24</span><span class="o">/</span><span class="n">lecture</span><span class="o">/</span><span class="n">introduction</span><span class="o">/</span><span class="n">intro_python_I</span><span class="o">.</span><span class="n">ipynb</span> <span class="n">Cell</span> <span class="mi">63</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="o">----&gt;</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;vscode-notebook-cell:/Users/aylinkallmayer/Dropbox/Promotion/05-Teaching/2023_Python-seminar/Python_For_Psychologists_23-24/lecture/introduction/intro_python_I.ipynb#Y130sZmlsZQ%3D%3D?line=0&#39;</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="n">god</span>
-
-<span class="ne">NameError</span>: name &#39;god&#39; is not defined
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">star</span>
 </pre></div>
 </div>
 </div>
@@ -1082,17 +1109,6 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<p>Variable names:</p>
-<ul class="simple">
-<li><p>Can include <code class="docutils literal notranslate"><span class="pre">letters</span></code> (A-Z), <code class="docutils literal notranslate"><span class="pre">digits</span></code> (0-9), and <code class="docutils literal notranslate"><span class="pre">underscores</span></code> ( _ )</p></li>
-<li><p>Cannot start with a <code class="docutils literal notranslate"><span class="pre">digit</span></code></p></li>
-<li><p>Are <strong>case sensitive</strong> (question: where did “lower/upper case” originate?)</p></li>
-</ul>
-<p>This means that, for example:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">shire0</span></code> is a valid variable name, whereas <code class="docutils literal notranslate"><span class="pre">0shire</span></code> is not</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shire</span></code> and <code class="docutils literal notranslate"><span class="pre">Shire</span></code> are different variables</p></li>
-</ul>
 <section id="exercise-2-1">
 <h4>Exercise 2.1<a class="headerlink" href="#exercise-2-1" title="Link to this heading">#</a></h4>
 <p>Create the following variables: <code class="docutils literal notranslate"><span class="pre">n_underwear</span></code>, <code class="docutils literal notranslate"><span class="pre">n_shirts</span></code>, <code class="docutils literal notranslate"><span class="pre">n_socks</span></code> with the respective values <code class="docutils literal notranslate"><span class="pre">7</span></code>, <code class="docutils literal notranslate"><span class="pre">3.0</span></code> and <code class="docutils literal notranslate"><span class="pre">14</span></code>.</p>
@@ -1147,7 +1163,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <li><p><code class="docutils literal notranslate"><span class="pre">Boolean</span></code> (<code class="docutils literal notranslate"><span class="pre">True</span></code>, <code class="docutils literal notranslate"><span class="pre">False</span></code>)</p></li>
 </ul>
 <p>If you’re unsure about the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> of a given <code class="docutils literal notranslate"><span class="pre">variable</span></code>, you can always use the <code class="docutils literal notranslate"><span class="pre">type()</span></code> command.</p>
-<section id="integers">
+<center><img src="https://realpython.com/cdn-cgi/image/width=960,format=auto/https://files.realpython.com/media/Basic-Data-Types-in-Python_Watermarked.e3dd34457952.jpg" height="400"></center><section id="integers">
 <h4>Integers<a class="headerlink" href="#integers" title="Link to this heading">#</a></h4>
 <p>Lets check out the different <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code> in more detail, starting with <code class="docutils literal notranslate"><span class="pre">integers</span></code>. <code class="docutils literal notranslate"><span class="pre">Intergers</span></code> are <em>natural numbers</em> that can be <em>signed</em> (e.g. <code class="docutils literal notranslate"><span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">42</span></code>, <code class="docutils literal notranslate"><span class="pre">180</span></code>, <code class="docutils literal notranslate"><span class="pre">-1</span></code>, <code class="docutils literal notranslate"><span class="pre">-42</span></code>, <code class="docutils literal notranslate"><span class="pre">-180</span></code>).</p>
 <div class="cell docutils container">
@@ -1189,10 +1205,26 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+<p>Python has no limit to how long an integer value can be. The only constraint is the amount of memory your system has. Beyond that, an integer can be as long as you need:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">123123123123123123123123123123123123123123123123</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>When you’re working with long integers, you can use the underscore character to make the literals more readable:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1_000_000</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="floating-point-numbers">
 <h4>Floating-point numbers<a class="headerlink" href="#floating-point-numbers" title="Link to this heading">#</a></h4>
-<p>So what’s the difference to <code class="docutils literal notranslate"><span class="pre">floating-point</span> <span class="pre">numbers</span></code>? <code class="docutils literal notranslate"><span class="pre">Floating-point</span> <span class="pre">numbers</span></code> are <em>decimal-point numbers</em> that can be <em>signed</em> (e.g. <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">42.42</span></code>, <code class="docutils literal notranslate"><span class="pre">180.90</span></code>, <code class="docutils literal notranslate"><span class="pre">-1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">-42.42</span></code>, <code class="docutils literal notranslate"><span class="pre">-180.90</span></code>).</p>
+<p>So what’s the difference to <code class="docutils literal notranslate"><span class="pre">floating-point</span> <span class="pre">numbers</span></code>? <code class="docutils literal notranslate"><span class="pre">Floating-point</span> <span class="pre">numbers</span></code> are <em>decimal-point numbers</em> that can be <em>signed</em> (e.g. <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">42.42</span></code>, <code class="docutils literal notranslate"><span class="pre">180.90</span></code>, <code class="docutils literal notranslate"><span class="pre">-1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">-42.42</span></code>, <code class="docutils literal notranslate"><span class="pre">-180.90</span></code>, and even <code class="docutils literal notranslate"><span class="pre">.5</span></code> or <code class="docutils literal notranslate"><span class="pre">1.</span></code>).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_float</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -1233,10 +1265,37 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </section>
+<section id="using-e-or-e-in-floats-for-scientific-notation-in-python">
+<h4>Using <code class="docutils literal notranslate"><span class="pre">e</span></code> or <code class="docutils literal notranslate"><span class="pre">E</span></code> in Floats for Scientific Notation in Python<a class="headerlink" href="#using-e-or-e-in-floats-for-scientific-notation-in-python" title="Link to this heading">#</a></h4>
+<p>In Python, the lowercase <code class="docutils literal notranslate"><span class="pre">e</span></code> or uppercase <code class="docutils literal notranslate"><span class="pre">E</span></code> is used to represent <strong>scientific notation</strong>, which makes it easy to work with very large or very small floating-point numbers.</p>
+</section>
+<section id="syntax">
+<h4>Syntax<a class="headerlink" href="#syntax" title="Link to this heading">#</a></h4>
+<p>The format for scientific notation is <code class="docutils literal notranslate"><span class="pre">&lt;mantissa&gt;e&lt;exponent&gt;</span></code>. The number before <code class="docutils literal notranslate"><span class="pre">e</span></code> (called the <strong>mantissa</strong>) is multiplied by 10 raised to the power of the number following <code class="docutils literal notranslate"><span class="pre">e</span></code> (the <strong>exponent</strong>).</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">1e3</span></code> represents (1 x 10^3), which equals <code class="docutils literal notranslate"><span class="pre">1000.0</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">2.5E-4</span></code> represents (2.5 x 10^{-4}), which equals <code class="docutils literal notranslate"><span class="pre">0.00025</span></code>.</p></li>
+</ul>
+</section>
+<section id="examples-in-code">
+<h4>Examples in Code<a class="headerlink" href="#examples-in-code" title="Link to this heading">#</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Positive exponent</span>
+<span class="nb">print</span><span class="p">(</span><span class="mf">1.5e3</span><span class="p">)</span>  <span class="c1"># Output: 1500.0</span>
+
+<span class="c1"># Negative exponent</span>
+<span class="nb">print</span><span class="p">(</span><span class="mf">2.5E-4</span><span class="p">)</span>  <span class="c1"># Output: 0.00025</span>
+
+<span class="c1"># Using in calculations</span>
+<span class="n">result</span> <span class="o">=</span> <span class="mf">5e2</span> <span class="o">+</span> <span class="mf">3.2E3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># Output: 3700.0</span>
+</pre></div>
+</div>
+</section>
 <section id="strings">
 <h4>Strings<a class="headerlink" href="#strings" title="Link to this heading">#</a></h4>
 <p>Next up: <code class="docutils literal notranslate"><span class="pre">strings</span></code>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">Strings</span></code> are basically <code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">elements</span></code>, from <code class="docutils literal notranslate"><span class="pre">letters</span></code> to <code class="docutils literal notranslate"><span class="pre">words</span></code> to <code class="docutils literal notranslate"><span class="pre">sentences</span></code> all are encoded as <code class="docutils literal notranslate"><span class="pre">strings</span></code> in <code class="docutils literal notranslate"><span class="pre">python</span></code>. In order to define a <code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">Python</span></code> needs <strong>quotation marks</strong>, more precisely <code class="docutils literal notranslate"><span class="pre">strings</span></code> start and end with quotation marks, e.g. <code class="docutils literal notranslate"><span class="pre">&quot;Rivendell&quot;</span></code>. You can choose between <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">'</span></code> as both will work (NB: <code class="docutils literal notranslate"><span class="pre">python</span></code> will put <code class="docutils literal notranslate"><span class="pre">'</span></code> around <code class="docutils literal notranslate"><span class="pre">strings</span></code> even if you specified <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>). However, it is recommended to decide on one and be consistent.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Strings</span></code> are basically <code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">elements</span></code>, from <code class="docutils literal notranslate"><span class="pre">letters</span></code> to <code class="docutils literal notranslate"><span class="pre">words</span></code> to <code class="docutils literal notranslate"><span class="pre">sentences</span></code> all are encoded as <code class="docutils literal notranslate"><span class="pre">strings</span></code> in <code class="docutils literal notranslate"><span class="pre">python</span></code>. In order to define a <code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">Python</span></code> needs <strong>quotation marks</strong>, more precisely <code class="docutils literal notranslate"><span class="pre">strings</span></code> start and end with quotation marks, e.g. <code class="docutils literal notranslate"><span class="pre">&quot;Frankfurt&quot;</span></code>. You can choose between <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">'</span></code> as both will work (NB: <code class="docutils literal notranslate"><span class="pre">python</span></code> will put <code class="docutils literal notranslate"><span class="pre">'</span></code> around <code class="docutils literal notranslate"><span class="pre">strings</span></code> even if you specified <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>). However, it is recommended to decide on one and be consistent.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;Frankfurt&quot;</span>
@@ -1275,6 +1334,124 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </pre></div>
 </div>
 </div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># what is this?</span>
+<span class="n">str_example</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">str_example</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># but how to use &quot; and &#39; in a string?</span>
+<span class="n">str_example</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;A triple-quoted string in a single line&quot;&quot;&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">str_example</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">str_example</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;Another triple-quoted string in a single line&#39;&#39;&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">str_example</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># but how to use &quot; and &#39; in a string?</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This string contains a single quote (&#39;</span><span class="p">)</span> <span class="n">character</span><span class="s1">&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">str_example</span> <span class="o">=</span> <span class="s2">&quot;This string contains a single quote (&#39;) character&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">str_example</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">str_example</span> <span class="o">=</span> <span class="s1">&#39;This string contains a double quote (&quot;) character&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">str_example</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="escape-sequences-in-strings">
+<h4>Escape Sequences in Strings<a class="headerlink" href="#escape-sequences-in-strings" title="Link to this heading">#</a></h4>
+<p><strong>Escape sequences</strong> are special characters in a string, starting with a backslash (<code class="docutils literal notranslate"><span class="pre">\</span></code>), that let you insert characters that are otherwise difficult to type directly, like newline characters, tabs, or quotes.</p>
+</section>
+<section id="common-escape-sequences-in-python">
+<h4>Common Escape Sequences in Python<a class="headerlink" href="#common-escape-sequences-in-python" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Escape Sequence</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example Usage</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\'</span></code></p></td>
+<td><p>Single quote</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'It\'s</span> <span class="pre">Python!'</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">It's</span> <span class="pre">Python!</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\&quot;</span></code></p></td>
+<td><p>Double quote</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;She</span> <span class="pre">said</span> <span class="pre">\&quot;Hello!\&quot;&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">She</span> <span class="pre">said</span> <span class="pre">&quot;Hello!&quot;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\\</span></code></p></td>
+<td><p>Backslash</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;C:\\Users\\Name&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">C:\Users\Name</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\n</span></code></p></td>
+<td><p>Newline</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;Hello\nWorld&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">(new</span> <span class="pre">line)</span> <span class="pre">World</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\t</span></code></p></td>
+<td><p>Tab</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;Hello\tWorld&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Hello</span>&#160;&#160;&#160; <span class="pre">World</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\b</span></code></p></td>
+<td><p>Backspace</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;Hello\bWorld&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">HelloWorld</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="examples-of-escape-sequences-in-code">
+<h4>Examples of Escape Sequences in Code<a class="headerlink" href="#examples-of-escape-sequences-in-code" title="Link to this heading">#</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Newline and tab</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\n</span><span class="s2">World&quot;</span><span class="p">)</span>    <span class="c1"># Output: Hello (new line) World</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\t</span><span class="s2">World&quot;</span><span class="p">)</span>    <span class="c1"># Output: Hello   World</span>
+
+<span class="c1"># Including quotes within a string</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;She said </span><span class="se">\&quot;</span><span class="s2">Hello!</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: She said &quot;Hello!&quot;</span>
+
+<span class="c1"># Backslash and Octal values</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Path: C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">Name&quot;</span><span class="p">)</span> <span class="c1"># Output: Path: C:\Users\Name</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\101</span><span class="s2">&quot;</span><span class="p">)</span>                  <span class="c1"># Output: A (octal for ASCII &#39;A&#39;)</span>
+
+<span class="c1"># Carriage return and backspace</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\r</span><span class="s2">World&quot;</span><span class="p">)</span>          <span class="c1"># Output: World</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\b</span><span class="s2">World&quot;</span><span class="p">)</span>          <span class="c1"># Output: HelloWorld</span>
+</pre></div>
 </div>
 </section>
 <section id="booleans">
@@ -1435,6 +1612,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <p>What outcome would you expect based on the following lines of code?</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">-</span> <span class="pre">False</span></code></p></li>
+<li><p>Why?</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">type(True)</span></code></p></li>
 </ol>
 <div class="cell docutils container">
@@ -1739,6 +1917,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-and-data-types">Variables and data types</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-and-types">Variables and types</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#symbol-names">Symbol names</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-variables-in-python">Naming Variables in Python</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment">Assignment</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-1">Exercise 2.1</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-2">Exercise 2.2</a></li>
@@ -1748,7 +1927,13 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-types-data-structures">Fundamental types &amp; data structures</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#integers">Integers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#floating-point-numbers">Floating-point numbers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-e-or-e-in-floats-for-scientific-notation-in-python">Using <code class="docutils literal notranslate"><span class="pre">e</span></code> or <code class="docutils literal notranslate"><span class="pre">E</span></code> in Floats for Scientific Notation in Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax">Syntax</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-in-code">Examples in Code</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#escape-sequences-in-strings">Escape Sequences in Strings</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-escape-sequences-in-python">Common Escape Sequences in Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-escape-sequences-in-code">Examples of Escape Sequences in Code</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#booleans">Booleans</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-data-types">Converting data types</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-1">Exercise 3.1</a></li>
