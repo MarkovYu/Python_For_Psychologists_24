@@ -21,7 +21,9 @@ Please see the rendered version of the `jupyter notebook` [Introduction IV - Int
 
 ## Tasks for subsequent meeting 🖥️✍🏽📖
 
-To be added
+Homework assignment #2 - Introduction to Python - 1, you can download it [here](https://github.com/MarkovYu/Python_For_Psychologists_24/blob/cdd722b2bb93de2cba7ebd5c9aee8e86b8362fc8/lecture/homework/PFP_assignment_2_intro_python_1_2024.ipynb) or [here](https://markovyu.github.io/Python_For_Psychologists_24/homework/PFP_assignment_2_intro_python_1_2024.html)
+
+**Deadline: 15/11/2024**
 
 ## optional/reading/further materials
 
