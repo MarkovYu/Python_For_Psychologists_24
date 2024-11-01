@@ -1,0 +1,839 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Homework assignment #2 &#8212; Winter - 2024</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'homework/PFP_assignment_2_intro_python_1_2024';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python module showcases" href="../showcases/module_showcases.html" />
+    <link rel="prev" title="Introduction III - Introduction to Python - I" href="../introduction/intro_python_I.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/pfp_logo.png" class="logo__image only-light" alt="Winter - 2024 - Home"/>
+    <img src="../_static/pfp_logo.png" class="logo__image only-dark pst-js-only" alt="Winter - 2024 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../dei.html">Diversity, Equity and Inclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Course overview &amp; procedure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup for the course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outline.html">General outline</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../introduction/introduction.html">Introduction</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction/introduction_1.html">Introduction I</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_2.html">Introduction II</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_jupyter.html">Introduction II - the jupyter ecosystem &amp; notebooks, first look at programming in Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_jupyter_II.html">Introduction II - Jupiter Notebook 7.0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../introduction/introduction_4.html">Introduction III</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_I.html">Introduction III - Introduction to Python - I</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Homework assignment #2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../showcases/module_showcases.html">Python module showcases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../showcases/python_numpy.html">Introduction to NumPy</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/python_scipy.html">Introduction to SciPy</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/python_scikit.html">Introduction to scikit-learn &amp; scikit-image</a></li>
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/python_visualization_for_data.html">Visualization of different data types with python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../showcases/image_manipulation_nibabel.html">Using Python for neuroimaging data - NiBabel</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/image_manipulation_nilearn.html">Using Python for neuroimaging data - Nilearn</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/statistical_analyses_MRI.html">Nilearn GLM: statistical analyses of MRI in Python</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/functional_connectivity.html">Functional connectivity and resting state</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/diffusion_imaging.html">Structural connectivity and diffusion imaging</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/machine_learning_preparation.html">Preparation Machine Learning</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/machine_learning_nilearn.html">MVPA and Searchlight with <code class="docutils literal notranslate"><span class="pre">nilearn</span></code></a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/machine_learning_keras.html"><code class="docutils literal notranslate"><span class="pre">TensorFlow</span></code>/<code class="docutils literal notranslate"><span class="pre">Keras</span></code></a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../showcases/Predicting_age_with_machine_learning.html">Machine learning to predict age from rs-fmri</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../AI.html">The use of AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoC.html">Code of Conduct</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/MarkovYu/Python_For_Psychologists_24/main?urlpath=tree/lecture/homework/PFP_assignment_2_intro_python_1_2024.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/MarkovYu/Python_For_Psychologists_24" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/MarkovYu/Python_For_Psychologists_24/edit/main/lecture/homework/PFP_assignment_2_intro_python_1_2024.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/MarkovYu/Python_For_Psychologists_24/issues/new?title=Issue%20on%20page%20%2Fhomework/PFP_assignment_2_intro_python_1_2024.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/homework/PFP_assignment_2_intro_python_1_2024.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Homework assignment #2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-python-programming-language"><span class="xref myst">1. Characteristics of the <code class="docutils literal notranslate"><span class="pre">python</span></code> programming language</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modules"><span class="xref myst">2. Modules</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-data-types"><span class="xref myst">3. Variables &amp; data types</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outro"><span class="xref myst">4. Outro</span></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <img src="https://github.com/M-earnest/Python_for_Psychologists_Winter2022/blob/main/lecture/static/pfp_logo.png?raw=true" width=300 />
+<center><h3>Homework assignment #2 - Introduction to Python - 1</h3></center>
+<p>Ahoi hoi folks and welcome to homework assignment #2 of the “Python for Psychologists” course, winter term 2024. This homework assignment will be your first venture into the practical use of python and probably also your first time working with jupyter notebooks. Even though we’ve used <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> in the seminar sessions you’ll might encounter some problems or unexpected behaviors. Thus, if you encounter any problems along the way, please don’t hesitate to get in touch (via e-mail or the discord server) or check back in the <a class="reference external" href="https://markovyu.github.io/Python_For_Psychologists_24/introduction/introduction_2.html"><code class="docutils literal notranslate"><span class="pre">Introduction</span> <span class="pre">to</span> <span class="pre">Jupyter</span></code></a> or the <a class="reference external" href="https://markovyu.github.io/Python_For_Psychologists_24/introduction/introduction_4.html"><code class="docutils literal notranslate"><span class="pre">Intro</span> <span class="pre">to</span> <span class="pre">Python</span> <span class="pre">I</span></code></a> chapters on the course website.</p>
+<p>Some general points:</p>
+<p>Throughout the assignment you will be asked to either provide some <code class="docutils literal notranslate"><span class="pre">answers</span> <span class="pre">to</span> <span class="pre">questions</span> <span class="pre">in</span> <span class="pre">written</span> <span class="pre">form</span></code> or directly <code class="docutils literal notranslate"><span class="pre">code</span></code>. Regarding the first, you can just write your answer in the empty <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cells</span></code> below the questions. Regarding the second, you can write your <code class="docutils literal notranslate"><span class="pre">code</span></code> in the empty <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">cells</span></code> below the questions and actually <code class="docutils literal notranslate"><span class="pre">run</span></code> it so that the output (if there’s one) will be included in the notebook. The <code class="docutils literal notranslate"><span class="pre">number</span></code> and <code class="docutils literal notranslate"><span class="pre">type</span></code> of <code class="docutils literal notranslate"><span class="pre">cell</span></code> you need to answer a given questions will be indicated but if you want to use more <code class="docutils literal notranslate"><span class="pre">cells</span></code> please don’t hesitate to add a few. If you see something like “Type Markdown … or Please provide your solution here
+“, you can just click (or double-click) on it to make it a <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cell</span></code>. If any of this sounds confusing or unclear you can again consult the <a class="reference external" href="https://markovyu.github.io/Python_For_Psychologists_24/introduction/introduction_2.html"><code class="docutils literal notranslate"><span class="pre">Introduction</span> <span class="pre">to</span> <span class="pre">Jupyter</span></code></a> page.</p>
+<p>Please don’t forget to save your <code class="docutils literal notranslate"><span class="pre">notebook</span></code> regularly (maybe every few minutes) either via <code class="docutils literal notranslate"><span class="pre">strg</span> <span class="pre">+</span> <span class="pre">s</span></code> on <code class="docutils literal notranslate"><span class="pre">windows</span></code> and <code class="docutils literal notranslate"><span class="pre">cmd</span> <span class="pre">+</span> <span class="pre">s</span></code> on <code class="docutils literal notranslate"><span class="pre">macOS</span></code>. Once you finished the <code class="docutils literal notranslate"><span class="pre">assignment</span></code>, pleas save the entire <code class="docutils literal notranslate"><span class="pre">notebook</span></code> via <code class="docutils literal notranslate"><span class="pre">File</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as...</span></code> and provide the following name <code class="docutils literal notranslate"><span class="pre">FirstNameSurname_pfp_2023_homework_assignment_2</span></code> where <code class="docutils literal notranslate"><span class="pre">FirstName</span></code> should be changed to your first name and <code class="docutils literal notranslate"><span class="pre">Surname</span></code> to your surname.</p>
+<p>The aim of this homework assignment is to go through the things we talked about in the session again and deepen your understanding of them. This will entail the following parts:</p>
+<p><a class="reference internal" href="#"><span class="xref myst">1. Characteristics of the <code class="docutils literal notranslate"><span class="pre">python</span></code> programming language</span></a><br />
+<a class="reference internal" href="#"><span class="xref myst">2. Modules</span></a><br />
+<a class="reference internal" href="#"><span class="xref myst">3. Variables &amp; data types</span></a><br />
+<a class="reference internal" href="#"><span class="xref myst">4. Outro/Q&amp;A</span></a></p>
+<p>You should be able to answer all of the following questions given the content included in the respective sections on the website, as well as the things covered in during the session. <strong>If you feel like some of the things asked here were actually not (sufficiently) covered during the session, please don’t hesitate to let me know ASAP and we’ll figure that out.</strong> Otherwise you of course are welcome to train your “google muscles”, just keep in mind that code directly copied from the internet should include sufficient credits (i.e. include links to the respective website as a comment in code/markdown cells). And remember that there is always more than one correct answer in <code class="docutils literal notranslate"><span class="pre">programming</span></code>.</p>
+<p>However, after this way too long intro, I wish you a great time and hope this will feel less like an assignment and more like a fun add on to the session. Again: learning new things takes time and programming is by no means an exception to that. Thus don’t worry if you have to look back and fourth between the assignment and the materials: we all start somewhere and you putting in the effort is already fantastic. You got this!</p>
+<section id="homework-assignment-2">
+<h1>Homework assignment #2<a class="headerlink" href="#homework-assignment-2" title="Link to this heading">#</a></h1>
+<section id="characteristics-of-the-python-programming-language">
+<h2><a class="reference internal" href="#"><span class="xref myst">1. Characteristics of the <code class="docutils literal notranslate"><span class="pre">python</span></code> programming language</span></a><a class="headerlink" href="#characteristics-of-the-python-programming-language" title="Link to this heading">#</a></h2>
+<p>During the session we talked about <code class="docutils literal notranslate"><span class="pre">Python</span></code> being a <strong>widely used/very flexible</strong>, <strong>high-level</strong>, <strong>general-purpose</strong>, <strong>dynamic</strong> programming language but what does this mean again? Please provide some points regarding each of these characteristics below, preferably in your own words. You can just write your answer in the <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cells</span></code> below the questions.</p>
+<p>What is meant by <strong>widely used</strong>?</p>
+<p>Please provide your solution here</p>
+<p>What is meant by <strong>high-level</strong>?</p>
+<p>Please provide your solution here</p>
+<p>What is meant by <strong>general-purpose</strong>?</p>
+<p>Please provide your solution here</p>
+<p>What is meant by <strong>dynamic</strong>?</p>
+<p>Please provide your solution here</p>
+</section>
+<section id="modules">
+<h2><a class="reference internal" href="#"><span class="xref myst">2. Modules</span></a><a class="headerlink" href="#modules" title="Link to this heading">#</a></h2>
+<p>We started our endeavors in <code class="docutils literal notranslate"><span class="pre">python</span></code> via talking about <code class="docutils literal notranslate"><span class="pre">modules</span></code> as they are crucial to basically anything we want to do. What is a <code class="docutils literal notranslate"><span class="pre">module</span></code> again and what role do they have within the <code class="docutils literal notranslate"><span class="pre">python</span></code> ecosystem? You can just write your answer in the <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cell</span></code> below.</p>
+<p>Please provide your solution here</p>
+<p>Lets assume you want to run a few basic <code class="docutils literal notranslate"><span class="pre">statistical</span> <span class="pre">analyses</span></code> on a behavioral dataset using the following <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">modules</span></code>: <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">scipy</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">pandas</span></code>. How would you import these modules in their entirety?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Would it also be possible to <code class="docutils literal notranslate"><span class="pre">import</span></code> these <code class="docutils literal notranslate"><span class="pre">modules</span></code> given certain <code class="docutils literal notranslate"><span class="pre">access</span> <span class="pre">names</span></code>, so that it’s easier to refer to them and access their <code class="docutils literal notranslate"><span class="pre">functions</span></code>? If so, could you show how one would do that for each of the three <code class="docutils literal notranslate"><span class="pre">modules</span></code> mentioned above?</p>
+<p><strong>Note</strong>: The common custom access names for these modules are np, sp and pd. You can see the pattern here</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>While having access to the entire <code class="docutils literal notranslate"><span class="pre">module</span></code> is cool we learned that we will actually only use certain <code class="docutils literal notranslate"><span class="pre">submodules</span></code>/<code class="docutils literal notranslate"><span class="pre">functions</span></code> most of the time. Based on our analyses we know that we will need the <code class="docutils literal notranslate"><span class="pre">&quot;min&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;max&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;mean&quot;</span></code> <code class="docutils literal notranslate"><span class="pre">functions</span></code> from <a class="reference external" href="https://numpy.org/">numpy</a>, the <code class="docutils literal notranslate"><span class="pre">&quot;DataFrame&quot;</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> from <a class="reference external" href="https://pandas.pydata.org/">pandas</a> and the <code class="docutils literal notranslate"><span class="pre">&quot;stats&quot;</span></code> package from <a class="reference external" href="https://scipy.github.io/devdocs/index.html">scipy</a>. How would you do this? (Remember that Python is case-senstive and that you can usually use tab-complete to short-cut writing out most keywords, folks!)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You may have noticed that the above lines contain links to the <code class="docutils literal notranslate"><span class="pre">documentation</span></code> of each <code class="docutils literal notranslate"><span class="pre">module</span></code>. This is meant to stress a very important point: <code class="docutils literal notranslate"><span class="pre">python</span></code> is not only great because it’s <code class="docutils literal notranslate"><span class="pre">open-source</span></code> and has an incredible <code class="docutils literal notranslate"><span class="pre">community</span></code>, it’s <code class="docutils literal notranslate"><span class="pre">modules</span></code>/<code class="docutils literal notranslate"><span class="pre">libraries</span></code> also usually have fantastics <code class="docutils literal notranslate"><span class="pre">documentation</span></code> that explain many details of the <code class="docutils literal notranslate"><span class="pre">module</span></code>, including <code class="docutils literal notranslate"><span class="pre">background</span></code>, <code class="docutils literal notranslate"><span class="pre">installation</span></code>, <code class="docutils literal notranslate"><span class="pre">functions</span></code>, <code class="docutils literal notranslate"><span class="pre">examples</span></code>, etc. . It’s a great starting point for working with a new <code class="docutils literal notranslate"><span class="pre">module</span></code> and/or <code class="docutils literal notranslate"><span class="pre">function</span></code>, always freely available to you!</p>
+<p>Before we utilize the <code class="docutils literal notranslate"><span class="pre">imported</span> <span class="pre">functions</span></code> we want to make sure how they work and what they do. Is there any option in <code class="docutils literal notranslate"><span class="pre">python</span></code> and/or <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> to get some information or help regarding a <code class="docutils literal notranslate"><span class="pre">function</span></code>? If there is, how would you do this for the modules at hand?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Bonus: try searching for the <code class="docutils literal notranslate"><span class="pre">functions</span></code> you imported in the respective <code class="docutils literal notranslate"><span class="pre">documentation</span></code> or <code class="docutils literal notranslate"><span class="pre">docs</span></code> of the <code class="docutils literal notranslate"><span class="pre">module</span></code>.</p>
+<p>That being said, what would be the result if we try to use a <code class="docutils literal notranslate"><span class="pre">module</span></code>/<code class="docutils literal notranslate"><span class="pre">function</span></code> we did not <code class="docutils literal notranslate"><span class="pre">import</span></code> yet? Can you provide a brief explanation (in the markdown cell below) and proof your answer with an example (in the code cell below)?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="variables-data-types">
+<h2><a class="reference internal" href="#"><span class="xref myst">3. Variables &amp; data types</span></a><a class="headerlink" href="#variables-data-types" title="Link to this heading">#</a></h2>
+<p>The final part of the session introduced more core concepts and building blocks of the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">programming</span> <span class="pre">language</span></code>, specifically <code class="docutils literal notranslate"><span class="pre">assignments</span></code> (the <code class="docutils literal notranslate"><span class="pre">operator</span></code>, not homework, hehe), <code class="docutils literal notranslate"><span class="pre">variables</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code>. Could you briefly describe what a variable actually is?</p>
+<p>Please provide your solution here</p>
+<p>Amazing, thanks! Now that we know what a <code class="docutils literal notranslate"><span class="pre">variable</span></code> is we need to talk about how we <code class="docutils literal notranslate"><span class="pre">declare</span></code> them via <code class="docutils literal notranslate"><span class="pre">assignments</span></code>. If you’d want to create two <code class="docutils literal notranslate"><span class="pre">variables</span></code> <code class="docutils literal notranslate"><span class="pre">group_1</span></code> and <code class="docutils literal notranslate"><span class="pre">group_2</span></code> with the respective <code class="docutils literal notranslate"><span class="pre">values</span></code> <code class="docutils literal notranslate"><span class="pre">&quot;control&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;target&quot;</span></code>, how would you do that?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Oh, this <code class="docutils literal notranslate"><span class="pre">assignment</span></code> <code class="docutils literal notranslate"><span class="pre">operator</span></code> looks like something we all saw in our <code class="docutils literal notranslate"><span class="pre">math</span></code> classes. Could you briefly explain the difference between <code class="docutils literal notranslate"><span class="pre">variables</span></code> in <code class="docutils literal notranslate"><span class="pre">coding</span></code> and <code class="docutils literal notranslate"><span class="pre">math</span></code> using the meaning of the <code class="docutils literal notranslate"><span class="pre">operator</span></code> used above? (Again, if you for example do not remember what an <code class="docutils literal notranslate"><span class="pre">operator</span></code>is in the python language, feel free to look that up.)</p>
+<p>Please provide your solution here</p>
+<p>Speaking of which: what happens when you try to refer to an <code class="docutils literal notranslate"><span class="pre">variable</span></code> that has not been <code class="docutils literal notranslate"><span class="pre">declared</span></code> yet? Can you provide a brief explanation and proof your answer with an example?</p>
+<p>Please provide your solution here</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Talking about <code class="docutils literal notranslate"><span class="pre">assignments</span></code>, <code class="docutils literal notranslate"><span class="pre">operators</span></code> and <code class="docutils literal notranslate"><span class="pre">variables</span></code>, can we actually use literally “anything” as a <code class="docutils literal notranslate"><span class="pre">variable</span> <span class="pre">name</span></code> or are there certain limitations? If so, can you name what these limitations would be and why these exist?</p>
+<p>Please provide your solution here</p>
+<p>Talking about <code class="docutils literal notranslate"><span class="pre">variables</span></code> what is the most common way to name a variable in Python?</p>
+<ul class="simple">
+<li><p>snake_case</p></li>
+<li><p>CamelCase</p></li>
+<li><p>SMTH_LIKE_THIS</p></li>
+<li><p>SmThLiKe_ThAT</p></li>
+</ul>
+<p>Following up on this, we also talked about different <strong>basic</strong> <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code> we might encounter in <code class="docutils literal notranslate"><span class="pre">python</span></code>. Could you maybe list the most common ones we talked about during the <code class="docutils literal notranslate"><span class="pre">session</span></code> and what they entail?</p>
+<p>Please provide your solution here</p>
+<p>Ah right, those were the ones we checked out! Is there potentially a way to find out what <code class="docutils literal notranslate"><span class="pre">type</span></code> a given <code class="docutils literal notranslate"><span class="pre">variable</span></code> has? Can you demonstrate how you would find out the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> of our <code class="docutils literal notranslate"><span class="pre">variables</span></code> <code class="docutils literal notranslate"><span class="pre">group_1</span></code> and <code class="docutils literal notranslate"><span class="pre">group_2</span></code>?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Could you please <code class="docutils literal notranslate"><span class="pre">declare</span></code> <code class="docutils literal notranslate"><span class="pre">variables</span></code> n_students, n_laptops, course_year and fun_factor these new <code class="docutils literal notranslate"><span class="pre">values</span></code>: twenty (in <code class="docutils literal notranslate"><span class="pre">int</span></code>), twenty-one (in <code class="docutils literal notranslate"><span class="pre">float</span></code>), 2024 (in <code class="docutils literal notranslate"><span class="pre">str</span></code>) and true (<code class="docutils literal notranslate"><span class="pre">boolean</span></code>)?</p>
+<p>Please print each variable using print() and also print each type of variable</p>
+<p><strong>Note</strong>: you can print multiple instances using , - <code class="docutils literal notranslate"><span class="pre">print(var1,</span> <span class="pre">var2,</span> <span class="pre">type(var1))</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Assign to n_students value of n_laptops. Damn, did we just overwrite our <code class="docutils literal notranslate"><span class="pre">variable</span></code> initial <code class="docutils literal notranslate"><span class="pre">values</span></code>? How does this work in <code class="docutils literal notranslate"><span class="pre">python</span></code>? What type now is n_students?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You are a 🧙‍♂️ wizard in a mystical land, and you have three magical ingredients: a Golden Apple (<code class="docutils literal notranslate"><span class="pre">integer</span></code>), a Mana Elixir (<code class="docutils literal notranslate"><span class="pre">float</span></code>), and a Mysterious Scroll (<code class="docutils literal notranslate"><span class="pre">string</span></code>). You need to <em>use</em> Mysterious Scroll by assigning it new value “Used Swap Scroll” and swap the values of Golden Apple and Mana Elixir.</p>
+<p><strong>Note</strong> you <strong>CAN’T</strong> in this task just assign new values to <code class="docutils literal notranslate"><span class="pre">golden_apple</span></code> and <code class="docutils literal notranslate"><span class="pre">mana_elixir</span></code>. Like <code class="docutils literal notranslate"><span class="pre">golden_apple</span> <span class="pre">=</span> <span class="pre">2.5</span></code> or <code class="docutils literal notranslate"><span class="pre">crystal_elixir</span> <span class="pre">=</span> <span class="pre">5</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Step 1: Assign magical ingredients</span>
+<span class="n">golden_apple</span> <span class="o">=</span> <span class="mi">5</span>      <span class="c1"># Integer: Number of Golden Apples</span>
+<span class="n">mana_elixir</span> <span class="o">=</span> <span class="mf">2.5</span>     <span class="c1"># Float: Amount of Mana Elixir</span>
+<span class="n">mysterious_scroll</span> <span class="o">=</span> <span class="s2">&quot;Swap Scroll&quot;</span>  <span class="c1"># String: Contents of the Mysterious Scroll</span>
+
+<span class="c1"># Step 2: Print original ingredients</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🧙‍♂️ Before the Magical Swap:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📜 Mysterious Scroll: &#39;</span><span class="si">{</span><span class="n">mysterious_scroll</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✨ Golden Apples: </span><span class="si">{</span><span class="n">golden_apple</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;💧 Mana Elixir: </span><span class="si">{</span><span class="n">mana_elixir</span><span class="si">}</span><span class="s2"> liters&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># Step 3: Use the scroll and perform the magical swap</span>
+<span class="c1"># Please write your solution here</span>
+
+<span class="c1"># Step 4: Print resulting ingredients</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🎉 After the Magical Swap:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📜 Mysterious Scroll (updated): &#39;</span><span class="si">{</span><span class="n">mysterious_scroll</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✨ Golden Apples (now Elixir): </span><span class="si">{</span><span class="n">golden_apple</span><span class="si">}</span><span class="s2"> liters&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;💧 Mana Elixir (now Apples): </span><span class="si">{</span><span class="n">mana_elixir</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Create a program where a 🧙‍♂️ wizard transforms an <code class="docutils literal notranslate"><span class="pre">integer</span></code> (the number of magical artifacts) through the steps of converting it to a <code class="docutils literal notranslate"><span class="pre">float</span></code>, then to a <code class="docutils literal notranslate"><span class="pre">string</span></code>, and finally using a <code class="docutils literal notranslate"><span class="pre">boolean</span></code> to check if the transformation was successful.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Step 1: Assign the initial value</span>
+<span class="n">num_artifacts</span> <span class="o">=</span> <span class="mi">7</span>  <span class="c1"># Integer: Number of magical artifacts</span>
+
+<span class="c1"># Step 2: Print the original number of artifacts</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔮 Before Transformation:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The wizard has </span><span class="si">{</span><span class="n">num_artifacts</span><span class="si">}</span><span class="s2"> magical artifacts.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Step 3: Transform to float</span>
+<span class="n">artifact_strength</span> <span class="o">=</span>   <span class="c1"># Convert to float</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✨ After the spell of transformation, the artifact strength is: </span><span class="si">{</span><span class="n">artifact_strength</span><span class="si">}</span><span class="s2"> (float)&quot;</span><span class="p">)</span>
+
+<span class="c1"># Step 4: Transform to string</span>
+<span class="n">artifact_description</span> <span class="o">=</span>   <span class="c1"># Convert to string</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📜 The artifact description is: &#39;</span><span class="si">{</span><span class="n">artifact_description</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+
+<span class="c1"># Step 5: Check with boolean</span>
+<span class="n">is_magic</span> <span class="o">=</span>  <span class="c1"># Check if the description contains &quot;magic&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;🧙‍♂️ Is the description magical? </span><span class="si">{</span><span class="n">is_magic</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Step 6: Check the type of num_artifacts, artifact_strength, artifact_description and is_magic</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Create a program where a 🧙‍♂️ wizard calculates the strength of his potions using the <code class="docutils literal notranslate"><span class="pre">math</span></code> module. In the enchanted forest, a wizard brews potions to enhance his magical powers. To determine the strength of his potions, he uses a special formula that involves calculating the square root of the total number of ingredients he has multiplied by pi number.</p>
+<p>🧙‍♂️ wizard is old and have not enough memory, please only <code class="docutils literal notranslate"><span class="pre">import</span></code> functions which will help to calculate <code class="docutils literal notranslate"><span class="pre">potion_strength</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_ingredients</span> <span class="o">=</span> <span class="mi">25</span> <span class="c1"># Integer: Total number of ingredients</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🧙‍♂️ Before Potion Brewing:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The wizard has </span><span class="si">{</span><span class="n">num_ingredients</span><span class="si">}</span><span class="s2"> magical ingredients.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Please write your solution here</span>
+<span class="n">potion_strength</span> <span class="o">=</span> 
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✨ The strength of the potion is: </span><span class="si">{</span><span class="n">potion_strength</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📜 With a strength of </span><span class="si">{</span><span class="n">potion_strength</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, the potion is ready for casting!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="outro">
+<h2><a class="reference internal" href="#"><span class="xref myst">4. Outro</span></a><a class="headerlink" href="#outro" title="Link to this heading">#</a></h2>
+<p>Welcome to the end, you did, great job!</p>
+<p>Please remember to save the <code class="docutils literal notranslate"><span class="pre">notebook</span></code> as described in the beginning and send it to Peer via e-mail. If you have questions, encountered problems and/or errors, please use the <code class="docutils literal notranslate"><span class="pre">cell</span></code> to outline things further. The same holds true for any type of <code class="docutils literal notranslate"><span class="pre">feedback</span></code>!</p>
+<p>Thanks for going through this <code class="docutils literal notranslate"><span class="pre">assignment</span></code>, we hope you found it useful and informative. <code class="docutils literal notranslate"><span class="pre">Feedback</span></code> on your work can also by provided and is just one e-mail or discord message away!</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./homework"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../introduction/intro_python_I.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduction III - Introduction to Python - I</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../showcases/module_showcases.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Python module showcases</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-python-programming-language"><span class="xref myst">1. Characteristics of the <code class="docutils literal notranslate"><span class="pre">python</span></code> programming language</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modules"><span class="xref myst">2. Modules</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-data-types"><span class="xref myst">3. Variables &amp; data types</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outro"><span class="xref myst">4. Outro</span></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Peer Herholz
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2020.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
