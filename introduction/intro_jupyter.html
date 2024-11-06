@@ -182,7 +182,8 @@
 </ul>
 </details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="introduction_4.html">Introduction III</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="intro_python_I.html">Introduction IV - Introduction to Python - I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intro_python_I.html">Introduction III - Introduction to Python - I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../homework/PFP_assignment_2_intro_python_1_2024.html">Homework assignment #2</a></li>
 </ul>
 </details></li>
 </ul>
@@ -1173,44 +1174,6 @@ Namespaces are one honking great idea – let’s do more of those!</p>
 </div>
 </div>
 </div>
-<p>you can access the output of the most recent cell by simply using <code class="docutils literal notranslate"><span class="pre">_</span></code>. The underscore variable will continously be updated everytime you run a cell</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="o">+</span><span class="mi">10</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>same goes for the second-to-last output via a double underscore, the third-to-last output via a triple underscore and so on</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">___</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>You can suppress the <code class="docutils literal notranslate"><span class="pre">storage</span></code> and <code class="docutils literal notranslate"><span class="pre">rendering</span></code> of <code class="docutils literal notranslate"><span class="pre">output</span></code> if you append <code class="docutils literal notranslate"><span class="pre">;</span></code> to the last <code class="docutils literal notranslate"><span class="pre">cell</span></code> (this comes in handy when plotting with <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, for example):</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">10</span><span class="o">+</span><span class="mi">20</span><span class="p">;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_</span>
-</pre></div>
-</div>
-</div>
-</div>
 <p>As this notation get’s messy real quick, use other ways to access earlier outputs using the <code class="docutils literal notranslate"><span class="pre">_N</span></code> and <code class="docutils literal notranslate"><span class="pre">Out[N]</span></code> variables:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1219,24 +1182,10 @@ Namespaces are one honking great idea – let’s do more of those!</p>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_10</span> <span class="o">==</span> <span class="n">Out</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
 <p>Previous inputs are available, too:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_i</span>
 </pre></div>
 </div>
 </div>
@@ -1255,14 +1204,12 @@ Namespaces are one honking great idea – let’s do more of those!</p>
 <p>Through <code class="docutils literal notranslate"><span class="pre">notebooks</span></code> you can also access the underlying <code class="docutils literal notranslate"><span class="pre">operating</span> <span class="pre">system</span></code> and <code class="docutils literal notranslate"><span class="pre">communicate</span></code> with it as you would do in e.g. a <code class="docutils literal notranslate"><span class="pre">terminal</span></code> via <code class="docutils literal notranslate"><span class="pre">bash</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pwd
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">files</span> <span class="o">=</span> <span class="o">!</span>ls
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the current directory</span>
+<span class="n">current_directory</span> <span class="o">=</span> <span class="o">!</span>cd
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current directory:&quot;</span><span class="p">,</span> <span class="n">current_directory</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># List files and directories</span>
+<span class="n">files</span> <span class="o">=</span> <span class="o">!</span>dir
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My current directory&#39;s files:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
 </pre></div>

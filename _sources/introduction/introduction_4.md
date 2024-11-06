@@ -16,7 +16,7 @@ The big moment is finally here: we will start exploring `python` itself. Within 
 
 ## Materials 📓
 
-Please see the rendered version of the `jupyter notebook` [Introduction IV - Introduction to Python I](https://aylinsgl.github.io/Python_For_Psychologists_23-24/introduction/intro_python_I.html) in the `ToC` on the left.
+Please see the rendered version of the `jupyter notebook` [Introduction IV - Introduction to Python I](https://markovyu.github.io/Python_For_Psychologists_24/introduction/intro_python_I.html) in the `ToC` on the left.
 
 
 ## Tasks for subsequent meeting 🖥️✍🏽📖
