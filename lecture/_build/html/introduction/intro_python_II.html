@@ -183,6 +183,7 @@
 </details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="introduction_4.html">Introduction III</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="intro_python_I.html">Introduction III - Introduction to Python - I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../homework/PFP_assignment_2_intro_python_1_2024.html">Homework assignment #2</a></li>
 </ul>
 </details></li>
 </ul>
@@ -484,6 +485,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-we-get-started">Before we get started…</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives 📍</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-the-last-session">Recap of the last session</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-problems"><strong>Bonus Problems</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-python">What is Python?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module">Module</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-and-data-types">Variables and data types</a><ul class="nav section-nav flex-column">
@@ -491,20 +493,39 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operators-and-comparisons">Operators and comparisons</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-1">Exercise 4.1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-2">Exercise 4.2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-3">Exercise 4.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-operators-1-1">Exercise operators 1.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-operators-1-2">Exercise operators 1.2</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-1">Exercise 4.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-2">Exercise 4.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-3">Exercise 4.3</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings-list-and-dictionaries">Strings, List and dictionaries</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wait-why-len-is-len-variable-and-replace-is-not-replace-variable"><strong>Wait, why len is len(variable) and replace is not replace(variable)?</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-between-functions-and-methods-in-python">Difference Between Functions and Methods in Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-len-variable-and-not-variable-len">Why <code class="docutils literal notranslate"><span class="pre">len(variable)</span></code> and not <code class="docutils literal notranslate"><span class="pre">variable.len()</span></code>?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#important-string-methods-in-python">Important String Methods in Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#don-t-open-this-before-answering-on-previous-question">Don’t open this before answering on previous question</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ok-lets-continue">Ok lets continue</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#string-formatting">String formatting</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting">% formatting:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#str-format">str.format():</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#f-strings">f-strings:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#escape-sequences-in-strings">Escape Sequences in Strings</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-escape-sequences-in-python">Common Escape Sequences in Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-escape-sequences-in-code">Examples of Escape Sequences in Code</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#single-quote">Single Quote</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#double-quotes">Double Quotes</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#triple-quotes">Triple Quotes</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-1">Exercise 5.1</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-2">Exercise 5.2</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-3">Exercise 5.3</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-4">Exercise 5.4</a></li>
 </ul>
 </li>
 </ul>
@@ -549,6 +570,7 @@
 <p><a class="reference external" href="https://github.com/M-earnest">Michael Ernst</a><br />
 Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fiebach Lab</a>, <a class="reference external" href="https://www.psychologie.uni-frankfurt.de/49868684/Abteilungen">Neurocognitive Psychology</a> at <a class="reference external" href="https://www.goethe-university-frankfurt.de/en?locale=en">Goethe-University Frankfurt</a></p>
 <p>Adapted by: <a class="reference external" href="https://www.aylinkallmayer.com">Aylin Kallmayer</a>, <a class="reference external" href="https://www.scenegrammarlab.com">Scene-Grammar-Lab</a></p>
+<p><a class="reference external" href="https://www.y-markov.com">Yury Markov</a>, <a class="reference external" href="http://www.scenegrammarlab.com/">Scene Grammar Lab</a></p>
 <section id="before-we-get-started">
 <h2>Before we get started…<a class="headerlink" href="#before-we-get-started" title="Link to this heading">#</a></h2>
 <br>
@@ -653,6 +675,10 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <h2>Recap of the last session<a class="headerlink" href="#recap-of-the-last-session" title="Link to this heading">#</a></h2>
 <p>Before we dive into new endeavors, it might be important to briefly recap the things we’ve talked about so far. Specifically, we will do this to evaluate if everyone’s roughly on the same page. Thus, if some of the aspects within the recap are either new or fuzzy to you, please have a quick look at the respective part of the <a class="reference external" href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/intro_python_I.html">last session</a> again and as usual: ask questions wherever something is not clear.</p>
 </section>
+<section id="bonus-problems">
+<h2><strong>Bonus Problems</strong><a class="headerlink" href="#bonus-problems" title="Link to this heading">#</a></h2>
+<p>A new content in each lesson - 🎁 <strong>Bonus Problems</strong> 🎁. 🎁 <strong>Bonus Problems</strong> 🎁 are written <strong>ONLY</strong> for those who are familiar with intro of Python. If you feel that you are ready for them - go ahead and do them</p>
+</section>
 <section id="what-is-python">
 <h2>What is Python?<a class="headerlink" href="#what-is-python" title="Link to this heading">#</a></h2>
 <ul class="simple">
@@ -667,7 +693,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <center><img src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/python_import.png"></center><p>Assuming you want to import the entire <code class="docutils literal notranslate"><span class="pre">pandas</span></code> module to do some <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">exploration</span></code>, <code class="docutils literal notranslate"><span class="pre">wrangling</span></code> and <code class="docutils literal notranslate"><span class="pre">statistics</span></code>, how would you do that?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pleae write your solution in this cell</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution in this cell</span>
 </pre></div>
 </div>
 </div>
@@ -681,6 +707,14 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <p>During your analyzes you recognize that some of the analyses you want to run require functions from the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> <code class="docutils literal notranslate"><span class="pre">module</span></code> <code class="docutils literal notranslate"><span class="pre">pingouin</span></code>. Is there a way to only import the <code class="docutils literal notranslate"><span class="pre">functions</span></code> you want from this <code class="docutils literal notranslate"><span class="pre">module</span></code>, e.g. the <code class="docutils literal notranslate"><span class="pre">wilcoxon</span></code> test from within <code class="docutils literal notranslate"><span class="pre">pingouin.nonparametric</span></code>?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># First lets install the required packages</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>pingouin
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution in this cell</span>
@@ -818,18 +852,21 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <p>In <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">2.7</span></code> (aka the legacy version), what kind of <code class="docutils literal notranslate"><span class="pre">division</span></code> (<code class="docutils literal notranslate"><span class="pre">/</span></code>) is executed, <em>depends</em> on the type of the numbers involved. If all numbers are <code class="docutils literal notranslate"><span class="pre">integers</span></code>, the <code class="docutils literal notranslate"><span class="pre">division</span></code> will be an <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">division</span></code>, otherwise, it will be a <code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">division</span></code>. In <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> this has been changed and fractions aren’t lost when <code class="docutils literal notranslate"><span class="pre">dividing</span></code> <code class="docutils literal notranslate"><span class="pre">integers</span></code> (for <code class="docutils literal notranslate"><span class="pre">integer</span></code> <code class="docutils literal notranslate"><span class="pre">division</span></code> you can use another operator, <code class="docutils literal notranslate"><span class="pre">//</span></code>). In <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> the following two <code class="docutils literal notranslate"><span class="pre">operations</span></code> will give the same result (in <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">2</span></code> the first one will be treated as an <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">division</span></code>). It’s thus important to remember that the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> of  <code class="docutils literal notranslate"><span class="pre">division</span> <span class="pre">outcomes</span></code> will always be <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p>
+<p>Just a <strong>note</strong> but we are working in Python 3</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># Floor division - 5 / 2 = _2_.5</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="o">%</span><span class="k">2</span>) # Modulo operation - 2 + 2 + _1_ = 5
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5
-0.5
-0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.5
+2.5
+2
+1
 </pre></div>
 </div>
 </div>
@@ -924,6 +961,45 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+</pre></div>
+</div>
+</div>
+</div>
+<section id="exercise-operators-1-1">
+<h3>Exercise operators 1.1<a class="headerlink" href="#exercise-operators-1-1" title="Link to this heading">#</a></h3>
+<p>Given a two-digit number, e.g. 42. Find the sum of its digits.</p>
+<p><strong>Note</strong>: you should use math operators</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution in this cell</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>🎁 <strong>Bonus Problem</strong> 🎁: write a function which finds sum of digits of two-digit number</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution in this cell</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="exercise-operators-1-2">
+<h3>Exercise operators 1.2<a class="headerlink" href="#exercise-operators-1-2" title="Link to this heading">#</a></h3>
+<p>Given a three-digit number, e.g. 404. Find the sum of its digits.</p>
+<p><strong>Note</strong>: you should use math operators</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution in this cell</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>🎁 <strong>Bonus Problem</strong> 🎁: write a function which finds sum of digits of three-digit number</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution in this cell</span>
 </pre></div>
 </div>
 </div>
@@ -1270,7 +1346,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <section id="exercise-4-1">
-<h3>Exercise 4.1<a class="headerlink" href="#exercise-4-1" title="Link to this heading">#</a></h3>
+<h4>Exercise 4.1<a class="headerlink" href="#exercise-4-1" title="Link to this heading">#</a></h4>
 <p>You want to compute the <code class="docutils literal notranslate"><span class="pre">mean</span></code> of the following <code class="docutils literal notranslate"><span class="pre">reaction</span> <span class="pre">times</span></code>: <code class="docutils literal notranslate"><span class="pre">1.2</span></code>, <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">1.5</span></code>, <code class="docutils literal notranslate"><span class="pre">1.9</span></code>, <code class="docutils literal notranslate"><span class="pre">1.3</span></code>, <code class="docutils literal notranslate"><span class="pre">1.2</span></code>, <code class="docutils literal notranslate"><span class="pre">1.7</span></code>. Is there a way to achieve that using <code class="docutils literal notranslate"><span class="pre">operators</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1279,7 +1355,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<p>Spoiler: there are of course many existing <code class="docutils literal notranslate"><span class="pre">functions</span></code> for all sorts of equations and statistics so you don’t have to write it yourself every time. For example, we could also compute the <code class="docutils literal notranslate"><span class="pre">mean</span></code> using <code class="docutils literal notranslate"><span class="pre">numpy</span></code>’s <code class="docutils literal notranslate"><span class="pre">mean</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>:</p>
+<p>🎁 <strong>Bonus Problem</strong> 🎁: there are of course many existing <code class="docutils literal notranslate"><span class="pre">functions</span></code> for all sorts of equations and statistics so you don’t have to write it yourself every time. For example, we could also compute the <code class="docutils literal notranslate"><span class="pre">mean</span></code> using <code class="docutils literal notranslate"><span class="pre">numpy</span></code>’s <code class="docutils literal notranslate"><span class="pre">mean</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
@@ -1289,9 +1365,17 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </section>
 <section id="exercise-4-2">
-<h3>Exercise 4.2<a class="headerlink" href="#exercise-4-2" title="Link to this heading">#</a></h3>
-<p>Having computed the <code class="docutils literal notranslate"><span class="pre">mean</span></code>, you need to compare it to a reference <code class="docutils literal notranslate"><span class="pre">value</span></code>. The latter can be <em>possibly</em> found in a <code class="docutils literal notranslate"><span class="pre">string</span></code> that entails data from a previous analyses. If that’s the case, the <code class="docutils literal notranslate"><span class="pre">string</span></code> should contain the words <code class="docutils literal notranslate"><span class="pre">&quot;mean</span> <span class="pre">reaction</span> <span class="pre">time&quot;</span></code>. Is there a way to evaluate this?</p>
+<h4>Exercise 4.2<a class="headerlink" href="#exercise-4-2" title="Link to this heading">#</a></h4>
+<p>Having computed the <code class="docutils literal notranslate"><span class="pre">mean</span></code>, you need to compare it to a reference <code class="docutils literal notranslate"><span class="pre">value</span></code>. The latter can be <em>possibly</em> found in a <code class="docutils literal notranslate"><span class="pre">string</span></code> that entails data from a previous analyses. If that’s the case, the <code class="docutils literal notranslate"><span class="pre">string</span></code> should contain the words <code class="docutils literal notranslate"><span class="pre">&quot;mean</span> <span class="pre">reaction</span> <span class="pre">time&quot;</span></code>. Check whether the string contains these words.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">string</span></code> would be: “In contrast to the majority of the prior studies the mean reaction time of the here described analyses was <code class="docutils literal notranslate"><span class="pre">1.2</span></code>.”</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>🎁 <strong>Bonus Problem</strong> 🎁: can you write a function which checks whether the string contains specific phrase?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
@@ -1301,8 +1385,16 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </section>
 <section id="exercise-4-3">
-<h3>Exercise 4.3<a class="headerlink" href="#exercise-4-3" title="Link to this heading">#</a></h3>
+<h4>Exercise 4.3<a class="headerlink" href="#exercise-4-3" title="Link to this heading">#</a></h4>
 <p>Having found the reference <code class="docutils literal notranslate"><span class="pre">value</span></code>, that is <code class="docutils literal notranslate"><span class="pre">1.2</span></code> we can compare it to our <code class="docutils literal notranslate"><span class="pre">mean</span></code>. Specifically, you want to know if the <code class="docutils literal notranslate"><span class="pre">mean</span></code> is <code class="docutils literal notranslate"><span class="pre">less</span> <span class="pre">or</span> <span class="pre">equal</span></code> than <code class="docutils literal notranslate"><span class="pre">1.2</span></code>. The outcome of the <code class="docutils literal notranslate"><span class="pre">comparison</span></code> should then be the <code class="docutils literal notranslate"><span class="pre">value</span></code> of a new <code class="docutils literal notranslate"><span class="pre">variable</span></code> called <code class="docutils literal notranslate"><span class="pre">mean_reference_comp</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>🎁 <strong>Bonus Problem</strong> 🎁: You can already guess the task. can you write a function for this?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
@@ -1321,6 +1413,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </ul>
 </li>
 </ul>
+</section>
 </section>
 </section>
 <section id="strings-list-and-dictionaries">
@@ -1407,6 +1500,116 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+</section>
+<section id="wait-why-len-is-len-variable-and-replace-is-not-replace-variable">
+<h3><strong>Wait, why len is len(variable) and replace is not replace(variable)?</strong><a class="headerlink" href="#wait-why-len-is-len-variable-and-replace-is-not-replace-variable" title="Link to this heading">#</a></h3>
+<section id="difference-between-functions-and-methods-in-python">
+<h4>Difference Between Functions and Methods in Python<a class="headerlink" href="#difference-between-functions-and-methods-in-python" title="Link to this heading">#</a></h4>
+<p>In Python, the difference between <strong>functions</strong> and <strong>methods</strong> lies in <strong>how</strong> and <strong>where</strong> they’re used:</p>
+<ul class="simple">
+<li><p><strong>Functions</strong> are independent blocks of code that perform a specific task and can be called with <code class="docutils literal notranslate"><span class="pre">function_name(arguments)</span></code>. They are not tied to any particular object. For example, <code class="docutils literal notranslate"><span class="pre">len()</span></code> is a function that works on various types (lists, strings, etc.) to return their length. You call it as <code class="docutils literal notranslate"><span class="pre">len(variable)</span></code>.</p></li>
+<li><p><strong>Methods</strong> are functions that are bound to specific <strong>objects</strong> and can only be used with those objects. They are called using the syntax <code class="docutils literal notranslate"><span class="pre">object.method(arguments)</span></code>, where the method operates on that particular object. For example, <code class="docutils literal notranslate"><span class="pre">replace()</span></code> is a method specifically for strings and is called as <code class="docutils literal notranslate"><span class="pre">string.replace(old,</span> <span class="pre">new)</span></code>.</p></li>
+</ul>
+</section>
+</section>
+<section id="why-len-variable-and-not-variable-len">
+<h3>Why <code class="docutils literal notranslate"><span class="pre">len(variable)</span></code> and not <code class="docutils literal notranslate"><span class="pre">variable.len()</span></code>?<a class="headerlink" href="#why-len-variable-and-not-variable-len" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">len()</span></code></strong> is a built-in function that works with various types (lists, strings, dictionaries, etc.), so it’s designed as a function for flexibility.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">replace()</span></code></strong>, on the other hand, is a <strong>string method</strong>. It only makes sense for string objects, so it’s called directly on the string (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;.replace(&quot;h&quot;,</span> <span class="pre">&quot;j&quot;)</span></code>).</p></li>
+</ul>
+<p>This approach allows Python to provide a consistent interface for general functions like <code class="docutils literal notranslate"><span class="pre">len()</span></code> across different types while keeping specific behaviors as methods within specific types.</p>
+</section>
+<section id="important-string-methods-in-python">
+<h3>Important String Methods in Python<a class="headerlink" href="#important-string-methods-in-python" title="Link to this heading">#</a></h3>
+<p>There are a lot of different methods for str</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Method</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">str.upper()</span></code></p></td>
+<td><p>Converts all characters in the string to uppercase.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;.upper()</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;HELLO&quot;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">str.lower()</span></code></p></td>
+<td><p>Converts all characters in the string to lowercase.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;HELLO&quot;.lower()</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">str.strip()</span></code></p></td>
+<td><p>Removes leading and trailing whitespace from the string.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;</span>&#160; <span class="pre">hello</span>&#160; <span class="pre">&quot;.strip()</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">str.replace(old,</span> <span class="pre">new)</span></code></p></td>
+<td><p>Replaces all occurrences of a substring (<code class="docutils literal notranslate"><span class="pre">old</span></code>) with another substring (<code class="docutils literal notranslate"><span class="pre">new</span></code>).</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello</span> <span class="pre">world&quot;.replace(&quot;world&quot;,</span> <span class="pre">&quot;there&quot;)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello</span> <span class="pre">there&quot;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">str.split(separator)</span></code></p></td>
+<td><p>Splits the string into a list of substrings based on a specified separator.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;apple,banana&quot;.split(&quot;,&quot;)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[&quot;apple&quot;,</span> <span class="pre">&quot;banana&quot;]</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">str.join(iterable)</span></code></p></td>
+<td><p>Joins elements of an iterable (e.g., list) into a single string, with the string as separator.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;,</span> <span class="pre">&quot;.join([&quot;apple&quot;,</span> <span class="pre">&quot;banana&quot;])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;apple,</span> <span class="pre">banana&quot;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">str.find(substring)</span></code></p></td>
+<td><p>Returns the index of the first occurrence of a substring; <code class="docutils literal notranslate"><span class="pre">-1</span></code> if not found.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;.find(&quot;e&quot;)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">str.startswith(prefix)</span></code></p></td>
+<td><p>Checks if the string starts with the specified prefix. Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;.startswith(&quot;he&quot;)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">str.endswith(suffix)</span></code></p></td>
+<td><p>Checks if the string ends with the specified suffix. Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;.endswith(&quot;lo&quot;)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">str.capitalize()</span></code></p></td>
+<td><p>Capitalizes the first letter of the string and makes the rest lowercase.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;.capitalize()</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;Hello&quot;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">str.title()</span></code></p></td>
+<td><p>Capitalizes the first letter of each word in the string.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello</span> <span class="pre">world&quot;.title()</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;Hello</span> <span class="pre">World&quot;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">str.count(substring)</span></code></p></td>
+<td><p>Counts the number of occurrences of a substring in the string.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello</span> <span class="pre">hello&quot;.count(&quot;hello&quot;)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">str.isdigit()</span></code></p></td>
+<td><p>Checks if all characters in the string are digits. Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;12345&quot;.isdigit()</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">str.isalpha()</span></code></p></td>
+<td><p>Checks if all characters in the string are alphabetic (letters only). Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;.isalpha()</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">str.isspace()</span></code></p></td>
+<td><p>Checks if the string contains only whitespace characters. Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;</span>&#160;&#160; <span class="pre">&quot;.isspace()</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>We can also <code class="docutils literal notranslate"><span class="pre">index</span></code> a <code class="docutils literal notranslate"><span class="pre">string</span></code> using <code class="docutils literal notranslate"><span class="pre">string[x]</span></code> to get the <code class="docutils literal notranslate"><span class="pre">character</span></code> at the specified <code class="docutils literal notranslate"><span class="pre">index</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1487,6 +1690,30 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+<p>This makes sense, but what is this?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">statement_2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;.&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<section id="don-t-open-this-before-answering-on-previous-question">
+<h4>Don’t open this before answering on previous question<a class="headerlink" href="#don-t-open-this-before-answering-on-previous-question" title="Link to this heading">#</a></h4>
+<p>In Python, a negative index allows you to access elements from the end of a sequence (like a list, string, or tuple). Specifically:</p>
+<ul class="simple">
+<li><p>-1 refers to the last element,</p></li>
+<li><p>-2 refers to the second-to-last element,</p></li>
+<li><p>and so on.</p></li>
+</ul>
+</section>
+<section id="ok-lets-continue">
+<h4>Ok lets continue<a class="headerlink" href="#ok-lets-continue" title="Link to this heading">#</a></h4>
 <p>If we want to get more than one <code class="docutils literal notranslate"><span class="pre">character</span></code> of a <code class="docutils literal notranslate"><span class="pre">string</span></code> we can use the following syntax <code class="docutils literal notranslate"><span class="pre">string[start:stop]</span></code> which extracts characters between <code class="docutils literal notranslate"><span class="pre">index</span></code> <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">stop</span></code>. This technique is called <em>slicing</em>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1562,6 +1789,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+</section>
 <section id="string-formatting">
 <h4>String formatting<a class="headerlink" href="#string-formatting" title="Link to this heading">#</a></h4>
 <p>Besides <code class="docutils literal notranslate"><span class="pre">operating</span></code> on <code class="docutils literal notranslate"><span class="pre">strings</span></code> we can also apply different <code class="docutils literal notranslate"><span class="pre">formatting</span> <span class="pre">styles</span></code>. More precisely, this refers to different ways of displaying <code class="docutils literal notranslate"><span class="pre">strings</span></code>. The main <code class="docutils literal notranslate"><span class="pre">function</span></code> we’ll explore regarding this will be the <code class="docutils literal notranslate"><span class="pre">print</span></code> function. Comparable to <code class="docutils literal notranslate"><span class="pre">len</span></code>, it’s one of the <code class="docutils literal notranslate"><span class="pre">python</span></code> <code class="docutils literal notranslate"><span class="pre">functions</span></code> that’s always available to you, even without <code class="docutils literal notranslate"><span class="pre">import</span></code>.</p>
@@ -1617,6 +1845,15 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+<p>Different string formatting</p>
+<ul class="simple">
+<li></li>
+<li><p>str.format(): Useful for compatibility with older Python versions.</p></li>
+<li><p>f-strings: Best for general use due to readability and flexibility; available in Python 3.6+.</p></li>
+</ul>
+</section>
+<section id="formatting">
+<h4>% formatting:<a class="headerlink" href="#formatting" title="Link to this heading">#</a></h4>
 <p>Another very cool and handy option that we can specify <code class="docutils literal notranslate"><span class="pre">placeholders</span></code> which will be filled with an <code class="docutils literal notranslate"><span class="pre">input</span></code> according to a given <code class="docutils literal notranslate"><span class="pre">formatting</span> <span class="pre">style</span></code>. <code class="docutils literal notranslate"><span class="pre">Python</span></code> has two <code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">formatting</span> <span class="pre">styles</span></code>. An example of the old style is below, the <code class="docutils literal notranslate"><span class="pre">placeholder</span></code> or <code class="docutils literal notranslate"><span class="pre">specifier</span></code> <code class="docutils literal notranslate"><span class="pre">%.3f</span></code> transforms the <code class="docutils literal notranslate"><span class="pre">input</span></code> <code class="docutils literal notranslate"><span class="pre">number</span></code> into a <code class="docutils literal notranslate"><span class="pre">string</span></code>, that corresponds to a <code class="docutils literal notranslate"><span class="pre">floating</span> <span class="pre">point</span> <span class="pre">number</span></code> with <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">decimal</span> <span class="pre">places</span></code> and the <code class="docutils literal notranslate"><span class="pre">specifier</span></code> <code class="docutils literal notranslate"><span class="pre">%d</span></code> transforms the <code class="docutils literal notranslate"><span class="pre">input</span></code> <code class="docutils literal notranslate"><span class="pre">number</span></code> into a <code class="docutils literal notranslate"><span class="pre">string</span></code>, corresponding to a <code class="docutils literal notranslate"><span class="pre">decimal</span> <span class="pre">number</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1668,42 +1905,170 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+</section>
+<section id="str-format">
+<h4>str.format():<a class="headerlink" href="#str-format" title="Link to this heading">#</a></h4>
 <p>There are other ways to be more explicit when formatting strings and we cann even use multiple inputs for one string</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{}</span><span class="s2"> is my name, and this is </span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are friends from the wild. </span><span class="si">{}</span><span class="s2"> is my name, and this is </span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Wally the Wombat&quot;</span><span class="p">,</span> <span class="s2">&quot;Carl the Capybara&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name, and this is Samwise Gamgee.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are friends from the wild. Wally the Wombat is my name, and this is Carl the Capybara.
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{0}</span><span class="s2"> is my name, and this is </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are friends from the wild. </span><span class="si">{0}</span><span class="s2"> is my name, and this is </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Wally the Wombat&quot;</span><span class="p">,</span> <span class="s2">&quot;Carl the Capybara&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name, and this is Samwise Gamgee.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are friends from the wild. Wally the Wombat is my name, and this is Carl the Capybara.
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{fname}</span><span class="s2"> is my name, and this is </span><span class="si">{sname}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fname</span> <span class="o">=</span> <span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="n">sname</span> <span class="o">=</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are friends from the wild. </span><span class="si">{1}</span><span class="s2"> is my name, and this is </span><span class="si">{0}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Wally the Wombat&quot;</span><span class="p">,</span> <span class="s2">&quot;Carl the Capybara&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name, and this is Samwise Gamgee.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are friends from the wild. Carl the Capybara is my name, and this is Wally the Wombat.
 </pre></div>
 </div>
 </div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are friends from the wild. </span><span class="si">{w_name}</span><span class="s2"> is my name, and this is </span><span class="si">{c_name}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">w_name</span><span class="o">=</span><span class="s2">&quot;Wally the Wombat&quot;</span><span class="p">,</span> <span class="n">c_name</span><span class="o">=</span><span class="s2">&quot;Carl the Capybara&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are friends from the wild. Wally the Wombat is my name, and this is Carl the Capybara.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="f-strings">
+<h4>f-strings:<a class="headerlink" href="#f-strings" title="Link to this heading">#</a></h4>
+<p>f-strings provide a concise and readable way to embed expressions inside string literals using curly braces {}. They are preceded by an f or F before the string.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Capybara&quot;</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">greeting</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Hello, I am </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">. I am </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old.&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello, I am Capybara. I am 30 years old.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="n">formatted</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;The value of pi is approximately </span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">formatted</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The value of pi is approximately 3.14
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;We are friends from the wild. </span><span class="si">{</span><span class="s2">&quot;Wally the Wombat&quot;</span><span class="si">}</span><span class="s2"> is my name, and this is </span><span class="si">{</span><span class="s2">&quot;Carl the Capybara&quot;</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are friends from the wild. Wally the Wombat is my name, and this is Carl the Capybara.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="escape-sequences-in-strings">
+<h4>Escape Sequences in Strings<a class="headerlink" href="#escape-sequences-in-strings" title="Link to this heading">#</a></h4>
+<p>Lets remember <strong>Escape sequences</strong> from previous lesson. Esacpe sequences are special characters in a string, starting with a backslash (<code class="docutils literal notranslate"><span class="pre">\</span></code>), that let you insert characters that are otherwise difficult to type directly, like newline characters, tabs, or quotes.</p>
+</section>
+<section id="common-escape-sequences-in-python">
+<h4>Common Escape Sequences in Python<a class="headerlink" href="#common-escape-sequences-in-python" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Escape Sequence</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example Usage</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\'</span></code></p></td>
+<td><p>Single quote</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'It\'s</span> <span class="pre">Python!'</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">It's</span> <span class="pre">Python!</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\&quot;</span></code></p></td>
+<td><p>Double quote</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;She</span> <span class="pre">said</span> <span class="pre">\&quot;Hello!\&quot;&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">She</span> <span class="pre">said</span> <span class="pre">&quot;Hello!&quot;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\\</span></code></p></td>
+<td><p>Backslash</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;C:\\Users\\Name&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">C:\Users\Name</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\n</span></code></p></td>
+<td><p>Newline</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;Hello\nWorld&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">(new</span> <span class="pre">line)</span> <span class="pre">World</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\t</span></code></p></td>
+<td><p>Tab</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;Hello\tWorld&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Hello</span>&#160;&#160;&#160; <span class="pre">World</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\b</span></code></p></td>
+<td><p>Backspace</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;Hello\bWorld&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">HelloWorld</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="examples-of-escape-sequences-in-code">
+<h4>Examples of Escape Sequences in Code<a class="headerlink" href="#examples-of-escape-sequences-in-code" title="Link to this heading">#</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Newline and tab</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\n</span><span class="s2">World&quot;</span><span class="p">)</span>    <span class="c1"># Output: Hello (new line) World</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\t</span><span class="s2">World&quot;</span><span class="p">)</span>    <span class="c1"># Output: Hello   World</span>
+
+<span class="c1"># Including quotes within a string</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;She said </span><span class="se">\&quot;</span><span class="s2">Hello!</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: She said &quot;Hello!&quot;</span>
+
+<span class="c1"># Backslash and Octal values</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Path: C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">Name&quot;</span><span class="p">)</span> <span class="c1"># Output: Path: C:\Users\Name</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\101</span><span class="s2">&quot;</span><span class="p">)</span>                  <span class="c1"># Output: A (octal for ASCII &#39;A&#39;)</span>
+
+<span class="c1"># Carriage return and backspace</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\r</span><span class="s2">World&quot;</span><span class="p">)</span>          <span class="c1"># Output: World</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\b</span><span class="s2">World&quot;</span><span class="p">)</span>          <span class="c1"># Output: HelloWorld</span>
+</pre></div>
 </div>
 <p>If you would like to include <code class="docutils literal notranslate"><span class="pre">line-breaks</span></code> and/or <code class="docutils literal notranslate"><span class="pre">tabs</span></code> in your <code class="docutils literal notranslate"><span class="pre">strings</span></code>, you can use <code class="docutils literal notranslate"><span class="pre">\n</span></code> and <code class="docutils literal notranslate"><span class="pre">\t</span></code> respectively:</p>
 <div class="cell docutils container">
@@ -1834,6 +2199,15 @@ Sam: His gardener.
 <h5>Exercise 5.2<a class="headerlink" href="#exercise-5-2" title="Link to this heading">#</a></h5>
 <p>Compute the <code class="docutils literal notranslate"><span class="pre">length</span></code> and <code class="docutils literal notranslate"><span class="pre">print</span></code> within the <code class="docutils literal notranslate"><span class="pre">strings</span></code> “The wombat information has [insert length here] characters.” and “The capybara information has [insert length here] characters.”
 After that, please compare the length of the <code class="docutils literal notranslate"><span class="pre">strings</span></code> and <code class="docutils literal notranslate"><span class="pre">print</span></code> if they are equal.</p>
+<p>Do it using three different variants, using %, format and f strings!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>🎁 <strong>Bonus Problem</strong> 🎁: You can already guess the task. can you write a function for this?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
@@ -1845,6 +2219,33 @@ After that, please compare the length of the <code class="docutils literal notra
 <section id="exercise-5-3">
 <h5>Exercise 5.3<a class="headerlink" href="#exercise-5-3" title="Link to this heading">#</a></h5>
 <p>Get the following <code class="docutils literal notranslate"><span class="pre">indices</span></code> from the <code class="docutils literal notranslate"><span class="pre">info_wombat</span></code> and <code class="docutils literal notranslate"><span class="pre">info_capybara</span></code> respectively: <code class="docutils literal notranslate"><span class="pre">4</span></code>-<code class="docutils literal notranslate"><span class="pre">10</span></code> and <code class="docutils literal notranslate"><span class="pre">4</span></code>-<code class="docutils literal notranslate"><span class="pre">12</span></code>. Replace the resulting word in <code class="docutils literal notranslate"><span class="pre">info_wombat</span></code> with <code class="docutils literal notranslate"><span class="pre">capybara</span></code> and the resulting word in <code class="docutils literal notranslate"><span class="pre">info_capybara</span></code> with <code class="docutils literal notranslate"><span class="pre">wombat</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>🎁 <strong>Bonus Problem</strong> 🎁: You can already guess the task. can you write a function for this?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="exercise-5-4">
+<h5>Exercise 5.4<a class="headerlink" href="#exercise-5-4" title="Link to this heading">#</a></h5>
+<p>Edit <code class="docutils literal notranslate"><span class="pre">info_wombat</span></code> and <code class="docutils literal notranslate"><span class="pre">info_capybara</span></code> in such way that it prints  each string on a new line. Please also write it in all CAPITAL LETTERS</p>
+<p>Note: you should use two differents methods for str to complete the task</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 </section>
@@ -1983,6 +2384,8 @@ After that, please compare the length of the <code class="docutils literal notra
 </div>
 </div>
 <p>Another nice thing to know: <code class="docutils literal notranslate"><span class="pre">python</span></code> <code class="docutils literal notranslate"><span class="pre">list</span></code>s can be <code class="docutils literal notranslate"><span class="pre">inhomogeneous</span></code> and <code class="docutils literal notranslate"><span class="pre">arbitrarily</span> <span class="pre">nested</span></code>, meaning that we can define and access <code class="docutils literal notranslate"><span class="pre">list</span></code>s within <code class="docutils literal notranslate"><span class="pre">list</span></code>s. Is this <code class="docutils literal notranslate"><span class="pre">list</span></code>-ception??</p>
+<center><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTJ3cTVreG5nZGl2cHhncDl2cnY4ejFtZTJrNmd4aDBxejhuZDk1eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7pHTiZYbAoq40/giphy.webp" width="300"></center>
+<center><a href="https://giphy.com/gifs/inception-7pHTiZYbAoq40">via GIPHY</a></center>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nested_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">]]]]]</span>
@@ -2053,11 +2456,11 @@ The favorite animals were: [&#39;cat&#39;, &#39;dog&#39;, &#39;wombat&#39;, &#39
 </div>
 </div>
 </div>
-<p>Initially we might want to <code class="docutils literal notranslate"><span class="pre">count</span></code> how many responses there were. We can achieve this via our old friend the <code class="docutils literal notranslate"><span class="pre">len</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>. If we want to also check if we got responses from all 17 participants of our sample population, we can directly use <code class="docutils literal notranslate"><span class="pre">comparisons</span></code>.</p>
+<p>Initially we might want to <code class="docutils literal notranslate"><span class="pre">count</span></code> how many responses there were. We can achieve this via our old friend the <code class="docutils literal notranslate"><span class="pre">len</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>. If we want to also check if we got responses from all 19 participants of our sample population, we can directly use <code class="docutils literal notranslate"><span class="pre">comparisons</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Regarding artists there were </span><span class="si">%s</span><span class="s1"> responses&#39;</span> <span class="o">%</span><span class="k">len</span>(artists))
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(artists)==17))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(artists)==19))
 </pre></div>
 </div>
 </div>
@@ -2072,7 +2475,7 @@ We got responses from all participants: False
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Regarding snacks there were </span><span class="si">%s</span><span class="s1"> responses&#39;</span> <span class="o">%</span><span class="k">len</span>(snacks))
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(snacks)==17))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(snacks)==19))
 </pre></div>
 </div>
 </div>
@@ -2086,7 +2489,7 @@ We got responses from all participants: False
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Regarding animals there were </span><span class="si">%s</span><span class="s1"> responses&#39;</span> <span class="o">%</span><span class="k">len</span>(animals))
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(animals)==17))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(animals)==19))
 </pre></div>
 </div>
 </div>
@@ -2859,6 +3262,7 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-we-get-started">Before we get started…</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives 📍</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-the-last-session">Recap of the last session</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-problems"><strong>Bonus Problems</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-python">What is Python?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module">Module</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-and-data-types">Variables and data types</a><ul class="nav section-nav flex-column">
@@ -2866,20 +3270,39 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operators-and-comparisons">Operators and comparisons</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-1">Exercise 4.1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-2">Exercise 4.2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-3">Exercise 4.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-operators-1-1">Exercise operators 1.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-operators-1-2">Exercise operators 1.2</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-1">Exercise 4.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-2">Exercise 4.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-3">Exercise 4.3</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings-list-and-dictionaries">Strings, List and dictionaries</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wait-why-len-is-len-variable-and-replace-is-not-replace-variable"><strong>Wait, why len is len(variable) and replace is not replace(variable)?</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-between-functions-and-methods-in-python">Difference Between Functions and Methods in Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-len-variable-and-not-variable-len">Why <code class="docutils literal notranslate"><span class="pre">len(variable)</span></code> and not <code class="docutils literal notranslate"><span class="pre">variable.len()</span></code>?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#important-string-methods-in-python">Important String Methods in Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#don-t-open-this-before-answering-on-previous-question">Don’t open this before answering on previous question</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ok-lets-continue">Ok lets continue</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#string-formatting">String formatting</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting">% formatting:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#str-format">str.format():</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#f-strings">f-strings:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#escape-sequences-in-strings">Escape Sequences in Strings</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-escape-sequences-in-python">Common Escape Sequences in Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-escape-sequences-in-code">Examples of Escape Sequences in Code</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#single-quote">Single Quote</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#double-quotes">Double Quotes</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#triple-quotes">Triple Quotes</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-1">Exercise 5.1</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-2">Exercise 5.2</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-3">Exercise 5.3</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-4">Exercise 5.4</a></li>
 </ul>
 </li>
 </ul>
