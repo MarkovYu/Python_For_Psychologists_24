@@ -18,9 +18,9 @@ chapters:
     sections:
     - file: introduction/intro_python_I.ipynb
     - file: homework/PFP_assignment_2_intro_python_1_2024.ipynb
-#  - file: introduction/introduction_5.md
-#    sections:
-#    - file: introduction/intro_python_II.ipynb 
+  - file: introduction/introduction_5.md
+    sections:
+    - file: introduction/intro_python_II.ipynb 
 #  - file: introduction/introduction_6.md  
 #    sections:
 #    - file: introduction/intro_python_III.ipynb
