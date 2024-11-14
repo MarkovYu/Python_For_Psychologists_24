@@ -1615,6 +1615,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </tbody>
 </table>
 </div>
+<iframe src="https://giphy.com/embed/3d5KleuUZoOvC" width="480" height="269" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/giphyqa-3d5KleuUZoOvC">via GIPHY</a></p><p>Don’t worry, you don’t need to learn them by heart. You can always google or use tab. It is just sometimes handy to also have a sheet with all usefull methods</p>
 <p>We can also <code class="docutils literal notranslate"><span class="pre">index</span></code> a <code class="docutils literal notranslate"><span class="pre">string</span></code> using <code class="docutils literal notranslate"><span class="pre">string[x]</span></code> to get the <code class="docutils literal notranslate"><span class="pre">character</span></code> at the specified <code class="docutils literal notranslate"><span class="pre">index</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1704,6 +1705,15 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;.&#39;
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="n">The</span> <span class="n">Kernel</span> <span class="n">crashed</span> <span class="k">while</span> <span class="n">executing</span> <span class="n">code</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">current</span> <span class="n">cell</span> <span class="ow">or</span> <span class="n">a</span> <span class="n">previous</span> <span class="n">cell</span><span class="o">.</span> 
+
+<span class="n">Please</span> <span class="n">review</span> <span class="n">the</span> <span class="n">code</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">cell</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">to</span> <span class="n">identify</span> <span class="n">a</span> <span class="n">possible</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">failure</span><span class="o">.</span> 
+
+<span class="n">Click</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;https://aka.ms/vscodeJupyterKernelCrash&#39;</span><span class="o">&gt;</span><span class="n">here</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">info</span><span class="o">.</span> 
+
+<span class="n">View</span> <span class="n">Jupyter</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;command:jupyter.viewOutput&#39;</span><span class="o">&gt;</span><span class="n">log</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="k">for</span> <span class="n">further</span> <span class="n">details</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
@@ -1910,6 +1920,12 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+<p>What is %___?</p>
+<ul class="simple">
+<li></li>
+<li></li>
+<li></li>
+</ul>
 </section>
 <section id="str-format">
 <h4>str.format():<a class="headerlink" href="#str-format" title="Link to this heading">#</a></h4>
@@ -2543,6 +2559,49 @@ We got responses from all participants: False
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The unique responses regarding artists were:  [&#39;haftbefehl&#39; &#39;hannah montana&#39; &#39;justin bieber&#39; &#39;michael jackson&#39; &#39;moneboy&#39;
  &#39;taylor swift&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>But there is a crucial difference between <code class="docutils literal notranslate"><span class="pre">np.unique</span></code> and <code class="docutils literal notranslate"><span class="pre">set()</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.unique</span></code> is a function from numpy module, written to give as an output unique values.</p>
+<p><code class="docutils literal notranslate"><span class="pre">set()</span></code> actually changes the format of your list to the new one - <code class="docutils literal notranslate"><span class="pre">set</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">list_2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">list_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_1</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">list_1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_2</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">list_2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 3, 5] &lt;class &#39;list&#39;&gt;
+{1, 2, 3, 5} &lt;class &#39;set&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Set is an unordered collection of data type that is iterable, mutable, and has no duplicate elements. The major advantage of using a set, as opposed to a list, is that it has a highly optimized method for checking whether a specific element is contained in the set.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating a Set </span>
+<span class="n">set1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Initial blank Set: &quot;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span> 
+   
+<span class="c1"># Creating a Set with </span>
+<span class="c1"># the use of Constructor </span>
+<span class="n">string1</span> <span class="o">=</span> <span class="s1">&#39;StringToSet&#39;</span>
+<span class="n">set1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">string1</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Set with the use of an Object: &quot;</span> <span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span> 
+   
+<span class="c1"># Creating a Set with </span>
+<span class="c1"># the use of a List </span>
+<span class="n">set1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s2">&quot;List&quot;</span><span class="p">,</span> <span class="s2">&quot;To&quot;</span><span class="p">,</span> <span class="s2">&quot;Set&quot;</span><span class="p">])</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Set with the use of List: &quot;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3206,14 +3265,14 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 </section>
 <section id="homework-assignment-3-1">
 <h2>Homework assignment #3.1<a class="headerlink" href="#homework-assignment-3-1" title="Link to this heading">#</a></h2>
-<p>Your third homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it <a class="reference external" href="https://drive.google.com/file/d/1oHi1P3YzNLIKvhUx9TlmtmbIZT5Q2zHx/view?usp=sharing">here</a>. In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun! NB: a substantial part of it will be <em>optional</em> and thus the notebook will look way longer than it actually is.</p>
-<p><strong>Deadline: 24/11/2023, 11:59 PM EST</strong></p>
+<p>Your third homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it <a class="reference internal" href="#"><span class="xref myst">here</span></a>. In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun! NB: a substantial part of it will be <em>optional</em> and thus the notebook will look way longer than it actually is.</p>
+<p>**Deadline: **</p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="homework-assignment-3-2">
 <h1>Homework assignment #3.2<a class="headerlink" href="#homework-assignment-3-2" title="Link to this heading">#</a></h1>
-<p>You can download the second part of the homework <a class="reference external" href="https://drive.google.com/file/d/1Y6QfwfszbtSP7_hKFXtEEROK40KBwJ77/view?usp=sharing">here</a>.</p>
-<p><strong>It is due next Friday, December 1st, 11:59 PM</strong></p>
+<p>You can download the second part of the homework <a class="reference internal" href="#"><span class="xref myst">here</span></a>.</p>
+<hr class="docutils" />
 </section>
 
     <script type="text/x-thebe-config">
