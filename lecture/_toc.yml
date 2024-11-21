@@ -21,9 +21,9 @@ chapters:
   - file: introduction/introduction_5.md
     sections:
     - file: introduction/intro_python_II.ipynb 
-#  - file: introduction/introduction_6.md  
-#    sections:
-#    - file: introduction/intro_python_III.ipynb
+  - file: introduction/introduction_6.md  
+    sections:
+    - file: introduction/intro_python_III.ipynb
 #- file: NY_recap.ipynb
 #- file: experiments/experiments.md
 #- file: newanalyses/DataAnalysis_lecture.ipynb

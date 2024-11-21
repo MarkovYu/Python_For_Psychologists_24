@@ -64,6 +64,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'introduction/intro_python_III';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python module showcases" href="../showcases/module_showcases.html" />
+    <link rel="prev" title="Introduction V" href="introduction_6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -114,8 +116,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -169,12 +169,12 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../dei.html">Diversity, Equity and Inclusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Course overview &amp; procedure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup for the course</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../outline.html">General outline</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="introduction.html">Introduction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="introduction.html">Introduction</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="introduction_1.html">Introduction I</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="introduction_2.html">Introduction II</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="intro_jupyter.html">Introduction II - the jupyter ecosystem &amp; notebooks, first look at programming in Python</a></li>
@@ -182,7 +182,19 @@
 </ul>
 </details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="introduction_4.html">Introduction III</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="intro_python_I.html">Introduction IV - Introduction to Python - I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intro_python_I.html">Introduction III - Introduction to Python - I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../homework/PFP_assignment_2_intro_python_1_2024.html">Homework assignment #2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="introduction_5.html">Introduction IV</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="intro_python_II.html">Introduction V - Introduction to Python - II</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="introduction_6.html">Introduction V</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Introduction VI - Introduction to Python III</a></li>
+
+
 </ul>
 </details></li>
 </ul>
@@ -486,11 +498,8 @@
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-the-last-session">Recap of the last session</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-and-data-types">Variables and data types</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operators-and-comparison">operators and comparison</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-2">Exercise 1.2</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings-lists-and-dictionaries">strings, lists and dictionaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operators-and-comparison">Operators and comparison</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings-lists-and-dictionaries">Strings, lists and dictionaries</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#indentation-control-flow">Indentation &amp; Control Flow</a><ul class="visible nav section-nav flex-column">
@@ -524,7 +533,14 @@
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-quickly-talk-about-function-names">Let’s quickly talk about function names…</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-unpacking-with-args-and-kwargs">Argument unpacking with <code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">*kwargs</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-unpacking-with-args-and-kwargs">Argument unpacking with <code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">*kwargs</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-classes-in-python">Introduction to Classes in Python</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-classes">What are Classes?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">Key Terms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-a-class">Defining a Class</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-components-of-a-class">Key Components of a Class</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-classes">Why Use Classes?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-benefits-of-classes">Key Benefits of Classes</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-1">Exercise 4.1</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-2">Exercise 4.2</a></li>
 </ul>
@@ -554,6 +570,7 @@
 <p><a class="reference external" href="https://github.com/M-earnest">Michael Ernst</a><br />
 Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fiebach Lab</a>, <a class="reference external" href="https://www.psychologie.uni-frankfurt.de/49868684/Abteilungen">Neurocognitive Psychology</a> at <a class="reference external" href="https://www.goethe-university-frankfurt.de/en?locale=en">Goethe-University Frankfurt</a></p>
 <p>Adapted by <a class="reference external" href="https://aylinkallmayer.com">Aylin Kallmayer</a></p>
+<p><a class="reference external" href="https://www.y-markov.com">Yury Markov</a>, <a class="reference external" href="http://www.scenegrammarlab.com/">Scene Grammar Lab</a></p>
 <section id="before-we-get-started">
 <h2>Before we get started …<a class="headerlink" href="#before-we-get-started" title="Link to this heading">#</a></h2>
 <br>
@@ -679,9 +696,8 @@ Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fi
 </div>
 </section>
 <section id="operators-and-comparison">
-<h2>operators and comparison<a class="headerlink" href="#operators-and-comparison" title="Link to this heading">#</a></h2>
-<section id="exercise-1-2">
-<h3>Exercise 1.2<a class="headerlink" href="#exercise-1-2" title="Link to this heading">#</a></h3>
+<h2>Operators and comparison<a class="headerlink" href="#operators-and-comparison" title="Link to this heading">#</a></h2>
+<p>Exercise 1.2</p>
 <p>Please calculate the following and <code class="docutils literal notranslate"><span class="pre">assign</span></code> them to the <code class="docutils literal notranslate"><span class="pre">variables</span></code> <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, <code class="docutils literal notranslate"><span class="pre">c</span></code>, etc., if needed:</p>
 <ul class="simple">
 <li><p>10 divided by 3</p></li>
@@ -701,9 +717,8 @@ Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fi
 </div>
 </div>
 </section>
-</section>
 <section id="strings-lists-and-dictionaries">
-<h2>strings, lists and dictionaries<a class="headerlink" href="#strings-lists-and-dictionaries" title="Link to this heading">#</a></h2>
+<h2>Strings, lists and dictionaries<a class="headerlink" href="#strings-lists-and-dictionaries" title="Link to this heading">#</a></h2>
 <p>Exercise 1.3</p>
 <p>You just did an experiment asking 10 people for a random number between 0 and 100. What <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">structure</span></code> would you use to store these values using python?</p>
 <p>Assume the values were: <code class="docutils literal notranslate"><span class="pre">1,</span> <span class="pre">50,</span> <span class="pre">23,</span> <span class="pre">77,</span> <span class="pre">91,</span> <span class="pre">3,</span> <span class="pre">34,</span> <span class="pre">81,</span> <span class="pre">55,</span> <span class="pre">49</span></code>. How would you define a variable of your selected data type to store these values?</p>
@@ -715,15 +730,6 @@ Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fi
 </div>
 </div>
 <p>Exercise 1.4</p>
-<p>From the above random numbers you now want to calculate the mean and test if that mean is higher than 50. How would you do that?</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Exercise 1.5</p>
 <p>Define a variable <code class="docutils literal notranslate"><span class="pre">rand_num_sub_4</span></code> that contains the <code class="docutils literal notranslate"><span class="pre">random</span> <span class="pre">number</span></code> from the <code class="docutils literal notranslate"><span class="pre">fourth</span> <span class="pre">subject</span></code> of your experiment and <code class="docutils literal notranslate"><span class="pre">print</span></code> the statement <code class="docutils literal notranslate"><span class="pre">'Subject</span> <span class="pre">number</span> <span class="pre">four</span> <span class="pre">picked</span> <span class="pre">X</span> <span class="pre">as</span> <span class="pre">random</span> <span class="pre">number'</span></code>, where <code class="docutils literal notranslate"><span class="pre">X</span></code> shoudle be replaced using string formatting. Assign the variable using it’s index.</p>
 <p>Remember: Where do you start to index in Python?</p>
 <div class="cell docutils container">
@@ -733,7 +739,7 @@ Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fi
 </div>
 </div>
 </div>
-<p>Exercise 1.6</p>
+<p>Exercise 1.5</p>
 <p>Oh no you made several mistakes! <code class="docutils literal notranslate"><span class="pre">Update</span></code> your <code class="docutils literal notranslate"><span class="pre">list</span></code> to correct the mistakes.</p>
 <ul class="simple">
 <li><p>The <code class="docutils literal notranslate"><span class="pre">random</span> <span class="pre">number</span></code> of the <code class="docutils literal notranslate"><span class="pre">fourth</span> <span class="pre">participant</span></code> wasn’t actually <code class="docutils literal notranslate"><span class="pre">77</span></code> but <code class="docutils literal notranslate"><span class="pre">76</span></code>.</p></li>
@@ -747,7 +753,7 @@ Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fi
 </div>
 </div>
 </div>
-<p>Exercise 1.7</p>
+<p>Exercise 1.6</p>
 <p>Instead of only declaring a <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">containing</span> <span class="pre">all</span> <span class="pre">the</span> <span class="pre">random</span> <span class="pre">numbers</span></code>, you now want to also <code class="docutils literal notranslate"><span class="pre">assign</span></code> a <code class="docutils literal notranslate"><span class="pre">personal</span> <span class="pre">ID</span></code> to each <code class="docutils literal notranslate"><span class="pre">subject</span></code> that you asked. In our case this would simply be <code class="docutils literal notranslate"><span class="pre">Sub_1</span></code> to <code class="docutils literal notranslate"><span class="pre">Sub_10</span></code> for the <code class="docutils literal notranslate"><span class="pre">first</span></code>, <code class="docutils literal notranslate"><span class="pre">second</span></code>, etc. <code class="docutils literal notranslate"><span class="pre">subject</span></code>, respectively.</p>
 <p>Define a <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> to store this information. Then <code class="docutils literal notranslate"><span class="pre">print</span></code> all the <code class="docutils literal notranslate"><span class="pre">keys</span></code> and also <code class="docutils literal notranslate"><span class="pre">redefine</span></code> the <code class="docutils literal notranslate"><span class="pre">rand_num_sub_4</span></code> variable from before, using your new <code class="docutils literal notranslate"><span class="pre">dictionary</span></code>.</p>
 <div class="cell docutils container">
@@ -757,7 +763,7 @@ Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fi
 </div>
 </div>
 </div>
-<p>Exercise 1.8</p>
+<p>Exercise 1.7</p>
 <p>We’ll assign the inscription on the ring from lord of the rings as a <code class="docutils literal notranslate"><span class="pre">string</span></code> to a variable called <code class="docutils literal notranslate"><span class="pre">lord_of_the_rings</span></code>. As a reminder, the inscription is:</p>
 <p><code class="docutils literal notranslate"><span class="pre">One</span> <span class="pre">Ring</span> <span class="pre">to</span> <span class="pre">rule</span> <span class="pre">them</span> <span class="pre">all,</span> <span class="pre">One</span> <span class="pre">Ring</span> <span class="pre">to</span> <span class="pre">find</span> <span class="pre">them,</span> <span class="pre">One</span> <span class="pre">Ring</span> <span class="pre">to</span> <span class="pre">bring</span> <span class="pre">them</span> <span class="pre">all,</span> <span class="pre">and</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">darkness</span> <span class="pre">bind</span> <span class="pre">them.</span></code></p>
 <p>We also want to create our own fantasy saga, but we are little copy cats. Therefore, we want to define a new statement for the <code class="docutils literal notranslate"><span class="pre">lord</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">stones</span></code>, and only <code class="docutils literal notranslate"><span class="pre">replace</span></code> the word <code class="docutils literal notranslate"><span class="pre">ring</span></code> with <code class="docutils literal notranslate"><span class="pre">stone</span></code> in our sentence. How would you do that?</p>
@@ -768,7 +774,7 @@ Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fi
 </div>
 </div>
 </div>
-<p>Exercise 1.9</p>
+<p>Exercise 1.8</p>
 <p>How <code class="docutils literal notranslate"><span class="pre">long</span></code> is this statement now <code class="docutils literal notranslate"><span class="pre">compared</span></code> to before?
 Further, we want to know what the <code class="docutils literal notranslate"><span class="pre">indices</span></code> <code class="docutils literal notranslate"><span class="pre">40</span> <span class="pre">to</span> <span class="pre">45</span></code> were in the <code class="docutils literal notranslate"><span class="pre">original</span> <span class="pre">inscription</span></code> and what they would be in our <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">sentence</span></code>?</p>
 <div class="cell docutils container">
@@ -778,7 +784,7 @@ Further, we want to know what the <code class="docutils literal notranslate"><sp
 </div>
 </div>
 </div>
-<p>Exercise 1.10</p>
+<p>Exercise 1.9</p>
 <p>You can <code class="docutils literal notranslate"><span class="pre">split</span></code> a <code class="docutils literal notranslate"><span class="pre">string</span></code> into a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">strings</span></code> using <code class="docutils literal notranslate"><span class="pre">string.split('</span> <span class="pre">')</span></code>. This function <code class="docutils literal notranslate"><span class="pre">splits</span></code> the string given the parameter <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code> (i.e the whitespaces) and generates a <code class="docutils literal notranslate"><span class="pre">list</span></code>. Assign the <code class="docutils literal notranslate"><span class="pre">split</span> <span class="pre">list</span></code> to a <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">variable</span></code>and <code class="docutils literal notranslate"><span class="pre">print</span></code> it.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Split</span></code> the lord of the stones <code class="docutils literal notranslate"><span class="pre">string</span></code> into a <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">of</span> <span class="pre">words</span></code>, <code class="docutils literal notranslate"><span class="pre">sort</span></code> this new <code class="docutils literal notranslate"><span class="pre">list</span></code>,</p>
 <p>add it to a new <code class="docutils literal notranslate"><span class="pre">variable</span></code> and <code class="docutils literal notranslate"><span class="pre">print</span></code> the <code class="docutils literal notranslate"><span class="pre">sorted</span> <span class="pre">list</span></code>. Further <code class="docutils literal notranslate"><span class="pre">print</span></code> the <code class="docutils literal notranslate"><span class="pre">10th</span> <span class="pre">element</span></code> of your sorted <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
@@ -1071,8 +1077,6 @@ First define a <code class="docutils literal notranslate"><span class="pre">vari
 </div>
 </div>
 </div>
-<p>This is where we got to 30.11.23, we will continue here next week!</p>
-<hr class="docutils" />
 <p>These many <code class="docutils literal notranslate"><span class="pre">if</span></code> statements were very tedious. Can we not do this more efficiently?</p>
 </br>
 <center><img src="https://i.pinimg.com/736x/f1/be/86/f1be8629d5673e3261726e5011c46e5a.jpg"></center>
@@ -2344,6 +2348,76 @@ Kwargs: {&#39;name&#39;: &#39;michael&#39;, &#39;number&#39;: &#39;017xxx&#39;, 
 </div>
 </div>
 <p>For a more in-depth explanation and examples check out the <a class="reference external" href="https://www.geeksforgeeks.org/args-kwargs-python/">tutorial by geeks for geeks</a></p>
+</section>
+<section id="introduction-to-classes-in-python">
+<h3>Introduction to Classes in Python<a class="headerlink" href="#introduction-to-classes-in-python" title="Link to this heading">#</a></h3>
+<p>Since we learned functions there is one last type of varibale we missed</p>
+</section>
+<section id="what-are-classes">
+<h3>What are Classes?<a class="headerlink" href="#what-are-classes" title="Link to this heading">#</a></h3>
+<p>A <strong>class</strong> is a blueprint for creating objects. It defines a set of attributes (data) and methods (functions) that the objects created from the class will have. Classes are used in <strong>Object-Oriented Programming (OOP)</strong> to model real-world entities and their behavior.</p>
+</section>
+<hr class="docutils" />
+<section id="key-terms">
+<h3>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Class</strong>: The definition or blueprint (e.g., a “Car” class defines attributes like color and methods like drive).</p></li>
+<li><p><strong>Object</strong>: An instance of a class (e.g., <code class="docutils literal notranslate"><span class="pre">my_car</span></code> is an object of the “Car” class).</p></li>
+<li><p><strong>Attributes</strong>: Variables that store data about the object (e.g., color, model).</p></li>
+<li><p><strong>Methods</strong>: Functions that define the behavior of the object (e.g., drive, stop).</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="defining-a-class">
+<h3>Defining a Class<a class="headerlink" href="#defining-a-class" title="Link to this heading">#</a></h3>
+<p>Here’s how to define and use a simple class in Python:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a class</span>
+<span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
+    <span class="c1"># Constructor method to initialize attributes</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">species</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>       <span class="c1"># Attribute: name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">species</span> <span class="o">=</span> <span class="n">species</span> <span class="c1"># Attribute: species</span>
+
+    <span class="c1"># Method: Describes the animal</span>
+    <span class="k">def</span> <span class="nf">describe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is a </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">.&quot;</span>
+
+<span class="c1"># Create an object (instance) of the class</span>
+<span class="n">wombat</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">(</span><span class="s2">&quot;Wally&quot;</span><span class="p">,</span> <span class="s2">&quot;wombat&quot;</span><span class="p">)</span>
+
+<span class="c1"># Access attributes and call methods</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">wombat</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>          <span class="c1"># Output: Wally</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">wombat</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>    <span class="c1"># Output: Wally is a wombat.</span>
+</pre></div>
+</div>
+</section>
+<section id="key-components-of-a-class">
+<h3>Key Components of a Class<a class="headerlink" href="#key-components-of-a-class" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Class Definition</strong>: Declares the class and gives it a name. <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">Animal:</span></code></p></li>
+<li><p><strong>Attributes</strong>: Hold the data or properties of an object. <code class="docutils literal notranslate"><span class="pre">self.name</span></code>, <code class="docutils literal notranslate"><span class="pre">self.species</span></code></p></li>
+<li><p><strong>Methods</strong>: Define the behavior or actions that the object can perform. <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">describe</span></code></p></li>
+<li><p><strong>Constructor Method (<code class="docutils literal notranslate"><span class="pre">__init__</span></code>)</strong>: Initializes the attributes of the object when it is created. <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">__init__(self,</span> <span class="pre">name,</span> <span class="pre">species):</span></code></p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="why-use-classes">
+<h3>Why Use Classes?<a class="headerlink" href="#why-use-classes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Organize Code</strong>: Encapsulate data and behavior into reusable units.</p></li>
+<li><p><strong>Model Real-World Entities</strong>: Represent objects like cars, people, or animals in your code.</p></li>
+<li><p><strong>Reusability</strong>: Define behaviors and attributes once, then create multiple objects based on the same class.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="key-benefits-of-classes">
+<h3>Key Benefits of Classes<a class="headerlink" href="#key-benefits-of-classes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Encapsulation</strong>: Bundles data (attributes) and methods that operate on the data into a single unit.</p></li>
+<li><p><strong>Inheritance</strong>: Allows a class to inherit methods and attributes from another class, promoting code reuse.</p></li>
+<li><p><strong>Polymorphism</strong>: Provides the ability to define methods that behave differently depending on the object type.</p></li>
+<li><p><strong>Modularity</strong>: Helps break down a complex system into smaller, manageable parts.</p></li>
+</ul>
 <section id="exercise-4-1">
 <h4>Exercise 4.1<a class="headerlink" href="#exercise-4-1" title="Link to this heading">#</a></h4>
 <p>Define a <code class="docutils literal notranslate"><span class="pre">function</span></code> called <code class="docutils literal notranslate"><span class="pre">get_longest_string</span></code> that takes two <code class="docutils literal notranslate"><span class="pre">strings</span></code> as <code class="docutils literal notranslate"><span class="pre">input</span></code> and <code class="docutils literal notranslate"><span class="pre">returns</span></code> the <code class="docutils literal notranslate"><span class="pre">longer</span> <span class="pre">string</span></code>. If the <code class="docutils literal notranslate"><span class="pre">strings</span></code> have the same <code class="docutils literal notranslate"><span class="pre">length</span></code>, the <code class="docutils literal notranslate"><span class="pre">first</span></code> one should be <code class="docutils literal notranslate"><span class="pre">returned</span></code>.</p>
@@ -2374,8 +2448,7 @@ Kwargs: {&#39;name&#39;: &#39;michael&#39;, &#39;number&#39;: &#39;017xxx&#39;, 
 </section>
 <section id="homework-assignment-5">
 <h2>Homework assignment #5<a class="headerlink" href="#homework-assignment-5" title="Link to this heading">#</a></h2>
-<p>Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it <a class="reference external" href="https://drive.google.com/file/d/10g9krxq9Y5SNdRpWfkvOMF0j5i3lbxeB/view?usp=share_link">here</a>. In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun! NB: a substantial part of it will be <em>optional</em> and thus the notebook will look way longer than it actually is.</p>
-<p><strong>Deadline: 22/12/2023, 11:59 PM EST</strong></p>
+<p>Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it <a class="reference internal" href="#"><span class="xref myst">here</span></a>. In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun! NB: a substantial part of it will be <em>optional</em> and thus the notebook will look way longer than it actually is.</p>
 <p>Also, in preparation for our switch to more applied things, i.e. starting with experiments in <code class="docutils literal notranslate"><span class="pre">python</span></code>. We’ll have to install <code class="docutils literal notranslate"><span class="pre">psychopy</span></code>. To do that please download the programm from <a class="reference external" href="https://www.psychopy.org/download.html">here</a> and follow the instructions for your specific operating system. If you encounter any Problems, please let me know!</p>
 <section id="and-this-concludes-our-introduction-sessions">
 <h3>And this concludes our introduction sessions.<a class="headerlink" href="#and-this-concludes-our-introduction-sessions" title="Link to this heading">#</a></h3>
@@ -2416,6 +2489,24 @@ Kwargs: {&#39;name&#39;: &#39;michael&#39;, &#39;number&#39;: &#39;017xxx&#39;, 
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="introduction_6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduction V</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../showcases/module_showcases.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Python module showcases</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -2439,11 +2530,8 @@ Kwargs: {&#39;name&#39;: &#39;michael&#39;, &#39;number&#39;: &#39;017xxx&#39;, 
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-the-last-session">Recap of the last session</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-and-data-types">Variables and data types</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operators-and-comparison">operators and comparison</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-2">Exercise 1.2</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings-lists-and-dictionaries">strings, lists and dictionaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operators-and-comparison">Operators and comparison</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings-lists-and-dictionaries">Strings, lists and dictionaries</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#indentation-control-flow">Indentation &amp; Control Flow</a><ul class="visible nav section-nav flex-column">
@@ -2477,7 +2565,14 @@ Kwargs: {&#39;name&#39;: &#39;michael&#39;, &#39;number&#39;: &#39;017xxx&#39;, 
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-quickly-talk-about-function-names">Let’s quickly talk about function names…</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-unpacking-with-args-and-kwargs">Argument unpacking with <code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">*kwargs</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-unpacking-with-args-and-kwargs">Argument unpacking with <code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">*kwargs</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-classes-in-python">Introduction to Classes in Python</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-classes">What are Classes?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">Key Terms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-a-class">Defining a Class</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-components-of-a-class">Key Components of a Class</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-classes">Why Use Classes?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-benefits-of-classes">Key Benefits of Classes</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-1">Exercise 4.1</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-2">Exercise 4.2</a></li>
 </ul>
