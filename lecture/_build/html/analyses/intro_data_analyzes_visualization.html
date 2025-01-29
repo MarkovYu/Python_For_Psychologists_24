@@ -64,6 +64,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'analyses/intro_data_analyzes_visualization';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python module showcases" href="../showcases/module_showcases.html" />
+    <link rel="prev" title="Homework assignment #4" href="../introduction/PFP_assignment_4_intro_python_3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -114,8 +116,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -169,7 +169,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../dei.html">Diversity, Equity and Inclusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Course overview &amp; procedure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup for the course</a></li>
@@ -182,13 +182,31 @@
 </ul>
 </details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_4.html">Introduction III</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_I.html">Introduction IV - Introduction to Python - I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_I.html">Introduction III - Introduction to Python - I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../homework/PFP_assignment_2_intro_python_1_2024.html">Homework assignment #2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_5.html">Introduction IV</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_II.html">Introduction V - Introduction to Python - II</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../introduction/PFP_assignment_3_intro_python_2.html">Homework assignment #3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_6.html">Introduction V</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_III.html">Introduction VI - Introduction to Python III</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../introduction/PFP_assignment_4_intro_python_3.html">Homework assignment #4</a></li>
+
 </ul>
 </details></li>
 </ul>
 </details></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data analyzes I - basics in data handling</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../showcases/module_showcases.html">Python module showcases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../showcases/python_numpy.html">Introduction to NumPy</a></li>
+
+
 
 
 
@@ -487,21 +505,14 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-ready">Getting ready</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-kind-of-data-do-i-have-and-where-is-it">What kind of data do I have and where is it</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1">Exercise 1</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-kind-of-data-do-i-have-and-where-is-it">What kind of data do I have and where is it</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-goal-of-the-data-analyzes">What is the goal of the data analyzes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-will-the-respective-steps-be-implemented">How will the respective steps be implemented</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-data-operations">Basic data operations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-data">Reading data</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2">Exercise 2</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas">Pandas</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3">Exercise 3</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas">Pandas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3">Exercise 3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-data">Exploring data</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4">Exercise 4</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5">Exercise 5</a></li>
@@ -674,7 +685,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">chdir</span>
 
-<span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;/Users/peerherholz/Desktop/&#39;</span><span class="p">)</span>
+<span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;C:/Users/ika_m/OneDrive - Johann Wolfgang Goethe Universität/Documents/test_data&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -684,7 +695,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">glob</span> <span class="kn">import</span> <span class="n">glob</span>
 
-<span class="n">data_files</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="s1">&#39;data_experiment/*.csv&#39;</span><span class="p">)</span>
+<span class="n">data_files</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -698,41 +709,36 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;data_experiment/yagurllea_experiment_2022_Jan_25_1318.csv&#39;,
- &#39;data_experiment/pauli4psychopy_experiment_2022_Jan_24_1145.csv&#39;,
- &#39;data_experiment/porla_experiment_2022_Jan_24_2154.csv&#39;,
- &#39;data_experiment/Sophie Oprée_experiment_2022_Jan_24_1411.csv&#39;,
- &#39;data_experiment/participant_123_experiment_2022_Jan_26_1307.csv&#39;,
- &#39;data_experiment/funny_ID_experiment_2022_Jan_24_1215.csv&#39;,
- &#39;data_experiment/Chiara Ferrandina_experiment_2022_Jan_24_1829.csv&#39;,
- &#39;data_experiment/Heidi Klum_experiment_2022_Jan_26_1600.csv&#39;,
- &#39;data_experiment/Smitty_Werben_Jagger_Man_Jensen#1_experiment_2022_Jan_26_1158.csv&#39;,
- &#39;data_experiment/wile_coyote_2022_Jan_23_1805.csv&#39;,
- &#39;data_experiment/bugs_bunny_experiment_2022_Jan_23_1745.csv&#39;,
- &#39;data_experiment/Bruce_Wayne_experiment_2022_Jan_23_1605.csv&#39;,
- &#39;data_experiment/twentyfour_experiment_2022_Jan_26_1436.csv&#39;,
- &#39;data_experiment/Nina _experiment_2022_Jan_24_1212.csv&#39;,
- &#39;data_experiment/daffy_duck_experiment_2022_Jan_23_1409.csv&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;AG 01_02_stroop_2025-01-23_13h12.02.354.csv&#39;,
+ &#39;BF 31_01_stroop_2025-01-23_12h25.25.690.csv&#39;,
+ &#39;BF_31_02_stroop_2025-01-23_13h12.43.710.csv&#39;,
+ &#39;FB_09_02_stroop_2025-01-23_13h12.14.223.csv&#39;,
+ &#39;FB_09_03_stroop_2025-01-23_13h30.49.889.csv&#39;,
+ &#39;FK_24_01_stroop_2025-01-23_12h36.23.128.csv&#39;,
+ &#39;JB_22_01_stroop_2025-01-23_12h29.58.313.csv&#39;,
+ &#39;JB_22_02_stroop_2025-01-23_13h13.20.521.csv&#39;,
+ &#39;JB_22_03_stroop_2025-01-23_13h32.52.317.csv&#39;,
+ &#39;XY_16_03_stroop_2025-01-23_13h31.18.706.csv&#39;]
 </pre></div>
 </div>
 </div>
 </div>
-<p>Coolio, that worked. We get a <code class="docutils literal notranslate"><span class="pre">list</span></code> indicating all <code class="docutils literal notranslate"><span class="pre">files</span></code> as <code class="docutils literal notranslate"><span class="pre">items</span></code> in the form of <code class="docutils literal notranslate"><span class="pre">strings</span></code>. We also see that we get the <code class="docutils literal notranslate"><span class="pre">relative</span> <span class="pre">paths</span></code> and that our <code class="docutils literal notranslate"><span class="pre">files</span></code> are in <code class="docutils literal notranslate"><span class="pre">.csv</span></code> format. Having everything in a <code class="docutils literal notranslate"><span class="pre">list</span></code>, we can make use of this great <code class="docutils literal notranslate"><span class="pre">python</span></code> <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> and e.g. check how many <code class="docutils literal notranslate"><span class="pre">files</span></code> we have, as well as if we have a <code class="docutils literal notranslate"><span class="pre">file</span></code> for every <code class="docutils literal notranslate"><span class="pre">participant</span></code> (should be <code class="docutils literal notranslate"><span class="pre">15</span></code>).</p>
+<p>Coolio, that worked. We get a <code class="docutils literal notranslate"><span class="pre">list</span></code> indicating all <code class="docutils literal notranslate"><span class="pre">files</span></code> as <code class="docutils literal notranslate"><span class="pre">items</span></code> in the form of <code class="docutils literal notranslate"><span class="pre">strings</span></code>. We also see that we get the <code class="docutils literal notranslate"><span class="pre">relative</span> <span class="pre">paths</span></code> and that our <code class="docutils literal notranslate"><span class="pre">files</span></code> are in <code class="docutils literal notranslate"><span class="pre">.csv</span></code> format. Having everything in a <code class="docutils literal notranslate"><span class="pre">list</span></code>, we can make use of this great <code class="docutils literal notranslate"><span class="pre">python</span></code> <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> and e.g. check how many <code class="docutils literal notranslate"><span class="pre">files</span></code> we have, as well as if we have a <code class="docutils literal notranslate"><span class="pre">file</span></code> for every <code class="docutils literal notranslate"><span class="pre">participant</span></code> (should be <code class="docutils literal notranslate"><span class="pre">10</span></code>).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data_files</span><span class="p">))</span>
 
-<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_files</span><span class="p">)</span><span class="o">==</span><span class="mi">15</span><span class="p">:</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_files</span><span class="p">)</span><span class="o">==</span><span class="mi">10</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The number of data files matches the number of participants.&#39;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_files</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">15</span><span class="p">:</span>
+<span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_files</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are </span><span class="si">%s</span><span class="s1"> more data files than participants.&#39;</span> <span class="o">%</span><span class="k">str</span>(int(len(data_files)-19)))
-<span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_files</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">15</span><span class="p">:</span>
+<span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_files</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are </span><span class="si">%s</span><span class="s1"> data files missing.&#39;</span> <span class="o">%</span><span class="k">str</span>(19-len(data_files)))
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>15
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
 The number of data files matches the number of participants.
 </pre></div>
 </div>
@@ -750,41 +756,29 @@ The number of data files matches the number of participants.
 </div>
 </div>
 </div>
-<section id="exercise-1">
-<h4>Exercise 1<a class="headerlink" href="#exercise-1" title="Link to this heading">#</a></h4>
-<p>Can you describe what behavior the above lines of <code class="docutils literal notranslate"><span class="pre">code</span></code> implement?</p>
-<p>See how cool and easy the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">basics</span></code> we explored in the introduction can be applied “in the wild”? That being said, we should check if everything worked as expected and get an updated <code class="docutils literal notranslate"><span class="pre">list</span></code> of our <code class="docutils literal notranslate"><span class="pre">files</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_files</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="s1">&#39;data_experiment/*.csv&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_files</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*.csv&#39;</span><span class="p">)</span>
 
 <span class="n">data_files</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;data_experiment/yagurllea_experiment_2022_Jan_25_1318.csv&#39;,
- &#39;data_experiment/pauli4psychopy_experiment_2022_Jan_24_1145.csv&#39;,
- &#39;data_experiment/porla_experiment_2022_Jan_24_2154.csv&#39;,
- &#39;data_experiment/Nina__experiment_2022_Jan_24_1212.csv&#39;,
- &#39;data_experiment/Sophie Oprée_experiment_2022_Jan_24_1411.csv&#39;,
- &#39;data_experiment/participant_123_experiment_2022_Jan_26_1307.csv&#39;,
- &#39;data_experiment/funny_ID_experiment_2022_Jan_24_1215.csv&#39;,
- &#39;data_experiment/Chiara Ferrandina_experiment_2022_Jan_24_1829.csv&#39;,
- &#39;data_experiment/Smitty_Werben_Jagger_Man_Jensen#1_experiment_2022_Jan_26_1158.csv&#39;,
- &#39;data_experiment/wile_coyote_2022_Jan_23_1805.csv&#39;,
- &#39;data_experiment/Heidi_Klum_experiment_2022_Jan_26_1600.csv&#39;,
- &#39;data_experiment/bugs bunny_experiment_2022_Jan_23_1745.csv&#39;,
- &#39;data_experiment/Bruce_Wayne_experiment_2022_Jan_23_1605.csv&#39;,
- &#39;data_experiment/twentyfour_experiment_2022_Jan_26_1436.csv&#39;,
- &#39;data_experiment/daffy_duck_experiment_2022_Jan_23_1409.csv&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;AG_01_02_stroop_2025-01-23_13h12.02.354.csv&#39;,
+ &#39;BF_31_01_stroop_2025-01-23_12h25.25.690.csv&#39;,
+ &#39;BF_31_02_stroop_2025-01-23_13h12.43.710.csv&#39;,
+ &#39;FB_09_02_stroop_2025-01-23_13h12.14.223.csv&#39;,
+ &#39;FB_09_03_stroop_2025-01-23_13h30.49.889.csv&#39;,
+ &#39;FK_24_01_stroop_2025-01-23_12h36.23.128.csv&#39;,
+ &#39;JB_22_01_stroop_2025-01-23_12h29.58.313.csv&#39;,
+ &#39;JB_22_02_stroop_2025-01-23_13h13.20.521.csv&#39;,
+ &#39;JB_22_03_stroop_2025-01-23_13h32.52.317.csv&#39;,
+ &#39;XY_16_03_stroop_2025-01-23_13h31.18.706.csv&#39;]
 </pre></div>
 </div>
 </div>
 </div>
-<p>Great! With these basics set, we can continue and start thinking about the potential goal of the analyses.</p>
-<p>For each <code class="docutils literal notranslate"><span class="pre">file</span></code> in our <code class="docutils literal notranslate"><span class="pre">list</span></code> of files called <code class="docutils literal notranslate"><span class="pre">data_files</span></code> we will check if there’s a <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">space</span></code>, in the <code class="docutils literal notranslate"><span class="pre">file</span> <span class="pre">name</span></code> and if so, <code class="docutils literal notranslate"><span class="pre">rename</span></code> the respective <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">replacing</span></code> the <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code> with an <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p>
-</section>
 </section>
 <section id="what-is-the-goal-of-the-data-analyzes">
 <h3>What is the goal of the data analyzes<a class="headerlink" href="#what-is-the-goal-of-the-data-analyzes" title="Link to this heading">#</a></h3>
@@ -841,142 +835,11 @@ The number of data files matches the number of participants.
 <li><p><a class="reference internal" href="#"><span class="xref myst">Exploring data</span></a></p></li>
 <li><p><a class="reference internal" href="#"><span class="xref myst">Data wrangling</span></a></p></li>
 </ul>
-<section id="reading-data">
-<h3>Reading data<a class="headerlink" href="#reading-data" title="Link to this heading">#</a></h3>
-<p>So far we actually have no idea what our <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">files</span></code> entail. Sure, roughly as we conducted the respective experiment, but not in detail and in what form. For this and every subsequent step, we need to actually <code class="docutils literal notranslate"><span class="pre">read</span></code> or rather <code class="docutils literal notranslate"><span class="pre">load</span></code> the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">file</span></code>(s) via <code class="docutils literal notranslate"><span class="pre">python</span></code>. This can be done via many options and might depend on the <code class="docutils literal notranslate"><span class="pre">data</span></code> at hand but given that we have <code class="docutils literal notranslate"><span class="pre">behavioral</span> <span class="pre">data</span></code> in <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files, we could simply use <a class="reference internal" href="#"><span class="xref myst">numpy</span></a>’s <a class="reference internal" href="#"><span class="xref myst">genfromtxt</span></a> <code class="docutils literal notranslate"><span class="pre">function</span></code>. Let’s start with the <code class="docutils literal notranslate"><span class="pre">first</span> <span class="pre">data</span> <span class="pre">file</span></code> of our <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="n">data_loaded</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">data_files</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>So, what to we have now? Let’s explore some basic properties, starting with the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code>:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">data_loaded</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy.ndarray
-</pre></div>
-</div>
-</div>
-</div>
-<p>It’s an <code class="docutils literal notranslate"><span class="pre">numpy</span> <span class="pre">array</span></code>, i.e. a special form of an array that comes with several cool inbuilt <code class="docutils literal notranslate"><span class="pre">functions</span></code>. Unfortunately, we don’t have time to go into more detail here but <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and its <code class="docutils literal notranslate"><span class="pre">array</span></code>s are crucial to basically everything related to <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">operations</span></code> and <code class="docutils literal notranslate"><span class="pre">analyzes</span></code> in <code class="docutils literal notranslate"><span class="pre">python</span></code>. To give you some idea/pointers, we will add a dedicated notebook that focuses on <code class="docutils literal notranslate"><span class="pre">numpy</span></code>. However, for now, what can do, for example, is easily checking the <code class="docutils literal notranslate"><span class="pre">shape</span></code> or <code class="docutils literal notranslate"><span class="pre">dimensions</span></code> of our <code class="docutils literal notranslate"><span class="pre">data</span></code>:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(43, 93)
-</pre></div>
-</div>
-</div>
-</div>
-<section id="exercise-2">
-<h4>Exercise 2<a class="headerlink" href="#exercise-2" title="Link to this heading">#</a></h4>
-<p>How do we find out what this output means?</p>
-<p>We can use the <code class="docutils literal notranslate"><span class="pre">help</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> to get some details:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on function shape in module numpy:
-
-shape(a)
-    Return the shape of an array.
-    
-    Parameters
-    ----------
-    a : array_like
-        Input array.
-    
-    Returns
-    -------
-    shape : tuple of ints
-        The elements of the shape tuple give the lengths of the
-        corresponding array dimensions.
-    
-    See Also
-    --------
-    len
-    ndarray.shape : Equivalent array method.
-    
-    Examples
-    --------
-    &gt;&gt;&gt; np.shape(np.eye(3))
-    (3, 3)
-    &gt;&gt;&gt; np.shape([[1, 2]])
-    (1, 2)
-    &gt;&gt;&gt; np.shape([0])
-    (1,)
-    &gt;&gt;&gt; np.shape(0)
-    ()
-    
-    &gt;&gt;&gt; a = np.array([(1, 2), (3, 4)], dtype=[(&#39;x&#39;, &#39;i4&#39;), (&#39;y&#39;, &#39;i4&#39;)])
-    &gt;&gt;&gt; np.shape(a)
-    (2,)
-    &gt;&gt;&gt; a.shape
-    (2,)
-</pre></div>
-</div>
-</div>
-</div>
-<p>Besides the <code class="docutils literal notranslate"><span class="pre">shape</span></code>, we can also easily get the <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code> and <code class="docutils literal notranslate"><span class="pre">mean</span></code> <code class="docutils literal notranslate"><span class="pre">values</span></code> of our <code class="docutils literal notranslate"><span class="pre">data</span></code>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data_loaded</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nan nan nan
-</pre></div>
-</div>
-</div>
-</div>
-<p>Wait a hot Montreal minute…why do we always get <code class="docutils literal notranslate"><span class="pre">nan</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">a</span> <span class="pre">number</span></code>? Maybe we should have check what our <code class="docutils literal notranslate"><span class="pre">data_loaded</span></code> <code class="docutils literal notranslate"><span class="pre">variable</span></code> actually contains…</p>
-<p>Let’s do that now:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[        nan,         nan,         nan, ...,         nan,
-                nan,         nan],
-       [        nan,         nan,         nan, ...,         nan,
-        60.26717645,         nan],
-       [        nan,         nan,         nan, ...,         nan,
-        60.26717645,         nan],
-       ...,
-       [        nan,         nan,         nan, ...,         nan,
-        60.26717645,         nan],
-       [        nan,         nan,         nan, ...,         nan,
-        60.26717645,         nan],
-       [        nan,         nan,         nan, ...,         nan,
-                nan,         nan]])
-</pre></div>
-</div>
-</div>
-</div>
-<p>Well…that’s not really informative. There are some <code class="docutils literal notranslate"><span class="pre">numbers</span></code>, a lot of <code class="docutils literal notranslate"><span class="pre">nan</span></code> and there’s also some structure in there but everything is far from being intelligible. The thing is: <code class="docutils literal notranslate"><span class="pre">numpy</span></code> is great for all the things re <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">analyzes</span></code>, no matter the <code class="docutils literal notranslate"><span class="pre">type</span></code> but quite often understanding and getting things into the right <code class="docutils literal notranslate"><span class="pre">form(at)</span></code> can be a bit of a hassle. Interestingly, there are actually quite a few <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">modules</span></code> that build upon <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and focus on certain <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">modalities</span></code> and <code class="docutils literal notranslate"><span class="pre">form(at)s</span></code>, making their respecting handling and wrangling way easier.</p>
 <p>For <code class="docutils literal notranslate"><span class="pre">data</span></code> in <code class="docutils literal notranslate"><span class="pre">tabular</span> <span class="pre">form</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">.csv</span></code>, <code class="docutils literal notranslate"><span class="pre">.tsv</span></code>, such as we have, <code class="docutils literal notranslate"><span class="pre">pandas</span></code> will come to the rescue!</p>
 <center><img src="https://miro.medium.com/max/1400/1*6d5dw6dPhy4vBp2vRW6uzw.png" width="400px" style="margin-bottom: 10px;"></center>
 <p>Nope, unfortunately not the cute fluffy animals but a <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">module</span></code> of the same name. However make sure to check <a class="reference external" href="https://www.pandasinternational.org/">https://www.pandasinternational.org/</a> to see what you can do to help preserve cute fluffy fantastic animals.</p>
-</section>
 <section id="pandas">
-<h4>Pandas<a class="headerlink" href="#pandas" title="Link to this heading">#</a></h4>
+<h3>Pandas<a class="headerlink" href="#pandas" title="Link to this heading">#</a></h3>
 <p>It is hard to describe how insanely useful and helpful the <a class="reference internal" href="#"><span class="xref myst">pandas</span></a> <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">module</span></code> is. However, TL;DR: big time! It quickly became one of the standard and most used tools for various <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">science</span></code> aspects and comes with a tremendous amount of <code class="docutils literal notranslate"><span class="pre">functions</span></code> for basically all data wrangling steps. Here is some core information:</p>
 <ul class="simple">
 <li><p>High-performance, easy-to-use <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">structures</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">analysis</span></code> tools</p></li>
@@ -995,7 +858,7 @@ shape(a)
 </div>
 </section>
 <section id="exercise-3">
-<h4>Exercise 3<a class="headerlink" href="#exercise-3" title="Link to this heading">#</a></h4>
+<h3>Exercise 3<a class="headerlink" href="#exercise-3" title="Link to this heading">#</a></h3>
 <p>Having import <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, how can we check its <code class="docutils literal notranslate"><span class="pre">functions</span></code>? Assuming you found out how: what <code class="docutils literal notranslate"><span class="pre">function</span></code> could be helpful and why?</p>
 <p>We can simply use <code class="docutils literal notranslate"><span class="pre">pd.</span></code> and <code class="docutils literal notranslate"><span class="pre">tab</span> <span class="pre">completion</span></code> to get the list of <code class="docutils literal notranslate"><span class="pre">available</span> <span class="pre">functions</span></code>.</p>
 <div class="cell docutils container">
@@ -1060,49 +923,49 @@ shape(a)
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>movie,snack,animal,loop_rating_movie.thisRepN,loop_rating_movie.thisTrialN,loop_rating_movie.thisN,loop_rating_movie.thisIndex,loop_rating_snacks.thisRepN,loop_rating_snacks.thisTrialN,loop_rating_snacks.thisN,loop_rating_snacks.thisIndex,loop_rating_animals.thisRepN,loop_rating_animals.thisTrialN,loop_rating_animals.thisN,loop_rating_animals.thisIndex,welcome_message.started,welcome_message.stopped,spacebar_welcome.keys,spacebar_welcome.rt,spacebar_welcome.started,spacebar_welcome.stopped,instruction.started,instruction.stopped,spacebar_instrunctions.keys,spacebar_instrunctions.rt,spacebar_instrunctions.started,spacebar_instrunctions.stopped,movie_intro_text.started,movie_intro_text.stopped,movies.started,movies.stopped,question_rating.started,question_rating.stopped,rating_movies.response,rating_movies.rt,rating_movies.started,rating_movies.stopped,spacebar_response.keys,spacebar_response.rt,spacebar_response.started,spacebar_response.stopped,explanation_rating.started,explanation_rating.stopped,snack_intro_text.started,snack_intro_text.stopped,snacks.started,snacks.stopped,question_rating_snack.started,question_rating_snack.stopped,rating_snacks.response,rating_snacks.rt,rating_snacks.started,rating_snacks.stopped,spacebar_response_snacks.keys,spacebar_response_snacks.rt,spacebar_response_snacks.started,spacebar_response_snacks.stopped,explanation_rating_snacks.started,explanation_rating_snacks.stopped,animal_intro_text.started,animal_intro_text.stopped,animal_text.started,animal_text.stopped,question_animal.started,question_animal.stopped,rating_animals.response,rating_animals.rt,rating_animals.started,rating_animals.stopped,spacebar_animals.keys,spacebar_animals.rt,spacebar_animals.started,spacebar_animals.stopped,explanation_animals.started,explanation_animals.stopped,end.started,end.stopped,spacebar_end.keys,spacebar_end.rt,spacebar_end.started,spacebar_end.stopped,thanks_image.started,thanks_image.stopped,participant,session,age,left-handed,like this course,date,expName,psychopyVersion,frameRate,</th>
+      <th>participant,session,date,expName,psychopyVersion,OS,frameRate,resp.keys,resp.corr,resp.rt,resp.duration,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,text,letterColor,corrAns,congruent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>,,,,,,,,,,,,,,,17.94193319999613,None,space,2....</td>
+      <td>AG_01_02,001,2025-01-23_13h12.02.354,stroop,20...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>,,,,,,,,,,,,,,,,,,,,,20.554694099992048,None,s...</td>
+      <td>AG_01_02,001,2025-01-23_13h12.02.354,stroop,20...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>The Intouchables,pancakes,barred owl,0,0,0,0,,...</td>
+      <td>AG_01_02,001,2025-01-23_13h12.02.354,stroop,20...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>James Bond,bananas,cat,0,1,1,1,,,,,,,,,,,,,,,,...</td>
+      <td>AG_01_02,001,2025-01-23_13h12.02.354,stroop,20...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Forrest Gump,dominoes,coral,0,2,2,2,,,,,,,,,,,...</td>
+      <td>AG_01_02,001,2025-01-23_13h12.02.354,stroop,20...</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Retired Extremely Dangerous,carrots,elephant,0...</td>
+      <td>AG_01_02,001,2025-01-23_13h12.02.354,stroop,20...</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>The Imitation Game,humus,groundhog,0,4,4,4,,,,...</td>
+      <td>AG_01_02,001,2025-01-23_13h12.02.354,stroop,20...</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>The Philosophers,chocolate,lizard,0,5,5,5,,,,,...</td>
+      <td>AG_01_02,001,2025-01-23_13h12.02.354,stroop,20...</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Call Me by Your Name,Kinder bueno,None,0,6,6,6...</td>
+      <td>AG_01_02,001,2025-01-23_13h12.02.354,stroop,20...</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Shutter Island,Pringles,None,0,7,7,7,,,,,,,,,,...</td>
+      <td>AG_01_02,001,2025-01-23_13h12.02.354,stroop,20...</td>
     </tr>
   </tbody>
 </table>
@@ -1113,7 +976,7 @@ shape(a)
 However, we told the <code class="docutils literal notranslate"><span class="pre">read_csv</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> that the <code class="docutils literal notranslate"><span class="pre">delimiter</span></code> is <code class="docutils literal notranslate"><span class="pre">;</span></code> instead of <code class="docutils literal notranslate"><span class="pre">,</span></code> and thus the <code class="docutils literal notranslate"><span class="pre">data</span></code> was read in wrong. We can easily fix that via setting the right <code class="docutils literal notranslate"><span class="pre">delimiter</span></code> (or just using the <code class="docutils literal notranslate"><span class="pre">default</span></code> of the respective <code class="docutils literal notranslate"><span class="pre">keyword</span> <span class="pre">argument</span></code>):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_files</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_files</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1144,32 +1007,38 @@ However, we told the <code class="docutils literal notranslate"><span class="pre
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>movie</th>
-      <th>snack</th>
-      <th>animal</th>
-      <th>loop_rating_movie.thisRepN</th>
-      <th>loop_rating_movie.thisTrialN</th>
-      <th>loop_rating_movie.thisN</th>
-      <th>loop_rating_movie.thisIndex</th>
-      <th>loop_rating_snacks.thisRepN</th>
-      <th>loop_rating_snacks.thisTrialN</th>
-      <th>loop_rating_snacks.thisN</th>
-      <th>...</th>
       <th>participant</th>
       <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
       <th>date</th>
       <th>expName</th>
       <th>psychopyVersion</th>
+      <th>OS</th>
       <th>frameRate</th>
-      <th>Unnamed: 92</th>
+      <th>resp.keys</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>resp.duration</th>
+      <th>trials.thisRepN</th>
+      <th>trials.thisTrialN</th>
+      <th>trials.thisN</th>
+      <th>trials.thisIndex</th>
+      <th>trials.ran</th>
+      <th>text</th>
+      <th>letterColor</th>
+      <th>corrAns</th>
+      <th>congruent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1180,237 +1049,219 @@ However, we told the <code class="docutils literal notranslate"><span class="pre
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.635</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>red</td>
+      <td>left</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>The Intouchables</td>
-      <td>pancakes</td>
-      <td>barred owl</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.342</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>James Bond</td>
-      <td>bananas</td>
-      <td>cat</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>0.0</td>
+      <td>0.641</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
       <td>1.0</td>
       <td>1.0</td>
-      <td>1.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
-      <td>NaN</td>
+      <td>red</td>
+      <td>green</td>
+      <td>down</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Forrest Gump</td>
-      <td>dominoes</td>
-      <td>coral</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>1.076</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Retired Extremely Dangerous</td>
-      <td>carrots</td>
-      <td>elephant</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>3.0</td>
-      <td>3.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.680</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>The Imitation Game</td>
-      <td>humus</td>
-      <td>groundhog</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>4.0</td>
-      <td>4.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.769</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>The Philosophers</td>
-      <td>chocolate</td>
-      <td>lizard</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>5.0</td>
-      <td>5.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.981</td>
       <td>NaN</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>6.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>red</td>
+      <td>left</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Call Me by Your Name</td>
-      <td>Kinder bueno</td>
-      <td>None</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.747</td>
       <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Shutter Island</td>
-      <td>Pringles</td>
-      <td>None</td>
-      <td>0.0</td>
-      <td>7.0</td>
-      <td>7.0</td>
-      <td>7.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.704</td>
       <td>NaN</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
     </tr>
   </tbody>
 </table>
-<p>10 rows × 93 columns</p>
 </div></div></div>
 </div>
 <p>Ah yes, that’s it: we see <code class="docutils literal notranslate"><span class="pre">columns</span></code> and <code class="docutils literal notranslate"><span class="pre">rows</span></code> and respective <code class="docutils literal notranslate"><span class="pre">values</span></code> therein. It’s intelligible and should now rather easily allow us to <code class="docutils literal notranslate"><span class="pre">explore</span></code> our data!</p>
@@ -1422,7 +1273,6 @@ However, we told the <code class="docutils literal notranslate"><span class="pre
 check if <code class="docutils literal notranslate"><span class="pre">python</span></code> has a dedicated <code class="docutils literal notranslate"><span class="pre">module</span></code> that will ease up these processes
 (spoiler: mosts of the time it does!)</p></li>
 </ul>
-</section>
 </section>
 <section id="exploring-data">
 <h3>Exploring data<a class="headerlink" href="#exploring-data" title="Link to this heading">#</a></h3>
@@ -1729,7 +1579,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(42, 93)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(32, 20)
 </pre></div>
 </div>
 </div>
@@ -1742,7 +1592,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RangeIndex(start=0, stop=42, step=1)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RangeIndex(start=0, stop=32, step=1)
 </pre></div>
 </div>
 </div>
@@ -1773,225 +1623,134 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>loop_rating_movie.thisRepN</th>
-      <th>loop_rating_movie.thisTrialN</th>
-      <th>loop_rating_movie.thisN</th>
-      <th>loop_rating_movie.thisIndex</th>
-      <th>loop_rating_snacks.thisRepN</th>
-      <th>loop_rating_snacks.thisTrialN</th>
-      <th>loop_rating_snacks.thisN</th>
-      <th>loop_rating_snacks.thisIndex</th>
-      <th>loop_rating_animals.thisRepN</th>
-      <th>loop_rating_animals.thisTrialN</th>
-      <th>...</th>
-      <th>spacebar_animals.started</th>
-      <th>explanation_animals.started</th>
-      <th>end.started</th>
-      <th>spacebar_end.rt</th>
-      <th>spacebar_end.started</th>
-      <th>thanks_image.started</th>
       <th>session</th>
-      <th>age</th>
       <th>frameRate</th>
-      <th>Unnamed: 92</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>resp.duration</th>
+      <th>trials.thisRepN</th>
+      <th>trials.thisTrialN</th>
+      <th>trials.thisN</th>
+      <th>trials.thisIndex</th>
+      <th>trials.ran</th>
+      <th>congruent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>count</th>
-      <td>17.0</td>
-      <td>17.000000</td>
-      <td>17.000000</td>
-      <td>17.000000</td>
-      <td>15.0</td>
-      <td>15.000000</td>
-      <td>15.000000</td>
-      <td>15.000000</td>
-      <td>6.0</td>
-      <td>6.000000</td>
-      <td>...</td>
-      <td>6.000000</td>
-      <td>6.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.00000</td>
-      <td>41.0</td>
-      <td>41.0</td>
-      <td>41.000000</td>
+      <td>32.0</td>
+      <td>3.200000e+01</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
       <td>0.0</td>
+      <td>30.00000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.0</td>
+      <td>30.000000</td>
     </tr>
     <tr>
       <th>mean</th>
-      <td>0.0</td>
-      <td>8.000000</td>
-      <td>8.000000</td>
-      <td>8.000000</td>
-      <td>0.0</td>
-      <td>7.000000</td>
-      <td>7.000000</td>
-      <td>7.000000</td>
-      <td>0.0</td>
-      <td>2.500000</td>
-      <td>...</td>
-      <td>157.171842</td>
-      <td>157.171842</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>0.966667</td>
+      <td>0.814500</td>
       <td>NaN</td>
+      <td>2.00000</td>
+      <td>2.500000</td>
+      <td>14.500000</td>
+      <td>2.500000</td>
+      <td>1.0</td>
+      <td>0.500000</td>
     </tr>
     <tr>
       <th>std</th>
       <td>0.0</td>
-      <td>5.049752</td>
-      <td>5.049752</td>
-      <td>5.049752</td>
+      <td>3.609561e-15</td>
+      <td>0.182574</td>
+      <td>0.227043</td>
+      <td>NaN</td>
+      <td>1.43839</td>
+      <td>1.737021</td>
+      <td>8.803408</td>
+      <td>1.737021</td>
       <td>0.0</td>
-      <td>4.472136</td>
-      <td>4.472136</td>
-      <td>4.472136</td>
-      <td>0.0</td>
-      <td>1.870829</td>
-      <td>...</td>
-      <td>7.021973</td>
-      <td>7.021973</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>NaN</td>
+      <td>0.508548</td>
     </tr>
     <tr>
       <th>min</th>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>...</td>
-      <td>147.578871</td>
-      <td>147.578871</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>0.000000</td>
+      <td>0.342000</td>
       <td>NaN</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>25%</th>
-      <td>0.0</td>
-      <td>4.000000</td>
-      <td>4.000000</td>
-      <td>4.000000</td>
-      <td>0.0</td>
-      <td>3.500000</td>
-      <td>3.500000</td>
-      <td>3.500000</td>
-      <td>0.0</td>
-      <td>1.250000</td>
-      <td>...</td>
-      <td>152.339791</td>
-      <td>152.339791</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>1.000000</td>
+      <td>0.680250</td>
       <td>NaN</td>
+      <td>1.00000</td>
+      <td>1.000000</td>
+      <td>7.250000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>50%</th>
-      <td>0.0</td>
-      <td>8.000000</td>
-      <td>8.000000</td>
-      <td>8.000000</td>
-      <td>0.0</td>
-      <td>7.000000</td>
-      <td>7.000000</td>
-      <td>7.000000</td>
-      <td>0.0</td>
-      <td>2.500000</td>
-      <td>...</td>
-      <td>157.730187</td>
-      <td>157.730187</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>1.000000</td>
+      <td>0.760000</td>
       <td>NaN</td>
+      <td>2.00000</td>
+      <td>2.500000</td>
+      <td>14.500000</td>
+      <td>2.500000</td>
+      <td>1.0</td>
+      <td>0.500000</td>
     </tr>
     <tr>
       <th>75%</th>
-      <td>0.0</td>
-      <td>12.000000</td>
-      <td>12.000000</td>
-      <td>12.000000</td>
-      <td>0.0</td>
-      <td>10.500000</td>
-      <td>10.500000</td>
-      <td>10.500000</td>
-      <td>0.0</td>
-      <td>3.750000</td>
-      <td>...</td>
-      <td>161.915188</td>
-      <td>161.915188</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>1.000000</td>
+      <td>0.970000</td>
       <td>NaN</td>
+      <td>3.00000</td>
+      <td>4.000000</td>
+      <td>21.750000</td>
+      <td>4.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>max</th>
-      <td>0.0</td>
-      <td>16.000000</td>
-      <td>16.000000</td>
-      <td>16.000000</td>
-      <td>0.0</td>
-      <td>14.000000</td>
-      <td>14.000000</td>
-      <td>14.000000</td>
-      <td>0.0</td>
-      <td>5.000000</td>
-      <td>...</td>
-      <td>166.138628</td>
-      <td>166.138628</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>1.000000</td>
+      <td>1.461000</td>
       <td>NaN</td>
+      <td>4.00000</td>
+      <td>5.000000</td>
+      <td>29.000000</td>
+      <td>5.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
-<p>8 rows × 52 columns</p>
 </div></div></div>
 </div>
 <p>One thing we immediately notice is the large difference between number of total <code class="docutils literal notranslate"><span class="pre">columns</span></code> and number of <code class="docutils literal notranslate"><span class="pre">columns</span></code> included in the descriptive overview. Something is going on there and this could make working with the <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> a bit cumbersome. Thus, let’s get a <code class="docutils literal notranslate"><span class="pre">list</span></code> of all <code class="docutils literal notranslate"><span class="pre">columns</span></code> to check what’s happening. This can be done via the <code class="docutils literal notranslate"><span class="pre">.columns</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>:</p>
@@ -2002,45 +1761,11 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;movie&#39;, &#39;snack&#39;, &#39;animal&#39;, &#39;loop_rating_movie.thisRepN&#39;,
-       &#39;loop_rating_movie.thisTrialN&#39;, &#39;loop_rating_movie.thisN&#39;,
-       &#39;loop_rating_movie.thisIndex&#39;, &#39;loop_rating_snacks.thisRepN&#39;,
-       &#39;loop_rating_snacks.thisTrialN&#39;, &#39;loop_rating_snacks.thisN&#39;,
-       &#39;loop_rating_snacks.thisIndex&#39;, &#39;loop_rating_animals.thisRepN&#39;,
-       &#39;loop_rating_animals.thisTrialN&#39;, &#39;loop_rating_animals.thisN&#39;,
-       &#39;loop_rating_animals.thisIndex&#39;, &#39;welcome_message.started&#39;,
-       &#39;welcome_message.stopped&#39;, &#39;spacebar_welcome.keys&#39;,
-       &#39;spacebar_welcome.rt&#39;, &#39;spacebar_welcome.started&#39;,
-       &#39;spacebar_welcome.stopped&#39;, &#39;instruction.started&#39;,
-       &#39;instruction.stopped&#39;, &#39;spacebar_instrunctions.keys&#39;,
-       &#39;spacebar_instrunctions.rt&#39;, &#39;spacebar_instrunctions.started&#39;,
-       &#39;spacebar_instrunctions.stopped&#39;, &#39;movie_intro_text.started&#39;,
-       &#39;movie_intro_text.stopped&#39;, &#39;movies.started&#39;, &#39;movies.stopped&#39;,
-       &#39;question_rating.started&#39;, &#39;question_rating.stopped&#39;,
-       &#39;rating_movies.response&#39;, &#39;rating_movies.rt&#39;, &#39;rating_movies.started&#39;,
-       &#39;rating_movies.stopped&#39;, &#39;spacebar_response.keys&#39;,
-       &#39;spacebar_response.rt&#39;, &#39;spacebar_response.started&#39;,
-       &#39;spacebar_response.stopped&#39;, &#39;explanation_rating.started&#39;,
-       &#39;explanation_rating.stopped&#39;, &#39;snack_intro_text.started&#39;,
-       &#39;snack_intro_text.stopped&#39;, &#39;snacks.started&#39;, &#39;snacks.stopped&#39;,
-       &#39;question_rating_snack.started&#39;, &#39;question_rating_snack.stopped&#39;,
-       &#39;rating_snacks.response&#39;, &#39;rating_snacks.rt&#39;, &#39;rating_snacks.started&#39;,
-       &#39;rating_snacks.stopped&#39;, &#39;spacebar_response_snacks.keys&#39;,
-       &#39;spacebar_response_snacks.rt&#39;, &#39;spacebar_response_snacks.started&#39;,
-       &#39;spacebar_response_snacks.stopped&#39;, &#39;explanation_rating_snacks.started&#39;,
-       &#39;explanation_rating_snacks.stopped&#39;, &#39;animal_intro_text.started&#39;,
-       &#39;animal_intro_text.stopped&#39;, &#39;animal_text.started&#39;,
-       &#39;animal_text.stopped&#39;, &#39;question_animal.started&#39;,
-       &#39;question_animal.stopped&#39;, &#39;rating_animals.response&#39;,
-       &#39;rating_animals.rt&#39;, &#39;rating_animals.started&#39;, &#39;rating_animals.stopped&#39;,
-       &#39;spacebar_animals.keys&#39;, &#39;spacebar_animals.rt&#39;,
-       &#39;spacebar_animals.started&#39;, &#39;spacebar_animals.stopped&#39;,
-       &#39;explanation_animals.started&#39;, &#39;explanation_animals.stopped&#39;,
-       &#39;end.started&#39;, &#39;end.stopped&#39;, &#39;spacebar_end.keys&#39;, &#39;spacebar_end.rt&#39;,
-       &#39;spacebar_end.started&#39;, &#39;spacebar_end.stopped&#39;, &#39;thanks_image.started&#39;,
-       &#39;thanks_image.stopped&#39;, &#39;participant&#39;, &#39;session&#39;, &#39;age&#39;, &#39;left-handed&#39;,
-       &#39;like this course&#39;, &#39;date&#39;, &#39;expName&#39;, &#39;psychopyVersion&#39;, &#39;frameRate&#39;,
-       &#39;Unnamed: 92&#39;],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;participant&#39;, &#39;session&#39;, &#39;date&#39;, &#39;expName&#39;, &#39;psychopyVersion&#39;, &#39;OS&#39;,
+       &#39;frameRate&#39;, &#39;resp.keys&#39;, &#39;resp.corr&#39;, &#39;resp.rt&#39;, &#39;resp.duration&#39;,
+       &#39;trials.thisRepN&#39;, &#39;trials.thisTrialN&#39;, &#39;trials.thisN&#39;,
+       &#39;trials.thisIndex&#39;, &#39;trials.ran&#39;, &#39;text&#39;, &#39;letterColor&#39;, &#39;corrAns&#39;,
+       &#39;congruent&#39;],
       dtype=&#39;object&#39;)
 </pre></div>
 </div>
@@ -2056,11 +1781,11 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    Heidi Klum
-1    Heidi Klum
-2    Heidi Klum
-3    Heidi Klum
-4    Heidi Klum
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    AG_01_02
+1    AG_01_02
+2    AG_01_02
+3    AG_01_02
+4    AG_01_02
 Name: participant, dtype: object
 </pre></div>
 </div>
@@ -4793,16 +4518,16 @@ Name: ratings, dtype: float64
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "conda-env-pfp_2021-py"
+            mode: "python"
         },
         kernelOptions: {
-            name: "conda-env-pfp_2021-py",
+            name: "python3",
             path: "./analyses"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'conda-env-pfp_2021-py'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -4814,6 +4539,24 @@ Name: ratings, dtype: float64
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../introduction/PFP_assignment_4_intro_python_3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework assignment #4</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../showcases/module_showcases.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Python module showcases</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -4838,21 +4581,14 @@ Name: ratings, dtype: float64
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-ready">Getting ready</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-kind-of-data-do-i-have-and-where-is-it">What kind of data do I have and where is it</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1">Exercise 1</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-kind-of-data-do-i-have-and-where-is-it">What kind of data do I have and where is it</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-goal-of-the-data-analyzes">What is the goal of the data analyzes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-will-the-respective-steps-be-implemented">How will the respective steps be implemented</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-data-operations">Basic data operations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-data">Reading data</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2">Exercise 2</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas">Pandas</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3">Exercise 3</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas">Pandas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3">Exercise 3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-data">Exploring data</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4">Exercise 4</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5">Exercise 5</a></li>
