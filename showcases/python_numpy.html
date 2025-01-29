@@ -182,13 +182,31 @@
 </ul>
 </details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_4.html">Introduction III</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_I.html">Introduction IV - Introduction to Python - I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_I.html">Introduction III - Introduction to Python - I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../homework/PFP_assignment_2_intro_python_1_2024.html">Homework assignment #2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_5.html">Introduction IV</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_II.html">Introduction V - Introduction to Python - II</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../introduction/PFP_assignment_3_intro_python_2.html">Homework assignment #3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../introduction/introduction_6.html">Introduction V</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../introduction/intro_python_III.html">Introduction VI - Introduction to Python III</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../introduction/PFP_assignment_4_intro_python_3.html">Homework assignment #4</a></li>
+
 </ul>
 </details></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="../analyses/intro_data_analyzes_visualization.html">Data analyzes I - basics in data handling</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="module_showcases.html">Python module showcases</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Introduction to NumPy</a></li>
+
+
 
 
 
@@ -549,6 +567,8 @@
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sorting-data">Sorting data</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#npy-numpy-s-own-data-format"><code class="docutils literal notranslate"><span class="pre">npy</span></code> - NumPy’s own data format</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2">Task 2</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-what-do-you-need-to-know-to-get-started">Summary - What do you need to know to get started?</a></li>
 </ul>
 
@@ -2335,6 +2355,41 @@
 </div>
 </div>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="task-1">
+<h1>Task 1<a class="headerlink" href="#task-1" title="Link to this heading">#</a></h1>
+<p>Create a NumPy array with the reaction times of 5 participants: [512, 438, 679, 589, 623].</p>
+<ul class="simple">
+<li><p>Add 100 milliseconds to each reaction time.</p></li>
+<li><p>Convert reaction times from milliseconds to seconds.</p></li>
+<li><p>Calculate the mean and standard deviation of the reaction times.</p></li>
+<li><p>Extract reaction times of first and last participant.</p></li>
+<li><p>Check which participants had a reaction time below 500 milliseconds (use fancy indexing).</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="task-2">
+<h1>Task 2<a class="headerlink" href="#task-2" title="Link to this heading">#</a></h1>
+<p>A psychologist conducted an experiment with 10 participants. Each participant completed 5 trials in two different experimental conditions:</p>
+<p>Condition A: Trials where participants responded to congruent stimuli.
+Condition B: Trials where participants responded to incongruent stimuli.
+You are given two randomly generated 2D NumPy arrays that contain reaction times in milliseconds for each participant in both conditions.</p>
+<p>Generate two 2D NumPy arrays (shape: 10 x 5) with random reaction times:</p>
+<ul class="simple">
+<li><p>Condition A reaction times should be normally distributed with a mean of 550 ms and standard deviation of 50 ms.</p></li>
+<li><p>Condition B reaction times should be normally distributed with a mean of 600 ms and standard deviation of 60 ms.
+Calculate and print the following statistics for each condition:</p></li>
+<li><p>Mean reaction time per participant (row-wise mean).</p></li>
+<li><p>Overall mean reaction time for the condition.</p></li>
+<li><p>Standard deviation of reaction times per participant.</p></li>
+<li><p>Find the fastest participant in each condition (i.e., the one with the lowest mean reaction time).</p></li>
+<li><p>Determine how many trials in Condition B were faster than the participant’s slowest trial in Condition A.</p></li>
+</ul>
+<p>Hint:</p>
+<ul class="simple">
+<li><p>Use np.random.normal() to generate reaction times.</p></li>
+<li><p>Use .mean(axis=1), .std(axis=1), and np.argmin() for calculations.</p></li>
+<li><p>Use broadcasting or np.sum() for comparing Condition B trials against Condition A’s slowest trial.</p></li>
+</ul>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="summary-what-do-you-need-to-know-to-get-started">
 <h1>Summary - What do you need to know to get started?<a class="headerlink" href="#summary-what-do-you-need-to-know-to-get-started" title="Link to this heading">#</a></h1>
 <ul class="simple">
@@ -2481,6 +2536,8 @@
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sorting-data">Sorting data</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#npy-numpy-s-own-data-format"><code class="docutils literal notranslate"><span class="pre">npy</span></code> - NumPy’s own data format</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2">Task 2</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-what-do-you-need-to-know-to-get-started">Summary - What do you need to know to get started?</a></li>
 </ul>
 
