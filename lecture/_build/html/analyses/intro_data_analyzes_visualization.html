@@ -513,7 +513,14 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-data-operations">Basic data operations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas">Pandas</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3">Exercise 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-data">Exploring data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-data">Exploring data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-indexing">What is Indexing?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-indexing">Types of Indexing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implicit-indexing-default-index">1. Implicit Indexing (Default Index)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explicit-indexing">2. Explicit Indexing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-indexing">3. Multi-Indexing</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4">Exercise 4</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5">Exercise 5</a></li>
 </ul>
@@ -545,7 +552,8 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="data-analyzes-i-basics-in-data-handling">
 <h1>Data analyzes I - basics in data handling<a class="headerlink" href="#data-analyzes-i-basics-in-data-handling" title="Link to this heading">#</a></h1>
-<p><a class="reference external" href="https://peerherholz.github.io/">Peer Herholz (he/him)</a><br />
+<p>Edited by <a class="reference external" href="https://www.y-markov.com/">Yury Markov (he/him)</a>
+<a class="reference external" href="https://peerherholz.github.io/">Peer Herholz (he/him)</a><br />
 Habilitation candidate  - <a class="reference external" href="http://www.fiebachlab.org/">Fiebach Lab</a>, <a class="reference external" href="https://www.psychologie.uni-frankfurt.de/49868684/Abteilungen">Neurocognitive Psychology</a> at <a class="reference external" href="https://www.goethe-university-frankfurt.de/en?locale=en">Goethe-University Frankfurt</a><br />
 Research affiliate - <a class="reference external" href="https://neurodatascience.github.io/">NeuroDataScience lab</a> at <a class="reference external" href="https://www.mcgill.ca/neuro/">MNI</a>/<a class="reference external" href="https://www.mcgill.ca/">McGill</a><br />
 Member - <a class="reference external" href="https://bids-specification.readthedocs.io/en/stable/">BIDS</a>, <a class="reference external" href="https://www.repronim.org/">ReproNim</a>, <a class="reference external" href="https://brainhack.org/">Brainhack</a>, <a class="reference external" href="https://www.cneuromod.ca/">Neuromod</a>, <a class="reference external" href="https://ohbm-environment.org/">OHBM SEA-SIG</a>, <a class="reference external" href="https://sites.google.com/view/unique-neuro-ai">UNIQUE</a></p>
@@ -628,7 +636,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <li><p>Python is the fastest-growing major programming language</p></li>
 <li><p>Top 3 overall (with JavaScript, Java)</p></li>
 </ul>
-<center><img src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/09/growth_major_languages-1-1400x1200.png" width="800px" style="margin-bottom: 10px;"></center><p>What we will do in this section of the course is a <em>short</em> introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code> for <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">analyses</span></code> including basic <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">operations</span></code> like <code class="docutils literal notranslate"><span class="pre">file</span> <span class="pre">reading</span></code> and <code class="docutils literal notranslate"><span class="pre">wrangling</span></code>, as well as <code class="docutils literal notranslate"><span class="pre">statistics</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">visualization</span></code>. The goal is to showcase crucial tools/resources and their underlying working principles to allow further more in-depth exploration and direct application.</p>
+<p>What we will do in this section of the course is a <em>short</em> introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code> for <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">analyses</span></code> including basic <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">operations</span></code> like <code class="docutils literal notranslate"><span class="pre">file</span> <span class="pre">reading</span></code> and <code class="docutils literal notranslate"><span class="pre">wrangling</span></code>, as well as <code class="docutils literal notranslate"><span class="pre">statistics</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">visualization</span></code>. The goal is to showcase crucial tools/resources and their underlying working principles to allow further more in-depth exploration and direct application.</p>
 <p>It is divided into the following chapters:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#"><span class="xref myst">Getting ready</span></a></p></li>
@@ -709,8 +717,8 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;AG 01_02_stroop_2025-01-23_13h12.02.354.csv&#39;,
- &#39;BF 31_01_stroop_2025-01-23_12h25.25.690.csv&#39;,
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;AG_01_02_stroop_2025-01-23_13h12.02.354.csv&#39;,
+ &#39;BF_31_01_stroop_2025-01-23_12h25.25.690.csv&#39;,
  &#39;BF_31_02_stroop_2025-01-23_13h12.43.710.csv&#39;,
  &#39;FB_09_02_stroop_2025-01-23_13h12.14.223.csv&#39;,
  &#39;FB_09_03_stroop_2025-01-23_13h30.49.889.csv&#39;,
@@ -868,7 +876,7 @@ The number of data files matches the number of participants.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/var/folders/61/0lj9r7px3k52gv9yfyx6ky300000gn/T/ipykernel_62387/3133375982.py&quot;</span><span class="gt">, line </span><span class="mi">1</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
     <span class="n">pd</span><span class="o">.</span>
        <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -971,7 +979,7 @@ The number of data files matches the number of participants.
 </table>
 </div></div></div>
 </div>
-<p>Hm, definitely looks more intelligible than before with <code class="docutils literal notranslate"><span class="pre">numpy</span></code>. We see the expected form of <code class="docutils literal notranslate"><span class="pre">columns</span></code> and <code class="docutils literal notranslate"><span class="pre">rows</span></code> but something is still going wrong. Our <code class="docutils literal notranslate"><span class="pre">data</span></code> seems not correctly formatted…what happened?</p>
+<p>Hm, our <code class="docutils literal notranslate"><span class="pre">data</span></code> seems not correctly formatted…what happened?</p>
 <p>The answer is comparably straightforward: our <code class="docutils literal notranslate"><span class="pre">data</span></code> is in a <code class="docutils literal notranslate"><span class="pre">.csv</span></code> which stands for <code class="docutils literal notranslate"><span class="pre">comma-separated-values</span></code>, i.e. “things” or <code class="docutils literal notranslate"><span class="pre">values</span></code> in our <code class="docutils literal notranslate"><span class="pre">data</span></code> should be separated by a <code class="docutils literal notranslate"><span class="pre">,</span></code>. This is also referred to as the <code class="docutils literal notranslate"><span class="pre">delimiter</span></code> and is something you should always watch out for: what kind of file is it, was the intended <code class="docutils literal notranslate"><span class="pre">delimiter</span></code> actually used, etc. .
 However, we told the <code class="docutils literal notranslate"><span class="pre">read_csv</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> that the <code class="docutils literal notranslate"><span class="pre">delimiter</span></code> is <code class="docutils literal notranslate"><span class="pre">;</span></code> instead of <code class="docutils literal notranslate"><span class="pre">,</span></code> and thus the <code class="docutils literal notranslate"><span class="pre">data</span></code> was read in wrong. We can easily fix that via setting the right <code class="docutils literal notranslate"><span class="pre">delimiter</span></code> (or just using the <code class="docutils literal notranslate"><span class="pre">default</span></code> of the respective <code class="docutils literal notranslate"><span class="pre">keyword</span> <span class="pre">argument</span></code>):</p>
 <div class="cell docutils container">
@@ -1302,32 +1310,38 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>movie</th>
-      <th>snack</th>
-      <th>animal</th>
-      <th>loop_rating_movie.thisRepN</th>
-      <th>loop_rating_movie.thisTrialN</th>
-      <th>loop_rating_movie.thisN</th>
-      <th>loop_rating_movie.thisIndex</th>
-      <th>loop_rating_snacks.thisRepN</th>
-      <th>loop_rating_snacks.thisTrialN</th>
-      <th>loop_rating_snacks.thisN</th>
-      <th>...</th>
       <th>participant</th>
       <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
       <th>date</th>
       <th>expName</th>
       <th>psychopyVersion</th>
+      <th>OS</th>
       <th>frameRate</th>
-      <th>Unnamed: 92</th>
+      <th>resp.keys</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>resp.duration</th>
+      <th>trials.thisRepN</th>
+      <th>trials.thisTrialN</th>
+      <th>trials.thisN</th>
+      <th>trials.thisIndex</th>
+      <th>trials.ran</th>
+      <th>text</th>
+      <th>letterColor</th>
+      <th>corrAns</th>
+      <th>congruent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1338,237 +1352,219 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.635</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>red</td>
+      <td>left</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>The Intouchables</td>
-      <td>pancakes</td>
-      <td>barred owl</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.342</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>James Bond</td>
-      <td>bananas</td>
-      <td>cat</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>0.0</td>
+      <td>0.641</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
       <td>1.0</td>
       <td>1.0</td>
-      <td>1.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
-      <td>NaN</td>
+      <td>red</td>
+      <td>green</td>
+      <td>down</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Forrest Gump</td>
-      <td>dominoes</td>
-      <td>coral</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>1.076</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Retired Extremely Dangerous</td>
-      <td>carrots</td>
-      <td>elephant</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>3.0</td>
-      <td>3.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.680</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>The Imitation Game</td>
-      <td>humus</td>
-      <td>groundhog</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>4.0</td>
-      <td>4.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.769</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>The Philosophers</td>
-      <td>chocolate</td>
-      <td>lizard</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>5.0</td>
-      <td>5.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.981</td>
       <td>NaN</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>6.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>red</td>
+      <td>left</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Call Me by Your Name</td>
-      <td>Kinder bueno</td>
-      <td>None</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.747</td>
       <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Shutter Island</td>
-      <td>Pringles</td>
-      <td>None</td>
-      <td>0.0</td>
-      <td>7.0</td>
-      <td>7.0</td>
-      <td>7.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>2022_Jan_26_1600</td>
-      <td>experiment</td>
-      <td>2021.2.3</td>
-      <td>59.572017</td>
+      <td>0.704</td>
       <td>NaN</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
     </tr>
   </tbody>
 </table>
-<p>10 rows × 93 columns</p>
 </div></div></div>
 </div>
 <p>Comparably to a <code class="docutils literal notranslate"><span class="pre">numpy</span> <span class="pre">array</span></code>, we could for example use <code class="docutils literal notranslate"><span class="pre">.shape</span></code> to get an idea regarding the dimensions of our, attention, <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>.</p>
@@ -1584,6 +1580,21 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
 </div>
 </div>
 </div>
+</section>
+</section>
+<section id="what-is-indexing">
+<h2>What is Indexing?<a class="headerlink" href="#what-is-indexing" title="Link to this heading">#</a></h2>
+<p>Indexing in pandas helps you <strong>select, filter, and manipulate data</strong> in a <strong>DataFrame</strong> or <strong>Series</strong> efficiently. It allows you to access specific <strong>rows</strong> and <strong>columns</strong> using:</p>
+<ul class="simple">
+<li><p><strong>Labels</strong> (names of rows/columns)</p></li>
+<li><p><strong>Integer positions</strong> (like list indices in Python)</p></li>
+</ul>
+</section>
+<section id="types-of-indexing">
+<h2>Types of Indexing<a class="headerlink" href="#types-of-indexing" title="Link to this heading">#</a></h2>
+<section id="implicit-indexing-default-index">
+<h3>1. Implicit Indexing (Default Index)<a class="headerlink" href="#implicit-indexing-default-index" title="Link to this heading">#</a></h3>
+<p>When loading a dataset, pandas assigns a default index (0, 1, 2, …).</p>
 <p>While the first number refers to the amount of <code class="docutils literal notranslate"><span class="pre">rows</span></code>, the second indicates the amount of <code class="docutils literal notranslate"><span class="pre">columns</span></code> in our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>. Regarding the first, we can also check the <code class="docutils literal notranslate"><span class="pre">index</span></code> of our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>, i.e. the name of the <code class="docutils literal notranslate"><span class="pre">rows</span></code>. By default/most often this will be integers (<code class="docutils literal notranslate"><span class="pre">0-N</span></code>) but can also be set to something else, e.g. <code class="docutils literal notranslate"><span class="pre">participants</span></code>, <code class="docutils literal notranslate"><span class="pre">dates</span></code>, etc. .</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1591,11 +1602,610 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RangeIndex(start=0, stop=32, step=1)
+</div>
+</section>
+<section id="explicit-indexing">
+<h3>2. Explicit Indexing<a class="headerlink" href="#explicit-indexing" title="Link to this heading">#</a></h3>
+<p>A more structured approach is to set a meaningful column (e.g., <strong>Participant ID</strong> or <strong>Trial Number</strong>) as the index. This allows for easier data selection and improves clarity when analyzing specific participants or conditions.</p>
+</section>
+<section id="multi-indexing">
+<h3>3. Multi-Indexing<a class="headerlink" href="#multi-indexing" title="Link to this heading">#</a></h3>
+<p>Pandas also supports hierarchical (multi-level) indexing, where multiple columns serve as an index. This is useful in experimental designs with repeated measures, such as trials grouped by <strong>participant ID</strong> and <strong>condition</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;participant&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>session</th>
+      <th>date</th>
+      <th>expName</th>
+      <th>psychopyVersion</th>
+      <th>OS</th>
+      <th>frameRate</th>
+      <th>resp.keys</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>resp.duration</th>
+      <th>trials.thisRepN</th>
+      <th>trials.thisTrialN</th>
+      <th>trials.thisN</th>
+      <th>trials.thisIndex</th>
+      <th>trials.ran</th>
+      <th>text</th>
+      <th>letterColor</th>
+      <th>corrAns</th>
+      <th>congruent</th>
+    </tr>
+    <tr>
+      <th>participant</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>AG_01_02</th>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>AG_01_02</th>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>0.635</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>red</td>
+      <td>left</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>AG_01_02</th>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>0.342</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>AG_01_02</th>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>0.0</td>
+      <td>0.641</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>green</td>
+      <td>down</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>AG_01_02</th>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>1.076</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>AG_01_02</th>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>0.680</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>AG_01_02</th>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>0.769</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>AG_01_02</th>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>0.981</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>6.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>red</td>
+      <td>left</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>AG_01_02</th>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>0.747</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>AG_01_02</th>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>0.704</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Lets go back</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">data_loaded</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>index</th>
+      <th>participant</th>
+      <th>session</th>
+      <th>date</th>
+      <th>expName</th>
+      <th>psychopyVersion</th>
+      <th>OS</th>
+      <th>frameRate</th>
+      <th>resp.keys</th>
+      <th>resp.corr</th>
+      <th>...</th>
+      <th>resp.duration</th>
+      <th>trials.thisRepN</th>
+      <th>trials.thisTrialN</th>
+      <th>trials.thisN</th>
+      <th>trials.thisIndex</th>
+      <th>trials.ran</th>
+      <th>text</th>
+      <th>letterColor</th>
+      <th>corrAns</th>
+      <th>congruent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>red</td>
+      <td>left</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>green</td>
+      <td>down</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>6</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>6.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>red</td>
+      <td>left</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>10 rows × 21 columns</p>
+</div></div></div>
 </div>
 <p>In order to get a first very general overview of our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> and the <code class="docutils literal notranslate"><span class="pre">data</span></code> in, <code class="docutils literal notranslate"><span class="pre">pandas</span></code> has an amazing <code class="docutils literal notranslate"><span class="pre">function</span></code> called <code class="docutils literal notranslate"><span class="pre">.describe()</span></code> which will provide <code class="docutils literal notranslate"><span class="pre">summary</span> <span class="pre">statistics</span></code> for each <code class="docutils literal notranslate"><span class="pre">column</span></code>, including <code class="docutils literal notranslate"><span class="pre">count</span></code>, <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">sd</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>/<code class="docutils literal notranslate"><span class="pre">max</span></code> and <code class="docutils literal notranslate"><span class="pre">percentiles</span></code>.</p>
 <center><img src="https://pandas.pydata.org/pandas-docs/dev/_images/06_reduction.svg" width="500px" style="margin-bottom: 10px;"></center><div class="cell docutils container">
@@ -1807,7 +2417,7 @@ Name: participant, dtype: object
 <p>Obviously, we want more than one <code class="docutils literal notranslate"><span class="pre">column</span></code>. This can be achieved via providing a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">column</span> <span class="pre">names</span></code> we would like to select or use <code class="docutils literal notranslate"><span class="pre">slicing</span></code>. For example, to select all the <code class="docutils literal notranslate"><span class="pre">columns</span></code> that contain <code class="docutils literal notranslate"><span class="pre">rating</span> <span class="pre">data</span></code> we can simply provide the respective <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">column</span> <span class="pre">names</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span><span class="p">[[</span><span class="s1">&#39;movie&#39;</span><span class="p">,</span> <span class="s1">&#39;snack&#39;</span><span class="p">,</span> <span class="s1">&#39;animal&#39;</span><span class="p">,</span> <span class="s1">&#39;rating_movies.response&#39;</span><span class="p">,</span> <span class="s1">&#39;rating_snacks.response&#39;</span><span class="p">,</span> <span class="s1">&#39;rating_animals.response&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span><span class="p">[[</span><span class="s1">&#39;resp.corr&#39;</span><span class="p">,</span> <span class="s1">&#39;resp.rt&#39;</span><span class="p">,</span><span class="s1">&#39;congruent&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1830,12 +2440,9 @@ Name: participant, dtype: object
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>movie</th>
-      <th>snack</th>
-      <th>animal</th>
-      <th>rating_movies.response</th>
-      <th>rating_snacks.response</th>
-      <th>rating_animals.response</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>congruent</th>
     </tr>
   </thead>
   <tbody>
@@ -1844,99 +2451,69 @@ Name: participant, dtype: object
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.635</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>The Intouchables</td>
-      <td>pancakes</td>
-      <td>barred owl</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.342</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>James Bond</td>
-      <td>bananas</td>
-      <td>cat</td>
-      <td>7.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.641</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Forrest Gump</td>
-      <td>dominoes</td>
-      <td>coral</td>
-      <td>3.44</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.076</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Retired Extremely Dangerous</td>
-      <td>carrots</td>
-      <td>elephant</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.680</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>The Imitation Game</td>
-      <td>humus</td>
-      <td>groundhog</td>
-      <td>6.02</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.769</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>The Philosophers</td>
-      <td>chocolate</td>
-      <td>lizard</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.981</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Call Me by Your Name</td>
-      <td>Kinder bueno</td>
-      <td>None</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.747</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Shutter Island</td>
-      <td>Pringles</td>
-      <td>None</td>
-      <td>5.04</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.704</td>
+      <td>1.0</td>
     </tr>
   </tbody>
 </table>
 </div></div></div>
 </div>
-<p>As we saw in the <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">columns</span></code>, the <code class="docutils literal notranslate"><span class="pre">demographic</span> <span class="pre">information</span></code> covers a few <code class="docutils literal notranslate"><span class="pre">columns</span></code> that are adjacent to each other. Thus, <code class="docutils literal notranslate"><span class="pre">slicing</span></code> the respective <code class="docutils literal notranslate"><span class="pre">list</span></code> works nicely to get the respective information. This works as discussed during <code class="docutils literal notranslate"><span class="pre">slicing</span></code> of <code class="docutils literal notranslate"><span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">strings</span></code>, i.e. we need to define the respective positions.</p>
+<p>We can also use <code class="docutils literal notranslate"><span class="pre">slicing</span></code> to get the respective information. This works as discussed during <code class="docutils literal notranslate"><span class="pre">slicing</span></code> of <code class="docutils literal notranslate"><span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">strings</span></code>, i.e. we need to define the respective positions.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span><span class="p">[</span><span class="n">data_loaded</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">83</span><span class="p">:</span><span class="mi">88</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded</span><span class="p">[</span><span class="n">data_loaded</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1961,51 +2538,39 @@ Name: participant, dtype: object
       <th></th>
       <th>participant</th>
       <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
+      <th>date</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
     </tr>
   </tbody>
 </table>
@@ -2017,7 +2582,7 @@ Name: participant, dtype: object
 <p>Using both, <code class="docutils literal notranslate"><span class="pre">select</span></code>ing via <code class="docutils literal notranslate"><span class="pre">column</span> <span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">slicing</span></code> the respective <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">column</span> <span class="pre">names</span></code> might do the trick:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">columns_select</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data_loaded</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">83</span><span class="p">:</span><span class="mi">88</span><span class="p">])</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;movie&#39;</span><span class="p">,</span> <span class="s1">&#39;snack&#39;</span><span class="p">,</span> <span class="s1">&#39;animal&#39;</span><span class="p">,</span> <span class="s1">&#39;rating_movies.response&#39;</span><span class="p">,</span> <span class="s1">&#39;rating_snacks.response&#39;</span><span class="p">,</span> <span class="s1">&#39;rating_animals.response&#39;</span><span class="p">]</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">columns_select</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data_loaded</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;resp.corr&#39;</span><span class="p">,</span> <span class="s1">&#39;resp.rt&#39;</span><span class="p">,</span><span class="s1">&#39;congruent&#39;</span><span class="p">]</span> 
 </pre></div>
 </div>
 </div>
@@ -2029,17 +2594,7 @@ Name: participant, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;participant&#39;,
- &#39;session&#39;,
- &#39;age&#39;,
- &#39;left-handed&#39;,
- &#39;like this course&#39;,
- &#39;movie&#39;,
- &#39;snack&#39;,
- &#39;animal&#39;,
- &#39;rating_movies.response&#39;,
- &#39;rating_snacks.response&#39;,
- &#39;rating_animals.response&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;participant&#39;, &#39;session&#39;, &#39;date&#39;, &#39;resp.corr&#39;, &#39;resp.rt&#39;, &#39;congruent&#39;]
 </pre></div>
 </div>
 </div>
@@ -2071,157 +2626,102 @@ Name: participant, dtype: object
       <th></th>
       <th>participant</th>
       <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
-      <th>movie</th>
-      <th>snack</th>
-      <th>animal</th>
-      <th>rating_movies.response</th>
-      <th>rating_snacks.response</th>
-      <th>rating_animals.response</th>
+      <th>date</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>congruent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.635</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Intouchables</td>
-      <td>pancakes</td>
-      <td>barred owl</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.342</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>James Bond</td>
-      <td>bananas</td>
-      <td>cat</td>
-      <td>7.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>0.0</td>
+      <td>0.641</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Forrest Gump</td>
-      <td>dominoes</td>
-      <td>coral</td>
-      <td>3.44</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.076</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Retired Extremely Dangerous</td>
-      <td>carrots</td>
-      <td>elephant</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.680</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Imitation Game</td>
-      <td>humus</td>
-      <td>groundhog</td>
-      <td>6.02</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.769</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Philosophers</td>
-      <td>chocolate</td>
-      <td>lizard</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.981</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Call Me by Your Name</td>
-      <td>Kinder bueno</td>
-      <td>None</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.747</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Shutter Island</td>
-      <td>Pringles</td>
-      <td>None</td>
-      <td>5.04</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.704</td>
+      <td>1.0</td>
     </tr>
   </tbody>
 </table>
@@ -2253,225 +2753,134 @@ Name: participant, dtype: object
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>loop_rating_movie.thisRepN</th>
-      <th>loop_rating_movie.thisTrialN</th>
-      <th>loop_rating_movie.thisN</th>
-      <th>loop_rating_movie.thisIndex</th>
-      <th>loop_rating_snacks.thisRepN</th>
-      <th>loop_rating_snacks.thisTrialN</th>
-      <th>loop_rating_snacks.thisN</th>
-      <th>loop_rating_snacks.thisIndex</th>
-      <th>loop_rating_animals.thisRepN</th>
-      <th>loop_rating_animals.thisTrialN</th>
-      <th>...</th>
-      <th>spacebar_animals.started</th>
-      <th>explanation_animals.started</th>
-      <th>end.started</th>
-      <th>spacebar_end.rt</th>
-      <th>spacebar_end.started</th>
-      <th>thanks_image.started</th>
       <th>session</th>
-      <th>age</th>
       <th>frameRate</th>
-      <th>Unnamed: 92</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>resp.duration</th>
+      <th>trials.thisRepN</th>
+      <th>trials.thisTrialN</th>
+      <th>trials.thisN</th>
+      <th>trials.thisIndex</th>
+      <th>trials.ran</th>
+      <th>congruent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>count</th>
-      <td>17.0</td>
-      <td>17.000000</td>
-      <td>17.000000</td>
-      <td>17.000000</td>
-      <td>15.0</td>
-      <td>15.000000</td>
-      <td>15.000000</td>
-      <td>15.000000</td>
-      <td>6.0</td>
-      <td>6.000000</td>
-      <td>...</td>
-      <td>6.000000</td>
-      <td>6.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.00000</td>
-      <td>41.0</td>
-      <td>41.0</td>
-      <td>41.000000</td>
+      <td>32.0</td>
+      <td>3.200000e+01</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
       <td>0.0</td>
+      <td>30.00000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.0</td>
+      <td>30.000000</td>
     </tr>
     <tr>
       <th>mean</th>
-      <td>0.0</td>
-      <td>8.000000</td>
-      <td>8.000000</td>
-      <td>8.000000</td>
-      <td>0.0</td>
-      <td>7.000000</td>
-      <td>7.000000</td>
-      <td>7.000000</td>
-      <td>0.0</td>
-      <td>2.500000</td>
-      <td>...</td>
-      <td>157.171842</td>
-      <td>157.171842</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>0.966667</td>
+      <td>0.814500</td>
       <td>NaN</td>
+      <td>2.00000</td>
+      <td>2.500000</td>
+      <td>14.500000</td>
+      <td>2.500000</td>
+      <td>1.0</td>
+      <td>0.500000</td>
     </tr>
     <tr>
       <th>std</th>
       <td>0.0</td>
-      <td>5.049752</td>
-      <td>5.049752</td>
-      <td>5.049752</td>
+      <td>3.609561e-15</td>
+      <td>0.182574</td>
+      <td>0.227043</td>
+      <td>NaN</td>
+      <td>1.43839</td>
+      <td>1.737021</td>
+      <td>8.803408</td>
+      <td>1.737021</td>
       <td>0.0</td>
-      <td>4.472136</td>
-      <td>4.472136</td>
-      <td>4.472136</td>
-      <td>0.0</td>
-      <td>1.870829</td>
-      <td>...</td>
-      <td>7.021973</td>
-      <td>7.021973</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>NaN</td>
+      <td>0.508548</td>
     </tr>
     <tr>
       <th>min</th>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>...</td>
-      <td>147.578871</td>
-      <td>147.578871</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>0.000000</td>
+      <td>0.342000</td>
       <td>NaN</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>25%</th>
-      <td>0.0</td>
-      <td>4.000000</td>
-      <td>4.000000</td>
-      <td>4.000000</td>
-      <td>0.0</td>
-      <td>3.500000</td>
-      <td>3.500000</td>
-      <td>3.500000</td>
-      <td>0.0</td>
-      <td>1.250000</td>
-      <td>...</td>
-      <td>152.339791</td>
-      <td>152.339791</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>1.000000</td>
+      <td>0.680250</td>
       <td>NaN</td>
+      <td>1.00000</td>
+      <td>1.000000</td>
+      <td>7.250000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>50%</th>
-      <td>0.0</td>
-      <td>8.000000</td>
-      <td>8.000000</td>
-      <td>8.000000</td>
-      <td>0.0</td>
-      <td>7.000000</td>
-      <td>7.000000</td>
-      <td>7.000000</td>
-      <td>0.0</td>
-      <td>2.500000</td>
-      <td>...</td>
-      <td>157.730187</td>
-      <td>157.730187</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>1.000000</td>
+      <td>0.760000</td>
       <td>NaN</td>
+      <td>2.00000</td>
+      <td>2.500000</td>
+      <td>14.500000</td>
+      <td>2.500000</td>
+      <td>1.0</td>
+      <td>0.500000</td>
     </tr>
     <tr>
       <th>75%</th>
-      <td>0.0</td>
-      <td>12.000000</td>
-      <td>12.000000</td>
-      <td>12.000000</td>
-      <td>0.0</td>
-      <td>10.500000</td>
-      <td>10.500000</td>
-      <td>10.500000</td>
-      <td>0.0</td>
-      <td>3.750000</td>
-      <td>...</td>
-      <td>161.915188</td>
-      <td>161.915188</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>1.000000</td>
+      <td>0.970000</td>
       <td>NaN</td>
+      <td>3.00000</td>
+      <td>4.000000</td>
+      <td>21.750000</td>
+      <td>4.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>max</th>
-      <td>0.0</td>
-      <td>16.000000</td>
-      <td>16.000000</td>
-      <td>16.000000</td>
-      <td>0.0</td>
-      <td>14.000000</td>
-      <td>14.000000</td>
-      <td>14.000000</td>
-      <td>0.0</td>
-      <td>5.000000</td>
-      <td>...</td>
-      <td>166.138628</td>
-      <td>166.138628</td>
-      <td>169.010592</td>
-      <td>3.904135</td>
-      <td>169.010592</td>
-      <td>172.94734</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>59.572017</td>
+      <td>2.040816e+01</td>
+      <td>1.000000</td>
+      <td>1.461000</td>
       <td>NaN</td>
+      <td>4.00000</td>
+      <td>5.000000</td>
+      <td>29.000000</td>
+      <td>5.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
-<p>8 rows × 52 columns</p>
 </div></div></div>
 </div>
 <section id="exercise-4">
@@ -2479,13 +2888,6 @@ Name: participant, dtype: object
 <p>Damn: the same output as before. Do you have any idea what might have gone wrong?</p>
 <p><code class="docutils literal notranslate"><span class="pre">Selecting</span></code> certain <code class="docutils literal notranslate"><span class="pre">columns</span></code> from a <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> does not automatically create a new <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> but returns the original <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> with the <code class="docutils literal notranslate"><span class="pre">selected</span> <span class="pre">columns</span></code>. In order to have a respective adapted version of the <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> to work with, we need to create a new <code class="docutils literal notranslate"><span class="pre">variable</span></code></p>
 <p>Alright, so let’s create a new <code class="docutils literal notranslate"><span class="pre">adapted</span></code> version of our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> that only contains the <code class="docutils literal notranslate"><span class="pre">specified</span> <span class="pre">columns</span></code>:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="p">[</span><span class="n">columns_select</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
@@ -2513,157 +2915,102 @@ Name: participant, dtype: object
       <th></th>
       <th>participant</th>
       <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
-      <th>movie</th>
-      <th>snack</th>
-      <th>animal</th>
-      <th>rating_movies.response</th>
-      <th>rating_snacks.response</th>
-      <th>rating_animals.response</th>
+      <th>date</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>congruent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.635</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Intouchables</td>
-      <td>pancakes</td>
-      <td>barred owl</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.342</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>James Bond</td>
-      <td>bananas</td>
-      <td>cat</td>
-      <td>7.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>0.0</td>
+      <td>0.641</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Forrest Gump</td>
-      <td>dominoes</td>
-      <td>coral</td>
-      <td>3.44</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.076</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Retired Extremely Dangerous</td>
-      <td>carrots</td>
-      <td>elephant</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.680</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Imitation Game</td>
-      <td>humus</td>
-      <td>groundhog</td>
-      <td>6.02</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.769</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Philosophers</td>
-      <td>chocolate</td>
-      <td>lizard</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.981</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Call Me by Your Name</td>
-      <td>Kinder bueno</td>
-      <td>None</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.747</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Shutter Island</td>
-      <td>Pringles</td>
-      <td>None</td>
-      <td>5.04</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.704</td>
+      <td>1.0</td>
     </tr>
   </tbody>
 </table>
@@ -2696,76 +3043,67 @@ Name: participant, dtype: object
     <tr style="text-align: right;">
       <th></th>
       <th>session</th>
-      <th>age</th>
-      <th>rating_movies.response</th>
-      <th>rating_snacks.response</th>
-      <th>rating_animals.response</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>congruent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>count</th>
-      <td>41.0</td>
-      <td>41.0</td>
-      <td>17.000000</td>
-      <td>15.000000</td>
-      <td>6.000000</td>
+      <td>32.0</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
     </tr>
     <tr>
       <th>mean</th>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>4.608235</td>
-      <td>4.910667</td>
-      <td>5.793333</td>
+      <td>0.966667</td>
+      <td>0.814500</td>
+      <td>0.500000</td>
     </tr>
     <tr>
       <th>std</th>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>1.277792</td>
-      <td>1.457079</td>
-      <td>1.027359</td>
+      <td>0.182574</td>
+      <td>0.227043</td>
+      <td>0.508548</td>
     </tr>
     <tr>
       <th>min</th>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>2.740000</td>
-      <td>2.000000</td>
-      <td>4.780000</td>
+      <td>0.000000</td>
+      <td>0.342000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>25%</th>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>4.000000</td>
-      <td>4.300000</td>
-      <td>4.965000</td>
+      <td>1.000000</td>
+      <td>0.680250</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>50%</th>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>4.000000</td>
-      <td>5.060000</td>
-      <td>5.520000</td>
+      <td>1.000000</td>
+      <td>0.760000</td>
+      <td>0.500000</td>
     </tr>
     <tr>
       <th>75%</th>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>5.480000</td>
-      <td>5.800000</td>
-      <td>6.750000</td>
+      <td>1.000000</td>
+      <td>0.970000</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>max</th>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>7.000000</td>
-      <td>7.000000</td>
-      <td>7.000000</td>
+      <td>1.000000</td>
+      <td>1.461000</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
@@ -2779,17 +3117,12 @@ Name: participant, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>participant                 object
-session                    float64
-age                        float64
-left-handed                 object
-like this course            object
-movie                       object
-snack                       object
-animal                      object
-rating_movies.response     float64
-rating_snacks.response     float64
-rating_animals.response    float64
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>participant     object
+session          int64
+date            object
+resp.corr      float64
+resp.rt        float64
+congruent      float64
 dtype: object
 </pre></div>
 </div>
@@ -2798,34 +3131,33 @@ dtype: object
 <p>Oh, it appears that only the <code class="docutils literal notranslate"><span class="pre">columns</span></code> that contain <code class="docutils literal notranslate"><span class="pre">values</span></code> of a numeric type, here <code class="docutils literal notranslate"><span class="pre">float64</span></code> are included in the <code class="docutils literal notranslate"><span class="pre">descriptive</span></code> summary. This actually makes sense as computing <code class="docutils literal notranslate"><span class="pre">descriptive</span> <span class="pre">statistics</span></code> from <code class="docutils literal notranslate"><span class="pre">strings</span></code>, <code class="docutils literal notranslate"><span class="pre">booleans</span></code> or the alike wouldn’t make a lot of sense per se. For this to work, we would need to change their data to a respective <code class="docutils literal notranslate"><span class="pre">numeric</span></code> expression. However, let’s quickly check the content of the other <code class="docutils literal notranslate"><span class="pre">columns</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">,</span> <span class="s1">&#39;left-handed&#39;</span><span class="p">,</span> <span class="s1">&#39;like this course&#39;</span><span class="p">,</span> <span class="s1">&#39;movie&#39;</span><span class="p">,</span> <span class="s1">&#39;snack&#39;</span><span class="p">,</span> <span class="s1">&#39;animal&#39;</span><span class="p">]:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">columns_select</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The data type of column </span><span class="si">%s</span><span class="s1"> is </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="n">column</span><span class="p">][</span><span class="mi">3</span><span class="p">])))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The data type of column participant is &lt;class &#39;str&#39;&gt;
-The data type of column left-handed is &lt;class &#39;bool&#39;&gt;
-The data type of column like this course is &lt;class &#39;str&#39;&gt;
-The data type of column movie is &lt;class &#39;str&#39;&gt;
-The data type of column snack is &lt;class &#39;str&#39;&gt;
-The data type of column animal is &lt;class &#39;str&#39;&gt;
+The data type of column session is &lt;class &#39;numpy.int64&#39;&gt;
+The data type of column date is &lt;class &#39;str&#39;&gt;
+The data type of column resp.corr is &lt;class &#39;numpy.float64&#39;&gt;
+The data type of column resp.rt is &lt;class &#39;numpy.float64&#39;&gt;
+The data type of column congruent is &lt;class &#39;numpy.float64&#39;&gt;
 </pre></div>
 </div>
 </div>
 </div>
-<p>Except for one <code class="docutils literal notranslate"><span class="pre">column</span></code> that contains <code class="docutils literal notranslate"><span class="pre">booleans</span></code> all other contain <code class="docutils literal notranslate"><span class="pre">strings</span></code>. This is important to remember for subsequent analyzes steps, e.g. if we want treat them as <code class="docutils literal notranslate"><span class="pre">categorical</span> <span class="pre">variables</span></code> or something else.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">.describe()</span></code> function is obviously super handy but we could also obtain the same information using different built-in <code class="docutils literal notranslate"><span class="pre">functions</span></code>, for example <code class="docutils literal notranslate"><span class="pre">.mean()</span></code> and <code class="docutils literal notranslate"><span class="pre">std()</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;rating_movies.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;rating_movies.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;resp.rt&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;resp.rt&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4.608235294117647
-1.2777922136155277
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8145
+0.227043175295528
 </pre></div>
 </div>
 </div>
@@ -2833,224 +3165,66 @@ The data type of column animal is &lt;class &#39;str&#39;&gt;
 </section>
 <section id="exercise-5">
 <h4>Exercise 5<a class="headerlink" href="#exercise-5" title="Link to this heading">#</a></h4>
-<p>How would you compute the <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">sd</span></code> for the <code class="docutils literal notranslate"><span class="pre">ratings</span></code> of the other <code class="docutils literal notranslate"><span class="pre">categories</span></code>?</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;rating_snacks.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;rating_snacks.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;rating_animals.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;rating_animals.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
+<p>How would you compute the <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">sd</span></code> for the <code class="docutils literal notranslate"><span class="pre">ratings</span></code> of the other <code class="docutils literal notranslate"><span class="pre">variables</span></code>?</p>
 <p>Another thing that you might have noticed already is that we have quite a large number of <code class="docutils literal notranslate"><span class="pre">nan</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">a</span> <span class="pre">number</span></code>, in our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> and thus <code class="docutils literal notranslate"><span class="pre">dataset</span></code>.</p>
 <p>This has something to do with the way <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> saves and organizes/structures information. Specifically, we get information for each given <code class="docutils literal notranslate"><span class="pre">routine</span></code> and <code class="docutils literal notranslate"><span class="pre">trial</span></code> therein via a so-called <code class="docutils literal notranslate"><span class="pre">wide-format</span></code> <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>. This results in the large number of <code class="docutils literal notranslate"><span class="pre">columns</span></code> that denote <code class="docutils literal notranslate"><span class="pre">routines</span></code> and their <code class="docutils literal notranslate"><span class="pre">components</span></code> which only contain information for events that happened therein but nothing else. Thus, the large amount of <code class="docutils literal notranslate"><span class="pre">nan</span></code>. Again, our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>/<code class="docutils literal notranslate"><span class="pre">dataset</span></code> is specific of <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> but comparable things happen/appear frequently in all kinds of <code class="docutils literal notranslate"><span class="pre">data</span></code>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>participant</th>
-      <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
-      <th>movie</th>
-      <th>snack</th>
-      <th>animal</th>
-      <th>rating_movies.response</th>
-      <th>rating_snacks.response</th>
-      <th>rating_animals.response</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Intouchables</td>
-      <td>pancakes</td>
-      <td>barred owl</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>James Bond</td>
-      <td>bananas</td>
-      <td>cat</td>
-      <td>7.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Forrest Gump</td>
-      <td>dominoes</td>
-      <td>coral</td>
-      <td>3.44</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Retired Extremely Dangerous</td>
-      <td>carrots</td>
-      <td>elephant</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Imitation Game</td>
-      <td>humus</td>
-      <td>groundhog</td>
-      <td>6.02</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Philosophers</td>
-      <td>chocolate</td>
-      <td>lizard</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Call Me by Your Name</td>
-      <td>Kinder bueno</td>
-      <td>None</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Shutter Island</td>
-      <td>Pringles</td>
-      <td>None</td>
-      <td>5.04</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
 </section>
 </section>
 <section id="data-wrangling">
 <h3>Data wrangling<a class="headerlink" href="#data-wrangling" title="Link to this heading">#</a></h3>
 <p>Together, this creates the impression and maybe necessity to address these things via <code class="docutils literal notranslate"><span class="pre">handling</span> <span class="pre">missing</span></code> and rearranging our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>. This process (or parts of it) can be referred to as <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">wrangling</span></code> and is actually a very common step when <code class="docutils literal notranslate"><span class="pre">analyzing</span> <span class="pre">data</span></code> that contain various different <code class="docutils literal notranslate"><span class="pre">operations</span></code>. For now, we will focus on the two we outlined before: <code class="docutils literal notranslate"><span class="pre">handling</span> <span class="pre">missing</span> <span class="pre">data</span></code> and <code class="docutils literal notranslate"><span class="pre">rearranging</span> <span class="pre">our</span> <span class="pre">dataframe</span></code>.</p>
-<center><img src="https://s26597.pcdn.co/wp-content/uploads/2019/01/TRI-Data-Wrangling-1.png" width="600"></center>
-<center><a href="https://s26597.pcdn.co/wp-content/uploads/2019/01/TRI-Data-Wrangling-1.png">via TRIFACTA</a></center><section id="handling-missing-values">
+<section id="handling-missing-values">
 <h4>Handling missing values<a class="headerlink" href="#handling-missing-values" title="Link to this heading">#</a></h4>
-<p>Talking about the <code class="docutils literal notranslate"><span class="pre">handling</span></code> of <code class="docutils literal notranslate"><span class="pre">missing</span> <span class="pre">values</span></code>, we could have several options: <code class="docutils literal notranslate"><span class="pre">imputation</span></code>, <code class="docutils literal notranslate"><span class="pre">deletion</span></code>, etc. . In our case we have a mixture of problems. The first two <code class="docutils literal notranslate"><span class="pre">rows</span></code> appear to only have <code class="docutils literal notranslate"><span class="pre">nan</span></code> except for the <code class="docutils literal notranslate"><span class="pre">demographic</span> <span class="pre">information</span></code> while the others only contain <code class="docutils literal notranslate"><span class="pre">nan</span></code> for some of the <code class="docutils literal notranslate"><span class="pre">ratings</span></code>.</p>
+<p>Talking about the <code class="docutils literal notranslate"><span class="pre">handling</span></code> of <code class="docutils literal notranslate"><span class="pre">missing</span> <span class="pre">values</span></code>, we could have several options: <code class="docutils literal notranslate"><span class="pre">imputation</span></code>, <code class="docutils literal notranslate"><span class="pre">deletion</span></code>, etc. . In our case we have a mixture of problems. The first <code class="docutils literal notranslate"><span class="pre">row</span></code> appear to only have <code class="docutils literal notranslate"><span class="pre">nan</span></code> except for the <code class="docutils literal notranslate"><span class="pre">demographic</span> <span class="pre">information</span></code> while the others could contain <code class="docutils literal notranslate"><span class="pre">nan</span></code> for some of the <code class="docutils literal notranslate"><span class="pre">values</span></code>.</p>
 <p>Given that we want to evaluate <code class="docutils literal notranslate"><span class="pre">rows</span></code> in more detail, we can make use of the incredible <code class="docutils literal notranslate"><span class="pre">.iterrows()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> which will implement a <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">loop</span></code> that will <code class="docutils literal notranslate"><span class="pre">loop</span></code> over the <code class="docutils literal notranslate"><span class="pre">rows</span></code> of <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> providing the <code class="docutils literal notranslate"><span class="pre">index</span></code> and respective <code class="docutils literal notranslate"><span class="pre">content</span></code>/<code class="docutils literal notranslate"><span class="pre">values</span></code>.</p>
-<p>Applied to our use case, we will employ <code class="docutils literal notranslate"><span class="pre">.iterrows()</span></code> to all but the first few <code class="docutils literal notranslate"><span class="pre">columns</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">5</span></code>, of our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> as they contain the <code class="docutils literal notranslate"><span class="pre">demographic</span> <span class="pre">information</span></code> and, for each <code class="docutils literal notranslate"><span class="pre">row</span></code>, are going to <code class="docutils literal notranslate"><span class="pre">print</span></code> the respective <code class="docutils literal notranslate"><span class="pre">index</span></code> and if it only contains <code class="docutils literal notranslate"><span class="pre">nan</span></code>. The latter can easily be evaluated using a combination of <code class="docutils literal notranslate"><span class="pre">.isnull()</span></code> and <code class="docutils literal notranslate"><span class="pre">.all()</span></code> that checks if <code class="docutils literal notranslate"><span class="pre">all</span></code> <code class="docutils literal notranslate"><span class="pre">values</span></code> of a given <code class="docutils literal notranslate"><span class="pre">row</span></code> (or <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>, <code class="docutils literal notranslate"><span class="pre">series</span></code>, etc.) is <code class="docutils literal notranslate"><span class="pre">nan</span></code>.</p>
+<p>Applied to our use case, we will employ <code class="docutils literal notranslate"><span class="pre">.iterrows()</span></code> to all but the first few <code class="docutils literal notranslate"><span class="pre">columns</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">3</span></code>, of our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> as they contain the <code class="docutils literal notranslate"><span class="pre">demographic</span> <span class="pre">information</span></code> and, for each <code class="docutils literal notranslate"><span class="pre">row</span></code>, are going to <code class="docutils literal notranslate"><span class="pre">print</span></code> the respective <code class="docutils literal notranslate"><span class="pre">index</span></code> and if it only contains <code class="docutils literal notranslate"><span class="pre">nan</span></code>. The latter can easily be evaluated using a combination of <code class="docutils literal notranslate"><span class="pre">.isnull()</span></code> and <code class="docutils literal notranslate"><span class="pre">.all()</span></code> that checks if <code class="docutils literal notranslate"><span class="pre">all</span></code> <code class="docutils literal notranslate"><span class="pre">values</span></code> of a given <code class="docutils literal notranslate"><span class="pre">row</span></code> (or <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>, <code class="docutils literal notranslate"><span class="pre">series</span></code>, etc.) is <code class="docutils literal notranslate"><span class="pre">nan</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The participant </span><span class="si">%s</span><span class="s1"> had a reaction time of </span><span class="si">%s</span><span class="s1"> seconds.&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="s1">&#39;resp.rt&#39;</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The participant AG_01_02 had a reaction time of 0.635 seconds.
+The participant AG_01_02 had a reaction time of 0.342 seconds.
+The participant AG_01_02 had a reaction time of 0.641 seconds.
+The participant AG_01_02 had a reaction time of 1.076 seconds.
+The participant AG_01_02 had a reaction time of 0.68 seconds.
+The participant AG_01_02 had a reaction time of 0.769 seconds.
+The participant AG_01_02 had a reaction time of 0.981 seconds.
+The participant AG_01_02 had a reaction time of 0.747 seconds.
+The participant AG_01_02 had a reaction time of 0.704 seconds.
+The participant AG_01_02 had a reaction time of 0.62 seconds.
+The participant AG_01_02 had a reaction time of 0.986 seconds.
+The participant AG_01_02 had a reaction time of 1.197 seconds.
+The participant AG_01_02 had a reaction time of 0.751 seconds.
+The participant AG_01_02 had a reaction time of 0.732 seconds.
+The participant AG_01_02 had a reaction time of 0.937 seconds.
+The participant AG_01_02 had a reaction time of 0.847 seconds.
+The participant AG_01_02 had a reaction time of 0.681 seconds.
+The participant AG_01_02 had a reaction time of 0.92 seconds.
+The participant AG_01_02 had a reaction time of 0.751 seconds.
+The participant AG_01_02 had a reaction time of 0.993 seconds.
+The participant AG_01_02 had a reaction time of 1.044 seconds.
+The participant AG_01_02 had a reaction time of 0.776 seconds.
+The participant AG_01_02 had a reaction time of 0.643 seconds.
+The participant AG_01_02 had a reaction time of 0.442 seconds.
+The participant AG_01_02 had a reaction time of 0.718 seconds.
+The participant AG_01_02 had a reaction time of 0.891 seconds.
+The participant AG_01_02 had a reaction time of 1.461 seconds.
+The participant AG_01_02 had a reaction time of 0.559 seconds.
+The participant AG_01_02 had a reaction time of 1.028 seconds.
+The participant AG_01_02 had a reaction time of 0.883 seconds.
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rows_del</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">data_loaded_sub</span><span class="p">[</span><span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">5</span><span class="p">:]]</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">data_loaded_sub</span><span class="p">[</span><span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">3</span><span class="p">:]]</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
     
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Row </span><span class="si">%s</span><span class="s1"> has only nan: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">values</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">all</span><span class="p">()))</span>
     
@@ -3061,7 +3235,7 @@ The data type of column animal is &lt;class &#39;str&#39;&gt;
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Row 0 has only nan: True
-Row 1 has only nan: True
+Row 1 has only nan: False
 Row 2 has only nan: False
 Row 3 has only nan: False
 Row 4 has only nan: False
@@ -3091,17 +3265,7 @@ Row 27 has only nan: False
 Row 28 has only nan: False
 Row 29 has only nan: False
 Row 30 has only nan: False
-Row 31 has only nan: False
-Row 32 has only nan: False
-Row 33 has only nan: False
-Row 34 has only nan: False
-Row 35 has only nan: False
-Row 36 has only nan: False
-Row 37 has only nan: False
-Row 38 has only nan: False
-Row 39 has only nan: False
-Row 40 has only nan: True
-Row 41 has only nan: True
+Row 31 has only nan: True
 </pre></div>
 </div>
 </div>
@@ -3115,12 +3279,6 @@ Row 41 has only nan: True
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The following rows will be removed: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">rows_del</span>)
-<span class="n">data_loaded_sub</span> <span class="o">=</span> <span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">rows_del</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following rows will be removed: [0, 1, 40, 41]
 </pre></div>
 </div>
 </div>
@@ -3153,157 +3311,102 @@ Row 41 has only nan: True
       <th></th>
       <th>participant</th>
       <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
-      <th>movie</th>
-      <th>snack</th>
-      <th>animal</th>
-      <th>rating_movies.response</th>
-      <th>rating_snacks.response</th>
-      <th>rating_animals.response</th>
+      <th>date</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>congruent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>2</th>
-      <td>Heidi Klum</td>
+      <th>1</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Intouchables</td>
-      <td>pancakes</td>
-      <td>barred owl</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.635</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.342</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>James Bond</td>
-      <td>bananas</td>
-      <td>cat</td>
-      <td>7.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>0.0</td>
+      <td>0.641</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Forrest Gump</td>
-      <td>dominoes</td>
-      <td>coral</td>
-      <td>3.44</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.076</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Retired Extremely Dangerous</td>
-      <td>carrots</td>
-      <td>elephant</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.680</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Imitation Game</td>
-      <td>humus</td>
-      <td>groundhog</td>
-      <td>6.02</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.769</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Philosophers</td>
-      <td>chocolate</td>
-      <td>lizard</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.981</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Call Me by Your Name</td>
-      <td>Kinder bueno</td>
-      <td>None</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.747</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Shutter Island</td>
-      <td>Pringles</td>
-      <td>None</td>
-      <td>5.04</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.704</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Love actually</td>
-      <td>Rocher</td>
-      <td>None</td>
-      <td>6.56</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Heidi Klum</td>
+      <td>0.620</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Great Gatsby</td>
-      <td>dark chocolate</td>
-      <td>None</td>
-      <td>3.06</td>
-      <td>NaN</td>
-      <td>NaN</td>
     </tr>
   </tbody>
 </table>
@@ -3339,157 +3442,362 @@ Row 41 has only nan: True
       <th></th>
       <th>participant</th>
       <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
-      <th>movie</th>
-      <th>snack</th>
-      <th>animal</th>
-      <th>rating_movies.response</th>
-      <th>rating_snacks.response</th>
-      <th>rating_animals.response</th>
+      <th>date</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>congruent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Intouchables</td>
-      <td>pancakes</td>
-      <td>barred owl</td>
-      <td>4.00</td>
+      <td>0.635</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.342</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>0.0</td>
+      <td>0.641</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>1.076</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.680</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.769</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.981</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.747</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.704</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.620</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>However, we could make our lives a bit easier, if we know that certain value could not be nan in the experiment. For example, we know that congruent parameter should be always 0 or 1. Based on this we could much easily remove not needed rows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="p">[</span><span class="n">columns_select</span><span class="p">]</span>
+<span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>participant</th>
+      <th>session</th>
+      <th>date</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>congruent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>James Bond</td>
-      <td>bananas</td>
-      <td>cat</td>
-      <td>7.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.635</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Forrest Gump</td>
-      <td>dominoes</td>
-      <td>coral</td>
-      <td>3.44</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.342</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Retired Extremely Dangerous</td>
-      <td>carrots</td>
-      <td>elephant</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>0.0</td>
+      <td>0.641</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Imitation Game</td>
-      <td>humus</td>
-      <td>groundhog</td>
-      <td>6.02</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.076</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub</span> <span class="o">=</span> <span class="n">data_loaded_sub</span><span class="p">[</span><span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">congruent</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">==</span><span class="kc">False</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>participant</th>
+      <th>session</th>
+      <th>date</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>congruent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.635</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.342</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>0.0</td>
+      <td>0.641</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>1.076</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Heidi Klum</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Philosophers</td>
-      <td>chocolate</td>
-      <td>lizard</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.680</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Lets not forget to reset indexes!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>participant</th>
+      <th>session</th>
+      <th>date</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>congruent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>1.0</td>
+      <td>0.635</td>
+      <td>0.0</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>Heidi Klum</td>
+      <th>1</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Call Me by Your Name</td>
-      <td>Kinder bueno</td>
-      <td>None</td>
-      <td>4.00</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.342</td>
+      <td>1.0</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Shutter Island</td>
-      <td>Pringles</td>
-      <td>None</td>
-      <td>5.04</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>2</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>0.0</td>
+      <td>0.641</td>
+      <td>0.0</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>Heidi Klum</td>
+      <th>3</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>Love actually</td>
-      <td>Rocher</td>
-      <td>None</td>
-      <td>6.56</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.076</td>
+      <td>0.0</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>Heidi Klum</td>
+      <th>4</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>The Great Gatsby</td>
-      <td>dark chocolate</td>
-      <td>None</td>
-      <td>3.06</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.680</td>
+      <td>1.0</td>
     </tr>
   </tbody>
 </table>
@@ -4589,7 +4897,14 @@ Name: ratings, dtype: float64
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-data-operations">Basic data operations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas">Pandas</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3">Exercise 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-data">Exploring data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-data">Exploring data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-indexing">What is Indexing?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-indexing">Types of Indexing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implicit-indexing-default-index">1. Implicit Indexing (Default Index)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explicit-indexing">2. Explicit Indexing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-indexing">3. Multi-Indexing</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4">Exercise 4</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5">Exercise 5</a></li>
 </ul>
