@@ -203,6 +203,7 @@
 </ul>
 </details></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Data analyzes I - basics in data handling</a></li>
+
 <li class="toctree-l1 has-children"><a class="reference internal" href="../showcases/module_showcases.html">Python module showcases</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../showcases/python_numpy.html">Introduction to NumPy</a></li>
 
@@ -498,6 +499,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Data analyzes I - basics in data handling</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-we-get-started">Before we get started …</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives 📍</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-data-science-in-python">Why do data science in Python?</a><ul class="nav section-nav flex-column">
@@ -525,10 +527,23 @@
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5">Exercise 5</a></li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-loc-and-iloc-in-pandas">Understanding <code class="docutils literal notranslate"><span class="pre">.loc</span></code> and <code class="docutils literal notranslate"><span class="pre">.iloc</span></code> in pandas</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loc-label-based-indexing"><code class="docutils literal notranslate"><span class="pre">.loc</span></code> (Label-based Indexing)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#features-of-loc">Features of <code class="docutils literal notranslate"><span class="pre">.loc</span></code>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc-integer-location-based-indexing"><code class="docutils literal notranslate"><span class="pre">.iloc</span></code> (Integer-location Based Indexing)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#features-of-iloc">Features of <code class="docutils literal notranslate"><span class="pre">.iloc</span></code>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-differences">Key Differences:</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-wrangling">Data wrangling</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#handling-missing-values">Handling missing values</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6">Exercise 6</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reshaping-the-dataframe">Reshaping the dataframe</a></li>
 </ul>
 </li>
 </ul>
@@ -538,8 +553,10 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-core-python-for-psychology-stack">The core “Python for psychology” stack</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-assignment-8">Homework assignment #8</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -644,7 +661,6 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <ul>
 <li><p><a class="reference internal" href="#"><span class="xref myst">Reading data</span></a></p></li>
 <li><p><a class="reference internal" href="#"><span class="xref myst">Exploring data</span></a></p></li>
-<li><p><a class="reference internal" href="#"><span class="xref myst">Data wrangling</span></a></p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="#"><span class="xref myst">Basic data visualization</span></a></p>
@@ -876,7 +892,7 @@ The number of data files matches the number of participants.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">30</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
     <span class="n">pd</span><span class="o">.</span>
        <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -1602,6 +1618,11 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RangeIndex(start=0, stop=32, step=1)
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="explicit-indexing">
@@ -1938,7 +1959,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>index</th>
       <th>participant</th>
       <th>session</th>
       <th>date</th>
@@ -1948,7 +1968,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <th>frameRate</th>
       <th>resp.keys</th>
       <th>resp.corr</th>
-      <th>...</th>
+      <th>resp.rt</th>
       <th>resp.duration</th>
       <th>trials.thisRepN</th>
       <th>trials.thisTrialN</th>
@@ -1964,7 +1984,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
   <tbody>
     <tr>
       <th>0</th>
-      <td>0</td>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -1974,7 +1993,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>20.408163</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>...</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1988,7 +2007,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -1998,7 +2016,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>20.408163</td>
       <td>left</td>
       <td>1.0</td>
-      <td>...</td>
+      <td>0.635</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2012,7 +2030,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
     </tr>
     <tr>
       <th>2</th>
-      <td>2</td>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -2022,7 +2039,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>20.408163</td>
       <td>down</td>
       <td>1.0</td>
-      <td>...</td>
+      <td>0.342</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>1.0</td>
@@ -2036,7 +2053,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
     </tr>
     <tr>
       <th>3</th>
-      <td>3</td>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -2046,7 +2062,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>20.408163</td>
       <td>left</td>
       <td>0.0</td>
-      <td>...</td>
+      <td>0.641</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>2.0</td>
@@ -2060,7 +2076,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
     </tr>
     <tr>
       <th>4</th>
-      <td>4</td>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -2070,7 +2085,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>20.408163</td>
       <td>right</td>
       <td>1.0</td>
-      <td>...</td>
+      <td>1.076</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>3.0</td>
@@ -2084,7 +2099,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
     </tr>
     <tr>
       <th>5</th>
-      <td>5</td>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -2094,7 +2108,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>20.408163</td>
       <td>right</td>
       <td>1.0</td>
-      <td>...</td>
+      <td>0.680</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>4.0</td>
@@ -2108,7 +2122,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
     </tr>
     <tr>
       <th>6</th>
-      <td>6</td>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -2118,7 +2131,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>20.408163</td>
       <td>left</td>
       <td>1.0</td>
-      <td>...</td>
+      <td>0.769</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>5.0</td>
@@ -2132,7 +2145,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
     </tr>
     <tr>
       <th>7</th>
-      <td>7</td>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -2142,7 +2154,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>20.408163</td>
       <td>left</td>
       <td>1.0</td>
-      <td>...</td>
+      <td>0.981</td>
       <td>NaN</td>
       <td>1.0</td>
       <td>0.0</td>
@@ -2156,7 +2168,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
     </tr>
     <tr>
       <th>8</th>
-      <td>8</td>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -2166,7 +2177,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>20.408163</td>
       <td>down</td>
       <td>1.0</td>
-      <td>...</td>
+      <td>0.747</td>
       <td>NaN</td>
       <td>1.0</td>
       <td>1.0</td>
@@ -2180,7 +2191,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
     </tr>
     <tr>
       <th>9</th>
-      <td>9</td>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -2190,7 +2200,7 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
       <td>20.408163</td>
       <td>left</td>
       <td>1.0</td>
-      <td>...</td>
+      <td>0.704</td>
       <td>NaN</td>
       <td>1.0</td>
       <td>2.0</td>
@@ -2204,7 +2214,6 @@ check if <code class="docutils literal notranslate"><span class="pre">python</sp
     </tr>
   </tbody>
 </table>
-<p>10 rows × 21 columns</p>
 </div></div></div>
 </div>
 <p>In order to get a first very general overview of our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> and the <code class="docutils literal notranslate"><span class="pre">data</span></code> in, <code class="docutils literal notranslate"><span class="pre">pandas</span></code> has an amazing <code class="docutils literal notranslate"><span class="pre">function</span></code> called <code class="docutils literal notranslate"><span class="pre">.describe()</span></code> which will provide <code class="docutils literal notranslate"><span class="pre">summary</span> <span class="pre">statistics</span></code> for each <code class="docutils literal notranslate"><span class="pre">column</span></code>, including <code class="docutils literal notranslate"><span class="pre">count</span></code>, <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">sd</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>/<code class="docutils literal notranslate"><span class="pre">max</span></code> and <code class="docutils literal notranslate"><span class="pre">percentiles</span></code>.</p>
@@ -3167,9 +3176,297 @@ The data type of column congruent is &lt;class &#39;numpy.float64&#39;&gt;
 <h4>Exercise 5<a class="headerlink" href="#exercise-5" title="Link to this heading">#</a></h4>
 <p>How would you compute the <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">sd</span></code> for the <code class="docutils literal notranslate"><span class="pre">ratings</span></code> of the other <code class="docutils literal notranslate"><span class="pre">variables</span></code>?</p>
 <p>Another thing that you might have noticed already is that we have quite a large number of <code class="docutils literal notranslate"><span class="pre">nan</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">a</span> <span class="pre">number</span></code>, in our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> and thus <code class="docutils literal notranslate"><span class="pre">dataset</span></code>.</p>
-<p>This has something to do with the way <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> saves and organizes/structures information. Specifically, we get information for each given <code class="docutils literal notranslate"><span class="pre">routine</span></code> and <code class="docutils literal notranslate"><span class="pre">trial</span></code> therein via a so-called <code class="docutils literal notranslate"><span class="pre">wide-format</span></code> <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>. This results in the large number of <code class="docutils literal notranslate"><span class="pre">columns</span></code> that denote <code class="docutils literal notranslate"><span class="pre">routines</span></code> and their <code class="docutils literal notranslate"><span class="pre">components</span></code> which only contain information for events that happened therein but nothing else. Thus, the large amount of <code class="docutils literal notranslate"><span class="pre">nan</span></code>. Again, our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>/<code class="docutils literal notranslate"><span class="pre">dataset</span></code> is specific of <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> but comparable things happen/appear frequently in all kinds of <code class="docutils literal notranslate"><span class="pre">data</span></code>.</p>
 </section>
 </section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="understanding-loc-and-iloc-in-pandas">
+<h1>Understanding <code class="docutils literal notranslate"><span class="pre">.loc</span></code> and <code class="docutils literal notranslate"><span class="pre">.iloc</span></code> in pandas<a class="headerlink" href="#understanding-loc-and-iloc-in-pandas" title="Link to this heading">#</a></h1>
+<p>In pandas, <code class="docutils literal notranslate"><span class="pre">.loc</span></code> and <code class="docutils literal notranslate"><span class="pre">.iloc</span></code> are two commonly used indexers for selecting and manipulating data in DataFrames. They serve different purposes and operate based on different selection criteria.</p>
+<section id="loc-label-based-indexing">
+<h2><code class="docutils literal notranslate"><span class="pre">.loc</span></code> (Label-based Indexing)<a class="headerlink" href="#loc-label-based-indexing" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">.loc</span></code> is used for selecting data by labels (explicit index or column names). It allows selection based on row and column labels, making it intuitive when working with named indices.</p>
+<section id="features-of-loc">
+<h3>Features of <code class="docutils literal notranslate"><span class="pre">.loc</span></code>:<a class="headerlink" href="#features-of-loc" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Uses explicit labels to select data.</p></li>
+<li><p>Supports selection of single values, ranges, and lists of labels.</p></li>
+<li><p>Allows Boolean indexing for conditional selections.</p></li>
+<li><p>Includes both start and end labels when slicing.</p></li>
+</ul>
+</section>
+</section>
+<section id="iloc-integer-location-based-indexing">
+<h2><code class="docutils literal notranslate"><span class="pre">.iloc</span></code> (Integer-location Based Indexing)<a class="headerlink" href="#iloc-integer-location-based-indexing" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">.iloc</span></code> is used for selecting data by numerical (positional) index. It is useful when you do not rely on explicit labels and instead work with the position of rows and columns.</p>
+<section id="features-of-iloc">
+<h3>Features of <code class="docutils literal notranslate"><span class="pre">.iloc</span></code>:<a class="headerlink" href="#features-of-iloc" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Uses integer-based index positions.</p></li>
+<li><p>Supports selection of individual values, slices, and lists of indices.</p></li>
+<li><p>Excludes the end index in slicing.</p></li>
+<li><p>Does not recognize explicit row or column labels.</p></li>
+</ul>
+</section>
+</section>
+<section id="key-differences">
+<h2>Key Differences:<a class="headerlink" href="#key-differences" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">.loc</span></code></p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">.iloc</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Indexing type</p></td>
+<td><p>Label-based</p></td>
+<td><p>Integer-based</p></td>
+</tr>
+<tr class="row-odd"><td><p>Row selection</p></td>
+<td><p>Uses row labels</p></td>
+<td><p>Uses row positions</p></td>
+</tr>
+<tr class="row-even"><td><p>Column selection</p></td>
+<td><p>Uses column names</p></td>
+<td><p>Uses column positions</p></td>
+</tr>
+<tr class="row-odd"><td><p>Slicing behavior</p></td>
+<td><p>Includes the end index</p></td>
+<td><p>Excludes the end index</p></td>
+</tr>
+<tr class="row-even"><td><p>Boolean indexing</p></td>
+<td><p>Supported</p></td>
+<td><p>Not supported directly</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Both <code class="docutils literal notranslate"><span class="pre">.loc</span></code> and <code class="docutils literal notranslate"><span class="pre">.iloc</span></code> are powerful tools for selecting data in pandas DataFrames and should be chosen based on whether you are working with labels or numerical indices.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example 1: Selecting a single row</span>
+<span class="n">first_row_loc</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Using label</span>
+<span class="n">first_row_iloc</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Using position</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">first_row_loc</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first_row_iloc</span><span class="p">)</span>
+
+<span class="c1">#wow, it looks like they are identical!</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>participant                         AG_01_02
+session                                    1
+date                 2025-01-23_13h12.02.354
+expName                               stroop
+psychopyVersion                     2023.1.3
+OS                                  MacIntel
+frameRate                          20.408163
+resp.keys                                NaN
+resp.corr                                NaN
+resp.rt                                  NaN
+resp.duration                            NaN
+trials.thisRepN                          NaN
+trials.thisTrialN                        NaN
+trials.thisN                             NaN
+trials.thisIndex                         NaN
+trials.ran                               NaN
+text                                     NaN
+letterColor                              NaN
+corrAns                                  NaN
+congruent                                NaN
+Name: 0, dtype: object
+participant                         AG_01_02
+session                                    1
+date                 2025-01-23_13h12.02.354
+expName                               stroop
+psychopyVersion                     2023.1.3
+OS                                  MacIntel
+frameRate                          20.408163
+resp.keys                                NaN
+resp.corr                                NaN
+resp.rt                                  NaN
+resp.duration                            NaN
+trials.thisRepN                          NaN
+trials.thisTrialN                        NaN
+trials.thisN                             NaN
+trials.thisIndex                         NaN
+trials.ran                               NaN
+text                                     NaN
+letterColor                              NaN
+corrAns                                  NaN
+congruent                                NaN
+Name: 0, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example 2: Selecting multiple rows</span>
+<span class="n">first_three_rows_loc</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> 
+<span class="n">first_three_rows_iloc</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>  
+
+<span class="nb">print</span><span class="p">(</span><span class="n">first_three_rows_loc</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first_three_rows_iloc</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  participant  session                     date expName psychopyVersion  \
+0    AG_01_02        1  2025-01-23_13h12.02.354  stroop        2023.1.3   
+1    AG_01_02        1  2025-01-23_13h12.02.354  stroop        2023.1.3   
+2    AG_01_02        1  2025-01-23_13h12.02.354  stroop        2023.1.3   
+
+         OS  frameRate resp.keys  resp.corr  resp.rt  resp.duration  \
+0  MacIntel  20.408163       NaN        NaN      NaN            NaN   
+1  MacIntel  20.408163      left        1.0    0.635            NaN   
+2  MacIntel  20.408163      down        1.0    0.342            NaN   
+
+   trials.thisRepN  trials.thisTrialN  trials.thisN  trials.thisIndex  \
+0              NaN                NaN           NaN               NaN   
+1              0.0                0.0           0.0               5.0   
+2              0.0                1.0           1.0               2.0   
+
+   trials.ran   text letterColor corrAns  congruent  
+0         NaN    NaN         NaN     NaN        NaN  
+1         1.0   blue         red    left        0.0  
+2         1.0  green       green    down        1.0  
+  participant  session                     date expName psychopyVersion  \
+0    AG_01_02        1  2025-01-23_13h12.02.354  stroop        2023.1.3   
+1    AG_01_02        1  2025-01-23_13h12.02.354  stroop        2023.1.3   
+
+         OS  frameRate resp.keys  resp.corr  resp.rt  resp.duration  \
+0  MacIntel  20.408163       NaN        NaN      NaN            NaN   
+1  MacIntel  20.408163      left        1.0    0.635            NaN   
+
+   trials.thisRepN  trials.thisTrialN  trials.thisN  trials.thisIndex  \
+0              NaN                NaN           NaN               NaN   
+1              0.0                0.0           0.0               5.0   
+
+   trials.ran  text letterColor corrAns  congruent  
+0         NaN   NaN         NaN     NaN        NaN  
+1         1.0  blue         red    left        0.0  
+</pre></div>
+</div>
+</div>
+</div>
+<p>But here it is different? Why?</p>
+<p><code class="docutils literal notranslate"><span class="pre">.loc</span></code> is using labels (inclusive)  and <code class="docutils literal notranslate"><span class="pre">.iloc</span></code> using positions (exclusive)</p>
+<p>Okay, now collumns time. Try to select first collumn using both <code class="docutils literal notranslate"><span class="pre">.loc</span></code> and <code class="docutils literal notranslate"><span class="pre">.iloc</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_collumn</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">loc</span><span class="p">[]</span>
+<span class="n">first_collumn_i</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">iloc</span><span class="p">[]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">first_collumn</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first_collumn_i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     AG_01_02
+1     AG_01_02
+2     AG_01_02
+3     AG_01_02
+4     AG_01_02
+5     AG_01_02
+6     AG_01_02
+7     AG_01_02
+8     AG_01_02
+9     AG_01_02
+10    AG_01_02
+11    AG_01_02
+12    AG_01_02
+13    AG_01_02
+14    AG_01_02
+15    AG_01_02
+16    AG_01_02
+17    AG_01_02
+18    AG_01_02
+19    AG_01_02
+20    AG_01_02
+21    AG_01_02
+22    AG_01_02
+23    AG_01_02
+24    AG_01_02
+25    AG_01_02
+26    AG_01_02
+27    AG_01_02
+28    AG_01_02
+29    AG_01_02
+30    AG_01_02
+31    AG_01_02
+Name: participant, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>Wow, great. Now one more time. Try to select rows 5-8 for collumns 3-5</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">weird_data</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">loc</span><span class="p">[]</span>
+<span class="n">weird_data_i</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">iloc</span><span class="p">[]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">weird_data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">weird_data_i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Great! Actually loc is very useful when it comes to bollean and data filtering. For example, you can easily select correct trials and have its reaction time</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Task 1: Extract trials where response was correct and get reaction times</span>
+<span class="n">correct_trials</span> <span class="o">=</span> <span class="n">data_loaded</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">data_loaded</span><span class="p">[</span><span class="s1">&#39;resp.corr&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">,</span> <span class="s1">&#39;resp.rt&#39;</span><span class="p">]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">correct_trials</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   participant  resp.rt
+1     AG_01_02    0.635
+2     AG_01_02    0.342
+4     AG_01_02    1.076
+5     AG_01_02    0.680
+6     AG_01_02    0.769
+7     AG_01_02    0.981
+8     AG_01_02    0.747
+9     AG_01_02    0.704
+10    AG_01_02    0.620
+11    AG_01_02    0.986
+12    AG_01_02    1.197
+13    AG_01_02    0.751
+14    AG_01_02    0.732
+15    AG_01_02    0.937
+16    AG_01_02    0.847
+17    AG_01_02    0.681
+18    AG_01_02    0.920
+19    AG_01_02    0.751
+20    AG_01_02    0.993
+21    AG_01_02    1.044
+22    AG_01_02    0.776
+23    AG_01_02    0.643
+24    AG_01_02    0.442
+25    AG_01_02    0.718
+26    AG_01_02    0.891
+27    AG_01_02    1.461
+28    AG_01_02    0.559
+29    AG_01_02    1.028
+30    AG_01_02    0.883
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Task 2: Extract trials where condition was congruent and get reaction times and responses correct</span>
+</pre></div>
+</div>
+</div>
+</div>
 <section id="data-wrangling">
 <h3>Data wrangling<a class="headerlink" href="#data-wrangling" title="Link to this heading">#</a></h3>
 <p>Together, this creates the impression and maybe necessity to address these things via <code class="docutils literal notranslate"><span class="pre">handling</span> <span class="pre">missing</span></code> and rearranging our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>. This process (or parts of it) can be referred to as <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">wrangling</span></code> and is actually a very common step when <code class="docutils literal notranslate"><span class="pre">analyzing</span> <span class="pre">data</span></code> that contain various different <code class="docutils literal notranslate"><span class="pre">operations</span></code>. For now, we will focus on the two we outlined before: <code class="docutils literal notranslate"><span class="pre">handling</span> <span class="pre">missing</span> <span class="pre">data</span></code> and <code class="docutils literal notranslate"><span class="pre">rearranging</span> <span class="pre">our</span> <span class="pre">dataframe</span></code>.</p>
@@ -3186,7 +3483,8 @@ The data type of column congruent is &lt;class &#39;numpy.float64&#39;&gt;
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The participant AG_01_02 had a reaction time of 0.635 seconds.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The participant AG_01_02 had a reaction time of nan seconds.
+The participant AG_01_02 had a reaction time of 0.635 seconds.
 The participant AG_01_02 had a reaction time of 0.342 seconds.
 The participant AG_01_02 had a reaction time of 0.641 seconds.
 The participant AG_01_02 had a reaction time of 1.076 seconds.
@@ -3216,6 +3514,7 @@ The participant AG_01_02 had a reaction time of 1.461 seconds.
 The participant AG_01_02 had a reaction time of 0.559 seconds.
 The participant AG_01_02 had a reaction time of 1.028 seconds.
 The participant AG_01_02 had a reaction time of 0.883 seconds.
+The participant AG_01_02 had a reaction time of nan seconds.
 </pre></div>
 </div>
 </div>
@@ -3279,6 +3578,12 @@ Row 31 has only nan: True
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The following rows will be removed: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">rows_del</span>)
+<span class="o">.</span><span class="n">drop</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following rows will be removed: [0, 31]
 </pre></div>
 </div>
 </div>
@@ -3318,6 +3623,15 @@ Row 31 has only nan: True
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th>0</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
     <tr>
       <th>1</th>
       <td>AG_01_02</td>
@@ -3397,15 +3711,6 @@ Row 31 has only nan: True
       <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
       <td>0.704</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>AG_01_02</td>
-      <td>1</td>
-      <td>2025-01-23_13h12.02.354</td>
-      <td>1.0</td>
-      <td>0.620</td>
       <td>1.0</td>
     </tr>
   </tbody>
@@ -3454,12 +3759,21 @@ Row 31 has only nan: True
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
       <td>0.635</td>
       <td>0.0</td>
     </tr>
     <tr>
-      <th>1</th>
+      <th>2</th>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -3468,7 +3782,7 @@ Row 31 has only nan: True
       <td>1.0</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>3</th>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -3477,7 +3791,7 @@ Row 31 has only nan: True
       <td>0.0</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>4</th>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -3486,7 +3800,7 @@ Row 31 has only nan: True
       <td>0.0</td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>5</th>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -3495,7 +3809,7 @@ Row 31 has only nan: True
       <td>1.0</td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>6</th>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -3504,7 +3818,7 @@ Row 31 has only nan: True
       <td>1.0</td>
     </tr>
     <tr>
-      <th>6</th>
+      <th>7</th>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -3513,7 +3827,7 @@ Row 31 has only nan: True
       <td>0.0</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>8</th>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
@@ -3522,21 +3836,12 @@ Row 31 has only nan: True
       <td>1.0</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>AG_01_02</td>
-      <td>1</td>
-      <td>2025-01-23_13h12.02.354</td>
-      <td>1.0</td>
-      <td>0.704</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
       <th>9</th>
       <td>AG_01_02</td>
       <td>1</td>
       <td>2025-01-23_13h12.02.354</td>
       <td>1.0</td>
-      <td>0.620</td>
+      <td>0.704</td>
       <td>1.0</td>
     </tr>
   </tbody>
@@ -3803,617 +4108,386 @@ Row 31 has only nan: True
 </table>
 </div></div></div>
 </div>
-</section>
-<section id="reshaping-the-dataframe">
-<h4>Reshaping the dataframe<a class="headerlink" href="#reshaping-the-dataframe" title="Link to this heading">#</a></h4>
-<p>So far so good! Now, we have to think about the <code class="docutils literal notranslate"><span class="pre">structure</span></code> and <code class="docutils literal notranslate"><span class="pre">shape</span></code> of our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>. As mentioned before, <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> provides the <code class="docutils literal notranslate"><span class="pre">data</span></code> in <code class="docutils literal notranslate"><span class="pre">wide-format</span></code> resulting in all the <code class="docutils literal notranslate"><span class="pre">nan</span></code>s we see. Thus, a way to address this and making the <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> more intelligible at the same time, would be to <code class="docutils literal notranslate"><span class="pre">reshape</span></code> it to <code class="docutils literal notranslate"><span class="pre">long-format</span></code>.</p>
-<p>In more detail, we change the <code class="docutils literal notranslate"><span class="pre">shape</span></code> of our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> from a few <code class="docutils literal notranslate"><span class="pre">rows</span></code> that contain information per <code class="docutils literal notranslate"><span class="pre">trial</span></code> across a <code class="docutils literal notranslate"><span class="pre">wide</span></code> range of <code class="docutils literal notranslate"><span class="pre">columns</span></code> to a few <code class="docutils literal notranslate"><span class="pre">columns</span></code> that contain information stacked across a <code class="docutils literal notranslate"><span class="pre">long</span></code> range of <code class="docutils literal notranslate"><span class="pre">rows</span></code>.</p>
-<p>Given our <code class="docutils literal notranslate"><span class="pre">dataset</span></code> within which we have a <code class="docutils literal notranslate"><span class="pre">rating</span></code> for multiple <code class="docutils literal notranslate"><span class="pre">items</span></code> of multiple <code class="docutils literal notranslate"><span class="pre">categories</span></code>, <code class="docutils literal notranslate"><span class="pre">reshaping</span></code> our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> to indicate the <code class="docutils literal notranslate"><span class="pre">category</span></code>, <code class="docutils literal notranslate"><span class="pre">item</span></code> and respective <code class="docutils literal notranslate"><span class="pre">rating</span></code> should work out nicely. <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> has multiple options for this type of operation including <code class="docutils literal notranslate"><span class="pre">.melt()</span></code>, <code class="docutils literal notranslate"><span class="pre">.wide_to_long()</span></code>, <code class="docutils literal notranslate"><span class="pre">.stack()</span></code>, etc. .</p>
-<p>Here we will use a a combination of <code class="docutils literal notranslate"><span class="pre">.melt()</span></code> and <code class="docutils literal notranslate"><span class="pre">basic</span> <span class="pre">operations</span></code> like e.g. <code class="docutils literal notranslate"><span class="pre">selecting</span></code>. Starting with <code class="docutils literal notranslate"><span class="pre">.melt()</span></code>, we only need to provide a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">columns</span></code> that should remain “identical” or <code class="docutils literal notranslate"><span class="pre">unstacked</span></code> and a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">columns</span></code> that should be <code class="docutils literal notranslate"><span class="pre">stacked</span></code>. We will save the output to a new <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> and additionally apply a few “<code class="docutils literal notranslate"><span class="pre">cleaning</span> <span class="pre">operations</span></code>” (removing <code class="docutils literal notranslate"><span class="pre">duplicates</span></code> and <code class="docutils literal notranslate"><span class="pre">nan</span></code>):</p>
-<center><img src="https://pandas.pydata.org/pandas-docs/version/0.25.3/_images/reshaping_melt.png" width="600px" style="margin-bottom: 10px;"></center><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub_long</span> <span class="o">=</span> <span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="n">data_loaded_sub</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="mi">5</span><span class="p">],</span> 
-                                            <span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;movie&#39;</span><span class="p">,</span> <span class="s1">&#39;snack&#39;</span><span class="p">,</span> <span class="s1">&#39;animal&#39;</span><span class="p">],</span>
-                                            <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;item&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub_long</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>participant</th>
-      <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
-      <th>category</th>
-      <th>item</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>The Intouchables</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>James Bond</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Forrest Gump</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Retired Extremely Dangerous</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>The Imitation Game</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>The Philosophers</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Call Me by Your Name</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Shutter Island</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Love actually</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>The Great Gatsby</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<p>That worked reasonably well! We only miss the <code class="docutils literal notranslate"><span class="pre">rating</span></code>s as we didn’t include them during the <code class="docutils literal notranslate"><span class="pre">reshaping</span></code>. Thus, we will just <code class="docutils literal notranslate"><span class="pre">select</span></code> them from the old <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> and then add them to our new <code class="docutils literal notranslate"><span class="pre">dataframe</span></code>. During the <code class="docutils literal notranslate"><span class="pre">selection</span></code> of the respective <code class="docutils literal notranslate"><span class="pre">values</span></code>, we will remove the <code class="docutils literal notranslate"><span class="pre">nan</span></code>s and change the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">list</span></code> for easy handling.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ratings</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;rating_movies.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span> <span class="o">+</span> \
-          <span class="nb">list</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;rating_snacks.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span> <span class="o">+</span> \
-          <span class="nb">list</span><span class="p">(</span><span class="n">data_loaded_sub</span><span class="p">[</span><span class="s1">&#39;rating_animals.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ratings</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4.0,
- 7.0,
- 3.44,
- 4.0,
- 6.02,
- 4.0,
- 4.0,
- 5.04,
- 6.5600000000000005,
- 3.06,
- 2.74,
- 5.08,
- 4.7,
- 5.48,
- 6.08,
- 4.0,
- 3.14,
- 5.68,
- 6.98,
- 2.7,
- 5.0,
- 5.06,
- 6.040000000000001,
- 5.08,
- 5.06,
- 5.92,
- 4.58,
- 4.02,
- 5.5,
- 2.0,
- 3.04,
- 7.0,
- 7.0,
- 7.0,
- 5.04,
- 6.0,
- 4.94,
- 4.78]
-</pre></div>
-</div>
-</div>
-</div>
-<p>Now we can simply add this <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">ratings</span></code> to our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> via assigning them to a new <code class="docutils literal notranslate"><span class="pre">column</span></code>. This works comparably to defining new <code class="docutils literal notranslate"><span class="pre">keys</span></code> and <code class="docutils literal notranslate"><span class="pre">values</span></code> in <code class="docutils literal notranslate"><span class="pre">dictionaries</span></code>:</p>
-<center><img src="https://pandas.pydata.org/pandas-docs/version/1.0.5/_images/05_newcolumn_1.svg" width="500"></center>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub_long</span><span class="p">[</span><span class="s1">&#39;ratings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ratings</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_loaded_sub_long</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>participant</th>
-      <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
-      <th>category</th>
-      <th>item</th>
-      <th>ratings</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>The Intouchables</td>
-      <td>4.00</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>James Bond</td>
-      <td>7.00</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Forrest Gump</td>
-      <td>3.44</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Retired Extremely Dangerous</td>
-      <td>4.00</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>The Imitation Game</td>
-      <td>6.02</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>The Philosophers</td>
-      <td>4.00</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Call Me by Your Name</td>
-      <td>4.00</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Shutter Island</td>
-      <td>5.04</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Love actually</td>
-      <td>6.56</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Heidi Klum</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>False</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>The Great Gatsby</td>
-      <td>3.06</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<p>Even though this multi-step approach appears a bit cumbersome and introduces more room for errors, the important aspect is that we have everything in code making it reproducible and “easy” to find/spot potential mistakes.</p>
-<p>That being said, this might be a good time to save our converted and cleaned <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> to disk for further analyzes. Importantly, the idea here is that we finished the initial <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">exploration</span></code> and <code class="docutils literal notranslate"><span class="pre">wrangling</span></code> <code class="docutils literal notranslate"><span class="pre">steps</span></code> for a single participant and can now save the <code class="docutils literal notranslate"><span class="pre">data</span></code> to avoid running everything again every time we want to work with the data.</p>
-<p>Obviously, <code class="docutils literal notranslate"><span class="pre">pandas</span></code> has our back with the <code class="docutils literal notranslate"><span class="pre">.to_csv()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> through which we can just provide a name for the to be saved <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> resulting in a respective <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file. (NB: use <code class="docutils literal notranslate"><span class="pre">.to</span></code> and <code class="docutils literal notranslate"><span class="pre">tab</span> <span class="pre">completion</span></code> to check all other file types you can save your <code class="docutils literal notranslate"><span class="pre">dataframes</span></code> to.)</p>
+<p>Cool, lets also save our clean data now!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">makedirs</span>
-<span class="n">makedirs</span><span class="p">(</span><span class="s1">&#39;data_experiment/derivatives/preprocessing&#39;</span><span class="p">)</span>
-<span class="n">data_loaded_sub_long</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;data_experiment/derivatives/preprocessing/</span><span class="si">%s</span><span class="s1">_long_format.csv&#39;</span> <span class="o">%</span><span class="k">data_loaded_sub_long</span>[&#39;participant&#39;][0], index=False)
+<span class="n">makedirs</span><span class="p">(</span><span class="s1">&#39;data_experiment/preprocessing&#39;</span><span class="p">)</span>
+<span class="n">data_loaded_sub_long</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;data_experiment/preprocessing/</span><span class="si">%s</span><span class="s1">_clean.csv&#39;</span> <span class="o">%</span><span class="k">data_loaded_sub</span>[&#39;participant&#39;][0], index=False)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">data_experiment</span><span class="o">/</span><span class="n">derivatives</span><span class="o">/</span><span class="n">preprocessing</span><span class="o">/</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">data_experiment</span>\\<span class="n">preprocessing</span>\\
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Heidi Klum_long_format.csv
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Volume in drive C is Windows-SSD
+ Volume Serial Number is CE97-8A4E
+
+ Directory of C:\Users\ika_m\OneDrive - Johann Wolfgang Goethe Universität\Documents\test_data\data_experiment\preprocessing
+
+02/05/2025  05:14 PM    &lt;DIR&gt;          .
+02/05/2025  05:14 PM    &lt;DIR&gt;          ..
+02/05/2025  05:14 PM               790 AG_01_02clean.csv
+               1 File(s)            790 bytes
+               2 Dir(s)  227,778,236,416 bytes free
 </pre></div>
 </div>
 </div>
 </div>
 <p>While this seems already super intense concerning <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">analyzes</span> <span class="pre">steps</span></code>, it’s only just the beginning and actually an important aspects focusing on <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">quality</span> <span class="pre">control</span></code> and preparation of further <code class="docutils literal notranslate"><span class="pre">analyzes</span></code>. When working with other <code class="docutils literal notranslate"><span class="pre">dataset</span></code> you might have to less or way more of these <code class="docutils literal notranslate"><span class="pre">operations</span></code>, depending on a variety of factors.</p>
-<p>However, to avoid going through all these steps for each <code class="docutils literal notranslate"><span class="pre">participant</span></code>, we can simply use our <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">files</span></code> again and apply all steps within a <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">loop</span></code>. <strong>Important</strong>: only do this if you have your operations outlined and tested, as well as are sure the <code class="docutils literal notranslate"><span class="pre">data</span></code> doesn’t change between <code class="docutils literal notranslate"><span class="pre">participants</span></code>.</p>
+<p>However, to avoid going through all these steps for each <code class="docutils literal notranslate"><span class="pre">participant</span></code>, we can simply use our <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">files</span></code> again and apply all steps within a <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">loop</span></code>. <strong>Important</strong>: Sometimes, it is much easier approach is to read all the files into one dataframe and work with it, instead of having separate small. However, final decision on how to handle the data is up to you.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">participant</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_files</span><span class="p">):</span>
-    
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Working on </span><span class="si">%s</span><span class="s1">, file </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">participant</span><span class="p">,</span> <span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_files</span><span class="p">)))</span>
-    
-    <span class="c1"># load the dataframe</span>
-    <span class="n">data_loaded_part</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">participant</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-    <span class="c1"># select columns</span>
-    <span class="n">data_loaded_sub_part</span> <span class="o">=</span> <span class="n">data_loaded_part</span><span class="p">[</span><span class="n">columns_select</span><span class="p">]</span>
+<span class="c1"># Find all CSV files in the directory</span>
+<span class="n">csv_files</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;*.csv&quot;</span><span class="p">))</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Checking for nan across rows and deleting rows with only nan.&#39;</span><span class="p">)</span>
-    
-    <span class="c1"># create empty list to store NaN rows    </span>
-    <span class="n">rows_del</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1"># Initialize an empty list to store DataFrames</span>
+<span class="n">dfs</span> <span class="o">=</span> <span class="p">[]</span>
 
-    <span class="c1"># loop through rows and check if they only contain NaN, if so append index to list</span>
-    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">data_loaded_sub_part</span><span class="p">[</span><span class="n">data_loaded_sub_part</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">5</span><span class="p">:]]</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-        
-        <span class="k">if</span> <span class="n">values</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
-            <span class="n">rows_del</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+<span class="c1"># Load all CSV files and append them to the list</span>
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">csv_files</span><span class="p">:</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    <span class="n">dfs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 
-    <span class="c1"># remove rows that only contain NaN </span>
-    <span class="n">data_loaded_sub_part</span> <span class="o">=</span> <span class="n">data_loaded_sub_part</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">rows_del</span><span class="p">)</span>      
+<span class="c1"># Merge all DataFrames into one</span>
+<span class="n">merged_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">dfs</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-    <span class="c1"># reset index</span>
-    <span class="n">data_loaded_sub_part</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># Remove rows where &#39;congruent&#39; column has NaN values</span>
+<span class="n">cleaned_df</span> <span class="o">=</span> <span class="n">merged_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;congruent&#39;</span><span class="p">])</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Reshaping the dataframe.&#39;</span><span class="p">)</span>
-
-    <span class="c1"># bring dataframe to long-format</span>
-    <span class="n">data_loaded_sub_part_long</span> <span class="o">=</span> <span class="n">data_loaded_sub_part</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="n">data_loaded_sub_part</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="mi">5</span><span class="p">],</span> 
-                                                          <span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;movie&#39;</span><span class="p">,</span> <span class="s1">&#39;snack&#39;</span><span class="p">,</span> <span class="s1">&#39;animal&#39;</span><span class="p">],</span>
-                                                          <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;item&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-    <span class="c1"># exract ratings while removing rows with NaN    </span>
-    <span class="n">ratings</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data_loaded_sub_part</span><span class="p">[</span><span class="s1">&#39;rating_movies.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span> <span class="o">+</span> \
-              <span class="nb">list</span><span class="p">(</span><span class="n">data_loaded_sub_part</span><span class="p">[</span><span class="s1">&#39;rating_snacks.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span> <span class="o">+</span> \
-              <span class="nb">list</span><span class="p">(</span><span class="n">data_loaded_sub_part</span><span class="p">[</span><span class="s1">&#39;rating_animals.response&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
-
-    <span class="c1"># add ratings to long-format dataframe</span>
-    <span class="n">data_loaded_sub_part_long</span><span class="p">[</span><span class="s1">&#39;ratings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ratings</span>
-    
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Saving dataframe to </span><span class="si">%s</span><span class="s1">_long_format.csv&#39;</span> <span class="o">%</span><span class="k">data_loaded_sub_part_long</span>[&#39;participant&#39;][0])
-
-    <span class="c1"># save long-format dataframe</span>
-    <span class="n">data_loaded_sub_part_long</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;data_experiment/derivatives/preprocessing/</span><span class="si">%s</span><span class="s1">_long_format.csv&#39;</span> <span class="o">%</span><span class="k">data_loaded_sub_part_long</span>[&#39;participant&#39;][0], index=False)
-    
+<span class="c1"># Add a trial number column for each participant</span>
+<span class="n">cleaned_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;trial_number&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cleaned_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;participant&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">cumcount</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Working on data_experiment/yagurllea_experiment_2022_Jan_25_1318.csv, file 1/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to yagurllea_long_format.csv
-Working on data_experiment/pauli4psychopy_experiment_2022_Jan_24_1145.csv, file 2/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to pauli4psychopy_long_format.csv
-Working on data_experiment/porla_experiment_2022_Jan_24_2154.csv, file 3/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to porla_long_format.csv
-Working on data_experiment/Nina__experiment_2022_Jan_24_1212.csv, file 4/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to Nina _long_format.csv
-Working on data_experiment/Sophie Oprée_experiment_2022_Jan_24_1411.csv, file 5/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to Sophie Oprée_long_format.csv
-Working on data_experiment/participant_123_experiment_2022_Jan_26_1307.csv, file 6/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to participant_123_long_format.csv
-Working on data_experiment/funny_ID_experiment_2022_Jan_24_1215.csv, file 7/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to funny ID_long_format.csv
-Working on data_experiment/Chiara Ferrandina_experiment_2022_Jan_24_1829.csv, file 8/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to Chiara Ferrandina_long_format.csv
-Working on data_experiment/Smitty_Werben_Jagger_Man_Jensen#1_experiment_2022_Jan_26_1158.csv, file 9/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to Smitty_Werben_Jagger_Man_Jensen#1_long_format.csv
-Working on data_experiment/wile_coyote_2022_Jan_23_1805.csv, file 10/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to wile_coyote_long_format.csv
-Working on data_experiment/Heidi_Klum_experiment_2022_Jan_26_1600.csv, file 11/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to Heidi Klum_long_format.csv
-Working on data_experiment/bugs bunny_experiment_2022_Jan_23_1745.csv, file 12/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to bugs_bunny_long_format.csv
-Working on data_experiment/Bruce_Wayne_experiment_2022_Jan_23_1605.csv, file 13/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to Bruce_Wayne_long_format.csv
-Working on data_experiment/twentyfour_experiment_2022_Jan_26_1436.csv, file 14/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to Talha_long_format.csv
-Working on data_experiment/daffy_duck_experiment_2022_Jan_23_1409.csv, file 15/15
-Checking for nan across rows and deleting rows with only nan.
-Reshaping the dataframe.
-Saving dataframe to daffy_duck_long_format.csv
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\ika_m\AppData\Local\Temp\ipykernel_10376\2674278654.py:23: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  cleaned_df.loc[:, &#39;trial_number&#39;] = cleaned_df.groupby(&#39;participant&#39;).cumcount() + 1
 </pre></div>
 </div>
 </div>
 </div>
-<p>Yes, the <code class="docutils literal notranslate"><span class="pre">loop</span></code> looks a bit frightening but it’s really just containing all the necessary steps we explored and we could evaluate potential problems further via the following little <code class="docutils literal notranslate"><span class="pre">print</span></code> messages.</p>
-<p>Let’s check our <code class="docutils literal notranslate"><span class="pre">preprocessed</span> <span class="pre">data</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">data_experiment</span><span class="o">/</span><span class="n">derivatives</span><span class="o">/</span><span class="n">preprocessing</span><span class="o">/</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Bruce_Wayne_long_format.csv
-Chiara Ferrandina_long_format.csv
-Heidi Klum_long_format.csv
-Nina _long_format.csv
-Smitty_Werben_Jagger_Man_Jensen#1_long_format.csv
-Sophie Oprée_long_format.csv
-Talha_long_format.csv
-bugs_bunny_long_format.csv
-daffy_duck_long_format.csv
-funny ID_long_format.csv
-participant_123_long_format.csv
-pauli4psychopy_long_format.csv
-porla_long_format.csv
-wile_coyote_long_format.csv
-yagurllea_long_format.csv
-</pre></div>
-</div>
-</div>
-</div>
-<p>The next <code class="docutils literal notranslate"><span class="pre">step</span></code> of our analyzes would be to combine the <code class="docutils literal notranslate"><span class="pre">single</span> <span class="pre">participant</span> <span class="pre">dataframes</span></code> to one <code class="docutils literal notranslate"><span class="pre">group</span> <span class="pre">dataframe</span></code> that contains <code class="docutils literal notranslate"><span class="pre">data</span></code> from all <code class="docutils literal notranslate"><span class="pre">participants</span></code>. This will definitely come in handy and is more or less needed for the subsequent steps, including data <code class="docutils literal notranslate"><span class="pre">visualization</span></code> and <code class="docutils literal notranslate"><span class="pre">statistical</span> <span class="pre">analyses</span></code>.</p>
-<p>When it comes to <code class="docutils literal notranslate"><span class="pre">combining</span> <span class="pre">dataframes</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas</span></code> once more has a variety of options to perform such <code class="docutils literal notranslate"><span class="pre">operations</span></code>: <a class="reference internal" href="#"><span class="xref myst">merge</span></a>, <a class="reference internal" href="#"><span class="xref myst">concat</span></a>, <a class="reference internal" href="#"><span class="xref myst">join</span></a> and <a class="reference internal" href="#"><span class="xref myst">compare</span></a>, each serving a distinct function. Here, we will use <code class="docutils literal notranslate"><span class="pre">concat</span></code> to <code class="docutils literal notranslate"><span class="pre">concatenate</span></code> or <code class="docutils literal notranslate"><span class="pre">stack</span></code> our <code class="docutils literal notranslate"><span class="pre">dataframes</span></code>.</p>
-<p>For this to work, we need a <code class="docutils literal notranslate"><span class="pre">list</span></code> of loaded <code class="docutils literal notranslate"><span class="pre">dataframes</span></code>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_dataframes</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="s1">&#39;data_experiment/derivatives/preprocessing/*.csv&#39;</span><span class="p">)</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="n">list_dataframes_loaded</span> <span class="o">=</span> <span class="p">[]</span>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-<span class="k">for</span> <span class="n">dataframe</span> <span class="ow">in</span> <span class="n">list_dataframes</span><span class="p">:</span>
-    
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Loading dataframe </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">dataframe</span>)
-    
-    <span class="n">df_part</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
-    
-    <span class="n">list_dataframes_loaded</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df_part</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The number of loaded dataframes matches the number of available dataframes: </span><span class="si">%s</span><span class="s1">&#39;</span> 
-      <span class="o">%</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">list_dataframes_loaded</span><span class="p">)</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">list_dataframes</span><span class="p">)))</span>    
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading dataframe data_experiment/derivatives/preprocessing/Smitty_Werben_Jagger_Man_Jensen#1_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/bugs_bunny_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/pauli4psychopy_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/Heidi Klum_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/Sophie Oprée_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/daffy_duck_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/Nina _long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/wile_coyote_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/funny ID_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/yagurllea_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/participant_123_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/porla_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/Chiara Ferrandina_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/Bruce_Wayne_long_format.csv
-Loading dataframe data_experiment/derivatives/preprocessing/Talha_long_format.csv
-The number of loaded dataframes matches the number of available dataframes: True
-</pre></div>
-</div>
-</div>
-</div>
-<p>Now, we can use <code class="docutils literal notranslate"><span class="pre">concat</span></code> to combine the <code class="docutils literal notranslate"><span class="pre">list</span></code> of loaded <code class="docutils literal notranslate"><span class="pre">dataframes</span></code>. (NB: make sure the used <code class="docutils literal notranslate"><span class="pre">combination</span> <span class="pre">function</span></code> matches your use case and is specified correctly re the <code class="docutils literal notranslate"><span class="pre">axis</span></code>, etc.)</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataframe_concat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">list_dataframes_loaded</span><span class="p">)</span>
-<span class="n">dataframe_concat</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>participant</th>
+      <th>session</th>
+      <th>date</th>
+      <th>expName</th>
+      <th>psychopyVersion</th>
+      <th>OS</th>
+      <th>frameRate</th>
+      <th>resp.keys</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>...</th>
+      <th>trials.thisRepN</th>
+      <th>trials.thisTrialN</th>
+      <th>trials.thisN</th>
+      <th>trials.thisIndex</th>
+      <th>trials.ran</th>
+      <th>text</th>
+      <th>letterColor</th>
+      <th>corrAns</th>
+      <th>congruent</th>
+      <th>trial_number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>0.635</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>red</td>
+      <td>left</td>
+      <td>0.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>0.342</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>0.0</td>
+      <td>0.641</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>green</td>
+      <td>down</td>
+      <td>0.0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>1.076</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>0.0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>0.680</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>0.769</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>0.981</td>
+      <td>...</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>6.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>red</td>
+      <td>left</td>
+      <td>0.0</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>0.747</td>
+      <td>...</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>0.704</td>
+      <td>...</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>0.620</td>
+      <td>...</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>9.0</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+<p>10 rows × 21 columns</p>
+</div></div></div>
 </div>
 <p>Let’s check what we have:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The concatenated dataframe has the following dimensions: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(dataframe_concat.shape))
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We have the following columns: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">list</span>(dataframe_concat.columns))
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We have the following participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">dataframe_concat</span>[&#39;participant&#39;].unique())
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The concatenated dataframe has the following dimensions: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(cleaned_df.shape))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We have the following columns: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">list</span>(cleaned_df.columns))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We have the following participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">cleaned_df</span>[&#39;participant&#39;].unique())
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The concatenated dataframe has the following dimensions: (570, 8)
-We have the following columns: [&#39;participant&#39;, &#39;session&#39;, &#39;age&#39;, &#39;left-handed&#39;, &#39;like this course&#39;, &#39;category&#39;, &#39;item&#39;, &#39;ratings&#39;]
-We have the following participants: [&#39;Smitty_Werben_Jagger_Man_Jensen#1&#39; &#39;bugs_bunny&#39; &#39;pauli4psychopy&#39;
- &#39;Heidi Klum&#39; &#39;Sophie Oprée&#39; &#39;daffy_duck&#39; &#39;Nina &#39; &#39;wile_coyote&#39; &#39;funny ID&#39;
- &#39;yagurllea&#39; &#39;participant_123&#39; &#39;porla&#39; &#39;Chiara Ferrandina&#39; &#39;Bruce_Wayne&#39;
- &#39;Talha&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The concatenated dataframe has the following dimensions: (300, 21)
+We have the following columns: [&#39;participant&#39;, &#39;session&#39;, &#39;date&#39;, &#39;expName&#39;, &#39;psychopyVersion&#39;, &#39;OS&#39;, &#39;frameRate&#39;, &#39;resp.keys&#39;, &#39;resp.corr&#39;, &#39;resp.rt&#39;, &#39;resp.duration&#39;, &#39;trials.thisRepN&#39;, &#39;trials.thisTrialN&#39;, &#39;trials.thisN&#39;, &#39;trials.thisIndex&#39;, &#39;trials.ran&#39;, &#39;text&#39;, &#39;letterColor&#39;, &#39;corrAns&#39;, &#39;congruent&#39;, &#39;trial_number&#39;]
+We have the following participants: [&#39;AG_01_02&#39; &#39;BF_31_01&#39; &#39;BF_31_02&#39; &#39;FB_09_02&#39; &#39;FB_09_03&#39; &#39;FK_24_01&#39;
+ &#39;JB_22_01&#39; &#39;JB_22_02&#39; &#39;JB_22_03&#39; &#39;XY_16_03&#39;]
 </pre></div>
 </div>
 </div>
@@ -4421,7 +4495,7 @@ We have the following participants: [&#39;Smitty_Werben_Jagger_Man_Jensen#1&#39;
 <p>We can now make use of the <code class="docutils literal notranslate"><span class="pre">.describe()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> to get some first insights at the <code class="docutils literal notranslate"><span class="pre">group</span> <span class="pre">level</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataframe_concat</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -4445,104 +4519,175 @@ We have the following participants: [&#39;Smitty_Werben_Jagger_Man_Jensen#1&#39;
     <tr style="text-align: right;">
       <th></th>
       <th>session</th>
-      <th>age</th>
-      <th>ratings</th>
+      <th>frameRate</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>resp.duration</th>
+      <th>trials.thisRepN</th>
+      <th>trials.thisTrialN</th>
+      <th>trials.thisN</th>
+      <th>trials.thisIndex</th>
+      <th>trials.ran</th>
+      <th>congruent</th>
+      <th>trial_number</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>count</th>
-      <td>570.0</td>
-      <td>570.000000</td>
-      <td>570.000000</td>
+      <td>300.0</td>
+      <td>300.000000</td>
+      <td>300.000000</td>
+      <td>300.000000</td>
+      <td>0.0</td>
+      <td>300.000000</td>
+      <td>300.000000</td>
+      <td>300.000000</td>
+      <td>300.000000</td>
+      <td>300.0</td>
+      <td>300.000000</td>
+      <td>300.000000</td>
     </tr>
     <tr>
       <th>mean</th>
       <td>1.0</td>
-      <td>25.866667</td>
-      <td>5.080737</td>
+      <td>67.035007</td>
+      <td>0.906667</td>
+      <td>0.733070</td>
+      <td>NaN</td>
+      <td>2.000000</td>
+      <td>2.500000</td>
+      <td>14.500000</td>
+      <td>2.500000</td>
+      <td>1.0</td>
+      <td>0.500000</td>
+      <td>15.500000</td>
     </tr>
     <tr>
       <th>std</th>
       <td>0.0</td>
-      <td>7.326417</td>
-      <td>1.675161</td>
+      <td>30.648353</td>
+      <td>0.291385</td>
+      <td>0.586253</td>
+      <td>NaN</td>
+      <td>1.416576</td>
+      <td>1.710679</td>
+      <td>8.669903</td>
+      <td>1.710679</td>
+      <td>0.0</td>
+      <td>0.500835</td>
+      <td>8.669903</td>
     </tr>
     <tr>
       <th>min</th>
       <td>1.0</td>
-      <td>21.000000</td>
+      <td>20.408163</td>
+      <td>0.000000</td>
+      <td>0.299000</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+      <td>0.000000</td>
       <td>1.000000</td>
     </tr>
     <tr>
       <th>25%</th>
       <td>1.0</td>
-      <td>22.000000</td>
-      <td>4.000000</td>
+      <td>55.555556</td>
+      <td>1.000000</td>
+      <td>0.512750</td>
+      <td>NaN</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>7.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.000000</td>
+      <td>8.000000</td>
     </tr>
     <tr>
       <th>50%</th>
       <td>1.0</td>
-      <td>22.000000</td>
-      <td>5.120000</td>
+      <td>58.823529</td>
+      <td>1.000000</td>
+      <td>0.614000</td>
+      <td>NaN</td>
+      <td>2.000000</td>
+      <td>2.500000</td>
+      <td>14.500000</td>
+      <td>2.500000</td>
+      <td>1.0</td>
+      <td>0.500000</td>
+      <td>15.500000</td>
     </tr>
     <tr>
       <th>75%</th>
       <td>1.0</td>
-      <td>25.000000</td>
-      <td>6.695000</td>
+      <td>76.923077</td>
+      <td>1.000000</td>
+      <td>0.795250</td>
+      <td>NaN</td>
+      <td>3.000000</td>
+      <td>4.000000</td>
+      <td>22.000000</td>
+      <td>4.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>23.000000</td>
     </tr>
     <tr>
       <th>max</th>
       <td>1.0</td>
-      <td>43.000000</td>
-      <td>7.000000</td>
+      <td>142.857143</td>
+      <td>1.000000</td>
+      <td>8.553000</td>
+      <td>NaN</td>
+      <td>4.000000</td>
+      <td>5.000000</td>
+      <td>29.000000</td>
+      <td>5.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>30.000000</td>
     </tr>
   </tbody>
 </table>
 </div></div></div>
 </div>
 <p>However, given the <code class="docutils literal notranslate"><span class="pre">shape</span></code> and <code class="docutils literal notranslate"><span class="pre">structure</span></code> of our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> we actually might want to consider being more precise and splitting aspects, as we have e.g. multiple entries for each <code class="docutils literal notranslate"><span class="pre">participants</span></code> <code class="docutils literal notranslate"><span class="pre">age</span></code> and can’t distinguish <code class="docutils literal notranslate"><span class="pre">ratings</span></code> based on <code class="docutils literal notranslate"><span class="pre">categories</span></code>.</p>
-<p>Regarding these things, the <code class="docutils literal notranslate"><span class="pre">.groupby()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> can be very helpful as it allows us to <code class="docutils literal notranslate"><span class="pre">group</span></code> and <code class="docutils literal notranslate"><span class="pre">separate</span></code> our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> based on certain aspects, e.g. <code class="docutils literal notranslate"><span class="pre">categories</span></code>. It will return a form of <code class="docutils literal notranslate"><span class="pre">list</span></code> with <code class="docutils literal notranslate"><span class="pre">subdataframes</span></code> given the specified <code class="docutils literal notranslate"><span class="pre">grouping</span> <span class="pre">aspect</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">category</span></code> and thus <code class="docutils literal notranslate"><span class="pre">movies</span></code>, <code class="docutils literal notranslate"><span class="pre">snacks</span></code> and <code class="docutils literal notranslate"><span class="pre">animals</span></code>.</p>
+<p>Regarding these things, the <code class="docutils literal notranslate"><span class="pre">.groupby()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> can be very helpful as it allows us to <code class="docutils literal notranslate"><span class="pre">group</span></code> and <code class="docutils literal notranslate"><span class="pre">separate</span></code> our <code class="docutils literal notranslate"><span class="pre">dataframe</span></code> based on certain aspects, e.g. <code class="docutils literal notranslate"><span class="pre">congruent</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">df</span> <span class="ow">in</span> <span class="n">dataframe_concat</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">df</span> <span class="ow">in</span> <span class="n">cleaned_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;congruent&#39;</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Showing information for subdataframe: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">index</span>)
-    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ratings&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;resp.rt&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Showing information for subdataframe: animal
-count    90.000000
-mean      5.701111
-std       1.187184
-min       2.400000
-25%       4.985000
-50%       5.940000
-75%       6.980000
-max       7.000000
-Name: ratings, dtype: float64
-Showing information for subdataframe: movie
-count    255.000000
-mean       4.806118
-std        1.795347
-min        1.000000
-25%        4.000000
-50%        5.000000
-75%        6.260000
-max        7.000000
-Name: ratings, dtype: float64
-Showing information for subdataframe: snack
-count    225.000000
-mean       5.143822
-std        1.633625
-min        1.000000
-25%        4.000000
-50%        5.680000
-75%        6.460000
-max        7.000000
-Name: ratings, dtype: float64
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Showing information for subdataframe: 0.0
+count    150.000000
+mean       0.780460
+std        0.735391
+min        0.320000
+25%        0.514250
+50%        0.629000
+75%        0.838250
+max        8.553000
+Name: resp.rt, dtype: float64
+Showing information for subdataframe: 1.0
+count    150.000000
+mean       0.685680
+std        0.379962
+min        0.299000
+25%        0.509000
+50%        0.598500
+75%        0.750000
+max        3.564000
+Name: resp.rt, dtype: float64
 </pre></div>
 </div>
 </div>
@@ -4550,7 +4695,7 @@ Name: ratings, dtype: float64
 <p>Comparably, we could use <code class="docutils literal notranslate"><span class="pre">indexing</span></code>/<code class="docutils literal notranslate"><span class="pre">selecting</span></code> again to work with respective <code class="docutils literal notranslate"><span class="pre">subdataframes</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataframe_concat</span><span class="p">[</span><span class="n">dataframe_concat</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;movie&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="p">[</span><span class="n">cleaned_df</span><span class="p">[</span><span class="s1">&#39;congruent&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4575,69 +4720,147 @@ Name: ratings, dtype: float64
       <th></th>
       <th>participant</th>
       <th>session</th>
-      <th>age</th>
-      <th>left-handed</th>
-      <th>like this course</th>
-      <th>category</th>
-      <th>item</th>
-      <th>ratings</th>
+      <th>date</th>
+      <th>expName</th>
+      <th>psychopyVersion</th>
+      <th>OS</th>
+      <th>frameRate</th>
+      <th>resp.keys</th>
+      <th>resp.corr</th>
+      <th>resp.rt</th>
+      <th>...</th>
+      <th>trials.thisRepN</th>
+      <th>trials.thisTrialN</th>
+      <th>trials.thisN</th>
+      <th>trials.thisIndex</th>
+      <th>trials.ran</th>
+      <th>text</th>
+      <th>letterColor</th>
+      <th>corrAns</th>
+      <th>congruent</th>
+      <th>trial_number</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>Smitty_Werben_Jagger_Man_Jensen#1</td>
-      <td>1.0</td>
-      <td>42.0</td>
-      <td>False</td>
-      <td>No</td>
-      <td>movie</td>
-      <td>The Intouchables</td>
-      <td>1.00</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Smitty_Werben_Jagger_Man_Jensen#1</td>
-      <td>1.0</td>
-      <td>42.0</td>
-      <td>False</td>
-      <td>No</td>
-      <td>movie</td>
-      <td>James Bond</td>
-      <td>1.00</td>
-    </tr>
-    <tr>
       <th>2</th>
-      <td>Smitty_Werben_Jagger_Man_Jensen#1</td>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
       <td>1.0</td>
-      <td>42.0</td>
-      <td>False</td>
-      <td>No</td>
-      <td>movie</td>
-      <td>Forrest Gump</td>
-      <td>1.00</td>
+      <td>0.342</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>2</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>Smitty_Werben_Jagger_Man_Jensen#1</td>
+      <th>5</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>right</td>
       <td>1.0</td>
-      <td>42.0</td>
-      <td>False</td>
-      <td>No</td>
-      <td>movie</td>
-      <td>Retired Extremely Dangerous</td>
-      <td>1.00</td>
+      <td>0.680</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>5</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>Smitty_Werben_Jagger_Man_Jensen#1</td>
+      <th>6</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>42.0</td>
-      <td>False</td>
-      <td>No</td>
-      <td>movie</td>
-      <td>The Imitation Game</td>
-      <td>1.00</td>
+      <td>0.769</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>0.747</td>
+      <td>...</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>AG_01_02</td>
+      <td>1</td>
+      <td>2025-01-23_13h12.02.354</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>20.408163</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>0.704</td>
+      <td>...</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>...</th>
@@ -4649,99 +4872,177 @@ Name: ratings, dtype: float64
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>544</th>
-      <td>Talha</td>
+      <th>311</th>
+      <td>XY_16_03</td>
+      <td>1</td>
+      <td>2025-01-23_13h31.18.706</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>55.555556</td>
+      <td>down</td>
       <td>1.0</td>
-      <td>21.0</td>
-      <td>True</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Lord of the Rings - The Two Towers</td>
-      <td>6.58</td>
+      <td>0.698</td>
+      <td>...</td>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>22.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>23</td>
     </tr>
     <tr>
-      <th>545</th>
-      <td>Talha</td>
+      <th>312</th>
+      <td>XY_16_03</td>
+      <td>1</td>
+      <td>2025-01-23_13h31.18.706</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>55.555556</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>21.0</td>
-      <td>True</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Fight Club</td>
-      <td>4.98</td>
+      <td>0.565</td>
+      <td>...</td>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>23.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>24</td>
     </tr>
     <tr>
-      <th>546</th>
-      <td>Talha</td>
+      <th>314</th>
+      <td>XY_16_03</td>
+      <td>1</td>
+      <td>2025-01-23_13h31.18.706</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>55.555556</td>
+      <td>down</td>
       <td>1.0</td>
-      <td>21.0</td>
-      <td>True</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Harry Potter</td>
-      <td>2.04</td>
+      <td>0.715</td>
+      <td>...</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>25.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>green</td>
+      <td>green</td>
+      <td>down</td>
+      <td>1.0</td>
+      <td>26</td>
     </tr>
     <tr>
-      <th>547</th>
-      <td>Talha</td>
+      <th>317</th>
+      <td>XY_16_03</td>
+      <td>1</td>
+      <td>2025-01-23_13h31.18.706</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>55.555556</td>
+      <td>left</td>
       <td>1.0</td>
-      <td>21.0</td>
-      <td>True</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Harry Potter and the MatLab-Prince</td>
-      <td>1.04</td>
+      <td>0.548</td>
+      <td>...</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>28.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>red</td>
+      <td>red</td>
+      <td>left</td>
+      <td>1.0</td>
+      <td>29</td>
     </tr>
     <tr>
-      <th>548</th>
-      <td>Talha</td>
+      <th>318</th>
+      <td>XY_16_03</td>
+      <td>1</td>
+      <td>2025-01-23_13h31.18.706</td>
+      <td>stroop</td>
+      <td>2023.1.3</td>
+      <td>MacIntel</td>
+      <td>55.555556</td>
+      <td>right</td>
       <td>1.0</td>
-      <td>21.0</td>
-      <td>True</td>
-      <td>Yes</td>
-      <td>movie</td>
-      <td>Shindlers List</td>
-      <td>6.98</td>
+      <td>0.700</td>
+      <td>...</td>
+      <td>4.0</td>
+      <td>5.0</td>
+      <td>29.0</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>blue</td>
+      <td>blue</td>
+      <td>right</td>
+      <td>1.0</td>
+      <td>30</td>
     </tr>
   </tbody>
 </table>
-<p>255 rows × 8 columns</p>
+<p>150 rows × 21 columns</p>
 </div></div></div>
 </div>
 <p>With that, we could start <code class="docutils literal notranslate"><span class="pre">visualizing</span></code> and analyzing our <code class="docutils literal notranslate"><span class="pre">data</span></code> via <code class="docutils literal notranslate"><span class="pre">inferential</span> <span class="pre">statistics</span></code>. Regarding the former, <code class="docutils literal notranslate"><span class="pre">pandas</span></code> even has some built-in <code class="docutils literal notranslate"><span class="pre">functions</span></code> for <code class="docutils literal notranslate"><span class="pre">basic</span> <span class="pre">plotting</span></code>. Here, some spoilers: a <code class="docutils literal notranslate"><span class="pre">histogram</span></code> for <code class="docutils literal notranslate"><span class="pre">movie</span> <span class="pre">ratings</span></code></p>
 <center><img src="https://pandas.pydata.org/docs/_images/04_plot_overview.svg" width="600px" style="margin-bottom: 10px;"></center><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataframe_concat</span><span class="p">[</span><span class="n">dataframe_concat</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;movie&#39;</span><span class="p">][</span><span class="s1">&#39;ratings&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="p">[</span><span class="n">cleaned_df</span><span class="p">[</span><span class="s1">&#39;congruent&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;resp.rt&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:ylabel=&#39;Frequency&#39;&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: ylabel=&#39;Frequency&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/25010855fdb06b7cc8162b4babdfc671032af8509435df01563c90c60199976a.png" src="../_images/25010855fdb06b7cc8162b4babdfc671032af8509435df01563c90c60199976a.png" />
+<img alt="../_images/27bfef434bdda10a53edd718ae14055e2336018e4a37656c11eca62a6ae014da.png" src="../_images/27bfef434bdda10a53edd718ae14055e2336018e4a37656c11eca62a6ae014da.png" />
 </div>
 </div>
 <p>and a <code class="docutils literal notranslate"><span class="pre">boxplot</span></code> for ratings across <code class="docutils literal notranslate"><span class="pre">categories</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataframe_concat</span><span class="p">[[</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="s1">&#39;ratings&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="p">[[</span><span class="s1">&#39;congruent&#39;</span><span class="p">,</span> <span class="s1">&#39;resp.rt&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;congruent&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:title={&#39;center&#39;:&#39;ratings&#39;}, xlabel=&#39;[category]&#39;&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: title={&#39;center&#39;: &#39;resp.rt&#39;}, xlabel=&#39;[congruent]&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/c13d3d8c0af09dca08d3fcb0d152ec2e73688ad372dbe4c8f91c0988c422cf30.png" src="../_images/c13d3d8c0af09dca08d3fcb0d152ec2e73688ad372dbe4c8f91c0988c422cf30.png" />
+<img alt="../_images/e0522a4c82106fe212fc01f870f90d7860876e06aec26257abe1baed82e89dd8.png" src="../_images/e0522a4c82106fe212fc01f870f90d7860876e06aec26257abe1baed82e89dd8.png" />
 </div>
 </div>
 <p>Sorry, but that’s enough spoilers…way more on <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">visualization</span></code> next week! For now, we should definitely save the <code class="docutils literal notranslate"><span class="pre">concatenated</span> <span class="pre">dataframe</span></code> as we need it for everything that follows!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataframe_concat</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;data_experiment/derivatives/preprocessing/dataframe_group.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;data_experiment/preprocessing/cleaned_df_group.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4810,11 +5111,6 @@ Name: ratings, dtype: float64
 </ul>
 </section>
 </section>
-<section id="homework-assignment-8">
-<h2>Homework assignment #8<a class="headerlink" href="#homework-assignment-8" title="Link to this heading">#</a></h2>
-<p>Your eight homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it <a class="reference external" href="https://www.dropbox.com/s/tvnatrn1lxnw0gv/PFP_assignment_8_intro_analyzes.ipynb?dl=1">here</a>. In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun!</p>
-<p><strong>Deadline: 02/02/2022, 11:59 PM EST</strong></p>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -4882,6 +5178,7 @@ Name: ratings, dtype: float64
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Data analyzes I - basics in data handling</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-we-get-started">Before we get started …</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives 📍</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-data-science-in-python">Why do data science in Python?</a><ul class="nav section-nav flex-column">
@@ -4909,10 +5206,23 @@ Name: ratings, dtype: float64
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5">Exercise 5</a></li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-loc-and-iloc-in-pandas">Understanding <code class="docutils literal notranslate"><span class="pre">.loc</span></code> and <code class="docutils literal notranslate"><span class="pre">.iloc</span></code> in pandas</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loc-label-based-indexing"><code class="docutils literal notranslate"><span class="pre">.loc</span></code> (Label-based Indexing)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#features-of-loc">Features of <code class="docutils literal notranslate"><span class="pre">.loc</span></code>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc-integer-location-based-indexing"><code class="docutils literal notranslate"><span class="pre">.iloc</span></code> (Integer-location Based Indexing)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#features-of-iloc">Features of <code class="docutils literal notranslate"><span class="pre">.iloc</span></code>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-differences">Key Differences:</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-wrangling">Data wrangling</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#handling-missing-values">Handling missing values</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6">Exercise 6</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reshaping-the-dataframe">Reshaping the dataframe</a></li>
 </ul>
 </li>
 </ul>
@@ -4922,8 +5232,10 @@ Name: ratings, dtype: float64
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-core-python-for-psychology-stack">The core “Python for psychology” stack</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-assignment-8">Homework assignment #8</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
