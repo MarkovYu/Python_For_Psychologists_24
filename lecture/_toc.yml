@@ -27,6 +27,7 @@ chapters:
           - file: introduction/intro_python_III.ipynb
           - file: introduction/PFP_assignment_4_intro_python_3.ipynb
   - file: analyses/intro_data_analyzes_visualization.ipynb
+  - file: analyses/intro_data_analyzes_visualization_II.ipynb
   #- file: experiments/experiments.md
   #- file: newanalyses/DataAnalysis_lecture.ipynb
   - file: showcases/module_showcases.md
